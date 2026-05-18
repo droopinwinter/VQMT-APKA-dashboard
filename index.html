@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategy Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1117; --card: #1a1d27; --border: #2a2d3e;
+    --text: #e0e0e0; --muted: #6b7280; --accent: #3b82f6;
+    --green: #22c55e; --red: #ef4444; --yellow: #f59e0b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; }
+
+  /* ── Header ── */
+  header { background: var(--card); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 1.2rem; font-weight: 700; letter-spacing: 0.5px; }
+  #last-update { font-size: 0.78rem; color: var(--muted); }
+
+  /* ── Tabs ── */
+  .tab-bar { display: flex; gap: 6px; padding: 16px 24px 0; flex-wrap: wrap; }
+  .tab { padding: 6px 18px; border-radius: 6px; border: 1px solid var(--border); background: var(--card);
+         color: var(--muted); cursor: pointer; font-size: 0.85rem; transition: all .2s; }
+  .tab:hover { border-color: var(--accent); color: var(--text); }
+  .tab.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+
+  /* ── Main layout ── */
+  main { padding: 20px 24px; max-width: 1400px; }
+
+  /* ── Metric cards ── */
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 20px; }
+  .metric-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+  .metric-card .label { font-size: 0.72rem; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .5px; }
+  .metric-card .value { font-size: 1.5rem; font-weight: 700; }
+  .pos { color: var(--green); } .neg { color: var(--red); } .neu { color: var(--text); }
+
+  /* ── Regime badge ── */
+  #regime-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; margin-bottom: 20px; }
+
+  /* ── Chart ── */
+  .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+  .chart-card h3 { font-size: 0.9rem; color: var(--muted); margin-bottom: 14px; }
+  .chart-wrap { position: relative; height: 340px; }
+
+  /* ── Table ── */
+  .table-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .table-card h3 { font-size: 0.9rem; color: var(--muted); margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th { text-align: left; color: var(--muted); padding: 8px 10px; border-bottom: 1px solid var(--border); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; }
+  td { padding: 9px 10px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: rgba(255,255,255,.03); }
+  .no-data { color: var(--muted); text-align: center; padding: 30px; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📈 Strategy Dashboard</h1>
+  <span id="last-update">載入中...</span>
+</header>
+
+<!-- Profile tabs -->
+<div class="tab-bar" id="profile-tabs">
+  <button class="tab active" onclick="setProfile('focus')">Focus</button>
+  <button class="tab" onclick="setProfile('diversified')">Diversified</button>
+</div>
+
+<!-- Market tabs -->
+<div class="tab-bar" id="market-tabs" style="padding-top:10px;">
+  <button class="tab active" onclick="setMarket('US')">🇺🇸 美股 US</button>
+  <button class="tab" onclick="setMarket('TW')">🇹🇼 台股 TW</button>
+  <button class="tab" onclick="setMarket('USETF')">🇺🇸 US ETF</button>
+  <button class="tab" onclick="setMarket('TWETF')">🇹🇼 TW ETF</button>
+</div>
+
+<main>
+  <!-- Regime -->
+  <div id="regime-badge" style="background:#1e3a2f; color:#22c55e;">● TREND</div>
+
+  <!-- Metrics -->
+  <div class="metrics" id="metrics-row">
+    <div class="metric-card"><div class="label">年化報酬 CAGR</div><div class="value neu" id="m-cagr">--</div></div>
+    <div class="metric-card"><div class="label">夏普比率 Sharpe</div><div class="value neu" id="m-sharpe">--</div></div>
+    <div class="metric-card"><div class="label">最大回撤 MaxDD</div><div class="value neu" id="m-maxdd">--</div></div>
+    <div class="metric-card"><div class="label">累計報酬</div><div class="value neu" id="m-total">--</div></div>
+    <div class="metric-card"><div class="label">回測年數</div><div class="value neu" id="m-years">--</div></div>
+  </div>
+
+  <!-- Chart -->
+  <div class="chart-card">
+    <h3>📊 權益曲線（正規化至 1.0）</h3>
+    <div class="chart-wrap"><canvas id="equityChart"></canvas></div>
+  </div>
+
+  <!-- Holdings -->
+  <div class="table-card">
+    <h3>📋 目前持倉</h3>
+    <div id="holdings-wrap"><p class="no-data">載入中...</p></div>
+  </div>
+</main>
+
+<script>
+// ── State ──────────────────────────────────────
+let DATA  = {};   // { focus: {...}, diversified: {...} }
+let chart = null;
+let currentProfile = 'focus';
+let currentMarket  = 'US';
+
+// ── Bootstrap ──────────────────────────────────
+async function init() {
+  try {
+    const sum = await fetchJSON('data/summary.json');
+    document.getElementById('last-update').textContent = '更新時間：' + sum.generated_at;
+
+    for (const p of sum.profiles) {
+      try {
+        DATA[p] = await fetchJSON(`data/${p}/data.json`);
+      } catch(e) { DATA[p] = {}; }
+    }
+    render();
+  } catch(e) {
+    document.getElementById('last-update').textContent = '資料載入失敗';
+    console.error(e);
+  }
+}
+
+async function fetchJSON(url) {
+  const r = await fetch(url + '?t=' + Date.now());
+  if (!r.ok) throw new Error(url + ' ' + r.status);
+  return r.json();
+}
+
+// ── Tab helpers ─────────────────────────────────
+function setProfile(p) {
+  currentProfile = p;
+  document.querySelectorAll('#profile-tabs .tab').forEach(t =>
+    t.classList.toggle('active', t.textContent.toLowerCase() === p));
+  render();
+}
+function setMarket(m) {
+  currentMarket = m;
+  document.querySelectorAll('#market-tabs .tab').forEach(t =>
+    t.classList.toggle('active', t.onclick.toString().includes(`'${m}'`)));
+  render();
+}
+
+// ── Render ──────────────────────────────────────
+function render() {
+  const mkt   = (DATA[currentProfile] || {})[currentMarket] || {};
+  renderRegime(mkt.meta);
+  renderMetrics(mkt);
+  renderChart(mkt);
+  renderHoldings(mkt.holdings);
+}
+
+// Regime badge
+function renderRegime(meta) {
+  const el = document.getElementById('regime-badge');
+  if (!meta) { el.style.display='none'; return; }
+  el.style.display='inline-block';
+
+  const regime = (meta.market_regime || 'UNKNOWN').toUpperCase();
+  const hk     = String(meta.hard_kill_state).toLowerCase() === 'true';
+  const sk     = (meta.soft_kill_state || 'normal') !== 'normal';
+
+  if (hk) {
+    el.style.background='#3b0f0f'; el.style.color='#ef4444';
+    el.textContent = '⛔ HARD KILL — ' + (meta.hard_kill_date || '');
+  } else if (sk) {
+    el.style.background='#3b2a0f'; el.style.color='#f59e0b';
+    el.textContent = '⚠️ 縮倉中 — ' + (meta.soft_kill_state || '') + ' / ' + regime;
+  } else {
+    const colors = { TREND:'#1e3a2f:#22c55e', SIDEWAYS:'#2a2a1e:#f59e0b',
+                     REVERSION:'#1e2a3a:#3b82f6', BEAR:'#3b1e1e:#ef4444',
+                     HIGH_VOL:'#3b2a0f:#f59e0b' };
+    const [bg, fg] = (colors[regime] || '#1e1e2a:#6b7280').split(':');
+    el.style.background = bg; el.style.color = fg;
+    el.textContent = '● ' + regime;
+  }
+}
+
+// Metrics
+function renderMetrics(mkt) {
+  const bt = mkt.backtest_net || mkt.backtest || {};
+  const m  = bt.metrics || {};
+
+  const set = (id, val, fmt, threshold) => {
+    const el = document.getElementById(id);
+    el.textContent = val === undefined ? '--' : fmt(val);
+    if (val !== undefined && threshold !== undefined) {
+      el.className = 'value ' + (val >= threshold ? 'pos' : 'neg');
+    }
+  };
+
+  set('m-cagr',   m.cagr,         v => v.toFixed(1)+'%', 0);
+  set('m-sharpe', m.sharpe,       v => v.toFixed(2),     1);
+  set('m-maxdd',  m.max_dd,       v => v.toFixed(1)+'%', 0);
+  set('m-total',  m.total_return, v => v.toFixed(1)+'%', 0);
+  set('m-years',  m.years,        v => v.toFixed(1)+'y', undefined);
+}
+
+// Chart
+function renderChart(mkt) {
+  const ctx = document.getElementById('equityChart').getContext('2d');
+  if (chart) chart.destroy();
+
+  const datasets = [];
+  if (mkt.backtest) {
+    datasets.push({ label:'回測（含費）', data: toChartPoints(mkt.backtest),
+      borderColor:'#3b82f6', backgroundColor:'rgba(59,130,246,.08)',
+      tension:.3, pointRadius:0, borderWidth:2, fill:true });
+  }
+  if (mkt.backtest_net) {
+    datasets.push({ label:'回測（扣費）', data: toChartPoints(mkt.backtest_net),
+      borderColor:'#8b5cf6', backgroundColor:'transparent',
+      tension:.3, pointRadius:0, borderWidth:1.5, borderDash:[4,3] });
+  }
+  if (mkt.live) {
+    datasets.push({ label:'實盤', data: toChartPoints(mkt.live),
+      borderColor:'#22c55e', backgroundColor:'rgba(34,197,94,.08)',
+      tension:.3, pointRadius:0, borderWidth:2.5, fill:true });
+  }
+
+  if (!datasets.length) {
+    chart = null; return;
+  }
+
+  chart = new Chart(ctx, {
+    type: 'line',
+    data: { datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode:'index', intersect:false },
+      plugins: {
+        legend: { labels:{ color:'#9ca3af', boxWidth:14, font:{ size:12 } } },
+        tooltip: {
+          callbacks: {
+            label: ctx => `${ctx.dataset.label}: ${(ctx.parsed.y * 100).toFixed(1)}%`
+          }
+        }
+      },
+      scales: {
+        x: { type:'time', time:{ unit:'year' },
+             ticks:{ color:'#6b7280', maxTicksLimit:8 },
+             grid:{ color:'rgba(255,255,255,.04)' } },
+        y: { ticks:{ color:'#6b7280', callback: v => (v*100).toFixed(0)+'%' },
+             grid:{ color:'rgba(255,255,255,.04)' } }
+      }
+    }
+  });
+}
+
+function toChartPoints(series) {
+  return series.dates.map((d,i) => ({ x: new Date(d), y: series.values[i] }));
+}
+
+// Holdings table
+function renderHoldings(holdings) {
+  const wrap = document.getElementById('holdings-wrap');
+  if (!holdings || !holdings.length) {
+    wrap.innerHTML = '<p class="no-data">目前無持倉資料</p>'; return;
+  }
+
+  const cols = Object.keys(holdings[0]);
+  const numCols = new Set(['weight','price','shares','value','score']);
+
+  let html = '<table><thead><tr>' +
+    cols.map(c => `<th>${c}</th>`).join('') + '</tr></thead><tbody>';
+
+  for (const row of holdings) {
+    html += '<tr>' + cols.map(c => {
+      let v = row[c];
+      if (c === 'weight' && typeof v === 'number') v = (v * 100).toFixed(1) + '%';
+      else if (numCols.has(c) && typeof v === 'number') v = v.toLocaleString();
+      return `<td>${v ?? '--'}</td>`;
+    }).join('') + '</tr>';
+  }
+  html += '</tbody></table>';
+  wrap.innerHTML = html;
+}
+
+// ── Chart.js 時間軸 adapter ────────────────────
+// 需要 date adapter，使用內建 intl
+Chart.defaults.plugins.tooltip.backgroundColor = '#1a1d27';
+Chart.defaults.plugins.tooltip.borderColor      = '#2a2d3e';
+Chart.defaults.plugins.tooltip.borderWidth      = 1;
+Chart.defaults.plugins.tooltip.titleColor       = '#e0e0e0';
+Chart.defaults.plugins.tooltip.bodyColor        = '#9ca3af';
+
+// 載入時間軸 adapter
+const adapterScript = document.createElement('script');
+adapterScript.src = 'https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js';
+adapterScript.onload = init;
+document.head.appendChild(adapterScript);
+</script>
+</body>
+</html>
