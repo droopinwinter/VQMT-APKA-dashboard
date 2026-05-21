@@ -68,8 +68,14 @@
   <button class="tab" onclick="setProfile('diversified')">Diversified</button>
 </div>
 
+<!-- Strategy tabs -->
+<div class="tab-bar" id="strategy-tabs" style="padding-top:4px;">
+  <button class="tab active" onclick="setStrategy('apka')">APKA</button>
+  <button class="tab" onclick="setStrategy('vqmt')">VQMT</button>
+</div>
+
 <!-- Market tabs -->
-<div class="tab-bar" id="market-tabs" style="padding-top:10px;">
+<div class="tab-bar" id="market-tabs" style="padding-top:4px;">
   <button class="tab active" onclick="setMarket('US')">🇺🇸 美股 US</button>
   <button class="tab" onclick="setMarket('TW')">🇹🇼 台股 TW</button>
   <button class="tab" onclick="setMarket('USETF')">🇺🇸 US ETF</button>
@@ -104,10 +110,11 @@
 
 <script>
 // ── State ──────────────────────────────────────
-let DATA  = {};   // { focus: {...}, diversified: {...} }
+let DATA  = {};   // { focus: { apka: {...}, vqmt: {...} }, diversified: { ... } }
 let chart = null;
-let currentProfile = 'focus';
-let currentMarket  = 'US';
+let currentProfile  = 'focus';
+let currentStrategy = 'apka';
+let currentMarket   = 'US';
 
 // ── Bootstrap ──────────────────────────────────
 async function init() {
@@ -115,10 +122,14 @@ async function init() {
     const sum = await fetchJSON('data/summary.json');
     document.getElementById('last-update').textContent = '更新時間：' + sum.generated_at;
 
+    const strategies = sum.strategies || ['apka', 'vqmt'];
     for (const p of sum.profiles) {
-      try {
-        DATA[p] = await fetchJSON(`data/${p}/data.json`);
-      } catch(e) { DATA[p] = {}; }
+      DATA[p] = {};
+      for (const s of strategies) {
+        try {
+          DATA[p][s] = await fetchJSON(`data/${p}/${s}/data.json`);
+        } catch(e) { DATA[p][s] = {}; }
+      }
     }
     render();
   } catch(e) {
@@ -140,6 +151,12 @@ function setProfile(p) {
     t.classList.toggle('active', t.textContent.toLowerCase() === p));
   render();
 }
+function setStrategy(s) {
+  currentStrategy = s;
+  document.querySelectorAll('#strategy-tabs .tab').forEach(t =>
+    t.classList.toggle('active', t.textContent.toLowerCase() === s));
+  render();
+}
 function setMarket(m) {
   currentMarket = m;
   document.querySelectorAll('#market-tabs .tab').forEach(t =>
@@ -149,7 +166,7 @@ function setMarket(m) {
 
 // ── Render ──────────────────────────────────────
 function render() {
-  const mkt   = (DATA[currentProfile] || {})[currentMarket] || {};
+  const mkt = ((DATA[currentProfile] || {})[currentStrategy] || {})[currentMarket] || {};
   renderRegime(mkt.meta);
   renderMetrics(mkt);
   renderChart(mkt);
