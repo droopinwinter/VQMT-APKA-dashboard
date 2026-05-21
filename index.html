@@ -101,6 +101,12 @@
     <div class="chart-wrap"><canvas id="equityChart"></canvas></div>
   </div>
 
+  <!-- Drawdown -->
+  <div class="chart-card">
+    <h3>📉 最大虧損分析 Drawdown Analysis</h3>
+    <div class="chart-wrap"><canvas id="drawdownChart"></canvas></div>
+  </div>
+
   <!-- Holdings -->
   <div class="table-card">
     <h3>📋 目前持倉</h3>
@@ -112,6 +118,7 @@
 // ── State ──────────────────────────────────────
 let DATA  = {};   // { focus: { apka: {...}, vqmt: {...} }, diversified: { ... } }
 let chart = null;
+let ddChart = null;
 let currentProfile  = 'focus';
 let currentStrategy = 'apka';
 let currentMarket   = 'US';
@@ -166,10 +173,12 @@ function setMarket(m) {
 
 // ── Render ──────────────────────────────────────
 function render() {
-  const mkt = ((DATA[currentProfile] || {})[currentStrategy] || {})[currentMarket] || {};
+  const stratData = (DATA[currentProfile] || {})[currentStrategy] || {};
+  const mkt = stratData[currentMarket] || {};
   renderRegime(mkt.meta);
   renderMetrics(mkt);
   renderChart(mkt);
+  renderDrawdown(stratData);
   renderHoldings(mkt.holdings);
 }
 
@@ -272,6 +281,74 @@ function renderChart(mkt) {
 
 function toChartPoints(series) {
   return series.dates.map((d,i) => ({ x: new Date(d), y: series.values[i] }));
+}
+
+// Drawdown
+const DD_COLORS = {
+  US:    { bt: 'rgba(59,130,246,0.55)',   live: 'rgba(147,197,253,0.40)' },
+  TW:    { bt: 'rgba(244,114,182,0.55)',  live: 'rgba(253,186,116,0.40)' },
+  USETF: { bt: 'rgba(167,139,250,0.55)',  live: 'rgba(196,181,253,0.35)' },
+  TWETF: { bt: 'rgba(52,211,153,0.50)',   live: 'rgba(110,231,183,0.35)' },
+};
+
+function calcDrawdown(values) {
+  const dd = []; let peak = values[0];
+  for (const v of values) { if (v > peak) peak = v; dd.push((v - peak) / peak); }
+  return dd;
+}
+
+function renderDrawdown(stratData) {
+  const ctx = document.getElementById('drawdownChart').getContext('2d');
+  if (ddChart) { ddChart.destroy(); ddChart = null; }
+
+  const datasets = [];
+  for (const mkt of ['US', 'TW', 'USETF', 'TWETF']) {
+    const d = stratData[mkt]; if (!d) continue;
+    const c = DD_COLORS[mkt] || { bt: 'rgba(100,100,100,0.5)', live: 'rgba(150,150,150,0.35)' };
+
+    const bt = d.backtest_net || d.backtest;
+    if (bt && bt.values.length > 1) {
+      const dd = calcDrawdown(bt.values);
+      datasets.push({
+        label: `${mkt} Backtest DD (Net)`,
+        data: bt.dates.map((x, i) => ({ x: new Date(x), y: dd[i] })),
+        borderColor: c.bt.replace(/[\d.]+\)$/, '0.9)'),
+        backgroundColor: c.bt, tension: 0.2, pointRadius: 0, borderWidth: 1, fill: true,
+      });
+    }
+    if (d.live && d.live.values.length > 1) {
+      const dd = calcDrawdown(d.live.values);
+      datasets.push({
+        label: `${mkt} Live DD`,
+        data: d.live.dates.map((x, i) => ({ x: new Date(x), y: dd[i] })),
+        borderColor: c.live.replace(/[\d.]+\)$/, '0.8)'),
+        backgroundColor: c.live, tension: 0.2, pointRadius: 0, borderWidth: 1, fill: true,
+      });
+    }
+  }
+
+  if (!datasets.length) return;
+
+  ddChart = new Chart(ctx, {
+    type: 'line',
+    data: { datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { labels: { color: '#9ca3af', boxWidth: 14, font: { size: 12 } } },
+        tooltip: { callbacks: { label: c => `${c.dataset.label}: ${(c.parsed.y * 100).toFixed(1)}%` } }
+      },
+      scales: {
+        x: { type: 'time', time: { unit: 'year' },
+             ticks: { color: '#6b7280', maxTicksLimit: 8 },
+             grid: { color: 'rgba(255,255,255,.04)' } },
+        y: { max: 0,
+             ticks: { color: '#6b7280', callback: v => (v * 100).toFixed(0) + '%' },
+             grid: { color: 'rgba(255,255,255,.04)' } }
+      }
+    }
+  });
 }
 
 // Holdings table
