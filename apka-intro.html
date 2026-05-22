@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APKA 交易系統說明</title>
+<style>
+  :root {
+    --bg: #0f1117; --card: #1a1d27; --border: #2a2d3e;
+    --text: #e0e0e0; --muted: #6b7280; --accent: #22c55e;
+    --blue: #3b82f6; --red: #ef4444; --yellow: #f59e0b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; line-height: 1.7; }
+
+  header { background: var(--card); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 1.2rem; font-weight: 700; }
+  .back-btn { padding: 5px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--card);
+              color: var(--muted); text-decoration: none; font-size: 0.82rem; transition: all .2s; }
+  .back-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  main { padding: 32px 24px; max-width: 860px; margin: 0 auto; }
+
+  .hero { text-align: center; padding: 40px 20px 32px; }
+  .hero .badge { display: inline-block; background: rgba(34,197,94,0.15); color: var(--accent); border: 1px solid rgba(34,197,94,0.3); border-radius: 20px; padding: 4px 16px; font-size: 0.82rem; font-weight: 600; margin-bottom: 16px; }
+  .hero h2 { font-size: 2rem; font-weight: 800; margin-bottom: 12px; }
+  .hero p { font-size: 1rem; color: var(--muted); max-width: 580px; margin: 0 auto; }
+
+  .section { margin-bottom: 32px; }
+  .section-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .section-title .icon { font-size: 1.3rem; }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin-bottom: 14px; }
+  .card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+  .card p { font-size: 0.88rem; color: #b0b4c0; }
+
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .compare-card { border-radius: 10px; padding: 18px 16px; }
+  .compare-card.vqmt { background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.2); }
+  .compare-card.apka { background: rgba(34,197,94,0.07); border: 1px solid rgba(34,197,94,0.2); }
+  .compare-card .c-title { font-size: 0.9rem; font-weight: 700; margin-bottom: 10px; }
+  .compare-card.vqmt .c-title { color: var(--blue); }
+  .compare-card.apka .c-title { color: var(--accent); }
+  .compare-card ul { padding-left: 16px; }
+  .compare-card li { font-size: 0.84rem; color: #b0b4c0; margin-bottom: 5px; }
+
+  .step-row { display: flex; gap: 16px; margin-bottom: 12px; align-items: flex-start; }
+  .step-num { width: 32px; height: 32px; min-width: 32px; background: rgba(34,197,94,0.15); border: 1px solid rgba(34,197,94,0.3);
+              border-radius: 50%; display: flex; align-items: center; justify-content: center;
+              font-size: 0.85rem; font-weight: 700; color: var(--accent); }
+  .step-content h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; }
+  .step-content p { font-size: 0.84rem; color: #b0b4c0; }
+
+  .kill-row { display: grid; grid-template-columns: 130px 1fr; gap: 14px; align-items: start; margin-bottom: 12px; }
+  .kill-label { border-radius: 6px; padding: 6px 10px; font-size: 0.82rem; font-weight: 700; text-align: center; }
+  .kill-lv1 { background: rgba(245,158,11,0.12); color: var(--yellow); border: 1px solid rgba(245,158,11,0.25); }
+  .kill-lv2 { background: rgba(239,68,68,0.12); color: var(--red); border: 1px solid rgba(239,68,68,0.25); }
+  .kill-lv3 { background: rgba(239,68,68,0.2); color: var(--red); border: 1px solid rgba(239,68,68,0.4); }
+  .kill-desc { font-size: 0.85rem; color: #b0b4c0; padding-top: 4px; }
+
+  .metric-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .metric-chip { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+  .metric-chip .m-label { font-size: 0.75rem; color: var(--muted); margin-bottom: 4px; text-transform: uppercase; }
+  .metric-chip .m-val { font-size: 1.4rem; font-weight: 800; color: var(--accent); }
+  .metric-chip .m-desc { font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
+
+  .highlight { color: var(--accent); font-weight: 600; }
+  .highlight-blue { color: var(--blue); font-weight: 600; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+
+  .note { background: rgba(34,197,94,0.05); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: 0.85rem; color: #b0b4c0; margin-top: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📗 APKA 交易系統說明</h1>
+  <a href="index.html" class="back-btn">← 返回監控面板</a>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="badge">動量核心 × 多層風控</div>
+    <h2>APKA 是什麼？</h2>
+    <p>APKA 是在 VQMT 多因子系統基礎上優化的進階策略，以<span style="color:var(--accent);font-weight:600;">動量因子為核心</span>，搭配嚴格的 Kill Switch 機制，追求在趨勢市場中獲取更高的集中報酬，同時透過多層風控保護資本。</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- APKA vs VQMT -->
+  <div class="section">
+    <div class="section-title"><span class="icon">⚖️</span>APKA 與 VQMT 的主要差異</div>
+    <div class="compare-grid">
+      <div class="compare-card vqmt">
+        <div class="c-title">📘 VQMT（Diversified 分散）</div>
+        <ul>
+          <li>四因子均衡配置</li>
+          <li>價值、品質、動量、技術各佔約 15–30%</li>
+          <li>分散風格，波動較低</li>
+          <li>適合長期穩健增長</li>
+          <li>持股來自多個行業</li>
+        </ul>
+      </div>
+      <div class="compare-card apka">
+        <div class="c-title">📗 APKA（Focus 集中）</div>
+        <ul>
+          <li>動量因子獨佔 <span class="highlight">100%</span> 權重（美股）</li>
+          <li>專注捕捉強勢股的價格動能</li>
+          <li>集中持股，追求更高超額報酬</li>
+          <li>適合進取型策略偏好</li>
+          <li>台股則採多因子混合配置</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">📌 美股 APKA 使用純動量策略（Momentum 100%），台股 APKA 因市場特性不同，採取技術因子（30%）+ 品質因子（20%）等多因子組合。</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 評分機制 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🎯</span>APKA 選股評分機制</div>
+    <div class="step-row">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>建立股票池</h4>
+        <p>從市場中篩選符合條件的股票（美股：市值 &gt; 20 億美元、日均成交 &gt; 500 萬美元），形成候選股票池（約 200 支）。</p>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>動量評分排名</h4>
+        <p>計算每支股票的 3–12 個月價格動能分數，考量風險調整後的漲幅，對所有候選股票進行排名。</p>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>集中選出前 10 支</h4>
+        <p>從排名中選出得分最高的 <span class="highlight">10 支</span>股票，形成持股組合。集中持股有助於充分把握強勢股的漲勢。</p>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>風險預算分配權重</h4>
+        <p>根據各股票的波動率和相關性，分配各股倉位權重（單股上限 <span class="highlight">25%</span>，下限 2%），確保風險分散。</p>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>月度再平衡</h4>
+        <p>每月月底重新評分並調倉，汰弱留強。最大換手率受限在 20%，避免頻繁交易侵蝕報酬。</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Kill Switch -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🔐</span>多層 Kill Switch 風控機制</div>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:14px;">APKA 的風控是系統的核心競爭力之一。當市場出現異常，系統分三個等級自動應對：</p>
+
+    <div class="kill-row">
+      <div class="kill-label kill-lv1">Level 1<br>縮倉 50%</div>
+      <div class="kill-desc">
+        <strong>觸發條件：</strong>實盤報酬 vs 回測基準的比值跌破 <span style="color:var(--yellow);font-weight:600;">70%</span>，或帳戶回撤達到 <span style="color:var(--yellow);font-weight:600;">-10%</span>（美股）。<br>
+        <strong>處置：</strong>倉位縮減至 50%，系統進入觀察期（約 3 天冷卻），待訊號穩定後再加回。
+      </div>
+    </div>
+
+    <div class="kill-row">
+      <div class="kill-label kill-lv2">Level 2<br>縮倉 80%</div>
+      <div class="kill-desc">
+        <strong>觸發條件：</strong>帳戶回撤持續擴大至 <span style="color:var(--red);font-weight:600;">-15%</span>（美股），或實盤與回測偏差進一步惡化。<br>
+        <strong>處置：</strong>倉位縮減至 20%，進入嚴格觀察模式。
+      </div>
+    </div>
+
+    <div class="kill-row">
+      <div class="kill-label kill-lv3">Level 3<br>Hard Kill 全清</div>
+      <div class="kill-desc">
+        <strong>觸發條件：</strong>帳戶回撤超過 <span style="color:var(--red);font-weight:600;">-20%</span>（美股），代表系統出現根本性失效。<br>
+        <strong>處置：</strong>立即全部清倉，交易完全停止。最快 <span style="color:var(--red);font-weight:600;">45 天</span>後才重新評估是否重啟。
+      </div>
+    </div>
+
+    <div class="note">🔒 冷卻期設計是為了防止「情緒性重壓」：在市場剛發生重大衝擊後，系統不急於重新進場，而是等待市場制度恢復穩定後再評估。</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 績效解讀 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📊</span>如何解讀 APKA 的績效指標</div>
+
+    <div class="metric-row">
+      <div class="metric-chip">
+        <div class="m-label">CAGR 年化報酬</div>
+        <div class="m-val">15%+</div>
+        <div class="m-desc">目標值。每年平均增長超過 15%，優於大多數主動型基金。</div>
+      </div>
+      <div class="metric-chip">
+        <div class="m-label">Sharpe 夏普比率</div>
+        <div class="m-val">&gt; 1.0</div>
+        <div class="m-desc">目標值。每承擔一單位風險賺超過一單位報酬，代表高效率。</div>
+      </div>
+      <div class="metric-chip">
+        <div class="m-label">MaxDD 最大回撤</div>
+        <div class="m-val">&lt; -25%</div>
+        <div class="m-desc">控制目標。最壞情況下的回撤上限，超過則觸發 Kill Switch。</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <h4>回測 vs 實盤的差異</h4>
+      <p>系統同時追蹤「回測績效」（歷史模擬）與「實盤績效」（真實交易）。若兩者出現顯著差異，可能代表市場環境改變或執行成本超出預期，系統會自動降低風險敞口。監控面板即時顯示這兩條曲線，讓你隨時掌握偏差狀況。</p>
+    </div>
+
+    <div class="card">
+      <h4>為什麼集中選股？</h4>
+      <p>學術研究（Jegadeesh & Titman, 1993 等）顯示，過去 3–12 個月強勢的股票在未來 3–6 個月往往繼續跑贏市場（動量效應）。APKA 的集中策略旨在充分利用這一效應，而不是將報酬稀釋在大量股票中。代價是波動性會比分散型策略略高，因此嚴格的 Kill Switch 機制是必不可少的保護。</p>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>

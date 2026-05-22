@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>策略參數查詢 — Strategy Dashboard</title>
+<style>
+  :root {
+    --bg: #0f1117; --card: #1a1d27; --border: #2a2d3e;
+    --text: #e0e0e0; --muted: #6b7280; --accent: #3b82f6;
+    --green: #22c55e; --red: #ef4444; --yellow: #f59e0b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; }
+
+  header { background: var(--card); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 1.2rem; font-weight: 700; }
+  .back-btn { padding: 5px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--card);
+              color: var(--muted); text-decoration: none; font-size: 0.82rem; transition: all .2s; }
+  .back-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  .tab-bar { display: flex; gap: 6px; padding: 16px 24px 0; flex-wrap: wrap; }
+  .tab { padding: 6px 18px; border-radius: 6px; border: 1px solid var(--border); background: var(--card);
+         color: var(--muted); cursor: pointer; font-size: 0.85rem; transition: all .2s; }
+  .tab:hover { border-color: var(--accent); color: var(--text); }
+  .tab.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+
+  main { padding: 20px 24px; max-width: 1200px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .card h3 { font-size: 0.9rem; color: var(--muted); margin-bottom: 16px; text-transform: uppercase; letter-spacing: .5px; }
+
+  /* Factor bar chart */
+  .factor-row { margin-bottom: 10px; }
+  .factor-label { display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px; }
+  .factor-label span:first-child { color: var(--text); }
+  .factor-label span:last-child { color: var(--accent); font-weight: 600; }
+  .bar-bg { background: rgba(255,255,255,.06); border-radius: 4px; height: 8px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; background: var(--accent); transition: width .4s ease; }
+  .bar-fill.zero { background: var(--border); }
+
+  /* Sub-weights */
+  .sub-section { margin-top: 14px; border-top: 1px solid var(--border); padding-top: 10px; }
+  .sub-title { font-size: 0.75rem; color: var(--muted); margin-bottom: 8px; text-transform: uppercase; }
+
+  /* Risk table */
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th { text-align: left; color: var(--muted); padding: 7px 8px; border-bottom: 1px solid var(--border); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; }
+  td { padding: 8px 8px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .val-hi { color: var(--green); } .val-lo { color: var(--yellow); }
+
+  /* Universe */
+  .uni-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .uni-item { background: rgba(255,255,255,.03); border-radius: 6px; padding: 10px 12px; }
+  .uni-item .u-label { font-size: 0.72rem; color: var(--muted); margin-bottom: 4px; text-transform: uppercase; }
+  .uni-item .u-value { font-size: 1.1rem; font-weight: 700; color: var(--text); }
+
+  /* Drawdown levels */
+  .dd-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; font-size: 0.82rem; }
+  .dd-thresh { color: var(--red); font-weight: 600; width: 55px; }
+  .dd-action { color: var(--muted); }
+
+  .no-data { color: var(--muted); text-align: center; padding: 30px; font-size: 0.85rem; }
+  #gen-time { font-size: 0.78rem; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚙️ 策略參數查詢</h1>
+  <div style="display:flex;gap:10px;align-items:center;">
+    <span id="gen-time"></span>
+    <a href="index.html" class="back-btn">← 返回監控面板</a>
+  </div>
+</header>
+
+<!-- Profile tabs -->
+<div class="tab-bar" id="profile-tabs">
+  <button class="tab active" onclick="setProfile('focus')">Focus（集中）</button>
+  <button class="tab" onclick="setProfile('diversified')">Diversified（分散）</button>
+</div>
+
+<!-- Market tabs -->
+<div class="tab-bar" id="market-tabs" style="padding-top:4px;">
+  <button class="tab active" onclick="setMarket('US')">🇺🇸 美股 US</button>
+  <button class="tab" onclick="setMarket('TW')">🇹🇼 台股 TW</button>
+  <button class="tab" onclick="setMarket('USETF')">🇺🇸 US ETF</button>
+  <button class="tab" onclick="setMarket('TWETF')">🇹🇼 TW ETF</button>
+</div>
+
+<main>
+  <div class="grid" id="content">
+    <p class="no-data">載入中...</p>
+  </div>
+</main>
+
+<script>
+let PARAMS = null;
+let currentProfile = 'focus';
+let currentMarket  = 'US';
+
+async function init() {
+  try {
+    const r = await fetch('data/params.json?t=' + Date.now());
+    if (!r.ok) throw new Error('params.json not found');
+    PARAMS = await r.json();
+    document.getElementById('gen-time').textContent = '更新時間：' + (PARAMS.generated_at || '');
+    render();
+  } catch(e) {
+    document.getElementById('content').innerHTML =
+      '<p class="no-data">⚠️ 參數檔案未找到，請先執行 export_to_web.py</p>';
+  }
+}
+
+function setProfile(p) {
+  currentProfile = p;
+  document.querySelectorAll('#profile-tabs .tab').forEach(t =>
+    t.classList.toggle('active', t.onclick.toString().includes(`'${p}'`)));
+  render();
+}
+function setMarket(m) {
+  currentMarket = m;
+  document.querySelectorAll('#market-tabs .tab').forEach(t =>
+    t.classList.toggle('active', t.onclick.toString().includes(`'${m}'`)));
+  render();
+}
+
+function render() {
+  if (!PARAMS) return;
+  const data = ((PARAMS.profiles || {})[currentProfile] || {})[currentMarket] || {};
+  const fw   = data.factor_weights || {};
+  const risk = data.risk || {};
+  const uni  = data.universe || {};
+
+  document.getElementById('content').innerHTML =
+    renderFactorCard(fw) + renderRiskCard(risk) + renderUniverseCard(uni);
+}
+
+function pct(v) {
+  if (v === null || v === undefined) return '--';
+  return (v * 100).toFixed(0) + '%';
+}
+
+function renderFactorCard(fw) {
+  const factors = [
+    { key: 'value',         label: '價值 Value' },
+    { key: 'momentum',      label: '動量 Momentum' },
+    { key: 'quality',       label: '品質 Quality' },
+    { key: 'tech_trend',    label: '技術趨勢 Tech Trend' },
+    { key: 'tech_reversion',label: '技術均值 Tech Reversion' },
+  ];
+
+  const techTrend = fw._tech_trend_sub || {};
+  const techRev   = fw._tech_reversion_sub || {};
+
+  let bars = factors.map(f => {
+    const v = fw[f.key] ?? 0;
+    const pctW = (v * 100).toFixed(0);
+    const isZero = v === 0;
+    return `<div class="factor-row">
+      <div class="factor-label"><span>${f.label}</span><span>${pctW}%</span></div>
+      <div class="bar-bg"><div class="bar-fill${isZero?' zero':''}" style="width:${pctW}%"></div></div>
+    </div>`;
+  }).join('');
+
+  // Sub-weights for tech factors
+  let subHtml = '';
+  const ttEntries = Object.entries(techTrend).filter(([k]) => !k.startsWith('_') && k !== 'version');
+  const trEntries = Object.entries(techRev).filter(([k]) => !k.startsWith('_') && k !== 'version');
+
+  if (ttEntries.length) {
+    subHtml += `<div class="sub-section">
+      <div class="sub-title">Tech Trend 子指標</div>`;
+    ttEntries.forEach(([k, v]) => {
+      const pv = ((v ?? 0) * 100).toFixed(0);
+      subHtml += `<div class="factor-row">
+        <div class="factor-label"><span style="color:var(--muted)">${k}</span><span>${pv}%</span></div>
+        <div class="bar-bg"><div class="bar-fill${v===0?' zero':''}" style="width:${pv}%;background:rgba(59,130,246,0.5)"></div></div>
+      </div>`;
+    });
+    subHtml += '</div>';
+  }
+  if (trEntries.length) {
+    subHtml += `<div class="sub-section">
+      <div class="sub-title">Tech Reversion 子指標</div>`;
+    trEntries.forEach(([k, v]) => {
+      const pv = ((v ?? 0) * 100).toFixed(0);
+      subHtml += `<div class="factor-row">
+        <div class="factor-label"><span style="color:var(--muted)">${k}</span><span>${pv}%</span></div>
+        <div class="bar-bg"><div class="bar-fill${v===0?' zero':''}" style="width:${pv}%;background:rgba(59,130,246,0.5)"></div></div>
+      </div>`;
+    });
+    subHtml += '</div>';
+  }
+
+  return `<div class="card">
+    <h3>📊 因子權重配置</h3>
+    ${bars}${subHtml}
+  </div>`;
+}
+
+function renderRiskCard(risk) {
+  const fmtPct = v => (v !== null && v !== undefined) ? (v * 100).toFixed(0) + '%' : '--';
+  const fmtBp  = v => (v !== null && v !== undefined) ? v + ' bps' : '--';
+  const rows = [
+    ['單股最大權重',     fmtPct(risk.max_weight)],
+    ['單股最小權重',     fmtPct(risk.min_weight)],
+    ['目標波動率',       fmtPct(risk.target_volatility)],
+    ['最大回撤停損',     fmtPct(risk.max_drawdown)],
+    ['追蹤停損',         fmtPct(risk.trailing_drawdown)],
+    ['手續費成本',       fmtBp(risk.commission_bp)],
+    ['滑點估計',         fmtBp(risk.slippage_bp)],
+    ['交易稅',           fmtBp(risk.tax_bp)],
+  ];
+
+  const ddLevels = risk.drawdown_levels || [];
+  const ddHtml = ddLevels.map(d =>
+    `<div class="dd-row">
+      <span class="dd-thresh">${d.threshold ? (d.threshold*100).toFixed(0)+'%' : '--'}</span>
+      <span class="dd-action">→ ${d.action || ''}</span>
+    </div>`
+  ).join('');
+
+  return `<div class="card">
+    <h3>🛡️ 風控參數</h3>
+    <table>
+      <thead><tr><th>參數</th><th>設定值</th></tr></thead>
+      <tbody>
+        ${rows.map(([l,v]) => `<tr><td>${l}</td><td>${v}</td></tr>`).join('')}
+      </tbody>
+    </table>
+    ${ddLevels.length ? `<div class="sub-section">
+      <div class="sub-title">回撤分級處置</div>${ddHtml}</div>` : ''}
+  </div>`;
+}
+
+function renderUniverseCard(uni) {
+  const fmt = v => (v !== null && v !== undefined) ? v : '--';
+  const fmtM = v => {
+    if (v === null || v === undefined) return '--';
+    if (v >= 1e9) return (v/1e9).toFixed(0) + ' B';
+    if (v >= 1e6) return (v/1e6).toFixed(0) + ' M';
+    return v;
+  };
+
+  const desc = uni.description || '';
+  return `<div class="card">
+    <h3>🌐 選股範圍 Universe</h3>
+    ${desc ? `<p style="font-size:0.8rem;color:var(--muted);margin-bottom:14px;">${desc}</p>` : ''}
+    <div class="uni-grid">
+      <div class="uni-item"><div class="u-label">最少持股數</div><div class="u-value">${fmt(uni.min_stocks)}</div></div>
+      <div class="uni-item"><div class="u-label">目標持股數</div><div class="u-value">${fmt(uni.target_stocks)}</div></div>
+      <div class="uni-item"><div class="u-label">最大股池</div><div class="u-value">${fmt(uni.max_stocks)}</div></div>
+      <div class="uni-item"><div class="u-label">最小市值</div><div class="u-value">${fmtM(uni.min_market_cap_usd)}</div></div>
+      <div class="uni-item"><div class="u-label">最小日均成交</div><div class="u-value">${fmtM(uni.min_adv_usd)}</div></div>
+    </div>
+  </div>`;
+}
+
+init();
+</script>
+</body>
+</html>

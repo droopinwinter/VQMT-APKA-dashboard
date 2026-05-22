@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VQMT+CTA 交易系統說明</title>
+<style>
+  :root {
+    --bg: #0f1117; --card: #1a1d27; --border: #2a2d3e;
+    --text: #e0e0e0; --muted: #6b7280; --accent: #3b82f6;
+    --green: #22c55e; --red: #ef4444; --yellow: #f59e0b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; line-height: 1.7; }
+
+  header { background: var(--card); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 1.2rem; font-weight: 700; }
+  .back-btn { padding: 5px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--card);
+              color: var(--muted); text-decoration: none; font-size: 0.82rem; transition: all .2s; }
+  .back-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  main { padding: 32px 24px; max-width: 860px; margin: 0 auto; }
+
+  .hero { text-align: center; padding: 40px 20px 32px; }
+  .hero .badge { display: inline-block; background: rgba(59,130,246,0.15); color: var(--accent); border: 1px solid rgba(59,130,246,0.3); border-radius: 20px; padding: 4px 16px; font-size: 0.82rem; font-weight: 600; margin-bottom: 16px; }
+  .hero h2 { font-size: 2rem; font-weight: 800; margin-bottom: 12px; }
+  .hero p { font-size: 1rem; color: var(--muted); max-width: 560px; margin: 0 auto; }
+
+  .section { margin-bottom: 32px; }
+  .section-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .section-title .icon { font-size: 1.3rem; }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin-bottom: 14px; }
+  .card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+  .card p { font-size: 0.88rem; color: #b0b4c0; }
+  .card .tag { display: inline-block; background: rgba(59,130,246,0.12); color: var(--accent); border-radius: 4px; padding: 2px 8px; font-size: 0.75rem; font-weight: 600; margin-right: 6px; margin-bottom: 6px; }
+
+  .factor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .factor-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px 16px; text-align: center; }
+  .factor-card .f-icon { font-size: 1.8rem; margin-bottom: 8px; }
+  .factor-card .f-name { font-size: 0.9rem; font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+  .factor-card .f-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+
+  .regime-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+  .regime-chip { border-radius: 8px; padding: 12px 14px; }
+  .regime-chip .r-name { font-size: 0.85rem; font-weight: 700; margin-bottom: 4px; }
+  .regime-chip .r-desc { font-size: 0.78rem; opacity: 0.85; }
+
+  .kill-row { display: grid; grid-template-columns: 120px 1fr; gap: 14px; align-items: start; margin-bottom: 12px; }
+  .kill-label { background: rgba(239,68,68,0.12); color: var(--red); border: 1px solid rgba(239,68,68,0.25); border-radius: 6px; padding: 6px 10px; font-size: 0.82rem; font-weight: 700; text-align: center; }
+  .kill-label.soft { background: rgba(245,158,11,0.12); color: var(--yellow); border-color: rgba(245,158,11,0.25); }
+  .kill-desc { font-size: 0.85rem; color: #b0b4c0; padding-top: 4px; }
+
+  .market-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  .market-table th { text-align: left; color: var(--muted); padding: 8px 10px; border-bottom: 1px solid var(--border); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; }
+  .market-table td { padding: 9px 10px; border-bottom: 1px solid var(--border); }
+  .market-table tr:last-child td { border-bottom: none; }
+
+  .highlight { color: var(--accent); font-weight: 600; }
+  .highlight-green { color: var(--green); font-weight: 600; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📘 VQMT+CTA 交易系統說明</h1>
+  <a href="index.html" class="back-btn">← 返回監控面板</a>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="badge">量化多因子 × 趨勢跟隨</div>
+    <h2>VQMT + CTA 是什麼？</h2>
+    <p>一套結合多因子評分選股（VQMT）與市場趨勢跟隨（CTA）的量化交易系統，透過數學模型取代人工判斷，系統性地在全球市場中選股、控倉、管理風險。</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 四大因子 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🔬</span>四大因子評分系統（VQMT）</div>
+    <p style="font-size:0.88rem;color:var(--muted);margin-bottom:16px;">系統對每支股票打出 0–100 的綜合分數，從四個維度評估：</p>
+    <div class="factor-grid">
+      <div class="factor-card">
+        <div class="f-icon">💰</div>
+        <div class="f-name">Value（價值）</div>
+        <div class="f-desc">股價相對於企業基本面是否便宜？如 P/E、P/B、EV/EBITDA 等指標。買「物超所值」的公司。</div>
+      </div>
+      <div class="factor-card">
+        <div class="f-icon">🏆</div>
+        <div class="f-name">Quality（品質）</div>
+        <div class="f-desc">企業財務健康度如何？看獲利能力、負債比、現金流。選「體質好」的公司。</div>
+      </div>
+      <div class="factor-card">
+        <div class="f-icon">🚀</div>
+        <div class="f-name">Momentum（動量）</div>
+        <div class="f-desc">近期漲勢強勁的股票，往往繼續強勢。追蹤 3–12 個月的價格動能。</div>
+      </div>
+      <div class="factor-card">
+        <div class="f-icon">📈</div>
+        <div class="f-name">Technical（技術）</div>
+        <div class="f-desc">透過 EMA 均線、布林通道、MACD 等技術指標，判斷短期趨勢與超賣機會。</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CTA 趨勢跟隨 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🌊</span>CTA 趨勢跟隨邏輯</div>
+    <div class="card">
+      <h4>什麼是 CTA？</h4>
+      <p>CTA（Commodity Trading Advisor）策略的核心理念是「順勢而為」：當市場在上漲趨勢時積極持股，當市場陷入熊市或高波動時自動減倉甚至清倉。系統每天自動判斷當前市場「制度」（Regime），並據此調整倉位。</p>
+    </div>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">市場制度分為五種狀態：</p>
+    <div class="regime-grid">
+      <div class="regime-chip" style="background:#1e3a2f;color:#22c55e;">
+        <div class="r-name">● TREND 趨勢</div>
+        <div class="r-desc">市場方向明確，積極持股</div>
+      </div>
+      <div class="regime-chip" style="background:#2a2a1e;color:#f59e0b;">
+        <div class="r-name">● SIDEWAYS 震盪</div>
+        <div class="r-desc">市場橫盤整理，適度佈局</div>
+      </div>
+      <div class="regime-chip" style="background:#1e2a3a;color:#3b82f6;">
+        <div class="r-name">● REVERSION 均值</div>
+        <div class="r-desc">短期過漲/過跌，等待回歸</div>
+      </div>
+      <div class="regime-chip" style="background:#3b1e1e;color:#ef4444;">
+        <div class="r-name">● BEAR 熊市</div>
+        <div class="r-desc">市場下行，降低風險曝險</div>
+      </div>
+      <div class="regime-chip" style="background:#3b2a0f;color:#f59e0b;">
+        <div class="r-name">● HIGH_VOL 高波動</div>
+        <div class="r-desc">市場劇烈波動，縮減倉位</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 風險管理 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🛡️</span>三層風險防護機制</div>
+
+    <div class="kill-row">
+      <div class="kill-label soft">Soft Kill<br>縮倉</div>
+      <div class="kill-desc">當實盤績效與回測基準出現顯著偏離（例如實盤回報僅達回測的 70% 以下），系統自動將倉位縮減至 50%，進入觀察期，待異常恢復後再重新加倉。</div>
+    </div>
+
+    <div class="kill-row">
+      <div class="kill-label">Hard Kill<br>全清</div>
+      <div class="kill-desc">當實盤最大回撤超過設定閾值（美股約 <span class="highlight">-15%</span>，台股約 <span class="highlight">-18%</span>），系統立即清倉並停止交易，進入冷卻期，最快 45 天後才重新進場評估。</div>
+    </div>
+
+    <div class="kill-row">
+      <div class="kill-label soft">回測偏差<br>監控</div>
+      <div class="kill-desc">系統每日比對實盤與回測的績效差異。若實際滑點或成本遠高於預期，會自動調降風險係數，防止模型失效時繼續重壓。</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 市場與操作 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🌏</span>適用市場與操作方式</div>
+    <table class="market-table">
+      <thead>
+        <tr><th>市場</th><th>標的範圍</th><th>持股數</th><th>再平衡</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>🇺🇸 美股 US</td>
+          <td>S&amp;P 500 大中型股（市值 &gt; 20 億美元）</td>
+          <td class="highlight">~10 支</td>
+          <td>每月</td>
+        </tr>
+        <tr>
+          <td>🇹🇼 台股 TW</td>
+          <td>台灣前 200 大個股</td>
+          <td class="highlight">~10 支</td>
+          <td>每月</td>
+        </tr>
+        <tr>
+          <td>🇺🇸 US ETF</td>
+          <td>美股主要 ETF（板塊、因子型）</td>
+          <td class="highlight">3–5 支</td>
+          <td>每月</td>
+        </tr>
+        <tr>
+          <td>🇹🇼 TW ETF</td>
+          <td>台灣主要 ETF</td>
+          <td class="highlight">3–5 支</td>
+          <td>每月</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="card" style="margin-top:14px;">
+      <h4>操作流程簡述</h4>
+      <p>每月月底，系統自動對股票池打分 → 選出得分最高的 10 支 → 透過風險預算分配各股權重 → 執行再平衡。日常則持續監控市場制度與 Kill Switch 狀態，發現異常立即調整。</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 關鍵數字 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📊</span>了解績效指標</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+      <div class="card">
+        <h4>CAGR 年化報酬率</h4>
+        <p>把總報酬換算成「每年平均賺幾%」，方便跨期比較。例如 <span class="highlight-green">15%</span> 代表每年平均成長 15%。</p>
+      </div>
+      <div class="card">
+        <h4>Sharpe 夏普比率</h4>
+        <p>衡量「每承擔一單位風險能賺多少回報」。<span class="highlight-green">&gt; 1.0</span> 是優良水準，愈高代表報酬效率愈佳。</p>
+      </div>
+      <div class="card">
+        <h4>MaxDD 最大回撤</h4>
+        <p>歷史上從最高點跌到最低點的最大跌幅。代表最壞情況下可能承受的損失，數值越小（絕對值）越好。</p>
+      </div>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>
