@@ -1,0 +1,409 @@
+{
+  "generated_at": "2026-05-22 10:49",
+  "profiles": {
+    "focus": {
+      "US": {
+        "factor_weights": {
+          "value": 0.0,
+          "momentum": 1.0,
+          "quality": 0.0,
+          "tech_trend": 0.0,
+          "tech_reversion": 0.0,
+          "_tech_trend_sub": {
+            "ema_ensemble": 1.0,
+            "macd_hist": 0.0,
+            "obv_factor": 0.0
+          },
+          "_tech_reversion_sub": {
+            "bollinger_pos": 1.0,
+            "srsi": 0.0
+          }
+        },
+        "risk": {
+          "max_weight": 0.25,
+          "min_weight": 0.02,
+          "target_volatility": 0.25,
+          "max_drawdown": 0.25,
+          "commission_bp": 1,
+          "slippage_bp": 2,
+          "tax_bp": 0,
+          "trailing_drawdown": 0.25,
+          "drawdown_levels": [
+            {
+              "action": "freeze",
+              "threshold": -0.1
+            },
+            {
+              "action": "reduce_50",
+              "threshold": -0.15
+            },
+            {
+              "action": "liquidate",
+              "threshold": -0.2
+            }
+          ]
+        },
+        "universe": {
+          "min_stocks": 50,
+          "target_stocks": 10,
+          "max_stocks": 200,
+          "min_market_cap_usd": 2000000000,
+          "min_adv_usd": 5000000,
+          "description": "US Large & Mid Cap Liquid Stocks"
+        }
+      },
+      "TW": {
+        "factor_weights": {
+          "value": 0.15,
+          "momentum": 0.15,
+          "quality": 0.2,
+          "tech_trend": 0.3,
+          "tech_reversion": 0.2,
+          "_tech_trend_sub": {
+            "ema_ensemble": 1.0,
+            "macd_hist": 0.0,
+            "obv_factor": 0.0
+          },
+          "_tech_reversion_sub": {
+            "bollinger_pos": 1.0,
+            "srsi": 0.0
+          }
+        },
+        "risk": {
+          "max_weight": null,
+          "min_weight": null,
+          "target_volatility": null,
+          "max_drawdown": 0.18,
+          "commission_bp": 30,
+          "slippage_bp": 5,
+          "tax_bp": 150,
+          "trailing_drawdown": 0.15,
+          "drawdown_levels": [
+            {
+              "action": "freeze",
+              "threshold": -0.12
+            },
+            {
+              "action": "reduce_50",
+              "threshold": -0.18
+            },
+            {
+              "action": "liquidate",
+              "threshold": -0.25
+            }
+          ]
+        },
+        "universe": {
+          "min_stocks": 50,
+          "target_stocks": 10,
+          "max_stocks": 200,
+          "min_market_cap_usd": null,
+          "min_adv_usd": null,
+          "description": "Taiwan Top 200 Liquid Stocks"
+        }
+      },
+      "USETF": {
+        "factor_weights": {
+          "value": 0.0,
+          "momentum": 1.0,
+          "quality": 0.0,
+          "tech_trend": 0.0,
+          "tech_reversion": 0.0,
+          "_tech_trend_sub": {
+            "ema_ensemble": 1.0,
+            "macd_hist": 0.0,
+            "obv_factor": 0.0
+          },
+          "_tech_reversion_sub": {
+            "bollinger_pos": 0.0,
+            "srsi": 1.0
+          }
+        },
+        "risk": {
+          "max_weight": 0.5,
+          "min_weight": 0.02,
+          "target_volatility": 0.4,
+          "max_drawdown": 0.4,
+          "commission_bp": 0,
+          "slippage_bp": 1,
+          "tax_bp": 0,
+          "trailing_drawdown": 0.35,
+          "drawdown_levels": [
+            {
+              "action": "freeze",
+              "threshold": -0.3
+            },
+            {
+              "action": "reduce_50",
+              "threshold": -0.45
+            },
+            {
+              "action": "liquidate",
+              "threshold": -0.6
+            }
+          ]
+        },
+        "universe": {
+          "min_stocks": 3,
+          "target_stocks": 3,
+          "max_stocks": 12,
+          "min_market_cap_usd": null,
+          "min_adv_usd": null,
+          "description": "US ETF Universe"
+        }
+      },
+      "TWETF": {
+        "factor_weights": {
+          "value": 0.0,
+          "momentum": 1.0,
+          "quality": 0.0,
+          "tech_trend": 0.0,
+          "tech_reversion": 0.0,
+          "_tech_trend_sub": {
+            "ema_ensemble": 1.0,
+            "macd_hist": 0.0,
+            "obv_factor": 0.0
+          },
+          "_tech_reversion_sub": {
+            "bollinger_pos": 0.0,
+            "srsi": 1.0
+          }
+        },
+        "risk": {
+          "max_weight": 0.5,
+          "min_weight": null,
+          "target_volatility": 0.4,
+          "max_drawdown": 0.2,
+          "commission_bp": 20,
+          "slippage_bp": 2,
+          "tax_bp": 50,
+          "trailing_drawdown": 0.15,
+          "drawdown_levels": [
+            {
+              "action": "freeze",
+              "threshold": -0.12
+            },
+            {
+              "action": "reduce_50",
+              "threshold": -0.18
+            },
+            {
+              "action": "liquidate",
+              "threshold": -0.25
+            }
+          ]
+        },
+        "universe": {
+          "min_stocks": 3,
+          "target_stocks": 3,
+          "max_stocks": 12,
+          "min_market_cap_usd": null,
+          "min_adv_usd": null,
+          "description": "Taiwan Top 200 Liquid Stocks"
+        }
+      }
+    },
+    "diversified": {
+      "US": {
+        "factor_weights": {
+          "value": 0.15,
+          "momentum": 0.15,
+          "quality": 0.2,
+          "tech_trend": 0.3,
+          "tech_reversion": 0.2,
+          "_tech_trend_sub": {
+            "ema_ensemble": 1.0,
+            "macd_hist": 0.0,
+            "obv_factor": 0.0
+          },
+          "_tech_reversion_sub": {
+            "bollinger_pos": 1.0,
+            "srsi": 0.0
+          }
+        },
+        "risk": {
+          "max_weight": 1.0,
+          "min_weight": 0.02,
+          "target_volatility": 0.18,
+          "max_drawdown": 0.2,
+          "commission_bp": 1,
+          "slippage_bp": 2,
+          "tax_bp": 0,
+          "trailing_drawdown": 0.15,
+          "drawdown_levels": [
+            {
+              "action": "freeze",
+              "threshold": -0.12
+            },
+            {
+              "action": "reduce_50",
+              "threshold": -0.18
+            },
+            {
+              "action": "liquidate",
+              "threshold": -0.25
+            }
+          ]
+        },
+        "universe": {
+          "min_stocks": 50,
+          "target_stocks": 50,
+          "max_stocks": 200,
+          "min_market_cap_usd": 500000000,
+          "min_adv_usd": 5000000,
+          "description": "US Large & Mid Cap Liquid Stocks"
+        }
+      },
+      "TW": {
+        "factor_weights": {
+          "value": 0.15,
+          "momentum": 0.15,
+          "quality": 0.2,
+          "tech_trend": 0.3,
+          "tech_reversion": 0.2,
+          "_tech_trend_sub": {
+            "ema_ensemble": 1.0,
+            "macd_hist": 0.0,
+            "obv_factor": 0.0
+          },
+          "_tech_reversion_sub": {
+            "bollinger_pos": 1.0,
+            "srsi": 0.0
+          }
+        },
+        "risk": {
+          "max_weight": null,
+          "min_weight": null,
+          "target_volatility": null,
+          "max_drawdown": 0.2,
+          "commission_bp": 30,
+          "slippage_bp": 5,
+          "tax_bp": 150,
+          "trailing_drawdown": 0.15,
+          "drawdown_levels": [
+            {
+              "action": "freeze",
+              "threshold": -0.12
+            },
+            {
+              "action": "reduce_50",
+              "threshold": -0.18
+            },
+            {
+              "action": "liquidate",
+              "threshold": -0.25
+            }
+          ]
+        },
+        "universe": {
+          "min_stocks": 50,
+          "target_stocks": 50,
+          "max_stocks": 200,
+          "min_market_cap_usd": null,
+          "min_adv_usd": null,
+          "description": "Taiwan Top 200 Liquid Stocks"
+        }
+      },
+      "USETF": {
+        "factor_weights": {
+          "value": 0.0,
+          "momentum": 0.7,
+          "quality": 0.0,
+          "tech_trend": 0.3,
+          "tech_reversion": 0.0,
+          "_tech_trend_sub": {
+            "ema_ensemble": 1.0,
+            "macd_hist": 0.0,
+            "obv_factor": 0.0
+          },
+          "_tech_reversion_sub": {
+            "bollinger_pos": 0.0,
+            "srsi": 1.0
+          }
+        },
+        "risk": {
+          "max_weight": 0.25,
+          "min_weight": 0.02,
+          "target_volatility": 0.15,
+          "max_drawdown": 0.2,
+          "commission_bp": 0,
+          "slippage_bp": 1,
+          "tax_bp": 0,
+          "trailing_drawdown": 0.12,
+          "drawdown_levels": [
+            {
+              "action": "freeze",
+              "threshold": -0.1
+            },
+            {
+              "action": "reduce_50",
+              "threshold": -0.15
+            },
+            {
+              "action": "liquidate",
+              "threshold": -0.2
+            }
+          ]
+        },
+        "universe": {
+          "min_stocks": 3,
+          "target_stocks": 5,
+          "max_stocks": 12,
+          "min_market_cap_usd": 1000000000,
+          "min_adv_usd": 5000000,
+          "description": "US ETF Universe"
+        }
+      },
+      "TWETF": {
+        "factor_weights": {
+          "value": 0.0,
+          "momentum": 0.7,
+          "quality": 0.0,
+          "tech_trend": 0.3,
+          "tech_reversion": 0.0,
+          "_tech_trend_sub": {
+            "ema_ensemble": 1.0,
+            "macd_hist": 0.0,
+            "obv_factor": 0.0
+          },
+          "_tech_reversion_sub": {
+            "bollinger_pos": 0.0,
+            "srsi": 1.0
+          }
+        },
+        "risk": {
+          "max_weight": null,
+          "min_weight": null,
+          "target_volatility": null,
+          "max_drawdown": 0.2,
+          "commission_bp": 20,
+          "slippage_bp": 2,
+          "tax_bp": 50,
+          "trailing_drawdown": 0.15,
+          "drawdown_levels": [
+            {
+              "action": "freeze",
+              "threshold": -0.12
+            },
+            {
+              "action": "reduce_50",
+              "threshold": -0.18
+            },
+            {
+              "action": "liquidate",
+              "threshold": -0.25
+            }
+          ]
+        },
+        "universe": {
+          "min_stocks": 3,
+          "target_stocks": 5,
+          "max_stocks": 12,
+          "min_market_cap_usd": null,
+          "min_adv_usd": null,
+          "description": "Taiwan Top 200 Liquid Stocks"
+        }
+      }
+    }
+  }
+}
