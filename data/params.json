@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-05-22 11:45",
+  "generated_at": "2026-05-22 16:50",
   "profiles": {
     "focus": {
       "US": {
         "factor_weights": {
-          "value": 0.0,
-          "momentum": 1.0,
-          "quality": 0.0,
-          "tech_trend": 0.0,
-          "tech_reversion": 0.0,
+          "value": 0.3029,
+          "momentum": 0.163,
+          "quality": 0.3053,
+          "tech_trend": 0.0555,
+          "tech_reversion": 0.1733,
           "_tech_trend_sub": {
-            "ema_ensemble": 1.0,
-            "macd_hist": 0.0,
-            "obv_factor": 0.0
+            "ema_ensemble": 0.3389,
+            "macd_hist": 0.3416,
+            "obv_factor": 0.3195
           },
           "_tech_reversion_sub": {
-            "bollinger_pos": 1.0,
-            "srsi": 0.0
+            "bollinger_pos": 0.3008,
+            "srsi": 0.6992
           }
         },
         "risk": {
@@ -54,44 +54,31 @@
       },
       "TW": {
         "factor_weights": {
-          "value": 0.15,
-          "momentum": 0.15,
-          "quality": 0.2,
-          "tech_trend": 0.3,
-          "tech_reversion": 0.2,
+          "value": 0.7546,
+          "momentum": 0.0779,
+          "quality": 0.0095,
+          "tech_trend": 0.076,
+          "tech_reversion": 0.082,
           "_tech_trend_sub": {
-            "ema_ensemble": 1.0,
-            "macd_hist": 0.0,
-            "obv_factor": 0.0
+            "ema_ensemble": 0.619,
+            "macd_hist": 0.3361,
+            "obv_factor": 0.0449
           },
           "_tech_reversion_sub": {
-            "bollinger_pos": 1.0,
-            "srsi": 0.0
+            "bollinger_pos": 0.8401,
+            "srsi": 0.1599
           }
         },
         "risk": {
-          "max_weight": null,
-          "min_weight": null,
-          "target_volatility": null,
-          "max_drawdown": 0.18,
+          "max_weight": 0.25,
+          "min_weight": 0.02,
+          "target_volatility": 0.25,
+          "max_drawdown": 0.22,
           "commission_bp": 30,
           "slippage_bp": 5,
           "tax_bp": 150,
-          "trailing_drawdown": 0.15,
-          "drawdown_levels": [
-            {
-              "action": "freeze",
-              "threshold": -0.12
-            },
-            {
-              "action": "reduce_50",
-              "threshold": -0.18
-            },
-            {
-              "action": "liquidate",
-              "threshold": -0.25
-            }
-          ]
+          "trailing_drawdown": null,
+          "drawdown_levels": []
         },
         "universe": {
           "min_stocks": 50,

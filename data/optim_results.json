@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-05-22 11:45",
+  "generated_at": "2026-05-22 16:50",
   "results": {
     "focus": {
       "vqmt": {
         "US": {
           "meta": {
-            "wf_calmar": 1.7575,
-            "generated_at": "2026-05-16 06:59"
+            "wf_calmar": 2.2973,
+            "generated_at": "2026-05-22 16:14"
           },
           "full_period": null,
           "factor_weights": {
-            "value": 0.0382,
-            "momentum": 0.1254,
-            "quality": 0.3458,
-            "tech_trend": 0.1824,
-            "tech_reversion": 0.3083,
+            "value": 0.3029,
+            "momentum": 0.163,
+            "quality": 0.3053,
+            "tech_trend": 0.0555,
+            "tech_reversion": 0.1733,
             "tech_trend_sub": {
-              "ema_ensemble": 0.4897,
-              "macd_hist": 0.0251,
-              "obv_factor": 0.4852
+              "ema_ensemble": 0.3389,
+              "macd_hist": 0.3416,
+              "obv_factor": 0.3195
             },
             "tech_reversion_sub": {
-              "bollinger_pos": 0.4052,
-              "srsi": 0.5948
+              "bollinger_pos": 0.3008,
+              "srsi": 0.6992
             }
           },
           "risk": {
@@ -41,7 +41,7 @@
         "TW": {
           "meta": {
             "wf_calmar": 2.3547,
-            "generated_at": "2026-05-17 08:51"
+            "generated_at": "2026-05-22 16:03"
           },
           "full_period": {
             "sharpe": 1.134,
@@ -50,162 +50,162 @@
             "wf_calmar": 2.3547
           },
           "factor_weights": {
-            "value": 0.2473,
-            "momentum": 0.2611,
-            "quality": 0.1081,
-            "tech_trend": 0.1709,
-            "tech_reversion": 0.2126,
+            "value": 0.7546,
+            "momentum": 0.0779,
+            "quality": 0.0095,
+            "tech_trend": 0.076,
+            "tech_reversion": 0.082,
             "tech_trend_sub": {
-              "ema_ensemble": 0.2909,
-              "macd_hist": 0.6694,
-              "obv_factor": 0.0397
+              "ema_ensemble": 0.619,
+              "macd_hist": 0.3361,
+              "obv_factor": 0.0449
             },
             "tech_reversion_sub": {
-              "bollinger_pos": 0.3996,
-              "srsi": 0.6004
+              "bollinger_pos": 0.8401,
+              "srsi": 0.1599
             }
           },
           "risk": {
-            "target_volatility": 0.15,
+            "target_volatility": 0.25,
             "max_weight": 0.25,
-            "max_drawdown": 0.3,
-            "trailing_stop": 0.12,
-            "breadth_warn": 0.35,
-            "breadth_bear": 0.15,
+            "max_drawdown": 0.22,
+            "trailing_stop": 0.25,
+            "breadth_warn": 0.45,
+            "breadth_bear": 0.35,
             "max_corr": 0.8,
             "rebalance_freq": "M",
             "top_n": 10
           },
           "top10": [
             {
-              "wf_calmar": 2.3547,
+              "wf_calmar": 2.2973,
               "rebalance_freq": "M",
               "target_vol": 0.175,
-              "max_drawdown": 0.28,
-              "max_single_weight": 0.28,
+              "max_drawdown": 0.3,
+              "max_single_weight": 0.24,
               "trailing_stop_threshold": 0.1,
-              "w_momentum": 0.5162,
-              "w_value": 0.2678,
-              "w_quality": 0.0322,
-              "w_tech_trend": 0.075,
-              "w_tech_reversion": 0.1087
+              "w_momentum": 0.2223,
+              "w_value": 0.2019,
+              "w_quality": 0.0555,
+              "w_tech_trend": 0.2761,
+              "w_tech_reversion": 0.2443
             },
             {
-              "wf_calmar": 2.2556,
-              "rebalance_freq": "M",
-              "target_vol": 0.15,
-              "max_drawdown": 0.2,
-              "max_single_weight": 0.26,
-              "trailing_stop_threshold": 0.08,
-              "w_momentum": 0.4101,
-              "w_value": 0.3113,
-              "w_quality": 0.1348,
-              "w_tech_trend": 0.0997,
-              "w_tech_reversion": 0.044
-            },
-            {
-              "wf_calmar": 2.242,
-              "rebalance_freq": "M",
-              "target_vol": 0.15,
-              "max_drawdown": 0.2,
-              "max_single_weight": 0.28,
-              "trailing_stop_threshold": 0.08,
-              "w_momentum": 0.5489,
-              "w_value": 0.2807,
-              "w_quality": 0.0639,
-              "w_tech_trend": 0.0451,
-              "w_tech_reversion": 0.0615
-            },
-            {
-              "wf_calmar": 2.2358,
-              "rebalance_freq": "M",
-              "target_vol": 0.15,
-              "max_drawdown": 0.2,
-              "max_single_weight": 0.28,
-              "trailing_stop_threshold": 0.08,
-              "w_momentum": 0.5281,
-              "w_value": 0.2898,
-              "w_quality": 0.0755,
-              "w_tech_trend": 0.0516,
-              "w_tech_reversion": 0.055
-            },
-            {
-              "wf_calmar": 2.2309,
+              "wf_calmar": 1.8389,
               "rebalance_freq": "M",
               "target_vol": 0.175,
-              "max_drawdown": 0.22,
-              "max_single_weight": 0.28,
-              "trailing_stop_threshold": 0.1,
-              "w_momentum": 0.4918,
-              "w_value": 0.3382,
-              "w_quality": 0.0344,
-              "w_tech_trend": 0.0638,
-              "w_tech_reversion": 0.0718
-            },
-            {
-              "wf_calmar": 2.2193,
-              "rebalance_freq": "M",
-              "target_vol": 0.15,
-              "max_drawdown": 0.28,
-              "max_single_weight": 0.26,
-              "trailing_stop_threshold": 0.1,
-              "w_momentum": 0.4731,
-              "w_value": 0.3072,
-              "w_quality": 0.0466,
-              "w_tech_trend": 0.1054,
-              "w_tech_reversion": 0.0678
-            },
-            {
-              "wf_calmar": 2.1943,
-              "rebalance_freq": "M",
-              "target_vol": 0.15,
-              "max_drawdown": 0.22,
-              "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.1,
-              "w_momentum": 0.4607,
-              "w_value": 0.2468,
-              "w_quality": 0.119,
-              "w_tech_trend": 0.051,
-              "w_tech_reversion": 0.1225
-            },
-            {
-              "wf_calmar": 2.1888,
-              "rebalance_freq": "M",
-              "target_vol": 0.15,
-              "max_drawdown": 0.2,
-              "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.12,
-              "w_momentum": 0.3802,
-              "w_value": 0.2905,
-              "w_quality": 0.1556,
-              "w_tech_trend": 0.046,
-              "w_tech_reversion": 0.1277
-            },
-            {
-              "wf_calmar": 2.1839,
-              "rebalance_freq": "M",
-              "target_vol": 0.15,
               "max_drawdown": 0.12,
-              "max_single_weight": 0.18,
+              "max_single_weight": 0.22,
               "trailing_stop_threshold": 0.18,
-              "w_momentum": 0.2888,
-              "w_value": 0.401,
-              "w_quality": 0.1489,
-              "w_tech_trend": 0.0135,
-              "w_tech_reversion": 0.1478
+              "w_momentum": 0.2211,
+              "w_value": 0.2072,
+              "w_quality": 0.0546,
+              "w_tech_trend": 0.2813,
+              "w_tech_reversion": 0.2359
             },
             {
-              "wf_calmar": 2.1728,
+              "wf_calmar": 1.7415,
+              "rebalance_freq": "M",
+              "target_vol": 0.125,
+              "max_drawdown": 0.3,
+              "max_single_weight": 0.18,
+              "trailing_stop_threshold": 0.08,
+              "w_momentum": 0.2044,
+              "w_value": 0.2182,
+              "w_quality": 0.051,
+              "w_tech_trend": 0.3425,
+              "w_tech_reversion": 0.1839
+            },
+            {
+              "wf_calmar": 1.7261,
+              "rebalance_freq": "Q",
+              "target_vol": 0.175,
+              "max_drawdown": 0.16,
+              "max_single_weight": 0.26,
+              "trailing_stop_threshold": 0.18,
+              "w_momentum": 0.2271,
+              "w_value": 0.1782,
+              "w_quality": 0.1325,
+              "w_tech_trend": 0.2328,
+              "w_tech_reversion": 0.2294
+            },
+            {
+              "wf_calmar": 1.6751,
               "rebalance_freq": "M",
               "target_vol": 0.15,
-              "max_drawdown": 0.28,
-              "max_single_weight": 0.26,
-              "trailing_stop_threshold": 0.1,
-              "w_momentum": 0.4681,
-              "w_value": 0.3148,
-              "w_quality": 0.037,
-              "w_tech_trend": 0.1109,
-              "w_tech_reversion": 0.0692
+              "max_drawdown": 0.3,
+              "max_single_weight": 0.22,
+              "trailing_stop_threshold": 0.08,
+              "w_momentum": 0.2615,
+              "w_value": 0.2087,
+              "w_quality": 0.0189,
+              "w_tech_trend": 0.3002,
+              "w_tech_reversion": 0.2107
+            },
+            {
+              "wf_calmar": 1.6652,
+              "rebalance_freq": "M",
+              "target_vol": 0.125,
+              "max_drawdown": 0.3,
+              "max_single_weight": 0.22,
+              "trailing_stop_threshold": 0.08,
+              "w_momentum": 0.222,
+              "w_value": 0.2195,
+              "w_quality": 0.0143,
+              "w_tech_trend": 0.3361,
+              "w_tech_reversion": 0.2082
+            },
+            {
+              "wf_calmar": 1.6582,
+              "rebalance_freq": "M",
+              "target_vol": 0.125,
+              "max_drawdown": 0.26,
+              "max_single_weight": 0.12,
+              "trailing_stop_threshold": 0.12,
+              "w_momentum": 0.0423,
+              "w_value": 0.2757,
+              "w_quality": 0.0633,
+              "w_tech_trend": 0.4467,
+              "w_tech_reversion": 0.172
+            },
+            {
+              "wf_calmar": 1.587,
+              "rebalance_freq": "M",
+              "target_vol": 0.15,
+              "max_drawdown": 0.3,
+              "max_single_weight": 0.24,
+              "trailing_stop_threshold": 0.08,
+              "w_momentum": 0.2509,
+              "w_value": 0.2164,
+              "w_quality": 0.0198,
+              "w_tech_trend": 0.2853,
+              "w_tech_reversion": 0.2277
+            },
+            {
+              "wf_calmar": 1.566,
+              "rebalance_freq": "M",
+              "target_vol": 0.125,
+              "max_drawdown": 0.3,
+              "max_single_weight": 0.18,
+              "trailing_stop_threshold": 0.08,
+              "w_momentum": 0.2206,
+              "w_value": 0.2137,
+              "w_quality": 0.0194,
+              "w_tech_trend": 0.3347,
+              "w_tech_reversion": 0.2116
+            },
+            {
+              "wf_calmar": 1.5468,
+              "rebalance_freq": "Q",
+              "target_vol": 0.175,
+              "max_drawdown": 0.16,
+              "max_single_weight": 0.24,
+              "trailing_stop_threshold": 0.2,
+              "w_momentum": 0.1719,
+              "w_value": 0.2881,
+              "w_quality": 0.0649,
+              "w_tech_trend": 0.2493,
+              "w_tech_reversion": 0.2258
             }
           ]
         },
