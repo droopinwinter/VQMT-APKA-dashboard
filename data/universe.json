@@ -1,0 +1,2434 @@
+{
+  "US": [
+    {
+      "ticker": "MMM",
+      "name": "3M公司"
+    },
+    {
+      "ticker": "AOS",
+      "name": "艾欧史密斯"
+    },
+    {
+      "ticker": "ABT",
+      "name": "美國雅培"
+    },
+    {
+      "ticker": "ABBV",
+      "name": "艾伯维"
+    },
+    {
+      "ticker": "ACN",
+      "name": "埃森哲"
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe"
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD"
+    },
+    {
+      "ticker": "AES",
+      "name": "AES Corporation"
+    },
+    {
+      "ticker": "AFL",
+      "name": "Aflac"
+    },
+    {
+      "ticker": "A",
+      "name": "安捷倫科技"
+    },
+    {
+      "ticker": "APD",
+      "name": "空气产品公司"
+    },
+    {
+      "ticker": "ABNB",
+      "name": "爱彼迎"
+    },
+    {
+      "ticker": "AKAM",
+      "name": "阿卡迈科技"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle Corporation"
+    },
+    {
+      "ticker": "ARE",
+      "name": "Alexandria Real Estate Equities"
+    },
+    {
+      "ticker": "ALGN",
+      "name": "艾利科技"
+    },
+    {
+      "ticker": "ALLE",
+      "name": "Allegion"
+    },
+    {
+      "ticker": "LNT",
+      "name": "美國聯合能源公司"
+    },
+    {
+      "ticker": "ALL",
+      "name": "Allstate"
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet"
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet"
+    },
+    {
+      "ticker": "MO",
+      "name": "奧馳亞"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "亞馬遜公司"
+    },
+    {
+      "ticker": "AMCR",
+      "name": "Amcor"
+    },
+    {
+      "ticker": "AEE",
+      "name": "阿莫林公司"
+    },
+    {
+      "ticker": "AEP",
+      "name": "美國電力公司"
+    },
+    {
+      "ticker": "AXP",
+      "name": "美國運通"
+    },
+    {
+      "ticker": "AIG",
+      "name": "美國國際集團"
+    },
+    {
+      "ticker": "AMT",
+      "name": "American Tower"
+    },
+    {
+      "ticker": "AWK",
+      "name": "American Water Works"
+    },
+    {
+      "ticker": "AMP",
+      "name": "美通金融"
+    },
+    {
+      "ticker": "AME",
+      "name": "Ametek"
+    },
+    {
+      "ticker": "AMGN",
+      "name": "安进"
+    },
+    {
+      "ticker": "APH",
+      "name": "安费诺"
+    },
+    {
+      "ticker": "ADI",
+      "name": "亚德诺半导体"
+    },
+    {
+      "ticker": "AON",
+      "name": "怡安集团"
+    },
+    {
+      "ticker": "APA",
+      "name": "APA Corporation"
+    },
+    {
+      "ticker": "APO",
+      "name": "阿波羅全球管理"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果公司"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "应用材料"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin"
+    },
+    {
+      "ticker": "APTV",
+      "name": "德尔福汽车"
+    },
+    {
+      "ticker": "ACGL",
+      "name": "Arch Capital Group"
+    },
+    {
+      "ticker": "ADM",
+      "name": "阿奇尔丹尼斯米德兰"
+    },
+    {
+      "ticker": "ARES",
+      "name": "Ares Management"
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks"
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co."
+    },
+    {
+      "ticker": "AIZ",
+      "name": "Assurant"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T"
+    },
+    {
+      "ticker": "ATO",
+      "name": "Atmos Energy"
+    },
+    {
+      "ticker": "ADSK",
+      "name": "歐特克"
+    },
+    {
+      "ticker": "ADP",
+      "name": "ADP (公司)"
+    },
+    {
+      "ticker": "AZO",
+      "name": "AutoZone"
+    },
+    {
+      "ticker": "AVB",
+      "name": "艾芙隆海灣社區公司"
+    },
+    {
+      "ticker": "AVY",
+      "name": "艾利丹尼森"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise"
+    },
+    {
+      "ticker": "BKR",
+      "name": "贝克休斯"
+    },
+    {
+      "ticker": "BALL",
+      "name": "Ball Corporation"
+    },
+    {
+      "ticker": "BAC",
+      "name": "美國銀行"
+    },
+    {
+      "ticker": "BAX",
+      "name": "百特国际"
+    },
+    {
+      "ticker": "BDX",
+      "name": "美国BD公司"
+    },
+    {
+      "ticker": "BRK.B",
+      "name": "波克夏·哈薩威"
+    },
+    {
+      "ticker": "BBY",
+      "name": "百思买"
+    },
+    {
+      "ticker": "TECH",
+      "name": "Bio-Techne"
+    },
+    {
+      "ticker": "BIIB",
+      "name": "渤健"
+    },
+    {
+      "ticker": "BLK",
+      "name": "貝萊德"
+    },
+    {
+      "ticker": "BX",
+      "name": "黑石集团"
+    },
+    {
+      "ticker": "XYZ",
+      "name": "Block公司"
+    },
+    {
+      "ticker": "BK",
+      "name": "纽约梅隆银行"
+    },
+    {
+      "ticker": "BA",
+      "name": "波音"
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings"
+    },
+    {
+      "ticker": "BSX",
+      "name": "波士顿科学"
+    },
+    {
+      "ticker": "BMY",
+      "name": "百时美施贵宝"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "博通有限"
+    },
+    {
+      "ticker": "BR",
+      "name": "Broadridge Financial Solutions"
+    },
+    {
+      "ticker": "BRO",
+      "name": "Brown & Brown"
+    },
+    {
+      "ticker": "BF.B",
+      "name": "Brown–Forman"
+    },
+    {
+      "ticker": "BLDR",
+      "name": "Builders FirstSource"
+    },
+    {
+      "ticker": "BG",
+      "name": "邦吉公司"
+    },
+    {
+      "ticker": "BXP",
+      "name": "BXP, Inc."
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson"
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence"
+    },
+    {
+      "ticker": "CPT",
+      "name": "Camden Property Trust"
+    },
+    {
+      "ticker": "CPB",
+      "name": "Campbell's Company (The)"
+    },
+    {
+      "ticker": "COF",
+      "name": "第一資本"
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival"
+    },
+    {
+      "ticker": "CARR",
+      "name": "开利全球公司"
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana"
+    },
+    {
+      "ticker": "CAT",
+      "name": "卡特彼勒"
+    },
+    {
+      "ticker": "CBOE",
+      "name": "Cboe Global Markets"
+    },
+    {
+      "ticker": "CBRE",
+      "name": "世邦魏理仕"
+    },
+    {
+      "ticker": "CDW",
+      "name": "CDW"
+    },
+    {
+      "ticker": "COR",
+      "name": "美源伯根"
+    },
+    {
+      "ticker": "CNC",
+      "name": "Centene Corporation"
+    },
+    {
+      "ticker": "CNP",
+      "name": "CenterPoint Energy"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries"
+    },
+    {
+      "ticker": "CRL",
+      "name": "查尔斯河实验室"
+    },
+    {
+      "ticker": "SCHW",
+      "name": "嘉信理財集團"
+    },
+    {
+      "ticker": "CHTR",
+      "name": "特許通訊"
+    },
+    {
+      "ticker": "CVX",
+      "name": "雪佛龍"
+    },
+    {
+      "ticker": "CMG",
+      "name": "奇波雷墨西哥燒烤"
+    },
+    {
+      "ticker": "CB",
+      "name": "安達保險集團"
+    },
+    {
+      "ticker": "CHD",
+      "name": "Church & Dwight"
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena"
+    },
+    {
+      "ticker": "CI",
+      "name": "Cigna"
+    },
+    {
+      "ticker": "CINF",
+      "name": "Cincinnati Financial"
+    },
+    {
+      "ticker": "CTAS",
+      "name": "信達思"
+    },
+    {
+      "ticker": "CSCO",
+      "name": "思科系统"
+    },
+    {
+      "ticker": "C",
+      "name": "花旗集团"
+    },
+    {
+      "ticker": "CFG",
+      "name": "公民金融集團"
+    },
+    {
+      "ticker": "CLX",
+      "name": "高乐氏"
+    },
+    {
+      "ticker": "CME",
+      "name": "芝加哥商品交易所集團"
+    },
+    {
+      "ticker": "CMS",
+      "name": "CMS Energy"
+    },
+    {
+      "ticker": "KO",
+      "name": "可口可乐公司"
+    },
+    {
+      "ticker": "CTSH",
+      "name": "高知特"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase"
+    },
+    {
+      "ticker": "CL",
+      "name": "高露洁-棕榄"
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "康卡斯特"
+    },
+    {
+      "ticker": "FIX",
+      "name": "Comfort Systems USA"
+    },
+    {
+      "ticker": "CAG",
+      "name": "康尼格拉品牌"
+    },
+    {
+      "ticker": "COP",
+      "name": "康菲公司"
+    },
+    {
+      "ticker": "ED",
+      "name": "聯合愛迪生"
+    },
+    {
+      "ticker": "STZ",
+      "name": "Constellation Brands"
+    },
+    {
+      "ticker": "CEG",
+      "name": "星座能源"
+    },
+    {
+      "ticker": "COO",
+      "name": "Cooper Companies (The)"
+    },
+    {
+      "ticker": "CPRT",
+      "name": "科帕特"
+    },
+    {
+      "ticker": "GLW",
+      "name": "康寧公司"
+    },
+    {
+      "ticker": "CPAY",
+      "name": "Corpay"
+    },
+    {
+      "ticker": "CTVA",
+      "name": "Corteva"
+    },
+    {
+      "ticker": "CSGP",
+      "name": "科斯塔集團"
+    },
+    {
+      "ticker": "COST",
+      "name": "好市多"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra"
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH公司"
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike"
+    },
+    {
+      "ticker": "CCI",
+      "name": "Crown Castle"
+    },
+    {
+      "ticker": "CSX",
+      "name": "CSX公司"
+    },
+    {
+      "ticker": "CMI",
+      "name": "康明斯"
+    },
+    {
+      "ticker": "CVS",
+      "name": "CVS健康"
+    },
+    {
+      "ticker": "DHR",
+      "name": "丹纳赫"
+    },
+    {
+      "ticker": "DRI",
+      "name": "達登餐飲公司"
+    },
+    {
+      "ticker": "DDOG",
+      "name": "数据狗"
+    },
+    {
+      "ticker": "DVA",
+      "name": "DaVita"
+    },
+    {
+      "ticker": "DECK",
+      "name": "Deckers Brands"
+    },
+    {
+      "ticker": "DE",
+      "name": "约翰迪尔"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies"
+    },
+    {
+      "ticker": "DAL",
+      "name": "達美航空"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy"
+    },
+    {
+      "ticker": "DXCM",
+      "name": "Dexcom"
+    },
+    {
+      "ticker": "FANG",
+      "name": "響尾蛇能源公司"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General"
+    },
+    {
+      "ticker": "DLTR",
+      "name": "美元树"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy"
+    },
+    {
+      "ticker": "DPZ",
+      "name": "Domino's"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash"
+    },
+    {
+      "ticker": "DOV",
+      "name": "Dover Corporation"
+    },
+    {
+      "ticker": "DOW",
+      "name": "陶氏化工"
+    },
+    {
+      "ticker": "DHI",
+      "name": "D. R. Horton"
+    },
+    {
+      "ticker": "DTE",
+      "name": "DTE Energy"
+    },
+    {
+      "ticker": "DUK",
+      "name": "Duke Energy"
+    },
+    {
+      "ticker": "DD",
+      "name": "杜邦"
+    },
+    {
+      "ticker": "ETN",
+      "name": "伊顿 (美国公司)"
+    },
+    {
+      "ticker": "EBAY",
+      "name": "EBay"
+    },
+    {
+      "ticker": "ECL",
+      "name": "艺康集团"
+    },
+    {
+      "ticker": "EIX",
+      "name": "Edison International"
+    },
+    {
+      "ticker": "EW",
+      "name": "爱德华生命科学"
+    },
+    {
+      "ticker": "EA",
+      "name": "艺电"
+    },
+    {
+      "ticker": "ELV",
+      "name": "Elevance Health"
+    },
+    {
+      "ticker": "EME",
+      "name": "Emcor"
+    },
+    {
+      "ticker": "EMR",
+      "name": "艾默生电气公司"
+    },
+    {
+      "ticker": "ETR",
+      "name": "Entergy"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources"
+    },
+    {
+      "ticker": "EPAM",
+      "name": "EPAM Systems"
+    },
+    {
+      "ticker": "EQT",
+      "name": "EQT Corporation"
+    },
+    {
+      "ticker": "EFX",
+      "name": "Equifax"
+    },
+    {
+      "ticker": "EQIX",
+      "name": "Equinix"
+    },
+    {
+      "ticker": "EQR",
+      "name": "Equity Residential"
+    },
+    {
+      "ticker": "ERIE",
+      "name": "Erie Indemnity"
+    },
+    {
+      "ticker": "ESS",
+      "name": "Essex Property Trust"
+    },
+    {
+      "ticker": "EL",
+      "name": "Estée Lauder Companies (The)"
+    },
+    {
+      "ticker": "EG",
+      "name": "Everest Group"
+    },
+    {
+      "ticker": "EVRG",
+      "name": "Evergy"
+    },
+    {
+      "ticker": "ES",
+      "name": "永源能源"
+    },
+    {
+      "ticker": "EXC",
+      "name": "艾索倫電力公司"
+    },
+    {
+      "ticker": "EXE",
+      "name": "Expand Energy"
+    },
+    {
+      "ticker": "EXPE",
+      "name": "智遊網集團"
+    },
+    {
+      "ticker": "EXPD",
+      "name": "Expeditors International"
+    },
+    {
+      "ticker": "EXR",
+      "name": "Extra Space Storage"
+    },
+    {
+      "ticker": "XOM",
+      "name": "埃克森美孚"
+    },
+    {
+      "ticker": "FFIV",
+      "name": "F5网络公司"
+    },
+    {
+      "ticker": "FDS",
+      "name": "FactSet Research Systems"
+    },
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac"
+    },
+    {
+      "ticker": "FAST",
+      "name": "快扣"
+    },
+    {
+      "ticker": "FRT",
+      "name": "Federal Realty Investment Trust"
+    },
+    {
+      "ticker": "FDX",
+      "name": "聯邦快遞"
+    },
+    {
+      "ticker": "FIS",
+      "name": "Fidelity National Information Services"
+    },
+    {
+      "ticker": "FITB",
+      "name": "Fifth Third Bancorp"
+    },
+    {
+      "ticker": "FSLR",
+      "name": "First Solar"
+    },
+    {
+      "ticker": "FE",
+      "name": "FirstEnergy"
+    },
+    {
+      "ticker": "FISV",
+      "name": "Fiserv"
+    },
+    {
+      "ticker": "F",
+      "name": "福特汽车"
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet"
+    },
+    {
+      "ticker": "FTV",
+      "name": "Fortive"
+    },
+    {
+      "ticker": "FOXA",
+      "name": "福斯公司"
+    },
+    {
+      "ticker": "FOX",
+      "name": "福斯公司"
+    },
+    {
+      "ticker": "BEN",
+      "name": "富蘭克林資源"
+    },
+    {
+      "ticker": "FCX",
+      "name": "费利浦·麦克莫兰铜金公司"
+    },
+    {
+      "ticker": "GRMN",
+      "name": "Garmin"
+    },
+    {
+      "ticker": "IT",
+      "name": "高德纳咨询公司"
+    },
+    {
+      "ticker": "GE",
+      "name": "GE航空航天"
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE医疗"
+    },
+    {
+      "ticker": "GEV",
+      "name": "奇異維諾瓦"
+    },
+    {
+      "ticker": "GEN",
+      "name": "Gen Digital"
+    },
+    {
+      "ticker": "GNRC",
+      "name": "Generac"
+    },
+    {
+      "ticker": "GD",
+      "name": "通用动力"
+    },
+    {
+      "ticker": "GIS",
+      "name": "通用磨坊"
+    },
+    {
+      "ticker": "GM",
+      "name": "通用汽车"
+    },
+    {
+      "ticker": "GPC",
+      "name": "Genuine Parts Company"
+    },
+    {
+      "ticker": "GILD",
+      "name": "吉利德科學"
+    },
+    {
+      "ticker": "GPN",
+      "name": "Global Payments"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life"
+    },
+    {
+      "ticker": "GDDY",
+      "name": "GoDaddy"
+    },
+    {
+      "ticker": "GS",
+      "name": "高盛"
+    },
+    {
+      "ticker": "HAL",
+      "name": "哈里伯顿"
+    },
+    {
+      "ticker": "HIG",
+      "name": "Hartford (The)"
+    },
+    {
+      "ticker": "HAS",
+      "name": "孩之寶"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare"
+    },
+    {
+      "ticker": "DOC",
+      "name": "Healthpeak Properties"
+    },
+    {
+      "ticker": "HSIC",
+      "name": "汉瑞祥"
+    },
+    {
+      "ticker": "HSY",
+      "name": "好時"
+    },
+    {
+      "ticker": "HPE",
+      "name": "慧與科技"
+    },
+    {
+      "ticker": "HLT",
+      "name": "希爾頓全球酒店集團"
+    },
+    {
+      "ticker": "HOLX",
+      "name": "Hologic"
+    },
+    {
+      "ticker": "HD",
+      "name": "家得宝"
+    },
+    {
+      "ticker": "HON",
+      "name": "霍尼韦尔"
+    },
+    {
+      "ticker": "HRL",
+      "name": "荷美爾"
+    },
+    {
+      "ticker": "HST",
+      "name": "Host Hotels & Resorts"
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace"
+    },
+    {
+      "ticker": "HPQ",
+      "name": "HP Inc."
+    },
+    {
+      "ticker": "HUBB",
+      "name": "Hubbell Incorporated"
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "亨廷頓銀行"
+    },
+    {
+      "ticker": "HII",
+      "name": "亨廷顿·英格尔斯工业"
+    },
+    {
+      "ticker": "IBM",
+      "name": "IBM"
+    },
+    {
+      "ticker": "IEX",
+      "name": "IDEX Corporation"
+    },
+    {
+      "ticker": "IDXX",
+      "name": "爱德士"
+    },
+    {
+      "ticker": "ITW",
+      "name": "伊利諾伊州工具廠股份"
+    },
+    {
+      "ticker": "INCY",
+      "name": "因賽特"
+    },
+    {
+      "ticker": "IR",
+      "name": "Ingersoll Rand"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corporation"
+    },
+    {
+      "ticker": "INTC",
+      "name": "英特尔"
+    },
+    {
+      "ticker": "IBKR",
+      "name": "盈透證券"
+    },
+    {
+      "ticker": "ICE",
+      "name": "洲际交易所集团"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances"
+    },
+    {
+      "ticker": "IP",
+      "name": "國際紙業"
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit"
+    },
+    {
+      "ticker": "ISRG",
+      "name": "直覺手術"
+    },
+    {
+      "ticker": "IVZ",
+      "name": "景順"
+    },
+    {
+      "ticker": "INVH",
+      "name": "Invitation Homes"
+    },
+    {
+      "ticker": "IQV",
+      "name": "艾昆纬"
+    },
+    {
+      "ticker": "IRM",
+      "name": "Iron Mountain"
+    },
+    {
+      "ticker": "JBHT",
+      "name": "J.B. Hunt"
+    },
+    {
+      "ticker": "JBL",
+      "name": "捷普科技"
+    },
+    {
+      "ticker": "JKHY",
+      "name": "Jack Henry & Associates"
+    },
+    {
+      "ticker": "J",
+      "name": "Jacobs Solutions"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson"
+    },
+    {
+      "ticker": "JCI",
+      "name": "江森自控"
+    },
+    {
+      "ticker": "JPM",
+      "name": "摩根大通"
+    },
+    {
+      "ticker": "KVUE",
+      "name": "科赴"
+    },
+    {
+      "ticker": "KDP",
+      "name": "克里格胡椒博士"
+    },
+    {
+      "ticker": "KEY",
+      "name": "KeyCorp"
+    },
+    {
+      "ticker": "KEYS",
+      "name": "Keysight Technologies"
+    },
+    {
+      "ticker": "KMB",
+      "name": "金百利克拉克公司"
+    },
+    {
+      "ticker": "KIM",
+      "name": "Kimco Realty"
+    },
+    {
+      "ticker": "KMI",
+      "name": "Kinder Morgan"
+    },
+    {
+      "ticker": "KKR",
+      "name": "KKR & Co."
+    },
+    {
+      "ticker": "KLAC",
+      "name": "科磊"
+    },
+    {
+      "ticker": "KHC",
+      "name": "卡夫亨氏"
+    },
+    {
+      "ticker": "KR",
+      "name": "克羅格"
+    },
+    {
+      "ticker": "LHX",
+      "name": "L3哈里斯技术公司"
+    },
+    {
+      "ticker": "LH",
+      "name": "Labcorp"
+    },
+    {
+      "ticker": "LRCX",
+      "name": "泛林集团"
+    },
+    {
+      "ticker": "LW",
+      "name": "蓝威斯顿"
+    },
+    {
+      "ticker": "LVS",
+      "name": "拉斯維加斯金沙集團"
+    },
+    {
+      "ticker": "LDOS",
+      "name": "Leidos"
+    },
+    {
+      "ticker": "LEN",
+      "name": "Lennar"
+    },
+    {
+      "ticker": "LII",
+      "name": "Lennox International"
+    },
+    {
+      "ticker": "LLY",
+      "name": "礼来公司"
+    },
+    {
+      "ticker": "LIN",
+      "name": "林德集团"
+    },
+    {
+      "ticker": "LYV",
+      "name": "理想國演藝"
+    },
+    {
+      "ticker": "LMT",
+      "name": "洛克希德·马丁"
+    },
+    {
+      "ticker": "L",
+      "name": "Loews Corporation"
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's"
+    },
+    {
+      "ticker": "LULU",
+      "name": "露露柠檬"
+    },
+    {
+      "ticker": "LYB",
+      "name": "LyondellBasell"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum"
+    },
+    {
+      "ticker": "MAR",
+      "name": "萬豪國際"
+    },
+    {
+      "ticker": "MRSH",
+      "name": "Marsh McLennan"
+    },
+    {
+      "ticker": "MLM",
+      "name": "Martin Marietta Materials"
+    },
+    {
+      "ticker": "MAS",
+      "name": "Masco"
+    },
+    {
+      "ticker": "MA",
+      "name": "万事达卡"
+    },
+    {
+      "ticker": "MTCH",
+      "name": "Match Group"
+    },
+    {
+      "ticker": "MKC",
+      "name": "McCormick & Company"
+    },
+    {
+      "ticker": "MCD",
+      "name": "McDonald's"
+    },
+    {
+      "ticker": "MCK",
+      "name": "麥克森公司"
+    },
+    {
+      "ticker": "MDT",
+      "name": "美敦力"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck & Co."
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms"
+    },
+    {
+      "ticker": "MET",
+      "name": "大都會人壽保險"
+    },
+    {
+      "ticker": "MTD",
+      "name": "梅特勒-托利多"
+    },
+    {
+      "ticker": "MGM",
+      "name": "MGM Resorts"
+    },
+    {
+      "ticker": "MCHP",
+      "name": "微晶片科技"
+    },
+    {
+      "ticker": "MU",
+      "name": "美光科技"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "微软"
+    },
+    {
+      "ticker": "MAA",
+      "name": "Mid-America Apartment Communities"
+    },
+    {
+      "ticker": "MRNA",
+      "name": "莫德纳"
+    },
+    {
+      "ticker": "MOH",
+      "name": "Molina Healthcare"
+    },
+    {
+      "ticker": "TAP",
+      "name": "Molson Coors Beverage Company"
+    },
+    {
+      "ticker": "MDLZ",
+      "name": "亿滋国际"
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems"
+    },
+    {
+      "ticker": "MNST",
+      "name": "怪物饮料"
+    },
+    {
+      "ticker": "MCO",
+      "name": "Moody's Corporation"
+    },
+    {
+      "ticker": "MS",
+      "name": "摩根士丹利"
+    },
+    {
+      "ticker": "MOS",
+      "name": "Mosaic Company (The)"
+    },
+    {
+      "ticker": "MSI",
+      "name": "摩托罗拉系统"
+    },
+    {
+      "ticker": "MSCI",
+      "name": "明晟"
+    },
+    {
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc."
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp"
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix"
+    },
+    {
+      "ticker": "NEM",
+      "name": "紐蒙特黃金公司"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "新闻集团"
+    },
+    {
+      "ticker": "NWS",
+      "name": "新闻集团"
+    },
+    {
+      "ticker": "NEE",
+      "name": "NextEra Energy"
+    },
+    {
+      "ticker": "NKE",
+      "name": "耐克"
+    },
+    {
+      "ticker": "NI",
+      "name": "NiSource"
+    },
+    {
+      "ticker": "NDSN",
+      "name": "Nordson Corporation"
+    },
+    {
+      "ticker": "NSC",
+      "name": "諾福克南方鐵路"
+    },
+    {
+      "ticker": "NTRS",
+      "name": "北方信托银行"
+    },
+    {
+      "ticker": "NOC",
+      "name": "诺斯洛普·格鲁门"
+    },
+    {
+      "ticker": "NCLH",
+      "name": "Norwegian Cruise Line Holdings"
+    },
+    {
+      "ticker": "NRG",
+      "name": "NRG Energy"
+    },
+    {
+      "ticker": "NUE",
+      "name": "紐柯鋼鐵公司"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "英伟达"
+    },
+    {
+      "ticker": "NVR",
+      "name": "NVR, Inc."
+    },
+    {
+      "ticker": "NXPI",
+      "name": "恩智浦半导体"
+    },
+    {
+      "ticker": "ORLY",
+      "name": "O’Reilly Automotive"
+    },
+    {
+      "ticker": "OXY",
+      "name": "西方石油公司"
+    },
+    {
+      "ticker": "ODFL",
+      "name": "奧多明尼昂貨運"
+    },
+    {
+      "ticker": "OMC",
+      "name": "宏盟集團"
+    },
+    {
+      "ticker": "ON",
+      "name": "安森美"
+    },
+    {
+      "ticker": "OKE",
+      "name": "Oneok"
+    },
+    {
+      "ticker": "ORCL",
+      "name": "甲骨文公司"
+    },
+    {
+      "ticker": "OTIS",
+      "name": "奧的斯電梯公司"
+    },
+    {
+      "ticker": "PCAR",
+      "name": "帕卡"
+    },
+    {
+      "ticker": "PKG",
+      "name": "Packaging Corporation of America"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "帕蘭泰爾"
+    },
+    {
+      "ticker": "PANW",
+      "name": "派拓网络"
+    },
+    {
+      "ticker": "PSKY",
+      "name": "派拉蒙天空之舞"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker Hannifin"
+    },
+    {
+      "ticker": "PAYX",
+      "name": "沛齊"
+    },
+    {
+      "ticker": "PAYC",
+      "name": "Paycom"
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal"
+    },
+    {
+      "ticker": "PNR",
+      "name": "Pentair"
+    },
+    {
+      "ticker": "PEP",
+      "name": "百事公司"
+    },
+    {
+      "ticker": "PFE",
+      "name": "輝瑞"
+    },
+    {
+      "ticker": "PCG",
+      "name": "PG&E Corporation"
+    },
+    {
+      "ticker": "PM",
+      "name": "菲利普莫里斯国际"
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66"
+    },
+    {
+      "ticker": "PNW",
+      "name": "Pinnacle West Capital"
+    },
+    {
+      "ticker": "PNC",
+      "name": "PNC金融服务集团"
+    },
+    {
+      "ticker": "POOL",
+      "name": "Pool Corporation"
+    },
+    {
+      "ticker": "PPG",
+      "name": "PPG工业集团"
+    },
+    {
+      "ticker": "PPL",
+      "name": "PPL Corporation"
+    },
+    {
+      "ticker": "PFG",
+      "name": "美國信安金融集團"
+    },
+    {
+      "ticker": "PG",
+      "name": "Procter & Gamble"
+    },
+    {
+      "ticker": "PGR",
+      "name": "Progressive Corporation"
+    },
+    {
+      "ticker": "PLD",
+      "name": "Prologis"
+    },
+    {
+      "ticker": "PRU",
+      "name": "保德信金融"
+    },
+    {
+      "ticker": "PEG",
+      "name": "Public Service Enterprise Group"
+    },
+    {
+      "ticker": "PTC",
+      "name": "PTC Inc."
+    },
+    {
+      "ticker": "PSA",
+      "name": "Public Storage"
+    },
+    {
+      "ticker": "PHM",
+      "name": "PulteGroup"
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services"
+    },
+    {
+      "ticker": "QCOM",
+      "name": "高通"
+    },
+    {
+      "ticker": "DGX",
+      "name": "Quest Diagnostics"
+    },
+    {
+      "ticker": "Q",
+      "name": "Qnity Electronics"
+    },
+    {
+      "ticker": "RL",
+      "name": "拉夫·劳伦马球"
+    },
+    {
+      "ticker": "RJF",
+      "name": "Raymond James Financial"
+    },
+    {
+      "ticker": "RTX",
+      "name": "雷神技术公司"
+    },
+    {
+      "ticker": "O",
+      "name": "Realty Income"
+    },
+    {
+      "ticker": "REG",
+      "name": "Regency Centers"
+    },
+    {
+      "ticker": "REGN",
+      "name": "再生元製藥"
+    },
+    {
+      "ticker": "RF",
+      "name": "Regions Financial Corporation"
+    },
+    {
+      "ticker": "RSG",
+      "name": "Republic Services"
+    },
+    {
+      "ticker": "RMD",
+      "name": "ResMed"
+    },
+    {
+      "ticker": "RVTY",
+      "name": "Revvity"
+    },
+    {
+      "ticker": "HOOD",
+      "name": "羅賓漢 (公司)"
+    },
+    {
+      "ticker": "ROK",
+      "name": "洛克威爾自動化"
+    },
+    {
+      "ticker": "ROL",
+      "name": "Rollins, Inc."
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies"
+    },
+    {
+      "ticker": "ROST",
+      "name": "羅斯百貨"
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Group"
+    },
+    {
+      "ticker": "SPGI",
+      "name": "S&P Global"
+    },
+    {
+      "ticker": "CRM",
+      "name": "赛富时"
+    },
+    {
+      "ticker": "SNDK",
+      "name": "晟碟公司"
+    },
+    {
+      "ticker": "SBAC",
+      "name": "SBA Communications"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger"
+    },
+    {
+      "ticker": "STX",
+      "name": "希捷科技"
+    },
+    {
+      "ticker": "SRE",
+      "name": "Sempra"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow"
+    },
+    {
+      "ticker": "SHW",
+      "name": "Sherwin-Williams"
+    },
+    {
+      "ticker": "SPG",
+      "name": "Simon Property Group"
+    },
+    {
+      "ticker": "SWKS",
+      "name": "Skyworks Solutions"
+    },
+    {
+      "ticker": "SJM",
+      "name": "J.M. Smucker Company (The)"
+    },
+    {
+      "ticker": "SW",
+      "name": "斯莫菲特韋斯特羅克"
+    },
+    {
+      "ticker": "SNA",
+      "name": "Snap-on"
+    },
+    {
+      "ticker": "SOLV",
+      "name": "Solventum"
+    },
+    {
+      "ticker": "SO",
+      "name": "南方電力公司"
+    },
+    {
+      "ticker": "LUV",
+      "name": "西南航空"
+    },
+    {
+      "ticker": "SWK",
+      "name": "Stanley Black & Decker"
+    },
+    {
+      "ticker": "SBUX",
+      "name": "星巴克"
+    },
+    {
+      "ticker": "STT",
+      "name": "道富公司"
+    },
+    {
+      "ticker": "STLD",
+      "name": "Steel Dynamics"
+    },
+    {
+      "ticker": "STE",
+      "name": "Steris"
+    },
+    {
+      "ticker": "SYK",
+      "name": "史赛克"
+    },
+    {
+      "ticker": "SMCI",
+      "name": "美超微電腦"
+    },
+    {
+      "ticker": "SYF",
+      "name": "Synchrony Financial"
+    },
+    {
+      "ticker": "SNPS",
+      "name": "新思科技"
+    },
+    {
+      "ticker": "SYY",
+      "name": "Sysco"
+    },
+    {
+      "ticker": "TMUS",
+      "name": "T-Mobile美国"
+    },
+    {
+      "ticker": "TROW",
+      "name": "普徕仕"
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive"
+    },
+    {
+      "ticker": "TPR",
+      "name": "泰佩思琦"
+    },
+    {
+      "ticker": "TRGP",
+      "name": "Targa Resources"
+    },
+    {
+      "ticker": "TGT",
+      "name": "目標百貨"
+    },
+    {
+      "ticker": "TEL",
+      "name": "泰科电子"
+    },
+    {
+      "ticker": "TDY",
+      "name": "Teledyne Technologies"
+    },
+    {
+      "ticker": "TER",
+      "name": "泰瑞達"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉公司"
+    },
+    {
+      "ticker": "TXN",
+      "name": "德州仪器"
+    },
+    {
+      "ticker": "TPL",
+      "name": "Texas Pacific Land Corporation"
+    },
+    {
+      "ticker": "TXT",
+      "name": "德事隆"
+    },
+    {
+      "ticker": "TMO",
+      "name": "赛默飞世尔科技"
+    },
+    {
+      "ticker": "TJX",
+      "name": "TJX Companies"
+    },
+    {
+      "ticker": "TKO",
+      "name": "TKO Group Holdings"
+    },
+    {
+      "ticker": "TTD",
+      "name": "Trade Desk (The)"
+    },
+    {
+      "ticker": "TSCO",
+      "name": "Tractor Supply"
+    },
+    {
+      "ticker": "TT",
+      "name": "Trane Technologies"
+    },
+    {
+      "ticker": "TDG",
+      "name": "TransDigm Group"
+    },
+    {
+      "ticker": "TRV",
+      "name": "旅行家集團"
+    },
+    {
+      "ticker": "TRMB",
+      "name": "天宝导航"
+    },
+    {
+      "ticker": "TFC",
+      "name": "Truist Financial"
+    },
+    {
+      "ticker": "TYL",
+      "name": "Tyler Technologies"
+    },
+    {
+      "ticker": "TSN",
+      "name": "泰森食品"
+    },
+    {
+      "ticker": "USB",
+      "name": "全美銀行"
+    },
+    {
+      "ticker": "UBER",
+      "name": "優步"
+    },
+    {
+      "ticker": "UDR",
+      "name": "UDR, Inc."
+    },
+    {
+      "ticker": "ULTA",
+      "name": "Ulta美妆"
+    },
+    {
+      "ticker": "UNP",
+      "name": "Union Pacific Corporation"
+    },
+    {
+      "ticker": "UAL",
+      "name": "United Airlines Holdings"
+    },
+    {
+      "ticker": "UPS",
+      "name": "联合包裹服务"
+    },
+    {
+      "ticker": "URI",
+      "name": "United Rentals"
+    },
+    {
+      "ticker": "UNH",
+      "name": "联合健康集团"
+    },
+    {
+      "ticker": "UHS",
+      "name": "Universal Health Services"
+    },
+    {
+      "ticker": "VLO",
+      "name": "瓦莱罗能源"
+    },
+    {
+      "ticker": "VTR",
+      "name": "Ventas"
+    },
+    {
+      "ticker": "VLTO",
+      "name": "Veralto"
+    },
+    {
+      "ticker": "VRSN",
+      "name": "威瑞信"
+    },
+    {
+      "ticker": "VRSK",
+      "name": "Verisk Analytics"
+    },
+    {
+      "ticker": "VZ",
+      "name": "威訊通訊"
+    },
+    {
+      "ticker": "VRTX",
+      "name": "福泰製藥"
+    },
+    {
+      "ticker": "VTRS",
+      "name": "晖致"
+    },
+    {
+      "ticker": "VICI",
+      "name": "Vici Properties"
+    },
+    {
+      "ticker": "V",
+      "name": "Visa公司"
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp."
+    },
+    {
+      "ticker": "VMC",
+      "name": "Vulcan Materials Company"
+    },
+    {
+      "ticker": "WRB",
+      "name": "W. R. Berkley Corporation"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W. W. Grainger"
+    },
+    {
+      "ticker": "WAB",
+      "name": "西屋制動公司"
+    },
+    {
+      "ticker": "WMT",
+      "name": "沃尔玛"
+    },
+    {
+      "ticker": "DIS",
+      "name": "华特迪士尼公司"
+    },
+    {
+      "ticker": "WBD",
+      "name": "华纳兄弟探索"
+    },
+    {
+      "ticker": "WM",
+      "name": "Waste Management"
+    },
+    {
+      "ticker": "WAT",
+      "name": "沃特世"
+    },
+    {
+      "ticker": "WEC",
+      "name": "WEC Energy Group"
+    },
+    {
+      "ticker": "WFC",
+      "name": "富国银行集团"
+    },
+    {
+      "ticker": "WELL",
+      "name": "Welltower"
+    },
+    {
+      "ticker": "WST",
+      "name": "West Pharmaceutical Services"
+    },
+    {
+      "ticker": "WDC",
+      "name": "威騰電子"
+    },
+    {
+      "ticker": "WY",
+      "name": "惠好"
+    },
+    {
+      "ticker": "WSM",
+      "name": "Williams-Sonoma, Inc."
+    },
+    {
+      "ticker": "WMB",
+      "name": "Williams Companies"
+    },
+    {
+      "ticker": "WTW",
+      "name": "韦莱韬悦"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday"
+    },
+    {
+      "ticker": "WYNN",
+      "name": "永利度假村"
+    },
+    {
+      "ticker": "XEL",
+      "name": "Xcel Energy"
+    },
+    {
+      "ticker": "XYL",
+      "name": "赛莱默"
+    },
+    {
+      "ticker": "YUM",
+      "name": "百胜餐饮集团"
+    },
+    {
+      "ticker": "ZBRA",
+      "name": "斑马技术公司"
+    },
+    {
+      "ticker": "ZBH",
+      "name": "捷迈邦美"
+    },
+    {
+      "ticker": "ZTS",
+      "name": "硕腾"
+    }
+  ],
+  "TW": [
+    {
+      "ticker": "1101.TW",
+      "name": "台泥"
+    },
+    {
+      "ticker": "1102.TW",
+      "name": "亞泥"
+    },
+    {
+      "ticker": "1216.TW",
+      "name": "統一"
+    },
+    {
+      "ticker": "1301.TW",
+      "name": "台塑"
+    },
+    {
+      "ticker": "1303.TW",
+      "name": "南亞"
+    },
+    {
+      "ticker": "1326.TW",
+      "name": "台化"
+    },
+    {
+      "ticker": "1402.TW",
+      "name": "遠東新"
+    },
+    {
+      "ticker": "1504.TW",
+      "name": "東元"
+    },
+    {
+      "ticker": "1605.TW",
+      "name": "華新"
+    },
+    {
+      "ticker": "2002.TW",
+      "name": "中鋼"
+    },
+    {
+      "ticker": "2059.TW",
+      "name": "川湖"
+    },
+    {
+      "ticker": "2105.TW",
+      "name": "正新"
+    },
+    {
+      "ticker": "2207.TW",
+      "name": "和泰車"
+    },
+    {
+      "ticker": "2303.TW",
+      "name": "聯電"
+    },
+    {
+      "ticker": "2308.TW",
+      "name": "台達電"
+    },
+    {
+      "ticker": "2317.TW",
+      "name": "鴻海"
+    },
+    {
+      "ticker": "2324.TW",
+      "name": "仁寶"
+    },
+    {
+      "ticker": "2327.TW",
+      "name": "國巨"
+    },
+    {
+      "ticker": "2330.TW",
+      "name": "台積電"
+    },
+    {
+      "ticker": "2345.TW",
+      "name": "智邦"
+    },
+    {
+      "ticker": "2353.TW",
+      "name": "宏碁"
+    },
+    {
+      "ticker": "2354.TW",
+      "name": "鴻準"
+    },
+    {
+      "ticker": "2356.TW",
+      "name": "英業達"
+    },
+    {
+      "ticker": "2357.TW",
+      "name": "華碩"
+    },
+    {
+      "ticker": "2376.TW",
+      "name": "技嘉"
+    },
+    {
+      "ticker": "2377.TW",
+      "name": "微星"
+    },
+    {
+      "ticker": "2379.TW",
+      "name": "瑞昱"
+    },
+    {
+      "ticker": "2382.TW",
+      "name": "廣達"
+    },
+    {
+      "ticker": "2383.TW",
+      "name": "台光電"
+    },
+    {
+      "ticker": "2408.TW",
+      "name": "南亞科"
+    },
+    {
+      "ticker": "2409.TW",
+      "name": "友達"
+    },
+    {
+      "ticker": "2412.TW",
+      "name": "中華電"
+    },
+    {
+      "ticker": "2439.TW",
+      "name": "美律"
+    },
+    {
+      "ticker": "2449.TW",
+      "name": "京元電子"
+    },
+    {
+      "ticker": "2454.TW",
+      "name": "聯發科"
+    },
+    {
+      "ticker": "2458.TW",
+      "name": "義隆"
+    },
+    {
+      "ticker": "2474.TW",
+      "name": "可成"
+    },
+    {
+      "ticker": "2492.TW",
+      "name": "華新科"
+    },
+    {
+      "ticker": "2498.TW",
+      "name": "宏達電"
+    },
+    {
+      "ticker": "2603.TW",
+      "name": "長榮"
+    },
+    {
+      "ticker": "2609.TW",
+      "name": "陽明"
+    },
+    {
+      "ticker": "2610.TW",
+      "name": "華航"
+    },
+    {
+      "ticker": "2615.TW",
+      "name": "萬海"
+    },
+    {
+      "ticker": "2618.TW",
+      "name": "長榮航"
+    },
+    {
+      "ticker": "2880.TW",
+      "name": "華南金"
+    },
+    {
+      "ticker": "2881.TW",
+      "name": "富邦金"
+    },
+    {
+      "ticker": "2882.TW",
+      "name": "國泰金"
+    },
+    {
+      "ticker": "2884.TW",
+      "name": "玉山金"
+    },
+    {
+      "ticker": "2885.TW",
+      "name": "元大金"
+    },
+    {
+      "ticker": "2886.TW",
+      "name": "兆豐金"
+    },
+    {
+      "ticker": "2891.TW",
+      "name": "中信金"
+    },
+    {
+      "ticker": "2892.TW",
+      "name": "第一金"
+    },
+    {
+      "ticker": "2912.TW",
+      "name": "統一超"
+    },
+    {
+      "ticker": "3008.TW",
+      "name": "大立光"
+    },
+    {
+      "ticker": "3034.TW",
+      "name": "聯詠"
+    },
+    {
+      "ticker": "3037.TW",
+      "name": "欣興"
+    },
+    {
+      "ticker": "3045.TW",
+      "name": "台灣大"
+    },
+    {
+      "ticker": "3231.TW",
+      "name": "緯創"
+    },
+    {
+      "ticker": "3443.TW",
+      "name": "創意"
+    },
+    {
+      "ticker": "3481.TW",
+      "name": "群創"
+    },
+    {
+      "ticker": "3532.TW",
+      "name": "台勝科"
+    },
+    {
+      "ticker": "3661.TW",
+      "name": "世芯-KY"
+    },
+    {
+      "ticker": "3702.TW",
+      "name": "大聯大"
+    },
+    {
+      "ticker": "3711.TW",
+      "name": "日月光投控"
+    },
+    {
+      "ticker": "4938.TW",
+      "name": "和碩"
+    },
+    {
+      "ticker": "4958.TW",
+      "name": "臻鼎-KY"
+    },
+    {
+      "ticker": "5347.TW",
+      "name": "世界"
+    },
+    {
+      "ticker": "5871.TW",
+      "name": "中租-KY"
+    },
+    {
+      "ticker": "5876.TW",
+      "name": "上海商銀"
+    },
+    {
+      "ticker": "5880.TW",
+      "name": "合庫金"
+    },
+    {
+      "ticker": "6415.TW",
+      "name": "矽力*-KY"
+    },
+    {
+      "ticker": "6669.TW",
+      "name": "緯穎"
+    },
+    {
+      "ticker": "6770.TW",
+      "name": "力積電"
+    },
+    {
+      "ticker": "8046.TW",
+      "name": "南電"
+    },
+    {
+      "ticker": "8454.TW",
+      "name": "富邦媒"
+    },
+    {
+      "ticker": "9904.TW",
+      "name": "寶成"
+    },
+    {
+      "ticker": "9910.TW",
+      "name": "豐泰"
+    },
+    {
+      "ticker": "9945.TW",
+      "name": "潤泰新"
+    }
+  ],
+  "USETF": [
+    {
+      "ticker": "SPY",
+      "name": "標普500指數"
+    },
+    {
+      "ticker": "QQQ",
+      "name": "納斯達克100指數"
+    },
+    {
+      "ticker": "UPRO",
+      "name": "三倍做多標普500"
+    },
+    {
+      "ticker": "SPXU",
+      "name": "三倍做空標普500"
+    },
+    {
+      "ticker": "TQQQ",
+      "name": "三倍做多納斯達克指數"
+    },
+    {
+      "ticker": "SQQQ",
+      "name": "三倍做空納斯達克指數"
+    },
+    {
+      "ticker": "SOXL",
+      "name": "三倍做多半導體"
+    },
+    {
+      "ticker": "SOXS",
+      "name": "三倍做空半導體"
+    },
+    {
+      "ticker": "FNGU",
+      "name": "三倍做多尖牙股"
+    },
+    {
+      "ticker": "TMF",
+      "name": "三倍做多20年期以上美國公債"
+    },
+    {
+      "ticker": "TMV",
+      "name": "三倍做空20年期以上美國公債"
+    },
+    {
+      "ticker": "GLD",
+      "name": "黃金"
+    },
+    {
+      "ticker": "UUP",
+      "name": "看多美元指數"
+    }
+  ],
+  "TWETF": [
+    {
+      "ticker": "0050.TW",
+      "name": "元大台灣50"
+    },
+    {
+      "ticker": "00631L.TW",
+      "name": "元大台灣50正2"
+    },
+    {
+      "ticker": "00632R.TW",
+      "name": "元大台灣50反1"
+    },
+    {
+      "ticker": "00830.TW",
+      "name": "國泰費城半導體"
+    },
+    {
+      "ticker": "00757.TW",
+      "name": "統一FANG+"
+    },
+    {
+      "ticker": "00670L.TW",
+      "name": "富邦NASDAQ正2"
+    },
+    {
+      "ticker": "00671R.TW",
+      "name": "富邦NASDAQ反1"
+    },
+    {
+      "ticker": "00647L.TW",
+      "name": "元大S&P500正2"
+    },
+    {
+      "ticker": "00648R.TW",
+      "name": "元大S&P500反1"
+    },
+    {
+      "ticker": "00680L.TW",
+      "name": "元大美債20正2"
+    },
+    {
+      "ticker": "00681R.TW",
+      "name": "元大美債20反1"
+    },
+    {
+      "ticker": "00881.TW",
+      "name": "國泰台灣5G+"
+    }
+  ]
+}

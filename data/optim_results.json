@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22 16:50",
+  "generated_at": "2026-05-24 20:05",
   "results": {
     "focus": {
       "vqmt": {
@@ -215,129 +215,129 @@
       "apka": {
         "US": {
           "meta": {
-            "wf_calmar": null,
-            "generated_at": "2026-05-16 10:53"
+            "wf_calmar": 1.5796,
+            "generated_at": "2026-05-22 17:55"
           },
-          "full_period": null,
+          "full_period": {
+            "sharpe": 0.989,
+            "cagr": 13.47,
+            "max_dd": -23.3,
+            "wf_calmar": 1.5796
+          },
           "factor_weights": null,
           "risk": {
             "target_volatility": 0.225,
-            "max_weight": 0.3,
-            "max_drawdown": 0.15,
-            "trailing_stop": 0.2,
+            "max_weight": 0.25,
+            "max_drawdown": 0.12,
+            "trailing_stop": 0.08,
             "breadth_warn": 0.4,
-            "breadth_bear": 0.15,
-            "max_corr": 0.7,
-            "rebalance_freq": "Q",
-            "top_n": 10
-          },
-          "top10": null
-        },
-        "TW": {
-          "meta": {
-            "wf_calmar": 1.8424,
-            "generated_at": "2026-05-17 09:26"
-          },
-          "full_period": {
-            "sharpe": 0.904,
-            "cagr": 17.39,
-            "max_dd": -33.2,
-            "wf_calmar": 1.8424
-          },
-          "factor_weights": null,
-          "risk": {
-            "target_volatility": 0.125,
-            "max_weight": 0.3,
-            "max_drawdown": 0.35,
-            "trailing_stop": 0.12,
-            "breadth_warn": 0.55,
-            "breadth_bear": 0.35,
-            "max_corr": 0.7,
-            "rebalance_freq": "Q",
+            "breadth_bear": 0.3,
+            "max_corr": 1.05,
+            "rebalance_freq": "M",
             "top_n": 10
           },
           "top10": [
             {
-              "wf_calmar": 1.8424,
+              "wf_calmar": 1.5796,
               "rebalance_freq": "M",
-              "target_vol": 0.25,
-              "max_drawdown": 0.12,
-              "max_single_weight": 0.08,
-              "trailing_stop_threshold": 0.3
+              "target_vol": 0.225,
+              "max_drawdown": 0.26,
+              "max_single_weight": 0.2,
+              "trailing_stop_threshold": 0.12
             },
             {
-              "wf_calmar": 1.8424,
+              "wf_calmar": 1.5674,
               "rebalance_freq": "M",
-              "target_vol": 0.25,
-              "max_drawdown": 0.12,
-              "max_single_weight": 0.08,
-              "trailing_stop_threshold": 0.2
+              "target_vol": 0.275,
+              "max_drawdown": 0.24,
+              "max_single_weight": 0.18,
+              "trailing_stop_threshold": 0.1
             },
             {
-              "wf_calmar": 1.8424,
+              "wf_calmar": 1.5674,
               "rebalance_freq": "M",
-              "target_vol": 0.25,
-              "max_drawdown": 0.12,
-              "max_single_weight": 0.08,
-              "trailing_stop_threshold": 0.24
+              "target_vol": 0.275,
+              "max_drawdown": 0.24,
+              "max_single_weight": 0.18,
+              "trailing_stop_threshold": 0.12
             },
             {
-              "wf_calmar": 1.8424,
+              "wf_calmar": 1.5559,
               "rebalance_freq": "M",
-              "target_vol": 0.25,
-              "max_drawdown": 0.12,
-              "max_single_weight": 0.08,
-              "trailing_stop_threshold": 0.24
+              "target_vol": 0.275,
+              "max_drawdown": 0.26,
+              "max_single_weight": 0.22,
+              "trailing_stop_threshold": 0.12
             },
             {
-              "wf_calmar": 1.8424,
+              "wf_calmar": 1.5559,
               "rebalance_freq": "M",
-              "target_vol": 0.25,
-              "max_drawdown": 0.12,
-              "max_single_weight": 0.08,
-              "trailing_stop_threshold": 0.2
+              "target_vol": 0.275,
+              "max_drawdown": 0.26,
+              "max_single_weight": 0.22,
+              "trailing_stop_threshold": 0.08
             },
             {
-              "wf_calmar": 1.8416,
+              "wf_calmar": 1.5559,
               "rebalance_freq": "M",
-              "target_vol": 0.25,
-              "max_drawdown": 0.12,
-              "max_single_weight": 0.08,
-              "trailing_stop_threshold": 0.24
+              "target_vol": 0.275,
+              "max_drawdown": 0.26,
+              "max_single_weight": 0.22,
+              "trailing_stop_threshold": 0.08
             },
             {
-              "wf_calmar": 1.7892,
+              "wf_calmar": 1.5559,
               "rebalance_freq": "M",
-              "target_vol": 0.175,
-              "max_drawdown": 0.12,
-              "max_single_weight": 0.1,
+              "target_vol": 0.275,
+              "max_drawdown": 0.26,
+              "max_single_weight": 0.2,
               "trailing_stop_threshold": 0.14
             },
             {
-              "wf_calmar": 1.7892,
+              "wf_calmar": 1.5559,
               "rebalance_freq": "M",
-              "target_vol": 0.175,
-              "max_drawdown": 0.12,
-              "max_single_weight": 0.1,
-              "trailing_stop_threshold": 0.18
+              "target_vol": 0.275,
+              "max_drawdown": 0.26,
+              "max_single_weight": 0.2,
+              "trailing_stop_threshold": 0.1
             },
             {
-              "wf_calmar": 1.7892,
+              "wf_calmar": 1.5559,
               "rebalance_freq": "M",
-              "target_vol": 0.175,
-              "max_drawdown": 0.12,
-              "max_single_weight": 0.1,
-              "trailing_stop_threshold": 0.14
+              "target_vol": 0.275,
+              "max_drawdown": 0.26,
+              "max_single_weight": 0.26,
+              "trailing_stop_threshold": 0.1
             },
             {
-              "wf_calmar": 1.7892,
+              "wf_calmar": 1.5502,
               "rebalance_freq": "M",
-              "target_vol": 0.175,
-              "max_drawdown": 0.12,
-              "max_single_weight": 0.1,
+              "target_vol": 0.25,
+              "max_drawdown": 0.26,
+              "max_single_weight": 0.2,
               "trailing_stop_threshold": 0.14
             }
           ]
+        },
+        "TW": {
+          "meta": {
+            "wf_calmar": null,
+            "generated_at": "2026-05-22 17:51"
+          },
+          "full_period": null,
+          "factor_weights": null,
+          "risk": {
+            "target_volatility": 0.25,
+            "max_weight": 0.2,
+            "max_drawdown": 0.15,
+            "trailing_stop": 0.3,
+            "breadth_warn": 0.35,
+            "breadth_bear": 0.3,
+            "max_corr": 0.75,
+            "rebalance_freq": "Q",
+            "top_n": 10
+          },
+          "top10": null
         },
         "USETF": null,
         "TWETF": null

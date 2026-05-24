@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>品種清單 — Strategy Dashboard</title>
+<style>
+  :root {
+    --bg: #0f1117; --card: #1a1d27; --border: #2a2d3e;
+    --text: #e0e0e0; --muted: #6b7280; --accent: #3b82f6;
+    --green: #22c55e; --red: #ef4444; --yellow: #f59e0b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; }
+
+  header { background: var(--card); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 1.2rem; font-weight: 700; }
+  #last-update { font-size: 0.78rem; color: var(--muted); }
+
+  .nav-btn { padding: 5px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--card);
+             color: var(--muted); cursor: pointer; font-size: 0.82rem; text-decoration: none;
+             transition: all .2s; white-space: nowrap; }
+  .nav-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  .tab-bar { display: flex; gap: 6px; padding: 16px 24px 0; flex-wrap: wrap; }
+  .tab { padding: 6px 18px; border-radius: 6px; border: 1px solid var(--border); background: var(--card);
+         color: var(--muted); cursor: pointer; font-size: 0.85rem; transition: all .2s; }
+  .tab:hover { border-color: var(--accent); color: var(--text); }
+  .tab.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+
+  main { padding: 20px 24px; max-width: 1400px; }
+
+  /* Legend */
+  .legend { display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--muted); }
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot-apka { background: #3b82f6; }
+  .dot-vqmt { background: #8b5cf6; }
+  .dot-both { background: linear-gradient(135deg, #3b82f6 50%, #8b5cf6 50%); }
+
+  /* Market grid */
+  .market-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: 16px; }
+
+  .market-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .market-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+  .market-title { font-size: 0.95rem; font-weight: 700; }
+  .market-stats { font-size: 0.75rem; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; }
+  .stat-badge { padding: 2px 8px; border-radius: 10px; font-size: 0.72rem; font-weight: 600; }
+  .stat-total { background: rgba(107,114,128,.15); color: var(--muted); }
+  .stat-apka  { background: rgba(59,130,246,.15); color: #60a5fa; }
+  .stat-vqmt  { background: rgba(139,92,246,.15); color: #a78bfa; }
+
+  /* Search */
+  .search-wrap { margin-bottom: 10px; }
+  .search-input { width: 100%; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--border);
+                  background: #0f1117; color: var(--text); font-size: 0.82rem; outline: none; }
+  .search-input:focus { border-color: var(--accent); }
+  .search-input::placeholder { color: var(--muted); }
+
+  /* Table */
+  .table-wrap { max-height: 420px; overflow-y: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  th { text-align: left; color: var(--muted); padding: 6px 8px; border-bottom: 1px solid var(--border);
+       font-weight: 500; font-size: 0.72rem; text-transform: uppercase; position: sticky; top: 0; background: var(--card); z-index: 1; }
+  td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: rgba(255,255,255,.03); }
+
+  .symbol { font-weight: 600; font-family: monospace; font-size: 0.85rem; }
+  .name-cell { color: var(--muted); font-size: 0.78rem; }
+
+  /* Holding indicator dots */
+  .holding-dots { display: flex; gap: 4px; align-items: center; }
+  .h-dot { width: 8px; height: 8px; border-radius: 50%; opacity: 0; }
+  .h-dot.active { opacity: 1; }
+  .h-apka { background: #3b82f6; }
+  .h-vqmt { background: #8b5cf6; }
+
+  /* Rows that have holdings */
+  tr.has-apka td:first-child { border-left: 2px solid #3b82f6; }
+  tr.has-vqmt td:first-child { border-left: 2px solid #8b5cf6; }
+  tr.has-both td:first-child { border-left: 2px solid; border-image: linear-gradient(180deg,#3b82f6,#8b5cf6) 1; }
+
+  .weight-apka { color: #60a5fa; font-size: 0.78rem; }
+  .weight-vqmt { color: #a78bfa; font-size: 0.78rem; }
+  .no-data { color: var(--muted); text-align: center; padding: 20px; font-size: 0.82rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📋 品種清單</h1>
+  <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+    <a href="index.html" class="nav-btn">← 返回主頁</a>
+    <span id="last-update">載入中...</span>
+  </div>
+</header>
+
+<div class="tab-bar" id="profile-tabs">
+  <button class="tab active" onclick="setProfile('focus')">Focus</button>
+  <button class="tab" onclick="setProfile('diversified')">Diversified</button>
+</div>
+
+<main>
+  <div class="legend">
+    <span style="font-size:0.8rem;color:var(--muted);">持倉標記：</span>
+    <div class="legend-item"><div class="dot dot-apka"></div>APKA 持倉</div>
+    <div class="legend-item"><div class="dot dot-vqmt"></div>VQMT 持倉</div>
+    <div class="legend-item"><div class="dot dot-both"></div>兩策略同時持倉</div>
+  </div>
+  <div class="market-grid" id="market-grid">
+    <p style="color:var(--muted);padding:20px;">載入中...</p>
+  </div>
+</main>
+
+<script>
+const MARKETS = [
+  { key: 'US',    label: '🇺🇸 美股 US' },
+  { key: 'TW',    label: '🇹🇼 台股 TW' },
+  { key: 'USETF', label: '🇺🇸 US ETF' },
+  { key: 'TWETF', label: '🇹🇼 TW ETF' },
+];
+
+let UNIVERSE = {};  // { US: [{ticker, name}, ...], ... }
+let HOLDINGS = {};  // { focus: { apka: { US: Set<symbol>, ... }, vqmt: {...} }, ... }
+let WEIGHTS  = {};  // { focus: { apka: { US: {symbol: weight}, ... }, ... } }
+let currentProfile = 'focus';
+let searchTerms = {};  // { US: '', TW: '', USETF: '', TWETF: '' }
+
+async function fetchJSON(url) {
+  const r = await fetch(url + '?t=' + Date.now());
+  if (!r.ok) throw new Error(url + ' ' + r.status);
+  return r.json();
+}
+
+async function init() {
+  try {
+    const [sum, universe] = await Promise.all([
+      fetchJSON('data/summary.json'),
+      fetchJSON('data/universe.json'),
+    ]);
+    document.getElementById('last-update').textContent = '更新時間：' + sum.generated_at;
+    UNIVERSE = universe;
+
+    // Load holdings from all profiles/strategies
+    for (const p of sum.profiles) {
+      HOLDINGS[p] = {};
+      WEIGHTS[p]  = {};
+      for (const s of (sum.strategies || ['apka', 'vqmt'])) {
+        HOLDINGS[p][s] = {};
+        WEIGHTS[p][s]  = {};
+        try {
+          const data = await fetchJSON(`data/${p}/${s}/data.json`);
+          for (const mkt of Object.keys(data)) {
+            const h = data[mkt].holdings || [];
+            HOLDINGS[p][s][mkt] = new Set(h.map(x => x.symbol));
+            WEIGHTS[p][s][mkt]  = Object.fromEntries(
+              h.map(x => [x.symbol, x.weight])
+            );
+          }
+        } catch(e) {}
+      }
+    }
+    render();
+  } catch(e) {
+    document.getElementById('last-update').textContent = '資料載入失敗';
+    document.getElementById('market-grid').innerHTML = '<p style="color:var(--red);padding:20px;">資料載入失敗</p>';
+    console.error(e);
+  }
+}
+
+function setProfile(p) {
+  currentProfile = p;
+  document.querySelectorAll('#profile-tabs .tab').forEach(t =>
+    t.classList.toggle('active', t.textContent.toLowerCase() === p));
+  render();
+}
+
+function fmtWeight(w) {
+  if (w === undefined || w === null) return '';
+  return (typeof w === 'number' && w <= 1 ? (w * 100).toFixed(1) : Number(w).toFixed(1)) + '%';
+}
+
+function buildTable(mkt, tickers) {
+  const term = (searchTerms[mkt] || '').toLowerCase();
+  const apkaH = (HOLDINGS[currentProfile]?.apka?.[mkt]) || new Set();
+  const vqmtH = (HOLDINGS[currentProfile]?.vqmt?.[mkt]) || new Set();
+  const apkaW = (WEIGHTS[currentProfile]?.apka?.[mkt]) || {};
+  const vqmtW = (WEIGHTS[currentProfile]?.vqmt?.[mkt]) || {};
+
+  const filtered = term
+    ? tickers.filter(t => t.ticker.toLowerCase().includes(term) || t.name.toLowerCase().includes(term))
+    : tickers;
+
+  if (!filtered.length) return '<p class="no-data">無符合結果</p>';
+
+  let html = `<table>
+    <thead><tr>
+      <th>代碼</th><th>名稱</th>
+      <th style="text-align:center;color:#60a5fa;">APKA</th>
+      <th style="text-align:center;color:#a78bfa;">VQMT</th>
+    </tr></thead><tbody>`;
+
+  for (const t of filtered) {
+    const inApka = apkaH.has(t.ticker);
+    const inVqmt = vqmtH.has(t.ticker);
+    let rowCls = '';
+    if (inApka && inVqmt) rowCls = 'has-both';
+    else if (inApka) rowCls = 'has-apka';
+    else if (inVqmt) rowCls = 'has-vqmt';
+
+    const apkaCell = inApka
+      ? `<span class="weight-apka">● ${fmtWeight(apkaW[t.ticker])}</span>`
+      : '<span style="color:var(--border);">—</span>';
+    const vqmtCell = inVqmt
+      ? `<span class="weight-vqmt">● ${fmtWeight(vqmtW[t.ticker])}</span>`
+      : '<span style="color:var(--border);">—</span>';
+
+    html += `<tr class="${rowCls}">
+      <td class="symbol">${t.ticker}</td>
+      <td class="name-cell">${t.name}</td>
+      <td style="text-align:center;">${apkaCell}</td>
+      <td style="text-align:center;">${vqmtCell}</td>
+    </tr>`;
+  }
+  html += '</tbody></table>';
+  return html;
+}
+
+function render() {
+  const grid = document.getElementById('market-grid');
+  const apkaH = HOLDINGS[currentProfile]?.apka || {};
+  const vqmtH = HOLDINGS[currentProfile]?.vqmt || {};
+
+  let html = '';
+  for (const { key, label } of MARKETS) {
+    const tickers = UNIVERSE[key] || [];
+    const apkaCount = (apkaH[key]?.size) || 0;
+    const vqmtCount = (vqmtH[key]?.size) || 0;
+    const term = searchTerms[key] || '';
+
+    html += `
+    <div class="market-card" id="card-${key}">
+      <div class="market-header">
+        <span class="market-title">${label}</span>
+        <div class="market-stats">
+          <span class="stat-badge stat-total">共 ${tickers.length} 支</span>
+          ${apkaCount ? `<span class="stat-badge stat-apka">APKA ${apkaCount} 檔</span>` : ''}
+          ${vqmtCount ? `<span class="stat-badge stat-vqmt">VQMT ${vqmtCount} 檔</span>` : ''}
+        </div>
+      </div>
+      <div class="search-wrap">
+        <input class="search-input" type="text" placeholder="搜尋代碼或名稱…"
+          value="${term}"
+          oninput="onSearch('${key}', this.value)" />
+      </div>
+      <div class="table-wrap" id="table-${key}">
+        ${buildTable(key, tickers)}
+      </div>
+    </div>`;
+  }
+
+  grid.innerHTML = html || '<p style="color:var(--muted);padding:20px;">無資料</p>';
+}
+
+function onSearch(mkt, val) {
+  searchTerms[mkt] = val;
+  const wrap = document.getElementById('table-' + mkt);
+  if (wrap) wrap.innerHTML = buildTable(mkt, UNIVERSE[mkt] || []);
+}
+
+init();
+</script>
+</body>
+</html>
