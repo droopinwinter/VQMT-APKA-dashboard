@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24 20:05",
+  "generated_at": "2026-05-30 09:59",
   "results": {
     "focus": {
       "vqmt": {
@@ -215,129 +215,129 @@
       "apka": {
         "US": {
           "meta": {
-            "wf_calmar": 1.5796,
-            "generated_at": "2026-05-22 17:55"
-          },
-          "full_period": {
-            "sharpe": 0.989,
-            "cagr": 13.47,
-            "max_dd": -23.3,
-            "wf_calmar": 1.5796
-          },
-          "factor_weights": null,
-          "risk": {
-            "target_volatility": 0.225,
-            "max_weight": 0.25,
-            "max_drawdown": 0.12,
-            "trailing_stop": 0.08,
-            "breadth_warn": 0.4,
-            "breadth_bear": 0.3,
-            "max_corr": 1.05,
-            "rebalance_freq": "M",
-            "top_n": 10
-          },
-          "top10": [
-            {
-              "wf_calmar": 1.5796,
-              "rebalance_freq": "M",
-              "target_vol": 0.225,
-              "max_drawdown": 0.26,
-              "max_single_weight": 0.2,
-              "trailing_stop_threshold": 0.12
-            },
-            {
-              "wf_calmar": 1.5674,
-              "rebalance_freq": "M",
-              "target_vol": 0.275,
-              "max_drawdown": 0.24,
-              "max_single_weight": 0.18,
-              "trailing_stop_threshold": 0.1
-            },
-            {
-              "wf_calmar": 1.5674,
-              "rebalance_freq": "M",
-              "target_vol": 0.275,
-              "max_drawdown": 0.24,
-              "max_single_weight": 0.18,
-              "trailing_stop_threshold": 0.12
-            },
-            {
-              "wf_calmar": 1.5559,
-              "rebalance_freq": "M",
-              "target_vol": 0.275,
-              "max_drawdown": 0.26,
-              "max_single_weight": 0.22,
-              "trailing_stop_threshold": 0.12
-            },
-            {
-              "wf_calmar": 1.5559,
-              "rebalance_freq": "M",
-              "target_vol": 0.275,
-              "max_drawdown": 0.26,
-              "max_single_weight": 0.22,
-              "trailing_stop_threshold": 0.08
-            },
-            {
-              "wf_calmar": 1.5559,
-              "rebalance_freq": "M",
-              "target_vol": 0.275,
-              "max_drawdown": 0.26,
-              "max_single_weight": 0.22,
-              "trailing_stop_threshold": 0.08
-            },
-            {
-              "wf_calmar": 1.5559,
-              "rebalance_freq": "M",
-              "target_vol": 0.275,
-              "max_drawdown": 0.26,
-              "max_single_weight": 0.2,
-              "trailing_stop_threshold": 0.14
-            },
-            {
-              "wf_calmar": 1.5559,
-              "rebalance_freq": "M",
-              "target_vol": 0.275,
-              "max_drawdown": 0.26,
-              "max_single_weight": 0.2,
-              "trailing_stop_threshold": 0.1
-            },
-            {
-              "wf_calmar": 1.5559,
-              "rebalance_freq": "M",
-              "target_vol": 0.275,
-              "max_drawdown": 0.26,
-              "max_single_weight": 0.26,
-              "trailing_stop_threshold": 0.1
-            },
-            {
-              "wf_calmar": 1.5502,
-              "rebalance_freq": "M",
-              "target_vol": 0.25,
-              "max_drawdown": 0.26,
-              "max_single_weight": 0.2,
-              "trailing_stop_threshold": 0.14
-            }
-          ]
-        },
-        "TW": {
-          "meta": {
             "wf_calmar": null,
-            "generated_at": "2026-05-22 17:51"
+            "generated_at": "2026-05-29 00:37"
           },
           "full_period": null,
           "factor_weights": null,
           "risk": {
-            "target_volatility": 0.25,
-            "max_weight": 0.2,
-            "max_drawdown": 0.15,
-            "trailing_stop": 0.3,
+            "target_volatility": 0.225,
+            "max_weight": 0.4,
+            "max_drawdown": 0.18,
+            "trailing_stop": 0.11,
             "breadth_warn": 0.35,
-            "breadth_bear": 0.3,
-            "max_corr": 0.75,
-            "rebalance_freq": "Q",
-            "top_n": 10
+            "breadth_bear": 0.35,
+            "max_corr": 0.7,
+            "rebalance_freq": "W",
+            "top_n": 2
           },
           "top10": null
+        },
+        "TW": {
+          "meta": {
+            "wf_calmar": 3.1107,
+            "generated_at": "2026-05-29 10:26"
+          },
+          "full_period": {
+            "sharpe": 0.439,
+            "cagr": 7.54,
+            "max_dd": -43.2,
+            "wf_calmar": 3.1107
+          },
+          "factor_weights": null,
+          "risk": {
+            "target_volatility": 0.15,
+            "max_weight": 0.25,
+            "max_drawdown": 0.16,
+            "trailing_stop": 0.15,
+            "breadth_warn": 0.45,
+            "breadth_bear": 0.2,
+            "max_corr": 1.05,
+            "rebalance_freq": "Q",
+            "top_n": 2
+          },
+          "top10": [
+            {
+              "wf_calmar": 3.1107,
+              "rebalance_freq": "Q",
+              "target_vol": 0.175,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.4,
+              "trailing_stop_threshold": 0.14
+            },
+            {
+              "wf_calmar": 3.1107,
+              "rebalance_freq": "Q",
+              "target_vol": 0.175,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.4,
+              "trailing_stop_threshold": 0.14
+            },
+            {
+              "wf_calmar": 3.1107,
+              "rebalance_freq": "Q",
+              "target_vol": 0.175,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.35,
+              "trailing_stop_threshold": 0.14
+            },
+            {
+              "wf_calmar": 3.1107,
+              "rebalance_freq": "Q",
+              "target_vol": 0.175,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.35,
+              "trailing_stop_threshold": 0.13
+            },
+            {
+              "wf_calmar": 2.8575,
+              "rebalance_freq": "Q",
+              "target_vol": 0.225,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.35,
+              "trailing_stop_threshold": 0.13
+            },
+            {
+              "wf_calmar": 2.8575,
+              "rebalance_freq": "Q",
+              "target_vol": 0.225,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.4,
+              "trailing_stop_threshold": 0.13
+            },
+            {
+              "wf_calmar": 2.8575,
+              "rebalance_freq": "Q",
+              "target_vol": 0.225,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.4,
+              "trailing_stop_threshold": 0.13
+            },
+            {
+              "wf_calmar": 2.8575,
+              "rebalance_freq": "Q",
+              "target_vol": 0.225,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.4,
+              "trailing_stop_threshold": 0.12
+            },
+            {
+              "wf_calmar": 2.8031,
+              "rebalance_freq": "Q",
+              "target_vol": 0.15,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.35,
+              "trailing_stop_threshold": 0.15
+            },
+            {
+              "wf_calmar": 2.7468,
+              "rebalance_freq": "Q",
+              "target_vol": 0.2,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.35,
+              "trailing_stop_threshold": 0.13
+            }
+          ]
         },
         "USETF": null,
         "TWETF": null
