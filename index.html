@@ -245,6 +245,8 @@ function renderChart(mkt) {
   const ctx = document.getElementById('equityChart').getContext('2d');
   if (chart) chart.destroy();
 
+  const holdingsMap = mkt.holdings_history || {};
+
   const datasets = [];
   if (mkt.backtest) {
     datasets.push({ label:'回測（含費）', data: toChartPoints(mkt.backtest),
@@ -276,7 +278,14 @@ function renderChart(mkt) {
         legend: { labels:{ color:'#9ca3af', boxWidth:14, font:{ size:12 } } },
         tooltip: {
           callbacks: {
-            label: ctx => `${ctx.dataset.label}: ${(ctx.parsed.y * 100).toFixed(1)}%`
+            label: c => `${c.dataset.label}: ${(c.parsed.y * 100).toFixed(1)}%`,
+            afterBody: items => {
+              if (!items.length) return [];
+              const d = new Date(items[0].parsed.x);
+              const key = d.toISOString().slice(0, 10);
+              const h = holdingsMap[key];
+              return h ? ['持倉: ' + h] : [];
+            }
           }
         }
       },
