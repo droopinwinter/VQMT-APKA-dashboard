@@ -2337,6 +2337,10 @@
       "name": "納斯達克100指數"
     },
     {
+      "ticker": "IWM",
+      "name": "羅素2000小型股"
+    },
+    {
       "ticker": "UPRO",
       "name": "三倍做多標普500"
     },
@@ -2346,11 +2350,11 @@
     },
     {
       "ticker": "TQQQ",
-      "name": "三倍做多納斯達克指數"
+      "name": "三倍做多納斯達克"
     },
     {
       "ticker": "SQQQ",
-      "name": "三倍做空納斯達克指數"
+      "name": "三倍做空納斯達克"
     },
     {
       "ticker": "SOXL",
@@ -2361,20 +2365,40 @@
       "name": "三倍做空半導體"
     },
     {
-      "ticker": "FNGU",
-      "name": "三倍做多尖牙股"
-    },
-    {
       "ticker": "TMF",
-      "name": "三倍做多20年期以上美國公債"
+      "name": "三倍做多20年期美國公債"
     },
     {
       "ticker": "TMV",
-      "name": "三倍做空20年期以上美國公債"
+      "name": "三倍做空20年期美國公債"
     },
     {
-      "ticker": "GLD",
-      "name": "黃金"
+      "ticker": "TLT",
+      "name": "20年期美國公債"
+    },
+    {
+      "ticker": "USO",
+      "name": "美國原油基金"
+    },
+    {
+      "ticker": "UNG",
+      "name": "美國天然氣基金"
+    },
+    {
+      "ticker": "XLF",
+      "name": "金融類股"
+    },
+    {
+      "ticker": "XLE",
+      "name": "能源類股"
+    },
+    {
+      "ticker": "XLV",
+      "name": "醫療保健類股"
+    },
+    {
+      "ticker": "XBI",
+      "name": "生技類股"
     },
     {
       "ticker": "UUP",
