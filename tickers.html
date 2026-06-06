@@ -84,6 +84,16 @@
   .weight-apka { color: #60a5fa; font-size: 0.78rem; }
   .weight-vqmt { color: #a78bfa; font-size: 0.78rem; }
   .no-data { color: var(--muted); text-align: center; padding: 20px; font-size: 0.82rem; }
+
+  /* Score pills */
+  .score-pill {
+    display: inline-block; padding: 1px 6px; border-radius: 4px;
+    font-size: 0.75rem; font-weight: 600; font-variant-numeric: tabular-nums;
+  }
+  .score-high  { background: rgba(34,197,94,.18);  color: #4ade80; }
+  .score-mid   { background: rgba(245,158,11,.18); color: #fbbf24; }
+  .score-low   { background: rgba(239,68,68,.18);  color: #f87171; }
+  .score-none  { color: var(--border); font-size: 0.78rem; }
 </style>
 </head>
 <body>
@@ -124,6 +134,7 @@ const MARKETS = [
 let UNIVERSE = {};  // { US: [{ticker, name}, ...], ... }
 let HOLDINGS = {};  // { focus: { apka: { US: Set<symbol>, ... }, vqmt: {...} }, ... }
 let WEIGHTS  = {};  // { focus: { apka: { US: {symbol: weight}, ... }, ... } }
+let SCORES   = {};  // { US: { AAPL: {apka: 75.3, vqmt: 62.1}, ... }, ... }
 let currentProfile = 'focus';
 let searchTerms = {};  // { US: '', TW: '', USETF: '', TWETF: '' }
 
@@ -135,12 +146,14 @@ async function fetchJSON(url) {
 
 async function init() {
   try {
-    const [sum, universe] = await Promise.all([
+    const [sum, universe, scores] = await Promise.all([
       fetchJSON('data/summary.json'),
       fetchJSON('data/universe.json'),
+      fetchJSON('data/scores.json').catch(() => ({})),
     ]);
     document.getElementById('last-update').textContent = '更新時間：' + sum.generated_at;
     UNIVERSE = universe;
+    SCORES   = scores;
 
     // Load holdings from all profiles/strategies
     for (const p of sum.profiles) {
@@ -181,12 +194,26 @@ function fmtWeight(w) {
   return (typeof w === 'number' && w <= 1 ? (w * 100).toFixed(1) : Number(w).toFixed(1)) + '%';
 }
 
+function scoreClass(v) {
+  if (v === null || v === undefined) return 'score-none';
+  if (v >= 65) return 'score-high';
+  if (v >= 35) return 'score-mid';
+  return 'score-low';
+}
+
+function fmtScore(v) {
+  if (v === null || v === undefined) return '<span class="score-none">—</span>';
+  const cls = scoreClass(v);
+  return `<span class="score-pill ${cls}">${Math.round(v)}</span>`;
+}
+
 function buildTable(mkt, tickers) {
   const term = (searchTerms[mkt] || '').toLowerCase();
   const apkaH = (HOLDINGS[currentProfile]?.apka?.[mkt]) || new Set();
   const vqmtH = (HOLDINGS[currentProfile]?.vqmt?.[mkt]) || new Set();
   const apkaW = (WEIGHTS[currentProfile]?.apka?.[mkt]) || {};
   const vqmtW = (WEIGHTS[currentProfile]?.vqmt?.[mkt]) || {};
+  const mktScores = SCORES[mkt] || {};
 
   const filtered = term
     ? tickers.filter(t => t.ticker.toLowerCase().includes(term) || t.name.toLowerCase().includes(term))
@@ -197,8 +224,10 @@ function buildTable(mkt, tickers) {
   let html = `<table>
     <thead><tr>
       <th>代碼</th><th>名稱</th>
-      <th style="text-align:center;color:#60a5fa;">APKA</th>
-      <th style="text-align:center;color:#a78bfa;">VQMT</th>
+      <th style="text-align:center;color:#60a5fa;">APKA 持倉</th>
+      <th style="text-align:center;color:#a78bfa;">VQMT 持倉</th>
+      <th style="text-align:center;color:#60a5fa;">APKA 分</th>
+      <th style="text-align:center;color:#a78bfa;">VQMT 分</th>
     </tr></thead><tbody>`;
 
   for (const t of filtered) {
@@ -216,11 +245,17 @@ function buildTable(mkt, tickers) {
       ? `<span class="weight-vqmt">● ${fmtWeight(vqmtW[t.ticker])}</span>`
       : '<span style="color:var(--border);">—</span>';
 
+    const tickerScores = mktScores[t.ticker] || {};
+    const apkaScore = fmtScore(tickerScores.apka);
+    const vqmtScore = fmtScore(tickerScores.vqmt);
+
     html += `<tr class="${rowCls}">
       <td class="symbol">${t.ticker}</td>
       <td class="name-cell">${t.name}</td>
       <td style="text-align:center;">${apkaCell}</td>
       <td style="text-align:center;">${vqmtCell}</td>
+      <td style="text-align:center;">${apkaScore}</td>
+      <td style="text-align:center;">${vqmtScore}</td>
     </tr>`;
   }
   html += '</tbody></table>';
