@@ -2325,6 +2325,46 @@
     {
       "ticker": "9945.TW",
       "name": "潤泰新"
+    },
+    {
+      "ticker": "3017.TW",
+      "name": "奇鋐"
+    },
+    {
+      "ticker": "3189.TW",
+      "name": "景碩"
+    },
+    {
+      "ticker": "2360.TW",
+      "name": "致茂"
+    },
+    {
+      "ticker": "2313.TW",
+      "name": "華通"
+    },
+    {
+      "ticker": "1519.TW",
+      "name": "華城"
+    },
+    {
+      "ticker": "6213.TW",
+      "name": "聯茂"
+    },
+    {
+      "ticker": "6239.TW",
+      "name": "力成"
+    },
+    {
+      "ticker": "3533.TW",
+      "name": "嘉聯益"
+    },
+    {
+      "ticker": "3044.TW",
+      "name": "健鼎"
+    },
+    {
+      "ticker": "2301.TW",
+      "name": "光寶科"
     }
   ],
   "USETF": [
@@ -2401,8 +2441,28 @@
       "name": "生技類股"
     },
     {
+      "ticker": "GLD",
+      "name": "黃金"
+    },
+    {
       "ticker": "UUP",
       "name": "看多美元指數"
+    },
+    {
+      "ticker": "DFEN",
+      "name": "3x做多航太&國防"
+    },
+    {
+      "ticker": "TECL",
+      "name": "3x做多科技板塊"
+    },
+    {
+      "ticker": "DPST",
+      "name": "3x做多地區銀行"
+    },
+    {
+      "ticker": "NAIL",
+      "name": "3x做多建築業"
     }
   ],
   "TWETF": [
