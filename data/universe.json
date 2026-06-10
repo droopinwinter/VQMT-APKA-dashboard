@@ -2027,12 +2027,32 @@
       "name": "統一"
     },
     {
+      "ticker": "1229.TW",
+      "name": "聯華"
+    },
+    {
       "ticker": "1301.TW",
       "name": "台塑"
     },
     {
       "ticker": "1303.TW",
       "name": "南亞"
+    },
+    {
+      "ticker": "1308.TW",
+      "name": "亞聚"
+    },
+    {
+      "ticker": "1312.TW",
+      "name": "國喬"
+    },
+    {
+      "ticker": "1314.TW",
+      "name": "中石化"
+    },
+    {
+      "ticker": "1319.TW",
+      "name": "東陽"
     },
     {
       "ticker": "1326.TW",
@@ -2043,28 +2063,124 @@
       "name": "遠東新"
     },
     {
+      "ticker": "1434.TW",
+      "name": "福懋興業"
+    },
+    {
+      "ticker": "1476.TW",
+      "name": "儒鴻"
+    },
+    {
+      "ticker": "1477.TW",
+      "name": "聚陽"
+    },
+    {
+      "ticker": "1503.TW",
+      "name": "士電"
+    },
+    {
       "ticker": "1504.TW",
       "name": "東元"
+    },
+    {
+      "ticker": "1513.TW",
+      "name": "中興電"
+    },
+    {
+      "ticker": "1519.TW",
+      "name": "華城"
+    },
+    {
+      "ticker": "1590.TW",
+      "name": "亞德客-KY"
     },
     {
       "ticker": "1605.TW",
       "name": "華新"
     },
     {
+      "ticker": "1704.TW",
+      "name": "榮化"
+    },
+    {
+      "ticker": "1722.TW",
+      "name": "台肥"
+    },
+    {
+      "ticker": "1802.TW",
+      "name": "台玻"
+    },
+    {
+      "ticker": "1905.TW",
+      "name": "華紙"
+    },
+    {
+      "ticker": "1907.TW",
+      "name": "永豐餘"
+    },
+    {
       "ticker": "2002.TW",
       "name": "中鋼"
+    },
+    {
+      "ticker": "2006.TW",
+      "name": "東和鋼鐵"
+    },
+    {
+      "ticker": "2014.TW",
+      "name": "中鴻"
+    },
+    {
+      "ticker": "2015.TW",
+      "name": "豐興"
+    },
+    {
+      "ticker": "2027.TW",
+      "name": "大成鋼"
+    },
+    {
+      "ticker": "2049.TW",
+      "name": "上銀"
     },
     {
       "ticker": "2059.TW",
       "name": "川湖"
     },
     {
+      "ticker": "2103.TW",
+      "name": "台橡"
+    },
+    {
+      "ticker": "2104.TW",
+      "name": "中橡"
+    },
+    {
       "ticker": "2105.TW",
       "name": "正新"
     },
     {
+      "ticker": "2201.TW",
+      "name": "裕隆"
+    },
+    {
+      "ticker": "2204.TW",
+      "name": "中華"
+    },
+    {
       "ticker": "2207.TW",
       "name": "和泰車"
+    },
+    {
+      "ticker": "2227.TW",
+      "name": "裕日車"
+    },
+    {
+      "ticker": "2258.TW",
+      "name": "鴻華先進"
+    },
+    {
+      "ticker": "2301.TW",
+      "name": "光寶科"
     },
     {
       "ticker": "2303.TW",
@@ -2073,6 +2189,10 @@
     {
       "ticker": "2308.TW",
       "name": "台達電"
+    },
+    {
+      "ticker": "2313.TW",
+      "name": "華通"
     },
     {
       "ticker": "2317.TW",
@@ -2091,8 +2211,24 @@
       "name": "台積電"
     },
     {
+      "ticker": "2337.TW",
+      "name": "旺宏"
+    },
+    {
+      "ticker": "2344.TW",
+      "name": "華邦電"
+    },
+    {
       "ticker": "2345.TW",
       "name": "智邦"
+    },
+    {
+      "ticker": "2347.TW",
+      "name": "聯強"
+    },
+    {
+      "ticker": "2352.TW",
+      "name": "佳世達"
     },
     {
       "ticker": "2353.TW",
@@ -2109,6 +2245,18 @@
     {
       "ticker": "2357.TW",
       "name": "華碩"
+    },
+    {
+      "ticker": "2360.TW",
+      "name": "致茂"
+    },
+    {
+      "ticker": "2368.TW",
+      "name": "金像電"
+    },
+    {
+      "ticker": "2371.TW",
+      "name": "大同"
     },
     {
       "ticker": "2376.TW",
@@ -2131,6 +2279,18 @@
       "name": "台光電"
     },
     {
+      "ticker": "2385.TW",
+      "name": "群光"
+    },
+    {
+      "ticker": "2395.TW",
+      "name": "研華"
+    },
+    {
+      "ticker": "2404.TW",
+      "name": "漢唐"
+    },
+    {
       "ticker": "2408.TW",
       "name": "南亞科"
     },
@@ -2143,8 +2303,20 @@
       "name": "中華電"
     },
     {
+      "ticker": "2421.TW",
+      "name": "建準"
+    },
+    {
+      "ticker": "2428.TW",
+      "name": "興勤"
+    },
+    {
       "ticker": "2439.TW",
       "name": "美律"
+    },
+    {
+      "ticker": "2441.TW",
+      "name": "超豐"
     },
     {
       "ticker": "2449.TW",
@@ -2171,8 +2343,24 @@
       "name": "宏達電"
     },
     {
+      "ticker": "2501.TW",
+      "name": "國泰建設"
+    },
+    {
+      "ticker": "2542.TW",
+      "name": "興富發"
+    },
+    {
+      "ticker": "2548.TW",
+      "name": "華固"
+    },
+    {
       "ticker": "2603.TW",
       "name": "長榮"
+    },
+    {
+      "ticker": "2608.TW",
+      "name": "嘉里大榮"
     },
     {
       "ticker": "2609.TW",
@@ -2191,6 +2379,34 @@
       "name": "長榮航"
     },
     {
+      "ticker": "2633.TW",
+      "name": "台灣高鐵"
+    },
+    {
+      "ticker": "2801.TW",
+      "name": "彰銀"
+    },
+    {
+      "ticker": "2812.TW",
+      "name": "台中銀"
+    },
+    {
+      "ticker": "2832.TW",
+      "name": "台產"
+    },
+    {
+      "ticker": "2834.TW",
+      "name": "臺企銀"
+    },
+    {
+      "ticker": "2838.TW",
+      "name": "聯邦銀"
+    },
+    {
+      "ticker": "2845.TW",
+      "name": "遠東銀"
+    },
+    {
       "ticker": "2880.TW",
       "name": "華南金"
     },
@@ -2201,6 +2417,10 @@
     {
       "ticker": "2882.TW",
       "name": "國泰金"
+    },
+    {
+      "ticker": "2883.TW",
+      "name": "凱基金"
     },
     {
       "ticker": "2884.TW",
@@ -2215,6 +2435,14 @@
       "name": "兆豐金"
     },
     {
+      "ticker": "2887.TW",
+      "name": "台新新光金"
+    },
+    {
+      "ticker": "2890.TW",
+      "name": "永豐金"
+    },
+    {
       "ticker": "2891.TW",
       "name": "中信金"
     },
@@ -2227,20 +2455,52 @@
       "name": "統一超"
     },
     {
+      "ticker": "3005.TW",
+      "name": "神基"
+    },
+    {
       "ticker": "3008.TW",
       "name": "大立光"
+    },
+    {
+      "ticker": "3017.TW",
+      "name": "奇鋐"
+    },
+    {
+      "ticker": "3019.TW",
+      "name": "亞光"
+    },
+    {
+      "ticker": "3023.TW",
+      "name": "信邦"
     },
     {
       "ticker": "3034.TW",
       "name": "聯詠"
     },
     {
+      "ticker": "3035.TW",
+      "name": "智原"
+    },
+    {
+      "ticker": "3036.TW",
+      "name": "文曄"
+    },
+    {
       "ticker": "3037.TW",
       "name": "欣興"
     },
     {
+      "ticker": "3044.TW",
+      "name": "健鼎"
+    },
+    {
       "ticker": "3045.TW",
       "name": "台灣大"
+    },
+    {
+      "ticker": "3189.TW",
+      "name": "景碩"
     },
     {
       "ticker": "3231.TW",
@@ -2259,8 +2519,24 @@
       "name": "台勝科"
     },
     {
+      "ticker": "3533.TW",
+      "name": "嘉聯益"
+    },
+    {
+      "ticker": "3576.TW",
+      "name": "新日興"
+    },
+    {
+      "ticker": "3653.TW",
+      "name": "健策"
+    },
+    {
       "ticker": "3661.TW",
       "name": "世芯-KY"
+    },
+    {
+      "ticker": "3665.TW",
+      "name": "貿聯-KY"
     },
     {
       "ticker": "3702.TW",
@@ -2271,6 +2547,18 @@
       "name": "日月光投控"
     },
     {
+      "ticker": "4763.TW",
+      "name": "材料-KY"
+    },
+    {
+      "ticker": "4904.TW",
+      "name": "遠傳"
+    },
+    {
+      "ticker": "4915.TW",
+      "name": "致伸"
+    },
+    {
       "ticker": "4938.TW",
       "name": "和碩"
     },
@@ -2279,8 +2567,12 @@
       "name": "臻鼎-KY"
     },
     {
-      "ticker": "5347.TW",
-      "name": "世界"
+      "ticker": "5269.TW",
+      "name": "祥碩"
+    },
+    {
+      "ticker": "5522.TW",
+      "name": "遠雄"
     },
     {
       "ticker": "5871.TW",
@@ -2295,56 +2587,16 @@
       "name": "合庫金"
     },
     {
-      "ticker": "6415.TW",
-      "name": "矽力*-KY"
+      "ticker": "6139.TW",
+      "name": "亞翔"
     },
     {
-      "ticker": "6669.TW",
-      "name": "緯穎"
+      "ticker": "6176.TW",
+      "name": "瑞儀"
     },
     {
-      "ticker": "6770.TW",
-      "name": "力積電"
-    },
-    {
-      "ticker": "8046.TW",
-      "name": "南電"
-    },
-    {
-      "ticker": "8454.TW",
-      "name": "富邦媒"
-    },
-    {
-      "ticker": "9904.TW",
-      "name": "寶成"
-    },
-    {
-      "ticker": "9910.TW",
-      "name": "豐泰"
-    },
-    {
-      "ticker": "9945.TW",
-      "name": "潤泰新"
-    },
-    {
-      "ticker": "3017.TW",
-      "name": "奇鋐"
-    },
-    {
-      "ticker": "3189.TW",
-      "name": "景碩"
-    },
-    {
-      "ticker": "2360.TW",
-      "name": "致茂"
-    },
-    {
-      "ticker": "2313.TW",
-      "name": "華通"
-    },
-    {
-      "ticker": "1519.TW",
-      "name": "華城"
+      "ticker": "6183.TW",
+      "name": "關貿網路"
     },
     {
       "ticker": "6213.TW",
@@ -2355,16 +2607,84 @@
       "name": "力成"
     },
     {
-      "ticker": "3533.TW",
-      "name": "嘉聯益"
+      "ticker": "6285.TW",
+      "name": "啟碁"
     },
     {
-      "ticker": "3044.TW",
-      "name": "健鼎"
+      "ticker": "6409.TW",
+      "name": "旭隼"
     },
     {
-      "ticker": "2301.TW",
-      "name": "光寶科"
+      "ticker": "6412.TW",
+      "name": "群電"
+    },
+    {
+      "ticker": "6415.TW",
+      "name": "矽力-KY"
+    },
+    {
+      "ticker": "6446.TW",
+      "name": "藥華藥"
+    },
+    {
+      "ticker": "6505.TW",
+      "name": "台塑化"
+    },
+    {
+      "ticker": "6526.TW",
+      "name": "達發"
+    },
+    {
+      "ticker": "6592.TW",
+      "name": "和潤企業"
+    },
+    {
+      "ticker": "6669.TW",
+      "name": "緯穎"
+    },
+    {
+      "ticker": "6770.TW",
+      "name": "力積電"
+    },
+    {
+      "ticker": "6789.TW",
+      "name": "采鈺"
+    },
+    {
+      "ticker": "7769.TW",
+      "name": "鴻勁"
+    },
+    {
+      "ticker": "8046.TW",
+      "name": "南電"
+    },
+    {
+      "ticker": "8454.TW",
+      "name": "富邦媒"
+    },
+    {
+      "ticker": "8464.TW",
+      "name": "億豐"
+    },
+    {
+      "ticker": "9904.TW",
+      "name": "寶成"
+    },
+    {
+      "ticker": "9910.TW",
+      "name": "豐泰"
+    },
+    {
+      "ticker": "9921.TW",
+      "name": "巨大"
+    },
+    {
+      "ticker": "9941.TW",
+      "name": "裕融"
+    },
+    {
+      "ticker": "9945.TW",
+      "name": "潤泰新"
     }
   ],
   "USETF": [
@@ -2475,10 +2795,6 @@
       "name": "元大台灣50正2"
     },
     {
-      "ticker": "00632R.TW",
-      "name": "元大台灣50反1"
-    },
-    {
       "ticker": "00830.TW",
       "name": "國泰費城半導體"
     },
@@ -2491,24 +2807,12 @@
       "name": "富邦NASDAQ正2"
     },
     {
-      "ticker": "00671R.TW",
-      "name": "富邦NASDAQ反1"
-    },
-    {
       "ticker": "00647L.TW",
       "name": "元大S&P500正2"
     },
     {
-      "ticker": "00648R.TW",
-      "name": "元大S&P500反1"
-    },
-    {
       "ticker": "00680L.TW",
       "name": "元大美債20正2"
-    },
-    {
-      "ticker": "00681R.TW",
-      "name": "元大美債20反1"
     },
     {
       "ticker": "00881.TW",
