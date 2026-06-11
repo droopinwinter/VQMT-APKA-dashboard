@@ -47,8 +47,20 @@
 
   /* ── Chart ── */
   .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
-  .chart-card h3 { font-size: 0.9rem; color: var(--muted); margin-bottom: 14px; }
+  .chart-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .chart-card h3 { font-size: 0.9rem; color: var(--muted); margin-bottom: 0; }
   .chart-wrap { position: relative; height: 340px; }
+  .expand-btn { background: rgba(255,255,255,.07); border: 1px solid var(--border); border-radius: 6px; color: var(--muted); cursor: pointer; padding: 4px 8px; font-size: 0.8rem; transition: all .2s; line-height: 1; }
+  .expand-btn:hover { background: rgba(255,255,255,.14); color: var(--text); border-color: var(--accent); }
+
+  /* ── Fullscreen overlay ── */
+  #fs-overlay { display: none; position: fixed; inset: 0; z-index: 9999; background: var(--bg); flex-direction: column; padding: 20px; }
+  #fs-overlay.open { display: flex; }
+  #fs-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  #fs-title { font-size: 1rem; color: var(--muted); }
+  #fs-close { background: rgba(255,255,255,.07); border: 1px solid var(--border); border-radius: 6px; color: var(--muted); cursor: pointer; padding: 6px 14px; font-size: 0.85rem; transition: all .2s; }
+  #fs-close:hover { background: rgba(255,255,255,.14); color: var(--text); border-color: var(--accent); }
+  #fs-canvas-wrap { flex: 1; position: relative; min-height: 0; }
 
   /* ── Table ── */
   .table-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
@@ -109,14 +121,29 @@
 
   <!-- Chart -->
   <div class="chart-card">
-    <h3>📊 權益曲線（正規化至 1.0）</h3>
+    <div class="chart-card-header">
+      <h3>📊 權益曲線（正規化至 1.0）</h3>
+      <button class="expand-btn" onclick="openFullscreen('equity')" title="全螢幕">⛶ Fullscreen</button>
+    </div>
     <div class="chart-wrap"><canvas id="equityChart"></canvas></div>
   </div>
 
   <!-- Drawdown -->
   <div class="chart-card">
-    <h3>📉 最大虧損分析 Drawdown Analysis</h3>
+    <div class="chart-card-header">
+      <h3>📉 最大虧損分析 Drawdown Analysis</h3>
+      <button class="expand-btn" onclick="openFullscreen('drawdown')" title="全螢幕">⛶ Fullscreen</button>
+    </div>
     <div class="chart-wrap"><canvas id="drawdownChart"></canvas></div>
+  </div>
+
+  <!-- Fullscreen overlay -->
+  <div id="fs-overlay">
+    <div id="fs-header">
+      <span id="fs-title"></span>
+      <button id="fs-close" onclick="closeFullscreen()">✕ Close</button>
+    </div>
+    <div id="fs-canvas-wrap"><canvas id="fsChart"></canvas></div>
   </div>
 
   <!-- Holdings -->
@@ -184,9 +211,14 @@ function setMarket(m) {
 }
 
 // ── Render ──────────────────────────────────────
+let lastMkt = null;
+let lastStratData = null;
+
 function render() {
   const stratData = (DATA[currentProfile] || {})[currentStrategy] || {};
   const mkt = stratData[currentMarket] || {};
+  lastMkt = mkt;
+  lastStratData = stratData;
   renderRegime(mkt.meta);
   renderMetrics(mkt);
   renderChart(mkt);
@@ -242,8 +274,12 @@ function renderMetrics(mkt) {
 
 // Chart
 function renderChart(mkt) {
-  const ctx = document.getElementById('equityChart').getContext('2d');
   if (chart) chart.destroy();
+  chart = buildEquityChart('equityChart', mkt);
+}
+
+function buildEquityChart(canvasId, mkt) {
+  const ctx = document.getElementById(canvasId).getContext('2d');
 
   const holdingsMap = mkt.holdings_history || {};
 
@@ -264,11 +300,9 @@ function renderChart(mkt) {
       tension:.3, pointRadius:0, borderWidth:2.5, fill:true });
   }
 
-  if (!datasets.length) {
-    chart = null; return;
-  }
+  if (!datasets.length) return null;
 
-  chart = new Chart(ctx, {
+  return new Chart(ctx, {
     type: 'line',
     data: { datasets },
     options: {
@@ -319,8 +353,12 @@ function calcDrawdown(values) {
 }
 
 function renderDrawdown(stratData) {
-  const ctx = document.getElementById('drawdownChart').getContext('2d');
   if (ddChart) { ddChart.destroy(); ddChart = null; }
+  ddChart = buildDrawdownChart('drawdownChart', stratData);
+}
+
+function buildDrawdownChart(canvasId, stratData) {
+  const ctx = document.getElementById(canvasId).getContext('2d');
 
   const datasets = [];
   for (const mkt of ['US', 'TW', 'USETF', 'TWETF']) {
@@ -348,9 +386,9 @@ function renderDrawdown(stratData) {
     }
   }
 
-  if (!datasets.length) return;
+  if (!datasets.length) return null;
 
-  ddChart = new Chart(ctx, {
+  return new Chart(ctx, {
     type: 'line',
     data: { datasets },
     options: {
@@ -410,6 +448,37 @@ const adapterScript = document.createElement('script');
 adapterScript.src = 'https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js';
 adapterScript.onload = init;
 document.head.appendChild(adapterScript);
+
+// ── Fullscreen ─────────────────────────────────
+let fsChart = null;
+
+function openFullscreen(type) {
+  if (!lastMkt && !lastStratData) return;
+  const overlay = document.getElementById('fs-overlay');
+  const title   = document.getElementById('fs-title');
+  if (fsChart) { fsChart.destroy(); fsChart = null; }
+
+  title.textContent = type === 'equity'
+    ? '📊 權益曲線（正規化至 1.0）'
+    : '📉 最大虧損分析 Drawdown Analysis';
+
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  if (type === 'equity') {
+    fsChart = buildEquityChart('fsChart', lastMkt);
+  } else {
+    fsChart = buildDrawdownChart('fsChart', lastStratData);
+  }
+}
+
+function closeFullscreen() {
+  document.getElementById('fs-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+  if (fsChart) { fsChart.destroy(); fsChart = null; }
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeFullscreen(); });
 </script>
 </body>
 </html>

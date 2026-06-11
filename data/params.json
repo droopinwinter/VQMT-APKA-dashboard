@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 10:27",
+  "generated_at": "2026-06-11 09:10",
   "profiles": {
     "focus": {
       "US": {
@@ -54,26 +54,26 @@
       },
       "TW": {
         "factor_weights": {
-          "value": 0.35,
-          "momentum": 0.2,
-          "quality": 0.13,
-          "tech_trend": 0.3,
-          "tech_reversion": 0.02,
+          "value": 0.489,
+          "momentum": 0.206,
+          "quality": 0.022,
+          "tech_trend": 0.16,
+          "tech_reversion": 0.123,
           "_tech_trend_sub": {
-            "ema_ensemble": 0.25,
-            "macd_hist": 0.65,
-            "obv_factor": 0.1
+            "ema_ensemble": 0.5,
+            "macd_hist": 0.3,
+            "obv_factor": 0.2
           },
           "_tech_reversion_sub": {
-            "bollinger_pos": 0.4,
-            "srsi": 0.6
+            "bollinger_pos": 0.35,
+            "srsi": 0.65
           }
         },
         "risk": {
           "max_weight": 0.25,
           "min_weight": 0.02,
-          "target_volatility": 0.125,
-          "max_drawdown": 0.14,
+          "target_volatility": 0.25,
+          "max_drawdown": 0.2,
           "commission_bp": 30,
           "slippage_bp": 5,
           "tax_bp": 150,
