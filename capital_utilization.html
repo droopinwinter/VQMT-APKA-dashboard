@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>資金運用 — Strategy Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1117; --card: #1a1d27; --border: #2a2d3e;
+    --text: #e0e0e0; --muted: #6b7280; --accent: #3b82f6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; }
+
+  header { background: var(--card); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  header h1 { font-size: 1.2rem; font-weight: 700; }
+  .nav-btn { padding: 5px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--card); color: var(--muted); cursor: pointer; font-size: 0.82rem; text-decoration: none; transition: all .2s; white-space: nowrap; }
+  .nav-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  .tab-bar { display: flex; gap: 6px; padding: 16px 24px 0; flex-wrap: wrap; }
+  .tab { padding: 6px 18px; border-radius: 6px; border: 1px solid var(--border); background: var(--card); color: var(--muted); cursor: pointer; font-size: 0.85rem; transition: all .2s; }
+  .tab:hover { border-color: var(--accent); color: var(--text); }
+  .tab.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+
+  main { padding: 20px 24px; }
+  #status { color: var(--muted); font-size: 0.85rem; margin-bottom: 12px; }
+
+  .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+  .chart-card h3 { font-size: 0.9rem; color: var(--muted); margin-bottom: 14px; }
+  .chart-wrap { position: relative; height: 380px; }
+
+  /* legend colour boxes */
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.78rem; color: var(--muted); }
+  .legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>💰 資金運用 Capital Utilization</h1>
+  <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+    <a href="index.html" class="nav-btn">← 返回主頁</a>
+    <span id="last-update" style="font-size:0.78rem;color:var(--muted)">載入中...</span>
+  </div>
+</header>
+
+<div class="tab-bar" id="profile-tabs">
+  <button class="tab active" onclick="setProfile('focus')">Focus</button>
+  <button class="tab" onclick="setProfile('diversified')">Diversified</button>
+</div>
+<div class="tab-bar" id="strategy-tabs" style="padding-top:4px;">
+  <button class="tab active" onclick="setStrategy('apka')">APKA</button>
+  <button class="tab" onclick="setStrategy('vqmt')">VQMT</button>
+</div>
+<div class="tab-bar" id="market-tabs" style="padding-top:4px;">
+  <button class="tab active" onclick="setMarket('US')">🇺🇸 美股 US</button>
+  <button class="tab" onclick="setMarket('TW')">🇹🇼 台股 TW</button>
+  <button class="tab" onclick="setMarket('USETF')">🇺🇸 US ETF</button>
+  <button class="tab" onclick="setMarket('TWETF')">🇹🇼 TW ETF</button>
+</div>
+
+<main>
+  <p id="status">資料載入中...</p>
+
+  <div class="chart-card">
+    <h3 id="bt-title">📊 Backtest 持倉比例（週取樣）</h3>
+    <div class="chart-wrap"><canvas id="btChart"></canvas></div>
+    <div class="legend" id="bt-legend"></div>
+  </div>
+
+  <div class="chart-card">
+    <h3 id="lv-title">📡 Live 持倉比例</h3>
+    <div class="chart-wrap"><canvas id="lvChart"></canvas></div>
+    <div class="legend" id="lv-legend"></div>
+  </div>
+</main>
+
+<script>
+// ── Palette (Tableau20-like, Cash always last = gray) ─────────────
+const PALETTE = [
+  '#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f',
+  '#edc948','#b07aa1','#ff9da7','#9c755f','#d4a373',
+  '#86efac','#fca5a5',
+  '#94a3b8',  // Other
+  '#4b5563',  // Cash
+];
+
+function tickerColor(label, index, total) {
+  if (label === 'Cash')  return PALETTE[PALETTE.length - 1];
+  if (label === 'Other') return PALETTE[PALETTE.length - 2];
+  return PALETTE[index % (PALETTE.length - 2)];
+}
+
+// ── State ─────────────────────────────────────────────────────────
+let DATA = {};   // { focus: { apka: { US: { backtest:{}, live:{} }, ... }, ... } }
+let currentProfile  = 'focus';
+let currentStrategy = 'apka';
+let currentMarket   = 'US';
+let btChart = null;
+let lvChart = null;
+
+// ── Bootstrap ─────────────────────────────────────────────────────
+async function init() {
+  try {
+    const sum = await fetchJSON('data/summary.json');
+    document.getElementById('last-update').textContent = '更新時間：' + sum.generated_at;
+
+    for (const p of sum.profiles) {
+      DATA[p] = {};
+      for (const s of (sum.strategies || ['apka', 'vqmt'])) {
+        try {
+          DATA[p][s] = await fetchJSON(`data/${p}/${s}/position_weights.json`);
+        } catch(e) { DATA[p][s] = {}; }
+      }
+    }
+    render();
+  } catch(e) {
+    document.getElementById('status').textContent = '資料載入失敗：' + e.message;
+    console.error(e);
+  }
+}
+
+async function fetchJSON(url) {
+  const r = await fetch(url + '?t=' + Date.now());
+  if (!r.ok) throw new Error(url + ' ' + r.status);
+  return r.json();
+}
+
+// ── Tabs ──────────────────────────────────────────────────────────
+function setProfile(p) {
+  currentProfile = p;
+  document.querySelectorAll('#profile-tabs .tab').forEach(t =>
+    t.classList.toggle('active', t.textContent.trim().toLowerCase() === p));
+  render();
+}
+function setStrategy(s) {
+  currentStrategy = s;
+  document.querySelectorAll('#strategy-tabs .tab').forEach(t =>
+    t.classList.toggle('active', t.textContent.trim().toLowerCase() === s));
+  render();
+}
+function setMarket(m) {
+  currentMarket = m;
+  document.querySelectorAll('#market-tabs .tab').forEach(t =>
+    t.classList.toggle('active', t.onclick.toString().includes(`'${m}'`)));
+  render();
+}
+
+// ── Render ────────────────────────────────────────────────────────
+function render() {
+  const mktData = ((DATA[currentProfile] || {})[currentStrategy] || {})[currentMarket] || {};
+
+  document.getElementById('bt-title').textContent =
+    `📊 ${currentMarket} Backtest 持倉比例（${currentStrategy.toUpperCase()}，週取樣，前12大品種）`;
+  document.getElementById('lv-title').textContent =
+    `📡 ${currentMarket} Live 持倉比例（${currentStrategy.toUpperCase()}）`;
+
+  if (mktData.backtest) {
+    btChart = buildChart('btChart', btChart, mktData.backtest, 'bt-legend');
+    document.getElementById('status').textContent = '';
+  } else {
+    if (btChart) { btChart.destroy(); btChart = null; }
+    document.getElementById('status').textContent = `⚠️ 此組合（${currentProfile}/${currentStrategy}/${currentMarket}）無 Backtest 持倉資料`;
+  }
+
+  if (mktData.live) {
+    lvChart = buildChart('lvChart', lvChart, mktData.live, 'lv-legend');
+  } else {
+    if (lvChart) { lvChart.destroy(); lvChart = null; }
+  }
+}
+
+function buildChart(canvasId, oldChart, posData, legendId) {
+  if (oldChart) oldChart.destroy();
+
+  const ctx = document.getElementById(canvasId).getContext('2d');
+  const { dates, series } = posData;
+
+  const datasets = series.map((s, i) => ({
+    label: s.label,
+    data: dates.map((d, j) => ({ x: new Date(d), y: s.data[j] })),
+    backgroundColor: tickerColor(s.label, i, series.length),
+    borderColor:     tickerColor(s.label, i, series.length),
+    borderWidth: 0,
+    fill: true,
+    tension: 0,
+    pointRadius: 0,
+  }));
+
+  // Legend
+  const legendEl = document.getElementById(legendId);
+  legendEl.innerHTML = series.map((s, i) =>
+    `<div class="legend-item">
+      <div class="legend-dot" style="background:${tickerColor(s.label, i, series.length)}"></div>
+      <span>${s.label}</span>
+    </div>`
+  ).join('');
+
+  Chart.defaults.plugins.tooltip.backgroundColor = '#1a1d27';
+  Chart.defaults.plugins.tooltip.borderColor      = '#2a2d3e';
+  Chart.defaults.plugins.tooltip.borderWidth      = 1;
+  Chart.defaults.plugins.tooltip.titleColor       = '#e0e0e0';
+  Chart.defaults.plugins.tooltip.bodyColor        = '#9ca3af';
+
+  return new Chart(ctx, {
+    type: 'line',
+    data: { datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: c => `${c.dataset.label}: ${(c.parsed.y * 100).toFixed(1)}%`,
+            footer: items => {
+              const total = items.filter(i => i.dataset.label !== 'Cash')
+                                 .reduce((s, i) => s + i.parsed.y, 0);
+              return `持倉合計：${(total * 100).toFixed(1)}%`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          type: 'time',
+          time: { unit: 'year' },
+          stacked: true,
+          ticks: { color: '#6b7280', maxTicksLimit: 8 },
+          grid:  { color: 'rgba(255,255,255,.04)' }
+        },
+        y: {
+          stacked: true,
+          min: 0, max: 1,
+          ticks: { color: '#6b7280', callback: v => (v * 100).toFixed(0) + '%' },
+          grid:  { color: 'rgba(255,255,255,.04)' }
+        }
+      }
+    }
+  });
+}
+
+// ── Load time adapter then init ───────────────────────────────────
+const s = document.createElement('script');
+s.src = 'https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js';
+s.onload = init;
+document.head.appendChild(s);
+</script>
+</body>
+</html>
