@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Strategy Dashboard</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="ticker_names.js"></script>
 <style>
   :root {
     --bg: #0f1117; --card: #1a1d27; --border: #2a2d3e;
@@ -410,31 +411,6 @@ function buildDrawdownChart(canvasId, stratData) {
   });
 }
 
-// Symbol → company name lookup
-const TICKER_NAMES = {
-  // US stocks
-  APA: 'APA Corp', C: 'Citigroup', CBOE: 'Cboe Global Markets',
-  CIEN: 'Ciena', CMI: 'Cummins', CSCO: 'Cisco Systems',
-  DELL: 'Dell Technologies', F: 'Ford Motor', FDX: 'FedEx',
-  GLD: 'SPDR Gold ETF', HPE: 'Hewlett Packard Enterprise',
-  INTU: 'Intuit', JBHT: 'J.B. Hunt Transport', KR: 'Kroger',
-  LUV: 'Southwest Airlines', MCHP: 'Microchip Technology',
-  MLM: 'Martin Marietta', PLTR: 'Palantir', TER: 'Teradyne',
-  TQQQ: 'ProShares UltraPro QQQ', UPRO: 'ProShares UltraPro S&P500',
-  VLO: 'Valero Energy', WDC: 'Western Digital', WEC: 'WEC Energy',
-  CFG: 'Citizens Financial', XEL: 'Xcel Energy',
-  // TW stocks
-  '0050.TW': '元大台灣50', '00830.TW': '國泰費城半導體', '00881.TW': '國泰台灣5G+',
-  '1216.TW': '統一企業', '1303.TW': '南亞塑膠', '1326.TW': '台化',
-  '2002.TW': '中鋼', '2308.TW': '台達電', '2330.TW': '台積電',
-  '2345.TW': '智邦', '2383.TW': '台光電', '2408.TW': '南亞科',
-  '2409.TW': '友達', '2449.TW': '京元電', '2454.TW': '聯發科',
-  '2880.TW': '華南金', '2885.TW': '元大金', '3037.TW': '欣興電子',
-  '3443.TW': '創意電子', '3532.TW': '台勝科', '3711.TW': '日月光投控',
-  '4958.TW': '臻鼎-KY', '6415.TW': '矽力-KY', '6770.TW': '力積電',
-  '8046.TW': '南電',
-};
-
 // Holdings table
 function renderHoldings(holdings) {
   const wrap = document.getElementById('holdings-wrap');
@@ -454,7 +430,7 @@ function renderHoldings(holdings) {
 
   for (const row of holdings) {
     html += '<tr>' + displayCols.map(c => {
-      if (c === 'name') return `<td style="color:#9ca3af">${TICKER_NAMES[row.symbol] ?? ''}</td>`;
+      if (c === 'name') return `<td style="color:#9ca3af">${(window.TICKER_NAMES || {})[row.symbol] ?? ''}</td>`;
       let v = row[c];
       if (c === 'weight' && typeof v === 'number') v = (v * 100).toFixed(1) + '%';
       else if (numCols.has(c) && typeof v === 'number') v = v.toLocaleString();
