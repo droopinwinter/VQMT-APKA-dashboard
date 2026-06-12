@@ -205,7 +205,7 @@ function setMarket(m) {
 function render() {
   if (!PARAMS) return;
 
-  const pData  = ((PARAMS.profiles || {})[currentProfile] || {})[currentMarket] || {};
+  const pData  = ((((PARAMS.profiles || {})[currentProfile] || {})[currentStrategy] || {})[currentMarket]) || {};
   const fw     = pData.factor_weights || {};
   const risk   = pData.risk || {};
   const uni    = pData.universe || {};
@@ -215,10 +215,10 @@ function render() {
     : null;
 
   document.getElementById('config-cards').innerHTML =
-    renderFactorCard(fw) + renderRiskCard(risk) + renderUniverseCard(uni);
+    renderFactorCard(fw, currentStrategy) + renderRiskCard(risk, currentStrategy) + renderUniverseCard(uni);
 
   document.getElementById('optim-section').innerHTML =
-    renderOptimCard(oData, fw, risk);
+    renderOptimCard(oData, fw, risk, currentStrategy);
 }
 
 // ── Formatters ───────────────────────────────
@@ -238,7 +238,15 @@ function fmtM(v) {
 function fmtV(v) { return (v !== null && v !== undefined) ? v : '--'; }
 
 // ── Factor card (current config) ─────────────
-function renderFactorCard(fw) {
+function renderFactorCard(fw, strategy) {
+  if (strategy === 'apka') {
+    return `<div class="card"><h3>📊 因子權重配置（目前設定）</h3>
+      <div style="padding:24px 0;text-align:center;color:var(--muted);font-size:0.85rem;line-height:1.8;">
+        🤖 APKA 使用 AI 外部評分模組<br>
+        <span style="font-size:0.78rem;">因子分數由模型動態計算，無固定因子權重</span>
+      </div>
+    </div>`;
+  }
   const factors = [
     { key: 'value',          label: '價值 Value' },
     { key: 'momentum',       label: '動量 Momentum' },
@@ -277,8 +285,32 @@ function renderFactorCard(fw) {
 }
 
 // ── Risk card (current config) ────────────────
-function renderRiskCard(risk) {
-  const rows = [
+function renderRiskCard(risk, strategy) {
+  let rows;
+  if (strategy === 'apka') {
+    rows = [
+      ['再平衡頻率',    fmtV(risk.rebalance_freq)],
+      ['持股數 Top-N',  fmtV(risk.top_n)],
+      ['單股最大權重',  fmtPct(risk.max_weight)],
+      ['單股最小權重',  fmtPct(risk.min_weight)],
+      ['目標波動率',    fmtPct(risk.target_volatility)],
+      ['最大回撤停損',  fmtPct(risk.max_drawdown)],
+      ['追蹤停損閾值',  fmtPct(risk.trailing_stop_threshold)],
+      ['廣度警告閾值',  fmtPct(risk.breadth_warn)],
+      ['廣度熊市閾值',  fmtPct(risk.breadth_bear)],
+      ['最大相關性',    risk.max_corr != null ? String(risk.max_corr) : '--'],
+      ['手續費成本',    fmtBp(risk.commission_bp)],
+      ['滑點估計',      fmtBp(risk.slippage_bp)],
+      ['交易稅',        fmtBp(risk.tax_bp)],
+    ];
+    return `<div class="card"><h3>🛡️ 風控參數（目前設定）</h3>
+      <table><thead><tr><th>參數</th><th>設定值</th></tr></thead><tbody>
+        ${rows.map(([l,v]) => `<tr><td>${l}</td><td class="val-cur">${v}</td></tr>`).join('')}
+      </tbody></table>
+    </div>`;
+  }
+  // VQMT
+  rows = [
     ['單股最大權重',  fmtPct(risk.max_weight)],
     ['單股最小權重',  fmtPct(risk.min_weight)],
     ['目標波動率',    fmtPct(risk.target_volatility)],
@@ -318,7 +350,7 @@ function renderUniverseCard(uni) {
 }
 
 // ── Optim card ────────────────────────────────
-function renderOptimCard(oData, curFw, curRisk) {
+function renderOptimCard(oData, curFw, curRisk, strategy) {
   if (!OPTIM) {
     return `<div class="card optim-card">
       <h3>🔬 Grid Search 最佳化結果</h3>
@@ -395,14 +427,26 @@ function renderOptimCard(oData, curFw, curRisk) {
 
   // ── Risk comparison table ──
   const orisk = oData.risk || {};
-  const riskRows = [
+  const isApka = strategy === 'apka';
+  const riskRows = isApka ? [
+    ['再平衡頻率',    fmtV(curRisk.rebalance_freq),              fmtV(orisk.rebalance_freq)],
+    ['持股數 Top-N',  fmtV(curRisk.top_n),                       fmtV(orisk.top_n)],
+    ['目標波動率',    fmtPct(curRisk.target_volatility),         fmtPct(orisk.target_volatility)],
+    ['單股最大權重',  fmtPct(curRisk.max_weight),                fmtPct(orisk.max_weight)],
+    ['最大回撤停損',  fmtPct(curRisk.max_drawdown),              fmtPct(orisk.max_drawdown)],
+    ['追蹤停損閾值',  fmtPct(curRisk.trailing_stop_threshold),   fmtPct(orisk.trailing_stop)],
+    ['廣度警告閾值',  fmtPct(curRisk.breadth_warn),              fmtPct(orisk.breadth_warn)],
+    ['廣度熊市閾值',  fmtPct(curRisk.breadth_bear),              fmtPct(orisk.breadth_bear)],
+    ['最大相關性',    curRisk.max_corr != null ? String(curRisk.max_corr) : '--',
+                      orisk.max_corr != null ? String(orisk.max_corr) : '--'],
+  ] : [
     ['目標波動率',    fmtPct(curRisk.target_volatility), fmtPct(orisk.target_volatility)],
     ['單股最大權重',  fmtPct(curRisk.max_weight),        fmtPct(orisk.max_weight)],
     ['最大回撤停損',  fmtPct(curRisk.max_drawdown),      fmtPct(orisk.max_drawdown)],
     ['追蹤停損閾值',  fmtPct(curRisk.trailing_drawdown), fmtPct(orisk.trailing_stop)],
     ['廣度警告閾值',  '--',                               fmtPct(orisk.breadth_warn)],
     ['廣度熊市閾值',  '--',                               fmtPct(orisk.breadth_bear)],
-    ['最大相關性',    '--',                               fmtV(orisk.max_corr) === '--' ? '--' : String(orisk.max_corr)],
+    ['最大相關性',    '--',                               orisk.max_corr != null ? String(orisk.max_corr) : '--'],
     ['再平衡頻率',    '--',                               fmtV(orisk.rebalance_freq)],
     ['持股數 Top-N',  '--',                               fmtV(orisk.top_n)],
   ];
