@@ -2783,6 +2783,14 @@
     {
       "ticker": "NAIL",
       "name": "3x做多建築業"
+    },
+    {
+      "ticker": "SCO",
+      "name": "2x做空原油"
+    },
+    {
+      "ticker": "UCO",
+      "name": "2x做多原油"
     }
   ],
   "TWETF": [
