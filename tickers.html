@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -221,6 +221,18 @@ function buildTable(mkt, tickers) {
 
   if (!filtered.length) return '<p class="no-data">無符合結果</p>';
 
+  const sorted = [...filtered].sort((a, b) => {
+    const aApka = apkaH.has(a.ticker), aVqmt = vqmtH.has(a.ticker);
+    const bApka = apkaH.has(b.ticker), bVqmt = vqmtH.has(b.ticker);
+    const aHeld = (aApka && aVqmt) ? 2 : (aApka || aVqmt) ? 1 : 0;
+    const bHeld = (bApka && bVqmt) ? 2 : (bApka || bVqmt) ? 1 : 0;
+    if (aHeld !== bHeld) return bHeld - aHeld;
+    const aS = mktScores[a.ticker] || {}, bS = mktScores[b.ticker] || {};
+    const aA = aS.apka ?? -1, bA = bS.apka ?? -1;
+    if (aA !== bA) return bA - aA;
+    return (bS.vqmt ?? -1) - (aS.vqmt ?? -1);
+  });
+
   let html = `<table>
     <thead><tr>
       <th>代碼</th><th>名稱</th>
@@ -230,7 +242,7 @@ function buildTable(mkt, tickers) {
       <th style="text-align:center;color:#a78bfa;">VQMT 分</th>
     </tr></thead><tbody>`;
 
-  for (const t of filtered) {
+  for (const t of sorted) {
     const inApka = apkaH.has(t.ticker);
     const inVqmt = vqmtH.has(t.ticker);
     let rowCls = '';
