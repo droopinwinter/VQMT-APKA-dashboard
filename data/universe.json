@@ -2016,675 +2016,675 @@
   "TW": [
     {
       "ticker": "1101.TW",
-      "name": "台泥"
+      "name": "台泥(水泥)"
     },
     {
       "ticker": "1102.TW",
-      "name": "亞泥"
+      "name": "亞泥(水泥)"
     },
     {
       "ticker": "1216.TW",
-      "name": "統一"
+      "name": "統一(食品飲料)"
     },
     {
       "ticker": "1229.TW",
-      "name": "聯華"
+      "name": "聯華(食品)"
     },
     {
       "ticker": "1301.TW",
-      "name": "台塑"
+      "name": "台塑(石化)"
     },
     {
       "ticker": "1303.TW",
-      "name": "南亞"
+      "name": "南亞(塑膠材料)"
     },
     {
       "ticker": "1308.TW",
-      "name": "亞聚"
+      "name": "亞聚(塑膠)"
     },
     {
       "ticker": "1312.TW",
-      "name": "國喬"
+      "name": "國喬(石化)"
     },
     {
       "ticker": "1314.TW",
-      "name": "中石化"
+      "name": "中石化(石化)"
     },
     {
       "ticker": "1319.TW",
-      "name": "東陽"
+      "name": "東陽(汽車零件)"
     },
     {
       "ticker": "1326.TW",
-      "name": "台化"
+      "name": "台化(塑膠)"
     },
     {
       "ticker": "1402.TW",
-      "name": "遠東新"
+      "name": "遠東新(紡織)"
     },
     {
       "ticker": "1434.TW",
-      "name": "福懋興業"
+      "name": "福懋興業(紡織)"
     },
     {
       "ticker": "1476.TW",
-      "name": "儒鴻"
+      "name": "儒鴻(成衣代工)"
     },
     {
       "ticker": "1477.TW",
-      "name": "聚陽"
+      "name": "聚陽(成衣代工)"
     },
     {
       "ticker": "1503.TW",
-      "name": "士電"
+      "name": "士電(電機)"
     },
     {
       "ticker": "1504.TW",
-      "name": "東元"
+      "name": "東元(電機)"
     },
     {
       "ticker": "1513.TW",
-      "name": "中興電"
+      "name": "中興電(電力設備)"
     },
     {
       "ticker": "1519.TW",
-      "name": "華城"
+      "name": "華城(電力設備)"
     },
     {
       "ticker": "1590.TW",
-      "name": "亞德客-KY"
+      "name": "亞德客-KY(氣動元件)"
     },
     {
       "ticker": "1605.TW",
-      "name": "華新"
+      "name": "華新(電線電纜)"
     },
     {
       "ticker": "1704.TW",
-      "name": "榮化"
+      "name": "榮化(化工)"
     },
     {
       "ticker": "1722.TW",
-      "name": "台肥"
+      "name": "台肥(化肥)"
     },
     {
       "ticker": "1802.TW",
-      "name": "台玻"
+      "name": "台玻(玻璃)"
     },
     {
       "ticker": "1905.TW",
-      "name": "華紙"
+      "name": "華紙(造紙)"
     },
     {
       "ticker": "1907.TW",
-      "name": "永豐餘"
+      "name": "永豐餘(造紙)"
     },
     {
       "ticker": "2002.TW",
-      "name": "中鋼"
+      "name": "中鋼(鋼鐵)"
     },
     {
       "ticker": "2006.TW",
-      "name": "東和鋼鐵"
+      "name": "東和鋼鐵(鋼鐵)"
     },
     {
       "ticker": "2014.TW",
-      "name": "中鴻"
+      "name": "中鴻(鋼鐵)"
     },
     {
       "ticker": "2015.TW",
-      "name": "豐興"
+      "name": "豐興(鋼鐵)"
     },
     {
       "ticker": "2027.TW",
-      "name": "大成鋼"
+      "name": "大成鋼(鋼鐵)"
     },
     {
       "ticker": "2049.TW",
-      "name": "上銀"
+      "name": "上銀(傳動元件)"
     },
     {
       "ticker": "2059.TW",
-      "name": "川湖"
+      "name": "川湖(滑軌)"
     },
     {
       "ticker": "2103.TW",
-      "name": "台橡"
+      "name": "台橡(橡膠)"
     },
     {
       "ticker": "2104.TW",
-      "name": "中橡"
+      "name": "中橡(橡膠)"
     },
     {
       "ticker": "2105.TW",
-      "name": "正新"
+      "name": "正新(輪胎)"
     },
     {
       "ticker": "2201.TW",
-      "name": "裕隆"
+      "name": "裕隆(汽車)"
     },
     {
       "ticker": "2204.TW",
-      "name": "中華"
+      "name": "中華(汽車)"
     },
     {
       "ticker": "2207.TW",
-      "name": "和泰車"
+      "name": "和泰車(汽車)"
     },
     {
       "ticker": "2227.TW",
-      "name": "裕日車"
+      "name": "裕日車(汽車)"
     },
     {
       "ticker": "2258.TW",
-      "name": "鴻華先進"
+      "name": "鴻華先進(電動車)"
     },
     {
       "ticker": "2301.TW",
-      "name": "光寶科"
+      "name": "光寶科(電子零組件)"
     },
     {
       "ticker": "2303.TW",
-      "name": "聯電"
+      "name": "聯電(晶圓代工)"
     },
     {
       "ticker": "2308.TW",
-      "name": "台達電"
+      "name": "台達電(電源管理)"
     },
     {
       "ticker": "2313.TW",
-      "name": "華通"
+      "name": "華通(PCB)"
     },
     {
       "ticker": "2317.TW",
-      "name": "鴻海"
+      "name": "鴻海(電子代工)"
     },
     {
       "ticker": "2324.TW",
-      "name": "仁寶"
+      "name": "仁寶(電子代工)"
     },
     {
       "ticker": "2327.TW",
-      "name": "國巨"
+      "name": "國巨(被動元件)"
     },
     {
       "ticker": "2330.TW",
-      "name": "台積電"
+      "name": "台積電(晶圓代工)"
     },
     {
       "ticker": "2337.TW",
-      "name": "旺宏"
+      "name": "旺宏(記憶體)"
     },
     {
       "ticker": "2344.TW",
-      "name": "華邦電"
+      "name": "華邦電(記憶體)"
     },
     {
       "ticker": "2345.TW",
-      "name": "智邦"
+      "name": "智邦(網通設備)"
     },
     {
       "ticker": "2347.TW",
-      "name": "聯強"
+      "name": "聯強(通路)"
     },
     {
       "ticker": "2352.TW",
-      "name": "佳世達"
+      "name": "佳世達(顯示器)"
     },
     {
       "ticker": "2353.TW",
-      "name": "宏碁"
+      "name": "宏碁(電腦)"
     },
     {
       "ticker": "2354.TW",
-      "name": "鴻準"
+      "name": "鴻準(機殼)"
     },
     {
       "ticker": "2356.TW",
-      "name": "英業達"
+      "name": "英業達(電子代工)"
     },
     {
       "ticker": "2357.TW",
-      "name": "華碩"
+      "name": "華碩(電腦)"
     },
     {
       "ticker": "2360.TW",
-      "name": "致茂"
+      "name": "致茂(測試設備)"
     },
     {
       "ticker": "2368.TW",
-      "name": "金像電"
+      "name": "金像電(PCB)"
     },
     {
       "ticker": "2371.TW",
-      "name": "大同"
+      "name": "大同(電機)"
     },
     {
       "ticker": "2376.TW",
-      "name": "技嘉"
+      "name": "技嘉(主機板)"
     },
     {
       "ticker": "2377.TW",
-      "name": "微星"
+      "name": "微星(電競硬體)"
     },
     {
       "ticker": "2379.TW",
-      "name": "瑞昱"
+      "name": "瑞昱(IC設計)"
     },
     {
       "ticker": "2382.TW",
-      "name": "廣達"
+      "name": "廣達(電子代工)"
     },
     {
       "ticker": "2383.TW",
-      "name": "台光電"
+      "name": "台光電(銅箔基板)"
     },
     {
       "ticker": "2385.TW",
-      "name": "群光"
+      "name": "群光(鍵盤模組)"
     },
     {
       "ticker": "2395.TW",
-      "name": "研華"
+      "name": "研華(工業電腦)"
     },
     {
       "ticker": "2404.TW",
-      "name": "漢唐"
+      "name": "漢唐(無塵室工程)"
     },
     {
       "ticker": "2408.TW",
-      "name": "南亞科"
+      "name": "南亞科(記憶體)"
     },
     {
       "ticker": "2409.TW",
-      "name": "友達"
+      "name": "友達(面板)"
     },
     {
       "ticker": "2412.TW",
-      "name": "中華電"
+      "name": "中華電(電信)"
     },
     {
       "ticker": "2421.TW",
-      "name": "建準"
+      "name": "建準(散熱)"
     },
     {
       "ticker": "2428.TW",
-      "name": "興勤"
+      "name": "興勤(保護元件)"
     },
     {
       "ticker": "2439.TW",
-      "name": "美律"
+      "name": "美律(聲學元件)"
     },
     {
       "ticker": "2441.TW",
-      "name": "超豐"
+      "name": "超豐(封測)"
     },
     {
       "ticker": "2449.TW",
-      "name": "京元電子"
+      "name": "京元電子(封測)"
     },
     {
       "ticker": "2454.TW",
-      "name": "聯發科"
+      "name": "聯發科(IC設計)"
     },
     {
       "ticker": "2458.TW",
-      "name": "義隆"
+      "name": "義隆(觸控IC)"
     },
     {
       "ticker": "2474.TW",
-      "name": "可成"
+      "name": "可成(金屬機殼)"
     },
     {
       "ticker": "2492.TW",
-      "name": "華新科"
+      "name": "華新科(被動元件)"
     },
     {
       "ticker": "2498.TW",
-      "name": "宏達電"
+      "name": "宏達電(手機)"
     },
     {
       "ticker": "2501.TW",
-      "name": "國泰建設"
+      "name": "國建(建設)"
     },
     {
       "ticker": "2542.TW",
-      "name": "興富發"
+      "name": "興富發(建設)"
     },
     {
       "ticker": "2548.TW",
-      "name": "華固"
+      "name": "華固(建設)"
     },
     {
       "ticker": "2603.TW",
-      "name": "長榮"
+      "name": "長榮(航運)"
     },
     {
       "ticker": "2608.TW",
-      "name": "嘉里大榮"
+      "name": "嘉里大榮(物流)"
     },
     {
       "ticker": "2609.TW",
-      "name": "陽明"
+      "name": "陽明(航運)"
     },
     {
       "ticker": "2610.TW",
-      "name": "華航"
+      "name": "華航(航空)"
     },
     {
       "ticker": "2615.TW",
-      "name": "萬海"
+      "name": "萬海(航運)"
     },
     {
       "ticker": "2618.TW",
-      "name": "長榮航"
+      "name": "長榮航(航空)"
     },
     {
       "ticker": "2633.TW",
-      "name": "台灣高鐵"
+      "name": "台灣高鐵(交通運輸)"
     },
     {
       "ticker": "2801.TW",
-      "name": "彰銀"
+      "name": "彰銀(銀行)"
     },
     {
       "ticker": "2812.TW",
-      "name": "台中銀"
+      "name": "台中銀(銀行)"
     },
     {
       "ticker": "2832.TW",
-      "name": "台產"
+      "name": "台產(保險)"
     },
     {
       "ticker": "2834.TW",
-      "name": "臺企銀"
+      "name": "臺企銀(銀行)"
     },
     {
       "ticker": "2838.TW",
-      "name": "聯邦銀"
+      "name": "聯邦銀(銀行)"
     },
     {
       "ticker": "2845.TW",
-      "name": "遠東銀"
+      "name": "遠東銀(銀行)"
     },
     {
       "ticker": "2880.TW",
-      "name": "華南金"
+      "name": "華南金(金融控股)"
     },
     {
       "ticker": "2881.TW",
-      "name": "富邦金"
+      "name": "富邦金(金融控股)"
     },
     {
       "ticker": "2882.TW",
-      "name": "國泰金"
+      "name": "國泰金(金融控股)"
     },
     {
       "ticker": "2883.TW",
-      "name": "凱基金"
+      "name": "凱基金(金融控股)"
     },
     {
       "ticker": "2884.TW",
-      "name": "玉山金"
+      "name": "玉山金(金融控股)"
     },
     {
       "ticker": "2885.TW",
-      "name": "元大金"
+      "name": "元大金(金融控股)"
     },
     {
       "ticker": "2886.TW",
-      "name": "兆豐金"
+      "name": "兆豐金(金融控股)"
     },
     {
       "ticker": "2887.TW",
-      "name": "台新新光金"
+      "name": "台新新光金(金融控股)"
     },
     {
       "ticker": "2890.TW",
-      "name": "永豐金"
+      "name": "永豐金(金融控股)"
     },
     {
       "ticker": "2891.TW",
-      "name": "中信金"
+      "name": "中信金(金融控股)"
     },
     {
       "ticker": "2892.TW",
-      "name": "第一金"
+      "name": "第一金(金融控股)"
     },
     {
       "ticker": "2912.TW",
-      "name": "統一超"
+      "name": "統一超(零售)"
     },
     {
       "ticker": "3005.TW",
-      "name": "神基"
+      "name": "神基(工業電腦)"
     },
     {
       "ticker": "3008.TW",
-      "name": "大立光"
+      "name": "大立光(光學鏡頭)"
     },
     {
       "ticker": "3017.TW",
-      "name": "奇鋐"
+      "name": "奇鋐(散熱)"
     },
     {
       "ticker": "3019.TW",
-      "name": "亞光"
+      "name": "亞光(光學)"
     },
     {
       "ticker": "3023.TW",
-      "name": "信邦"
+      "name": "信邦(連接線)"
     },
     {
       "ticker": "3034.TW",
-      "name": "聯詠"
+      "name": "聯詠(IC設計)"
     },
     {
       "ticker": "3035.TW",
-      "name": "智原"
+      "name": "智原(IC設計)"
     },
     {
       "ticker": "3036.TW",
-      "name": "文曄"
+      "name": "文曄(半導體通路)"
     },
     {
       "ticker": "3037.TW",
-      "name": "欣興"
+      "name": "欣興(PCB)"
     },
     {
       "ticker": "3044.TW",
-      "name": "健鼎"
+      "name": "健鼎(PCB)"
     },
     {
       "ticker": "3045.TW",
-      "name": "台灣大"
+      "name": "台灣大(電信)"
     },
     {
       "ticker": "3189.TW",
-      "name": "景碩"
+      "name": "景碩(PCB)"
     },
     {
       "ticker": "3231.TW",
-      "name": "緯創"
+      "name": "緯創(電子代工)"
     },
     {
       "ticker": "3443.TW",
-      "name": "創意"
+      "name": "創意(ASIC設計)"
     },
     {
       "ticker": "3481.TW",
-      "name": "群創"
+      "name": "群創(面板)"
     },
     {
       "ticker": "3532.TW",
-      "name": "台勝科"
+      "name": "台勝科(矽晶圓)"
     },
     {
       "ticker": "3533.TW",
-      "name": "嘉聯益"
+      "name": "嘉聯益(FPC)"
     },
     {
       "ticker": "3576.TW",
-      "name": "新日興"
+      "name": "新日興(軸承)"
     },
     {
       "ticker": "3653.TW",
-      "name": "健策"
+      "name": "健策(散熱)"
     },
     {
       "ticker": "3661.TW",
-      "name": "世芯-KY"
+      "name": "世芯-KY(ASIC設計)"
     },
     {
       "ticker": "3665.TW",
-      "name": "貿聯-KY"
+      "name": "貿聯-KY(連接線)"
     },
     {
       "ticker": "3702.TW",
-      "name": "大聯大"
+      "name": "大聯大(半導體通路)"
     },
     {
       "ticker": "3711.TW",
-      "name": "日月光投控"
+      "name": "日月光投控(封測)"
     },
     {
       "ticker": "4763.TW",
-      "name": "材料-KY"
+      "name": "材料-KY(化學材料)"
     },
     {
       "ticker": "4904.TW",
-      "name": "遠傳"
+      "name": "遠傳(電信)"
     },
     {
       "ticker": "4915.TW",
-      "name": "致伸"
+      "name": "致伸(電子零組件)"
     },
     {
       "ticker": "4938.TW",
-      "name": "和碩"
+      "name": "和碩(電子代工)"
     },
     {
       "ticker": "4958.TW",
-      "name": "臻鼎-KY"
+      "name": "臻鼎-KY(PCB)"
     },
     {
       "ticker": "5269.TW",
-      "name": "祥碩"
+      "name": "祥碩(高速IC)"
     },
     {
       "ticker": "5522.TW",
-      "name": "遠雄"
+      "name": "遠雄(建設)"
     },
     {
       "ticker": "5871.TW",
-      "name": "中租-KY"
+      "name": "中租-KY(租賃金融)"
     },
     {
       "ticker": "5876.TW",
-      "name": "上海商銀"
+      "name": "上海商銀(銀行)"
     },
     {
       "ticker": "5880.TW",
-      "name": "合庫金"
+      "name": "合庫金(金融控股)"
     },
     {
       "ticker": "6139.TW",
-      "name": "亞翔"
+      "name": "亞翔(無塵室工程)"
     },
     {
       "ticker": "6176.TW",
-      "name": "瑞儀"
+      "name": "瑞儀(背光模組)"
     },
     {
       "ticker": "6183.TW",
-      "name": "關貿網路"
+      "name": "關貿網路(資訊服務)"
     },
     {
       "ticker": "6213.TW",
-      "name": "聯茂"
+      "name": "聯茂(CCL)"
     },
     {
       "ticker": "6239.TW",
-      "name": "力成"
+      "name": "力成(封測)"
     },
     {
       "ticker": "6285.TW",
-      "name": "啟碁"
+      "name": "啟碁(網通)"
     },
     {
       "ticker": "6409.TW",
-      "name": "旭隼"
+      "name": "旭隼(電源)"
     },
     {
       "ticker": "6412.TW",
-      "name": "群電"
+      "name": "群電(電源)"
     },
     {
       "ticker": "6415.TW",
-      "name": "矽力-KY"
+      "name": "矽力-KY(電源IC)"
     },
     {
       "ticker": "6446.TW",
-      "name": "藥華藥"
+      "name": "藥華藥(生技)"
     },
     {
       "ticker": "6505.TW",
-      "name": "台塑化"
+      "name": "台塑化(石化)"
     },
     {
       "ticker": "6526.TW",
-      "name": "達發"
+      "name": "達發(IC設計)"
     },
     {
       "ticker": "6592.TW",
-      "name": "和潤企業"
+      "name": "和潤企業(汽車金融)"
     },
     {
       "ticker": "6669.TW",
-      "name": "緯穎"
+      "name": "緯穎(伺服器)"
     },
     {
       "ticker": "6770.TW",
-      "name": "力積電"
+      "name": "力積電(晶圓代工)"
     },
     {
       "ticker": "6789.TW",
-      "name": "采鈺"
+      "name": "采鈺(半導體封測)"
     },
     {
       "ticker": "7769.TW",
-      "name": "鴻勁"
+      "name": "鴻勁(半導體設備)"
     },
     {
       "ticker": "8046.TW",
-      "name": "南電"
+      "name": "南電(PCB)"
     },
     {
       "ticker": "8454.TW",
-      "name": "富邦媒"
+      "name": "富邦媒(電商)"
     },
     {
       "ticker": "8464.TW",
-      "name": "億豐"
+      "name": "億豐(窗簾)"
     },
     {
       "ticker": "9904.TW",
-      "name": "寶成"
+      "name": "寶成(鞋業代工)"
     },
     {
       "ticker": "9910.TW",
-      "name": "豐泰"
+      "name": "豐泰(鞋業代工)"
     },
     {
       "ticker": "9921.TW",
-      "name": "巨大"
+      "name": "巨大(自行車)"
     },
     {
       "ticker": "9941.TW",
-      "name": "裕融"
+      "name": "裕融(汽車金融)"
     },
     {
       "ticker": "9945.TW",
-      "name": "潤泰新"
+      "name": "潤泰新(建設)"
     }
   ],
   "USETF": [
@@ -2791,6 +2791,14 @@
     {
       "ticker": "UCO",
       "name": "2x做多原油"
+    },
+    {
+      "ticker": "UGL",
+      "name": "2x做多黃金"
+    },
+    {
+      "ticker": "AGQ",
+      "name": "2x做多白銀"
     }
   ],
   "TWETF": [
