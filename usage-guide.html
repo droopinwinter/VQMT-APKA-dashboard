@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>使用說明 — Strategy Dashboard</title>
+<style>
+  :root {
+    --bg: #0f1117; --card: #1a1d27; --border: #2a2d3e;
+    --text: #e0e0e0; --muted: #6b7280; --accent: #a78bfa;
+    --blue: #3b82f6; --green: #22c55e; --red: #ef4444; --yellow: #f59e0b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; line-height: 1.7; }
+
+  header { background: var(--card); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 1.2rem; font-weight: 700; }
+  .back-btn { padding: 5px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--card);
+              color: var(--muted); text-decoration: none; font-size: 0.82rem; transition: all .2s; }
+  .back-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  main { padding: 32px 24px; max-width: 860px; margin: 0 auto; }
+
+  .hero { text-align: center; padding: 40px 20px 32px; }
+  .hero .badge { display: inline-block; background: rgba(167,139,250,0.15); color: var(--accent); border: 1px solid rgba(167,139,250,0.3); border-radius: 20px; padding: 4px 16px; font-size: 0.82rem; font-weight: 600; margin-bottom: 16px; }
+  .hero h2 { font-size: 2rem; font-weight: 800; margin-bottom: 12px; }
+  .hero p { font-size: 1rem; color: var(--muted); max-width: 580px; margin: 0 auto; }
+
+  .section { margin-bottom: 32px; }
+  .section-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .section-title .icon { font-size: 1.3rem; }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin-bottom: 14px; }
+  .card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+  .card p { font-size: 0.88rem; color: #b0b4c0; }
+
+  .step-row { display: flex; gap: 16px; margin-bottom: 12px; align-items: flex-start; }
+  .step-num { width: 32px; height: 32px; min-width: 32px; background: rgba(167,139,250,0.15); border: 1px solid rgba(167,139,250,0.3);
+              border-radius: 50%; display: flex; align-items: center; justify-content: center;
+              font-size: 0.85rem; font-weight: 700; color: var(--accent); }
+  .step-content h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; }
+  .step-content p { font-size: 0.84rem; color: #b0b4c0; }
+
+  .metric-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .metric-chip { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+  .metric-chip .m-label { font-size: 0.75rem; color: var(--muted); margin-bottom: 4px; text-transform: uppercase; }
+  .metric-chip .m-val { font-size: 1.4rem; font-weight: 800; color: var(--accent); }
+  .metric-chip .m-desc { font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
+
+  .regime-row { display: grid; grid-template-columns: 130px 1fr; gap: 14px; align-items: start; margin-bottom: 12px; }
+  .regime-label { border-radius: 6px; padding: 6px 10px; font-size: 0.82rem; font-weight: 700; text-align: center; }
+  .regime-trend    { background: rgba(34,197,94,0.12); color: var(--green); border: 1px solid rgba(34,197,94,0.25); }
+  .regime-sideways { background: rgba(245,158,11,0.12); color: var(--yellow); border: 1px solid rgba(245,158,11,0.25); }
+  .regime-reversion{ background: rgba(59,130,246,0.12); color: var(--blue); border: 1px solid rgba(59,130,246,0.25); }
+  .regime-bear     { background: rgba(239,68,68,0.12); color: var(--red); border: 1px solid rgba(239,68,68,0.25); }
+  .regime-highvol  { background: rgba(239,68,68,0.2); color: var(--red); border: 1px solid rgba(239,68,68,0.4); }
+  .regime-desc { font-size: 0.85rem; color: #b0b4c0; padding-top: 4px; }
+
+  .highlight { color: var(--accent); font-weight: 600; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+
+  .note { background: rgba(167,139,250,0.06); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: 0.85rem; color: #b0b4c0; margin-top: 14px; }
+  .warn { background: rgba(239,68,68,0.06); border-left: 3px solid var(--red); border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: 0.85rem; color: #b0b4c0; margin-top: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📖 使用說明</h1>
+  <a href="index.html" class="back-btn">← 返回監控面板</a>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="badge">新手上手指南</div>
+    <h2>怎麼看這個網站、怎麼照著它交易？</h2>
+    <p>這個網站是一個交易策略監控面板，會即時顯示回測與實盤的績效、目前該持有哪些股票。這頁教你從打開網站到實際下單，一步步該怎麼做。</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 1: Tabs -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🗂️</span>第一步：選對你要看的組合</div>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:14px;">首頁最上方有三排切換鈕，由上到下依序決定「看哪一組資料」：</p>
+    <div class="card">
+      <h4>Focus / Diversified（資金配置風格）</h4>
+      <p><span class="highlight">Focus</span>＝集中持股，追求較高報酬但波動也較大；<span class="highlight">Diversified</span>＝分散持股，波動較低、較穩健。新手建議先從 Diversified 開始熟悉。</p>
+    </div>
+    <div class="card">
+      <h4>APKA / VQMT（選股策略）</h4>
+      <p>兩套不同的選股邏輯，各自的原理可點首頁的「📗 APKA 說明」「📘 VQMT+CTA 說明」按鈕深入了解。本頁只教你怎麼「用」，不重複解釋策略細節。</p>
+    </div>
+    <div class="card">
+      <h4>美股 US / 台股 TW / US ETF / TW ETF（交易市場）</h4>
+      <p>決定這組策略是在哪個市場、買什麼類型的標的（個股或 ETF）。你要交易台股就選 TW，要交易美股就選 US，以此類推。</p>
+    </div>
+    <div class="note">📌 這三排是「串接」的：例如 Focus + APKA + 美股 US，代表「集中持股、用 APKA 邏輯、交易美股個股」這一組資料。切換任何一個都會換一整組數字和圖表。</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 2: Metrics -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📊</span>第二步：看懂五個指標卡</div>
+    <div class="metric-row">
+      <div class="metric-chip">
+        <div class="m-label">CAGR 年化報酬</div>
+        <div class="m-val">越高越好</div>
+        <div class="m-desc">平均一年賺多少%。這組合過去平均每年的成長速度。</div>
+      </div>
+      <div class="metric-chip">
+        <div class="m-label">Sharpe 夏普比率</div>
+        <div class="m-val">&gt; 1 算不錯</div>
+        <div class="m-desc">賺得穩不穩：同樣報酬下，數字越高代表過程越不驚險。</div>
+      </div>
+      <div class="metric-chip">
+        <div class="m-label">MaxDD 最大回撤</div>
+        <div class="m-val">越接近 0 越好</div>
+        <div class="m-desc">歷史上最慘曾經虧掉多少%，是這組合可能發生的「最壞情況」。</div>
+      </div>
+      <div class="metric-chip">
+        <div class="m-label">累計報酬</div>
+        <div class="m-val">總報酬</div>
+        <div class="m-desc">從回測起點到現在，總共漲了多少%（複利計算）。</div>
+      </div>
+      <div class="metric-chip">
+        <div class="m-label">回測年數</div>
+        <div class="m-val">資料長度</div>
+        <div class="m-desc">上面所有數字是根據幾年的歷史資料算出來的，年數越長越有參考價值。</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 3: Charts -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📈</span>第三步：看懂兩張圖</div>
+    <div class="card">
+      <h4>權益曲線（正規化至 1.0）</h4>
+      <p>三條線分別是：<span class="highlight">回測（含費）</span>／<span class="highlight">回測（扣費）</span>——歷史模擬的績效，一條含交易成本、一條不含；<span class="highlight">實盤</span>——這組策略實際下單交易的真實績效。曲線起點都從 100% 開始往上走，數字越高代表資產翻了幾倍。<b>重點看實盤線有沒有貼著回測線走</b>：如果實盤明顯落後或偏離回測太多，代表策略在真實市場的表現和歷史模擬不一致，要提高警覺。</p>
+    </div>
+    <div class="card">
+      <h4>最大虧損分析 Drawdown Analysis</h4>
+      <p>這張圖顯示每個時間點「從高點回落了多少%」，同時比較四個市場（US/TW/USETF/TWETF）。線越往下代表當時虧損越深。用來判斷現在整體是不是處於較大幅度的回檔中，若目前正處於深回撤區間，加碼或進場時應更謹慎。</p>
+    </div>
+    <div class="note">🔍 兩張圖右上角都有「⛶ Fullscreen」按鈕，可以點開放大看細節。</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 4: Regime -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🚦</span>第四步：留意 Regime 燈號</div>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:14px;">指標卡上方會顯示目前市場狀態的燈號，代表系統判斷現在是什麼樣的行情：</p>
+    <div class="regime-row">
+      <div class="regime-label regime-trend">TREND</div>
+      <div class="regime-desc">趨勢行情，策略正常運作，通常是最適合持有部位的狀態。</div>
+    </div>
+    <div class="regime-row">
+      <div class="regime-label regime-sideways">SIDEWAYS</div>
+      <div class="regime-desc">盤整行情，方向不明顯，績效可能較平淡。</div>
+    </div>
+    <div class="regime-row">
+      <div class="regime-label regime-reversion">REVERSION</div>
+      <div class="regime-desc">均值回歸行情，市場傾向從極端往回修正。</div>
+    </div>
+    <div class="regime-row">
+      <div class="regime-label regime-bear">BEAR</div>
+      <div class="regime-desc">空頭行情，風險較高，系統可能已自動降低持倉。</div>
+    </div>
+    <div class="regime-row">
+      <div class="regime-label regime-highvol">HIGH_VOL</div>
+      <div class="regime-desc">高波動狀態，價格劇烈震盪，系統風控機制較容易被觸發（縮倉甚至清倉）。</div>
+    </div>
+    <div class="warn">⚠️ 若燈號轉為 BEAR 或 HIGH_VOL，代表系統可能已經（或即將）啟動風控縮倉／Kill Switch，此時不建議自行加碼對抗系統的減碼動作。詳細風控規則請見「📗 APKA 說明」「📘 VQMT+CTA 說明」。</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 5: How to actually trade -->
+  <div class="section">
+    <div class="section-title"><span class="icon">💵</span>第五步：怎麼照著網站的資訊去交易</div>
+    <div class="step-row">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>先選好你要跟的組合</h4>
+        <p>依照第一步，決定好 Focus/Diversified、APKA/VQMT、要交易的市場（US/TW/USETF/TWETF），並確認 Regime 燈號沒有處於 BEAR / HIGH_VOL 警戒狀態。</p>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>看首頁最下方「目前持倉」表格</h4>
+        <p>表格會列出每個代碼（symbol）、名稱、應配置的權重（weight）、參考股價、股數與市值。這就是「現在應該持有的股票清單」。</p>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>到「📋 品種清單」「⚙️ 參數查詢」確認代碼細節</h4>
+        <p>如果不確定某個代碼對應的公司或 ETF 是什麼、或想查更詳細的參數，用這兩個按鈕查詢，避免下錯單。</p>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>依照 weight 權重分配你的實際資金</h4>
+        <p>例如某支股票 weight 是 10%，就代表用你打算投入這組策略的總資金的 10% 去買它。可搭配「💰 資金運用」頁面看整體持倉比例分布，確認自己下單後的比例跟系統建議一致。</p>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>定期回來確認，發現變動就跟著調整</h4>
+        <p>策略每月會重新評分、調整持股（月度再平衡）。建議每月定期回來看一次持倉表格是否有變化；若中途 Regime 燈號轉為警戒狀態，也應提高檢查頻率，必要時跟著系統的縮倉方向減碼。</p>
+      </div>
+    </div>
+    <div class="note">📌 持倉表格中如果某支股票消失或新增，代表系統這次重新選股後把它換掉了——照著清單同步調整你手上的部位即可，不需要自己額外判斷加減碼。</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 6: System practical notes -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🔧</span>系統實務須知</div>
+
+    <div class="card">
+      <h4>📅 網站多久更新一次？</h4>
+      <p>本網站是靜態頁面，<span class="highlight">每週三、六上午 11:10（台北時間）</span>會自動重新整理一次資料，並在 1-2 分鐘內同步上線。其他時間看到的都是上次更新的舊資料，不會即時跳動，這是正常現象。</p>
+    </div>
+
+    <div class="card">
+      <h4>⏱️ 換股週期是不是固定 10 天？</h4>
+      <p>不完全是。APKA 訓練模型的目標確實是「預測未來 10 天的報酬」，但實際判斷買賣時機的機率模型看的是「未來 5 天」的表現；而各組合實際的<span class="highlight">換股（再平衡）頻率其實依市場與組合而不同</span>，有的是每週、有的雙週，也有每月甚至每季才調整一次，並不是統一的固定天數。建議<span class="highlight">以持倉表格實際發生變化為準</span>，不要自己假設「持有滿 10 天就該賣」。</p>
+    </div>
+
+    <div class="card">
+      <h4>🔢 APKA / VQMT 評分 0-100 分代表什麼？</h4>
+      <p>這個分數是「當天所有候選股票之間的相對排名」，<span class="highlight">100 分＝當天表現最強的股票</span>，不是固定的絕對獲利機率。系統規定分數要 <span class="highlight">≥ 50 分</span>才有資格被列入候選名單，之後才會依分數高低選出真正要持有的股票。也因為是「相對排名」，同一支股票的分數會隨著每次重新選股、其他股票表現變化而上下浮動，這是正常現象。</p>
+    </div>
+
+    <div class="card">
+      <h4>🚨 風控燈號轉變時，系統會自動做什麼？</h4>
+      <p>當實盤回撤達到約 <span class="highlight">-10%</span>，系統會自動<span class="highlight">凍結新增持倉</span>；達到約 <span class="highlight">-15%</span> 會自動<span class="highlight">減碼 50%</span>；達到約 <span class="highlight">-20%</span> 則會<span class="highlight">全部平倉</span>（實際門檻依組合略有差異）。這些都是系統自動執行的行為，看到燈號轉為警戒時，<span class="highlight">跟著系統減碼即可，不需要自行搶先加碼對抗</span>。</p>
+    </div>
+
+    <div class="card">
+      <h4>🎯 品種清單裡的股票是怎麼篩出來的？</h4>
+      <p>系統只會考慮股價 &gt; $5、市值 &gt; 10-20 億美元、日均成交金額 &gt; $500 萬美元的股票。所以清單上不會出現雞蛋水餃股或成交量太少、很難買賣的冷門股。</p>
+    </div>
+
+    <div class="card">
+      <h4>💸 權益曲線的「扣費」線已經算過交易成本了嗎？</h4>
+      <p>是的，「回測（扣費）」這條線已經估算了手續費、滑價、交易稅等成本。但實際交易時的成本會依你使用的券商、下單方式而有落差，僅供參考，不代表你實際交易後一定會得到一模一樣的結果。</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="card">
+    <h4>⚠️ 重要提醒</h4>
+    <p>本網站的所有數字皆為策略回測與實盤追蹤紀錄，<span class="highlight">僅供參考，不構成投資建議</span>。過去績效不代表未來表現，實際交易前請自行評估風險並確認手上資金與帳戶狀況。若想了解策略背後的選股邏輯與風控機制，請見「📗 APKA 說明」與「📘 VQMT+CTA 說明」頁面。</p>
+  </div>
+
+</main>
+</body>
+</html>
