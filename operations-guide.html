@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>操作手冊 — Strategy Dashboard</title>
+<style>
+  :root {
+    --bg: #0f1117; --card: #1a1d27; --border: #2a2d3e;
+    --text: #e0e0e0; --muted: #6b7280; --accent: #14b8a6;
+    --blue: #3b82f6; --green: #22c55e; --red: #ef4444; --yellow: #f59e0b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; line-height: 1.7; }
+
+  header { background: var(--card); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 1.2rem; font-weight: 700; }
+  .back-btn { padding: 5px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--card);
+              color: var(--muted); text-decoration: none; font-size: 0.82rem; transition: all .2s; }
+  .back-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  main { padding: 32px 24px; max-width: 860px; margin: 0 auto; }
+
+  .hero { text-align: center; padding: 40px 20px 32px; }
+  .hero .badge { display: inline-block; background: rgba(20,184,166,0.15); color: var(--accent); border: 1px solid rgba(20,184,166,0.3); border-radius: 20px; padding: 4px 16px; font-size: 0.82rem; font-weight: 600; margin-bottom: 16px; }
+  .hero h2 { font-size: 2rem; font-weight: 800; margin-bottom: 12px; }
+  .hero p { font-size: 1rem; color: var(--muted); max-width: 580px; margin: 0 auto; }
+
+  .section { margin-bottom: 32px; }
+  .section-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .section-title .icon { font-size: 1.3rem; }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin-bottom: 14px; }
+  .card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+  .card p { font-size: 0.88rem; color: #b0b4c0; }
+
+  .mech-list { font-size: 0.88rem; color: #b0b4c0; margin: 0 0 12px 18px; }
+  .mech-list li { margin-bottom: 8px; }
+
+  .read-box { background: rgba(20,184,166,0.06); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: 0.85rem; color: #b0b4c0; }
+  .read-box b { color: var(--text); }
+
+  .highlight { color: var(--accent); font-weight: 600; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🧭 操作手冊</h1>
+  <a href="index.html" class="back-btn">← 返回監控面板</a>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="badge">深入版操作 SOP</div>
+    <h2>怎麼加倉、減倉、分配籌碼、獲利了結、判斷大盤？</h2>
+    <p>這頁把系統背後實際運作的判斷邏輯攤開來講清楚，讓你知道每個持倉數字是「怎麼被算出來的」，而不只是照著表格數字下單。基礎操作流程請先看「📖 使用說明」。</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 1: Regime -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🚦</span>怎麼判斷大盤</div>
+    <ul class="mech-list">
+      <li>大盤燈號是用<span class="highlight">布林通道帶寬變化</span>判斷的：帶寬擴張 → TREND（趨勢行情）；帶寬收斂 → REVERSION（均值回歸行情）。</li>
+      <li>另外有一道獨立的波動率警戒：只要全市場超過 <span class="highlight">25%</span> 的股票，波動率落在自己歷史區間的前 10% 高檔，不管原本判斷是什麼，燈號會被<span class="highlight">直接強制轉成 HIGH_VOL</span>。</li>
+      <li>台股 / 台股 ETF 的 REVERSION 判斷，在儀表板上會顯示成 SIDEWAYS（美股則維持顯示 REVERSION），這是市場特性不同的顯示差異。</li>
+    </ul>
+    <div class="read-box">💡 <b>你該怎麼解讀</b>：燈號就是系統每天算好給你看的「大盤結論」，你不需要自己另外判斷趨勢；顏色一變，代表下面第 2-5 點的加倉／分配／減倉／保護機制也會跟著自動連動調整。</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 2: Entry -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📈</span>怎麼加倉</div>
+    <ul class="mech-list">
+      <li>進場門檻：APKA 策略要求評分<span class="highlight">≥ 50 分</span>且進入當日排名前 N 名才會被選入；VQMT 策略沒有絕對分數門檻，只看是否排進前 N 名。</li>
+      <li>加碼大小不是手動「今天加一點、明天再加一點」——而是<span class="highlight">每次再平衡都重新計算</span>：依當天分數在所有入選股票中的占比，分數越高、目標權重越高（分數加權，不是齊頭式平均分配）。</li>
+      <li>兩檔過去 60 天股價相關性 <span class="highlight">> 0.8</span> 的候選股票（等於在賭同一件事），系統只會留下分數較高的那一檔，避免重複下注。</li>
+      <li>大盤燈號直接影響「敢加碼多少」：BEAR 燈號下，評分會先被打到只剩 <span class="highlight">10%</span>，幾乎沒有股票會被判斷成值得買；HIGH_VOL 燈號下打到 <span class="highlight">30%</span>。單一持股的權重上限同時也會縮小（BEAR 縮到基準的 0.5 倍、HIGH_VOL 縮到 0.6 倍）。</li>
+    </ul>
+    <div class="read-box">💡 <b>你該怎麼解讀</b>：「加倉」是系統每次重新算出來的結果，不是你手動決定要不要多買一點；某檔目標權重比上次高，代表它這次評分相對更強、而且目前燈號沒有壓抑買進意願。</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 3: Capital allocation -->
+  <div class="section">
+    <div class="section-title"><span class="icon">💰</span>怎麼分配籌碼</div>
+    <ul class="mech-list">
+      <li>預設用<span class="highlight">分數加權</span>分配資金：分數占比＝權重占比，不是每檔平均分配。</li>
+      <li>分配完後依序套用三層限制：① 單一持股上限（基準 <span class="highlight">25%</span>，燈號緊張時再打折）→ ② 單一產業類別上限（<span class="highlight">50%</span>）→ ③ 整體年化波動率目標（<span class="highlight">15%</span>）與槓桿上限（<span class="highlight">1.0 倍</span>，即不開槓桿）。</li>
+      <li>套用波動率目標後，如果算出來的曝險低於 100%，剩下的資金會顯示為「現金 Cash」——這是系統<span class="highlight">主動選擇不滿倉</span>，不是漏掉沒分配。</li>
+    </ul>
+    <div class="read-box">💡 <b>你該怎麼解讀</b>：持倉表格裡的 weight 就是「這筆錢該占你投入這組策略總資金的比例」；「💰 資金運用」頁面看到現金比例升高，代表系統主動降低曝險，不代表系統故障或算錯。</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 4: Exit -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📉</span>怎麼減倉</div>
+    <ul class="mech-list">
+      <li>最常見的減碼：再平衡當天，某檔分數下滑，新算出來的目標權重比原本低，系統就會產生賣出／減碼的委託單。</li>
+      <li>就算還沒到排定的再平衡日，只要某檔持股的排名掉出「<span class="highlight">前 N 名的 1.5 倍緩衝區</span>」之外，系統會提前強制針對這一檔做一次再平衡，把它降到新的目標權重（甚至出清）。</li>
+      <li>委託金額低於一個門檻時會直接略過，避免因為太小的調整而頻繁交易、白白多付手續費。</li>
+    </ul>
+    <div class="read-box">💡 <b>你該怎麼解讀</b>：持倉表格中某檔權重變小或消失，通常代表它評分下滑或掉出安全名單；如果是在非預期的日期就消失，很可能是觸發了排名緩衝區的提前調整，照著系統減碼即可，不需要自己額外判斷。</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 5: Profit taking -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🎯</span>怎麼獲利了結</div>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:14px;">系統<span class="highlight">沒有</span>「漲多少就賣多少」的固定停利點，獲利了結是透過兩個機制間接達成：</p>
+    <div class="card">
+      <h4>① 個股 Trailing Stop（下跌保護）</h4>
+      <p>任何一檔股票只要從近 <span class="highlight">60 天</span>高點回落超過 <span class="highlight">15%</span>，不論它是不是曾經的大贏家，會被強制出清，並列入 <span class="highlight">10 天</span>內不得重新買進的黑名單。這是「保護已經到手的獲利不要整個吐回去」的下跌保護機制，不是「漲到目標價就獲利了結」。</p>
+    </div>
+    <div class="card">
+      <h4>② 再平衡回補目標權重（日常落袋為安）</h4>
+      <p>當某檔因為大漲而讓實際權重超過系統重新算出的目標權重（或超過持股上限）時，下次再平衡會自動把多出來的部分賣掉、分配回其他標的——這是系統真正「落袋為安」的日常機制。</p>
+    </div>
+    <div class="read-box">💡 <b>你該怎麼解讀</b>：不要期待系統會在某個漲幅時整批停利；正常上漲的獲利會隨著每次再平衡逐步兌現一部分，真正的下跌保護則是靠 -15%/60 天的 trailing stop，兩者搭配運作。</div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="card">
+    <h4>⚠️ 重要提醒</h4>
+    <p>本頁內容是根據策略系統的實際運作邏輯整理而成，<span class="highlight">屬於教育性說明，不構成投資建議</span>。實際交易請自行評估風險與資金狀況。想了解不該做的操作，請見「🚫 常見錯誤」；想了解策略本身的選股與風控機制，請見「📗 APKA 說明」與「📘 VQMT+CTA 說明」。</p>
+  </div>
+
+</main>
+</body>
+</html>
