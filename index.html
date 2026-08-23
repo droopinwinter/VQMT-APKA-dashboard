@@ -217,17 +217,15 @@ function setMarket(m) {
 
 // ── Render ──────────────────────────────────────
 let lastMkt = null;
-let lastStratData = null;
 
 function render() {
   const stratData = (DATA[currentProfile] || {})[currentStrategy] || {};
   const mkt = stratData[currentMarket] || {};
   lastMkt = mkt;
-  lastStratData = stratData;
   renderRegime(mkt.meta);
   renderMetrics(mkt);
   renderChart(mkt);
-  renderDrawdown(stratData);
+  renderDrawdown(mkt);
   renderHoldings(mkt.holdings);
 }
 
@@ -344,51 +342,40 @@ function toChartPoints(series) {
 }
 
 // Drawdown
-const DD_COLORS = {
-  US:    { bt: 'rgba(59,130,246,0.55)',   live: 'rgba(147,197,253,0.40)' },
-  TW:    { bt: 'rgba(244,114,182,0.55)',  live: 'rgba(253,186,116,0.40)' },
-  USETF: { bt: 'rgba(167,139,250,0.55)',  live: 'rgba(196,181,253,0.35)' },
-  TWETF: { bt: 'rgba(52,211,153,0.50)',   live: 'rgba(110,231,183,0.35)' },
-};
-
 function calcDrawdown(values) {
   const dd = []; let peak = values[0];
   for (const v of values) { if (v > peak) peak = v; dd.push((v - peak) / peak); }
   return dd;
 }
 
-function renderDrawdown(stratData) {
+function renderDrawdown(mkt) {
   if (ddChart) { ddChart.destroy(); ddChart = null; }
-  ddChart = buildDrawdownChart('drawdownChart', stratData);
+  ddChart = buildDrawdownChart('drawdownChart', mkt);
 }
 
-function buildDrawdownChart(canvasId, stratData) {
+function buildDrawdownChart(canvasId, mkt) {
   const ctx = document.getElementById(canvasId).getContext('2d');
 
   const datasets = [];
-  for (const mkt of ['US', 'TW', 'USETF', 'TWETF']) {
-    const d = stratData[mkt]; if (!d) continue;
-    const c = DD_COLORS[mkt] || { bt: 'rgba(100,100,100,0.5)', live: 'rgba(150,150,150,0.35)' };
 
-    const bt = d.backtest_net || d.backtest;
-    if (bt && bt.values.length > 1) {
-      const dd = calcDrawdown(bt.values);
-      datasets.push({
-        label: `${mkt} Backtest DD (Net)`,
-        data: bt.dates.map((x, i) => ({ x: new Date(x), y: dd[i] })),
-        borderColor: c.bt.replace(/[\d.]+\)$/, '0.9)'),
-        backgroundColor: c.bt, tension: 0.2, pointRadius: 0, borderWidth: 1, fill: true,
-      });
-    }
-    if (d.live && d.live.values.length > 1) {
-      const dd = calcDrawdown(d.live.values);
-      datasets.push({
-        label: `${mkt} Live DD`,
-        data: d.live.dates.map((x, i) => ({ x: new Date(x), y: dd[i] })),
-        borderColor: c.live.replace(/[\d.]+\)$/, '0.8)'),
-        backgroundColor: c.live, tension: 0.2, pointRadius: 0, borderWidth: 1, fill: true,
-      });
-    }
+  const bt = mkt.backtest_net || mkt.backtest;
+  if (bt && bt.values.length > 1) {
+    const dd = calcDrawdown(bt.values);
+    datasets.push({
+      label: '回測 DD（扣費）',
+      data: bt.dates.map((x, i) => ({ x: new Date(x), y: dd[i] })),
+      borderColor: '#8b5cf6', backgroundColor: 'rgba(139,92,246,0.25)',
+      tension: 0.2, pointRadius: 0, borderWidth: 1.5, fill: true,
+    });
+  }
+  if (mkt.live && mkt.live.values.length > 1) {
+    const dd = calcDrawdown(mkt.live.values);
+    datasets.push({
+      label: '實盤 DD',
+      data: mkt.live.dates.map((x, i) => ({ x: new Date(x), y: dd[i] })),
+      borderColor: '#22c55e', backgroundColor: 'rgba(34,197,94,0.25)',
+      tension: 0.2, pointRadius: 0, borderWidth: 1.5, fill: true,
+    });
   }
 
   if (!datasets.length) return null;
@@ -463,7 +450,7 @@ document.head.appendChild(adapterScript);
 let fsChart = null;
 
 function openFullscreen(type) {
-  if (!lastMkt && !lastStratData) return;
+  if (!lastMkt) return;
   const overlay = document.getElementById('fs-overlay');
   const title   = document.getElementById('fs-title');
   if (fsChart) { fsChart.destroy(); fsChart = null; }
@@ -478,7 +465,7 @@ function openFullscreen(type) {
   if (type === 'equity') {
     fsChart = buildEquityChart('fsChart', lastMkt);
   } else {
-    fsChart = buildDrawdownChart('fsChart', lastStratData);
+    fsChart = buildDrawdownChart('fsChart', lastMkt);
   }
 }
 
