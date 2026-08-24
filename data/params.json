@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24 08:12",
+  "generated_at": "2026-08-24 08:21",
   "profiles": {
     "focus": {
       "apka": {
@@ -22,7 +22,7 @@
           },
           "universe": {
             "min_stocks": 50,
-            "target_stocks": 10,
+            "target_stocks": 5,
             "max_stocks": 200,
             "min_market_cap_usd": 2000000000,
             "min_adv_usd": 5000000,
@@ -48,7 +48,7 @@
           },
           "universe": {
             "min_stocks": 50,
-            "target_stocks": 10,
+            "target_stocks": 6,
             "max_stocks": 200,
             "min_market_cap_usd": null,
             "min_adv_usd": null,
@@ -74,7 +74,7 @@
           },
           "universe": {
             "min_stocks": 3,
-            "target_stocks": 3,
+            "target_stocks": 8,
             "max_stocks": 12,
             "min_market_cap_usd": null,
             "min_adv_usd": null,
@@ -100,7 +100,7 @@
           },
           "universe": {
             "min_stocks": 3,
-            "target_stocks": 3,
+            "target_stocks": 7,
             "max_stocks": 12,
             "min_market_cap_usd": null,
             "min_adv_usd": null,
