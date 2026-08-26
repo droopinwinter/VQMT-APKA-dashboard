@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25 12:30",
+  "generated_at": "2026-08-26 12:30",
   "results": {
     "focus": {
       "vqmt": {
@@ -316,117 +316,117 @@
         },
         "USETF": {
           "meta": {
-            "wf_calmar": 0.6674,
-            "generated_at": "2026-08-23 08:18",
+            "wf_calmar": 0.5428,
+            "generated_at": "2026-08-26 11:27",
             "metric_label": "WF-Sharpe"
           },
           "full_period": {
-            "sharpe": 0.696,
-            "cagr": 10.93,
-            "max_dd": -21.7
+            "sharpe": 0.345,
+            "cagr": 1.94,
+            "max_dd": -9.8
           },
           "factor_weights": null,
           "risk": {
-            "target_volatility": 0.55,
+            "target_volatility": 0.5,
             "max_weight": 0.3,
-            "max_drawdown": 0.36,
-            "trailing_stop": 0.12,
-            "breadth_warn": 0.35,
-            "breadth_bear": 0.25,
-            "max_corr": 0.8,
+            "max_drawdown": 0.1,
+            "trailing_stop": 0.07,
+            "breadth_warn": 0.5,
+            "breadth_bear": 0.35,
+            "max_corr": 0.65,
             "rebalance_freq": "2W",
-            "top_n": 8
+            "top_n": 7
           },
           "top10": [
             {
-              "wf_calmar": 0.6674,
-              "top_n": 8,
-              "rebalance_freq": "2W",
-              "target_vol": 0.55,
-              "max_drawdown": 0.36,
-              "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.12
-            },
-            {
-              "wf_calmar": 0.6652,
-              "top_n": 8,
+              "wf_calmar": 0.5584,
+              "top_n": 7,
               "rebalance_freq": "2W",
               "target_vol": 0.5,
-              "max_drawdown": 0.38,
+              "max_drawdown": 0.1,
               "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.12
+              "trailing_stop_threshold": 0.07
             },
             {
-              "wf_calmar": 0.6518,
-              "top_n": 8,
+              "wf_calmar": 0.5354,
+              "top_n": 7,
+              "rebalance_freq": "2W",
+              "target_vol": 0.475,
+              "max_drawdown": 0.1,
+              "max_single_weight": 0.3,
+              "trailing_stop_threshold": 0.07
+            },
+            {
+              "wf_calmar": 0.5286,
+              "top_n": 7,
               "rebalance_freq": "2W",
               "target_vol": 0.5,
-              "max_drawdown": 0.36,
+              "max_drawdown": 0.1,
               "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.12
+              "trailing_stop_threshold": 0.07
             },
             {
-              "wf_calmar": 0.6518,
-              "top_n": 8,
+              "wf_calmar": 0.527,
+              "top_n": 7,
               "rebalance_freq": "2W",
               "target_vol": 0.5,
-              "max_drawdown": 0.36,
+              "max_drawdown": 0.1,
               "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.12
+              "trailing_stop_threshold": 0.07
             },
             {
-              "wf_calmar": 0.6518,
-              "top_n": 8,
+              "wf_calmar": 0.5178,
+              "top_n": 7,
               "rebalance_freq": "2W",
               "target_vol": 0.5,
-              "max_drawdown": 0.36,
+              "max_drawdown": 0.12,
               "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.12
+              "trailing_stop_threshold": 0.07
             },
             {
-              "wf_calmar": 0.6518,
-              "top_n": 8,
-              "rebalance_freq": "2W",
-              "target_vol": 0.5,
-              "max_drawdown": 0.36,
-              "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.12
-            },
-            {
-              "wf_calmar": 0.6518,
-              "top_n": 8,
-              "rebalance_freq": "2W",
-              "target_vol": 0.5,
-              "max_drawdown": 0.36,
-              "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.12
-            },
-            {
-              "wf_calmar": 0.6514,
-              "top_n": 8,
-              "rebalance_freq": "2W",
-              "target_vol": 0.5,
-              "max_drawdown": 0.34,
-              "max_single_weight": 0.35,
-              "trailing_stop_threshold": 0.2
-            },
-            {
-              "wf_calmar": 0.6509,
-              "top_n": 8,
+              "wf_calmar": 0.4674,
+              "top_n": 7,
               "rebalance_freq": "2W",
               "target_vol": 0.525,
-              "max_drawdown": 0.4,
+              "max_drawdown": 0.12,
               "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.14
+              "trailing_stop_threshold": 0.07
             },
             {
-              "wf_calmar": 0.6373,
+              "wf_calmar": 0.4577,
               "top_n": 8,
               "rebalance_freq": "2W",
-              "target_vol": 0.525,
-              "max_drawdown": 0.36,
+              "target_vol": 0.475,
+              "max_drawdown": 0.08,
               "max_single_weight": 0.3,
-              "trailing_stop_threshold": 0.11
+              "trailing_stop_threshold": 0.08
+            },
+            {
+              "wf_calmar": 0.426,
+              "top_n": 8,
+              "rebalance_freq": "2W",
+              "target_vol": 0.5,
+              "max_drawdown": 0.1,
+              "max_single_weight": 0.3,
+              "trailing_stop_threshold": 0.06
+            },
+            {
+              "wf_calmar": 0.3427,
+              "top_n": 8,
+              "rebalance_freq": "2W",
+              "target_vol": 0.475,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.25,
+              "trailing_stop_threshold": 0.06
+            },
+            {
+              "wf_calmar": 0.3166,
+              "top_n": 8,
+              "rebalance_freq": "2W",
+              "target_vol": 0.5,
+              "max_drawdown": 0.08,
+              "max_single_weight": 0.25,
+              "trailing_stop_threshold": 0.06
             }
           ]
         },
