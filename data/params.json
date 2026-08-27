@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26 12:30",
+  "generated_at": "2026-08-27 12:30",
   "profiles": {
     "focus": {
       "apka": {
@@ -31,24 +31,24 @@
         },
         "TW": {
           "risk": {
-            "max_weight": 0.25,
+            "max_weight": 0.35000000000000003,
             "min_weight": 0.15,
-            "target_volatility": 0.4,
-            "max_drawdown": 0.4,
-            "trailing_stop_threshold": 0.14,
+            "target_volatility": 0.3,
+            "max_drawdown": 0.2,
+            "trailing_stop_threshold": 0.15000000000000002,
             "trailing_stop_lookback": 14,
             "breadth_warn": 0.55,
-            "breadth_bear": 0.15000000000000002,
-            "max_corr": 1.05,
+            "breadth_bear": 0.35,
+            "max_corr": 1.0,
             "rebalance_freq": "Q",
-            "top_n": 6,
+            "top_n": 8,
             "commission_bp": 30,
             "slippage_bp": 5,
             "tax_bp": 150
           },
           "universe": {
             "min_stocks": 50,
-            "target_stocks": 6,
+            "target_stocks": 8,
             "max_stocks": 200,
             "min_market_cap_usd": null,
             "min_adv_usd": null,
