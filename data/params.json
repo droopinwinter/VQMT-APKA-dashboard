@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27 12:30",
+  "generated_at": "2026-08-28 12:30",
   "profiles": {
     "focus": {
       "apka": {
@@ -33,13 +33,13 @@
           "risk": {
             "max_weight": 0.35000000000000003,
             "min_weight": 0.15,
-            "target_volatility": 0.3,
-            "max_drawdown": 0.2,
+            "target_volatility": 0.4,
+            "max_drawdown": 0.16,
             "trailing_stop_threshold": 0.15000000000000002,
             "trailing_stop_lookback": 14,
-            "breadth_warn": 0.55,
-            "breadth_bear": 0.35,
-            "max_corr": 1.0,
+            "breadth_warn": 0.5,
+            "breadth_bear": 0.2,
+            "max_corr": 0.9500000000000001,
             "rebalance_freq": "Q",
             "top_n": 8,
             "commission_bp": 30,
@@ -57,15 +57,15 @@
         },
         "USETF": {
           "risk": {
-            "max_weight": 0.30000000000000004,
+            "max_weight": 0.4,
             "min_weight": 0.15,
-            "target_volatility": 0.55,
-            "max_drawdown": 0.36000000000000004,
-            "trailing_stop_threshold": 0.12000000000000001,
+            "target_volatility": 0.525,
+            "max_drawdown": 0.32,
+            "trailing_stop_threshold": 0.13,
             "trailing_stop_lookback": 14,
-            "breadth_warn": 0.35,
-            "breadth_bear": 0.25,
-            "max_corr": 0.8,
+            "breadth_warn": 0.3,
+            "breadth_bear": 0.35,
+            "max_corr": 0.9500000000000001,
             "rebalance_freq": "2W",
             "top_n": 8,
             "commission_bp": 1,
