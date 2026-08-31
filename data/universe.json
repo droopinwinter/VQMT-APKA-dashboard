@@ -2787,6 +2787,26 @@
     {
       "ticker": "AGQ",
       "name": "2x做多白銀"
+    },
+    {
+      "ticker": "INTW",
+      "name": "2x做多INTC"
+    },
+    {
+      "ticker": "ORCX",
+      "name": "2x做多ORCL"
+    },
+    {
+      "ticker": "MSFU",
+      "name": "2x做多MSFT"
+    },
+    {
+      "ticker": "NVDU",
+      "name": "2x做多NVDA"
+    },
+    {
+      "ticker": "BITX",
+      "name": "2x做多比特幣"
     }
   ],
   "TWETF": [
