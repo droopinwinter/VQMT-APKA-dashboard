@@ -1,2838 +1,2862 @@
 {
   "US": {
     "A": {
-      "apka": 44.9,
-      "vqmt": 43.2
+      "apka": 70.0,
+      "vqmt": 42.6
     },
     "AAPL": {
-      "apka": 44.9,
-      "vqmt": 62.8
+      "apka": 49.2,
+      "vqmt": 61.0
     },
     "ABBV": {
-      "apka": 10.9,
-      "vqmt": 34.2
+      "apka": 40.7,
+      "vqmt": 34.6
     },
     "ABNB": {
-      "apka": 27.1,
-      "vqmt": 34.7
+      "apka": 52.0,
+      "vqmt": 35.7
     },
     "ABT": {
-      "apka": 11.4,
-      "vqmt": 27.6
+      "apka": 32.4,
+      "vqmt": 29.3
     },
     "ACGL": {
-      "apka": 53.2,
-      "vqmt": 53.3
+      "apka": 68.1,
+      "vqmt": 54.0
     },
     "ACN": {
-      "apka": 26.0,
-      "vqmt": 32.3
+      "apka": 65.1,
+      "vqmt": 33.6
     },
     "ADBE": {
-      "apka": 39.3,
-      "vqmt": 44.2
-    },
-    "ADI": {
-      "apka": 35.3,
-      "vqmt": 49.4
-    },
-    "ADM": {
-      "apka": 20.6,
-      "vqmt": 41.2
-    },
-    "ADP": {
-      "apka": 16.0,
-      "vqmt": 39.8
-    },
-    "ADSK": {
-      "apka": 45.4,
-      "vqmt": 32.3
-    },
-    "AEE": {
-      "apka": 48.5,
-      "vqmt": 40.5
-    },
-    "AEP": {
-      "apka": 41.2,
-      "vqmt": 42.7
-    },
-    "AES": {
-      "apka": 44.9,
-      "vqmt": 61.3
-    },
-    "AFL": {
-      "apka": 48.2,
-      "vqmt": 49.6
-    },
-    "AIG": {
-      "apka": 38.2,
-      "vqmt": 39.4
-    },
-    "AIZ": {
-      "apka": 23.5,
-      "vqmt": 49.0
-    },
-    "AJG": {
-      "apka": 22.5,
-      "vqmt": 30.2
-    },
-    "AKAM": {
-      "apka": 31.8,
-      "vqmt": 44.5
-    },
-    "ALB": {
-      "apka": 33.9,
-      "vqmt": 13.7
-    },
-    "ALGN": {
-      "apka": 30.8,
-      "vqmt": 44.8
-    },
-    "ALL": {
-      "apka": 30.7,
-      "vqmt": 62.2
-    },
-    "ALLE": {
-      "apka": 41.2,
-      "vqmt": 37.2
-    },
-    "AMAT": {
-      "apka": 17.0,
-      "vqmt": 65.7
-    },
-    "AMCR": {
-      "apka": 18.4,
-      "vqmt": 39.1
-    },
-    "AMD": {
-      "apka": 32.8,
-      "vqmt": 54.3
-    },
-    "AME": {
-      "apka": 36.4,
-      "vqmt": 47.5
-    },
-    "AMGN": {
-      "apka": 20.9,
-      "vqmt": 50.2
-    },
-    "AMP": {
-      "apka": 17.5,
-      "vqmt": 44.4
-    },
-    "AMT": {
-      "apka": 25.0,
-      "vqmt": 39.6
-    },
-    "AMZN": {
-      "apka": 8.9,
-      "vqmt": 42.5
-    },
-    "ANET": {
-      "apka": 52.5,
-      "vqmt": 52.7
-    },
-    "AON": {
-      "apka": 21.4,
-      "vqmt": 45.2
-    },
-    "AOS": {
-      "apka": 46.5,
-      "vqmt": 37.8
-    },
-    "APA": {
-      "apka": 26.9,
-      "vqmt": 57.7
-    },
-    "APD": {
-      "apka": 27.0,
-      "vqmt": 41.2
-    },
-    "APH": {
-      "apka": 36.8,
-      "vqmt": 48.0
-    },
-    "APO": {
-      "apka": 20.6,
-      "vqmt": 2.0
-    },
-    "APP": {
-      "apka": 61.2,
-      "vqmt": 64.1
-    },
-    "APTV": {
-      "apka": 44.9,
-      "vqmt": 31.9
-    },
-    "ARE": {
-      "apka": 27.1,
-      "vqmt": 52.5
-    },
-    "ARES": {
-      "apka": 11.2,
-      "vqmt": 19.8
-    },
-    "ATO": {
-      "apka": 42.3,
+      "apka": 64.0,
       "vqmt": 45.4
     },
+    "ADI": {
+      "apka": 56.1,
+      "vqmt": 50.8
+    },
+    "ADM": {
+      "apka": 22.3,
+      "vqmt": 41.8
+    },
+    "ADP": {
+      "apka": 54.5,
+      "vqmt": 41.1
+    },
+    "ADSK": {
+      "apka": 51.4,
+      "vqmt": 33.6
+    },
+    "AEE": {
+      "apka": 54.2,
+      "vqmt": 42.0
+    },
+    "AEP": {
+      "apka": 60.3,
+      "vqmt": 44.3
+    },
+    "AES": {
+      "apka": 34.7,
+      "vqmt": 61.9
+    },
+    "AFL": {
+      "apka": 52.6,
+      "vqmt": 51.0
+    },
+    "AIG": {
+      "apka": 50.4,
+      "vqmt": 40.7
+    },
+    "AIZ": {
+      "apka": 33.8,
+      "vqmt": 49.2
+    },
+    "AJG": {
+      "apka": 46.9,
+      "vqmt": 31.1
+    },
+    "AKAM": {
+      "apka": 42.8,
+      "vqmt": 46.1
+    },
+    "ALB": {
+      "apka": 62.7,
+      "vqmt": 16.5
+    },
+    "ALGN": {
+      "apka": 41.2,
+      "vqmt": 45.3
+    },
+    "ALL": {
+      "apka": 52.0,
+      "vqmt": 62.8
+    },
+    "ALLE": {
+      "apka": 42.2,
+      "vqmt": 38.8
+    },
+    "AMAT": {
+      "apka": 26.4,
+      "vqmt": 66.7
+    },
+    "AMCR": {
+      "apka": 63.1,
+      "vqmt": 40.0
+    },
+    "AMD": {
+      "apka": 52.2,
+      "vqmt": 54.8
+    },
+    "AME": {
+      "apka": 30.5,
+      "vqmt": 48.6
+    },
+    "AMGN": {
+      "apka": 57.6,
+      "vqmt": 51.1
+    },
+    "AMP": {
+      "apka": 57.3,
+      "vqmt": 45.6
+    },
+    "AMT": {
+      "apka": 54.2,
+      "vqmt": 40.9
+    },
+    "AMZN": {
+      "apka": 53.4,
+      "vqmt": 48.0
+    },
+    "ANET": {
+      "apka": 32.0,
+      "vqmt": 54.7
+    },
+    "AON": {
+      "apka": 44.3,
+      "vqmt": 46.7
+    },
+    "AOS": {
+      "apka": 56.7,
+      "vqmt": 39.7
+    },
+    "APA": {
+      "apka": 38.4,
+      "vqmt": 58.0
+    },
+    "APD": {
+      "apka": 41.1,
+      "vqmt": 42.0
+    },
+    "APH": {
+      "apka": 39.8,
+      "vqmt": 49.0
+    },
+    "APO": {
+      "apka": 36.3,
+      "vqmt": 5.0
+    },
+    "APP": {
+      "apka": 59.3,
+      "vqmt": 63.2
+    },
+    "APTV": {
+      "apka": 42.1,
+      "vqmt": 32.4
+    },
+    "ARE": {
+      "apka": 50.3,
+      "vqmt": 53.2
+    },
+    "ARES": {
+      "apka": 25.6,
+      "vqmt": 21.9
+    },
+    "ATO": {
+      "apka": 47.4,
+      "vqmt": 46.1
+    },
     "AVGO": {
-      "apka": 43.3,
+      "apka": 67.2,
       "vqmt": 52.9
     },
     "AVY": {
-      "apka": 20.6,
-      "vqmt": 39.5
+      "apka": 59.5,
+      "vqmt": 40.4
     },
     "AWK": {
-      "apka": 18.1,
-      "vqmt": 33.8
+      "apka": 25.8,
+      "vqmt": 34.8
     },
     "AXON": {
-      "apka": 16.4,
-      "vqmt": 17.4
+      "apka": 56.8,
+      "vqmt": 18.9
     },
     "AXP": {
-      "apka": 42.3,
-      "vqmt": 41.0
+      "apka": 53.6,
+      "vqmt": 41.5
     },
     "AZO": {
-      "apka": 31.8,
-      "vqmt": 27.8
+      "apka": 39.6,
+      "vqmt": 29.2
     },
     "BA": {
-      "apka": 32.5,
-      "vqmt": 24.4
+      "apka": 47.1,
+      "vqmt": 25.2
     },
     "BAC": {
-      "apka": 28.8,
-      "vqmt": 50.0
+      "apka": 34.1,
+      "vqmt": 50.9
     },
     "BALL": {
-      "apka": 28.2,
-      "vqmt": 43.9
+      "apka": 50.4,
+      "vqmt": 45.0
     },
     "BAX": {
-      "apka": 22.0,
-      "vqmt": 28.9
+      "apka": 39.8,
+      "vqmt": 29.7
     },
     "BBY": {
-      "apka": 36.4,
-      "vqmt": 59.4
+      "apka": 42.4,
+      "vqmt": 61.1
     },
     "BDX": {
-      "apka": 30.8,
-      "vqmt": 36.5
+      "apka": 38.9,
+      "vqmt": 38.1
     },
     "BEN": {
-      "apka": 32.3,
-      "vqmt": 48.1
+      "apka": 52.4,
+      "vqmt": 49.9
     },
     "BG": {
-      "apka": 36.9,
-      "vqmt": 37.0
+      "apka": 57.2,
+      "vqmt": 38.4
     },
     "BIIB": {
-      "apka": 35.5,
-      "vqmt": 49.7
+      "apka": 51.6,
+      "vqmt": 50.6
     },
     "BKNG": {
-      "apka": 1.3,
-      "vqmt": 35.0
+      "apka": 47.2,
+      "vqmt": 36.6
     },
     "BKR": {
-      "apka": 9.5,
-      "vqmt": 50.8
+      "apka": 25.0,
+      "vqmt": 51.3
     },
     "BLDR": {
-      "apka": 15.2,
-      "vqmt": 5.6
+      "apka": 49.6,
+      "vqmt": 7.4
     },
     "BLK": {
-      "apka": 20.1,
-      "vqmt": 37.6
+      "apka": 36.0,
+      "vqmt": 38.5
     },
     "BMY": {
-      "apka": 14.7,
-      "vqmt": 59.6
+      "apka": 41.6,
+      "vqmt": 61.3
     },
     "BR": {
-      "apka": 34.8,
-      "vqmt": 31.1
+      "apka": 53.7,
+      "vqmt": 33.1
     },
     "BRO": {
-      "apka": 27.0,
-      "vqmt": 35.9
+      "apka": 34.0,
+      "vqmt": 37.0
     },
     "BSX": {
-      "apka": 4.7,
-      "vqmt": 29.9
+      "apka": 38.8,
+      "vqmt": 30.9
     },
     "BX": {
-      "apka": 25.8,
-      "vqmt": 33.2
+      "apka": 34.2,
+      "vqmt": 34.4
     },
     "BXP": {
-      "apka": 30.2,
-      "vqmt": 41.0
+      "apka": 39.9,
+      "vqmt": 41.4
     },
     "C": {
-      "apka": 51.9,
-      "vqmt": 52.5
+      "apka": 52.0,
+      "vqmt": 53.6
     },
     "CAG": {
-      "apka": 22.4,
-      "vqmt": 39.8
+      "apka": 50.7,
+      "vqmt": 40.6
     },
     "CAH": {
-      "apka": 17.6,
-      "vqmt": 44.7
+      "apka": 29.4,
+      "vqmt": 45.8
     },
     "CARR": {
-      "apka": 31.8,
-      "vqmt": 29.0
+      "apka": 49.3,
+      "vqmt": 31.3
     },
     "CAT": {
-      "apka": 42.8,
-      "vqmt": 54.7
+      "apka": 38.5,
+      "vqmt": 55.4
     },
     "CB": {
-      "apka": 10.1,
-      "vqmt": 49.2
+      "apka": 43.9,
+      "vqmt": 50.0
     },
     "CBOE": {
-      "apka": 62.5,
-      "vqmt": 52.6
+      "apka": 65.6,
+      "vqmt": 55.6
     },
     "CBRE": {
-      "apka": 0.0,
-      "vqmt": 30.8
+      "apka": 68.7,
+      "vqmt": 31.9
     },
     "CCI": {
-      "apka": 39.9,
-      "vqmt": 28.1
+      "apka": 65.3,
+      "vqmt": 29.9
     },
     "CCL": {
-      "apka": 11.8,
-      "vqmt": 28.5
+      "apka": 43.3,
+      "vqmt": 30.4
     },
     "CDNS": {
-      "apka": 67.0,
-      "vqmt": 36.8
+      "apka": 65.2,
+      "vqmt": 38.2
     },
     "CDW": {
-      "apka": 49.4,
-      "vqmt": 34.3
+      "apka": 56.2,
+      "vqmt": 35.7
     },
     "CEG": {
-      "apka": 24.3,
-      "vqmt": 27.3
+      "apka": 38.4,
+      "vqmt": 28.5
     },
     "CF": {
-      "apka": 23.6,
+      "apka": 42.7,
       "vqmt": 60.2
     },
     "CFG": {
-      "apka": 20.3,
-      "vqmt": 52.1
+      "apka": 33.1,
+      "vqmt": 53.0
     },
     "CHD": {
-      "apka": 35.6,
-      "vqmt": 40.8
+      "apka": 54.2,
+      "vqmt": 42.6
     },
     "CHRW": {
-      "apka": 68.3,
-      "vqmt": 41.9
+      "apka": 68.2,
+      "vqmt": 43.0
     },
     "CHTR": {
-      "apka": 13.2,
-      "vqmt": 41.1
+      "apka": 19.4,
+      "vqmt": 42.9
     },
     "CI": {
-      "apka": 57.5,
-      "vqmt": 41.5
+      "apka": 70.8,
+      "vqmt": 41.7
     },
     "CIEN": {
-      "apka": 35.8,
-      "vqmt": 57.7
+      "apka": 39.5,
+      "vqmt": 58.5
     },
     "CINF": {
-      "apka": 39.4,
-      "vqmt": 40.0
+      "apka": 69.9,
+      "vqmt": 42.0
     },
     "CL": {
-      "apka": 19.3,
-      "vqmt": 62.7
+      "apka": 52.9,
+      "vqmt": 63.3
     },
     "CLX": {
-      "apka": 29.0,
-      "vqmt": 18.8
+      "apka": 64.7,
+      "vqmt": 20.7
     },
     "CMCSA": {
-      "apka": 25.0,
-      "vqmt": 35.7
+      "apka": 45.5,
+      "vqmt": 37.5
     },
     "CME": {
-      "apka": 46.6,
-      "vqmt": 47.1
+      "apka": 47.7,
+      "vqmt": 48.6
     },
     "CMG": {
-      "apka": 50.7,
-      "vqmt": 35.9
+      "apka": 66.1,
+      "vqmt": 36.3
     },
     "CMI": {
-      "apka": 27.9,
-      "vqmt": 50.5
+      "apka": 40.6,
+      "vqmt": 51.2
     },
     "CMS": {
-      "apka": 37.0,
-      "vqmt": 40.3
+      "apka": 46.3,
+      "vqmt": 41.8
     },
     "CNC": {
-      "apka": 48.6,
-      "vqmt": 75.4
+      "apka": 63.9,
+      "vqmt": 76.1
     },
     "CNP": {
-      "apka": 46.8,
-      "vqmt": 40.8
+      "apka": 54.4,
+      "vqmt": 41.9
     },
     "COF": {
-      "apka": 47.8,
-      "vqmt": 37.0
+      "apka": 56.2,
+      "vqmt": 37.7
     },
     "COIN": {
-      "apka": 52.4,
+      "apka": 76.4,
       "vqmt": 0.0
     },
     "COO": {
-      "apka": 6.6,
-      "vqmt": 35.6
+      "apka": 17.9,
+      "vqmt": 40.9
     },
     "COP": {
-      "apka": 28.5,
-      "vqmt": 47.0
+      "apka": 46.2,
+      "vqmt": 48.1
     },
     "COR": {
-      "apka": 34.5,
-      "vqmt": 48.3
+      "apka": 35.6,
+      "vqmt": 49.0
     },
     "COST": {
-      "apka": 36.7,
-      "vqmt": 34.9
+      "apka": 58.3,
+      "vqmt": 36.2
     },
     "CPAY": {
-      "apka": 12.2,
-      "vqmt": 45.6
+      "apka": 44.2,
+      "vqmt": 46.2
     },
     "CPB": {
-      "apka": 21.7,
-      "vqmt": 33.7
+      "apka": 42.6,
+      "vqmt": 35.0
     },
     "CPRT": {
-      "apka": 15.5,
-      "vqmt": 32.7
-    },
-    "CPT": {
-      "apka": 40.5,
+      "apka": 48.0,
       "vqmt": 33.9
     },
+    "CPT": {
+      "apka": 51.7,
+      "vqmt": 34.3
+    },
     "CRH": {
-      "apka": 60.5,
-      "vqmt": 19.6
+      "apka": 73.7,
+      "vqmt": 21.2
     },
     "CRL": {
-      "apka": 27.7,
-      "vqmt": 14.9
+      "apka": 54.2,
+      "vqmt": 16.6
     },
     "CRM": {
-      "apka": 100.0,
-      "vqmt": 29.9
+      "apka": 86.9,
+      "vqmt": 30.9
     },
     "CRWD": {
       "apka": 99.3,
-      "vqmt": 45.2
+      "vqmt": 45.5
     },
     "CSCO": {
-      "apka": 44.2,
-      "vqmt": 54.9
+      "apka": 56.6,
+      "vqmt": 55.8
     },
     "CSGP": {
-      "apka": 19.4,
-      "vqmt": 6.2
+      "apka": 44.6,
+      "vqmt": 8.0
     },
     "CSX": {
-      "apka": 33.2,
-      "vqmt": 52.9
+      "apka": 42.9,
+      "vqmt": 53.8
     },
     "CTAS": {
-      "apka": 24.1,
-      "vqmt": 41.8
+      "apka": 31.1,
+      "vqmt": 43.4
     },
     "CTSH": {
-      "apka": 34.6,
-      "vqmt": 40.0
+      "apka": 67.7,
+      "vqmt": 41.5
     },
     "CTVA": {
-      "apka": 41.6,
-      "vqmt": 21.9
+      "apka": 56.2,
+      "vqmt": 19.9
     },
     "CVNA": {
-      "apka": 28.6,
-      "vqmt": 28.5
+      "apka": 48.2,
+      "vqmt": 29.9
     },
     "CVS": {
-      "apka": 56.2,
-      "vqmt": 56.6
+      "apka": 49.9,
+      "vqmt": 57.1
     },
     "CVX": {
-      "apka": 15.5,
-      "vqmt": 39.4
+      "apka": 28.8,
+      "vqmt": 41.2
     },
     "D": {
-      "apka": 46.6,
-      "vqmt": 41.7
+      "apka": 50.1,
+      "vqmt": 42.9
     },
     "DAL": {
-      "apka": 30.3,
-      "vqmt": 35.1
+      "apka": 31.5,
+      "vqmt": 35.8
     },
     "DASH": {
-      "apka": 57.4,
-      "vqmt": 24.3
+      "apka": 47.5,
+      "vqmt": 25.7
     },
     "DD": {
-      "apka": 43.5,
-      "vqmt": 43.0
+      "apka": 48.5,
+      "vqmt": 44.5
     },
     "DDOG": {
-      "apka": 58.1,
+      "apka": 72.6,
       "vqmt": 47.3
     },
     "DE": {
-      "apka": 25.5,
-      "vqmt": 37.9
+      "apka": 32.2,
+      "vqmt": 38.7
     },
     "DECK": {
-      "apka": 33.6,
-      "vqmt": 67.2
+      "apka": 39.9,
+      "vqmt": 66.6
     },
     "DELL": {
-      "apka": 49.4,
-      "vqmt": 48.1
+      "apka": 41.9,
+      "vqmt": 48.6
     },
     "DG": {
-      "apka": 24.1,
-      "vqmt": 43.8
+      "apka": 25.5,
+      "vqmt": 44.4
     },
     "DGX": {
-      "apka": 14.7,
-      "vqmt": 45.3
+      "apka": 31.8,
+      "vqmt": 46.3
     },
     "DHI": {
-      "apka": 50.0,
-      "vqmt": 36.1
+      "apka": 55.6,
+      "vqmt": 36.9
     },
     "DHR": {
-      "apka": 26.5,
-      "vqmt": 34.7
-    },
-    "DIS": {
-      "apka": 23.1,
-      "vqmt": 31.6
-    },
-    "DLR": {
-      "apka": 32.1,
+      "apka": 59.1,
       "vqmt": 35.8
     },
+    "DIS": {
+      "apka": 45.0,
+      "vqmt": 33.3
+    },
+    "DLR": {
+      "apka": 35.7,
+      "vqmt": 36.4
+    },
     "DLTR": {
-      "apka": 36.1,
-      "vqmt": 50.8
+      "apka": 55.1,
+      "vqmt": 51.6
     },
     "DOC": {
-      "apka": 30.7,
-      "vqmt": 46.8
+      "apka": 48.1,
+      "vqmt": 47.6
     },
     "DOV": {
-      "apka": 51.9,
-      "vqmt": 40.8
+      "apka": 52.6,
+      "vqmt": 42.3
     },
     "DOW": {
-      "apka": 12.8,
-      "vqmt": 19.5
+      "apka": 26.5,
+      "vqmt": 21.6
     },
     "DPZ": {
-      "apka": 7.5,
-      "vqmt": 41.4
-    },
-    "DRI": {
-      "apka": 3.2,
-      "vqmt": 41.5
-    },
-    "DTE": {
-      "apka": 38.7,
-      "vqmt": 35.2
-    },
-    "DUK": {
-      "apka": 47.9,
-      "vqmt": 41.9
-    },
-    "DVA": {
-      "apka": 65.4,
-      "vqmt": 52.2
-    },
-    "DVN": {
-      "apka": 18.0,
-      "vqmt": 50.9
-    },
-    "DXCM": {
-      "apka": 16.5,
-      "vqmt": 37.9
-    },
-    "EBAY": {
-      "apka": 54.0,
-      "vqmt": 48.0
-    },
-    "ECL": {
-      "apka": 21.6,
-      "vqmt": 36.8
-    },
-    "ED": {
-      "apka": 51.5,
-      "vqmt": 36.8
-    },
-    "EFX": {
-      "apka": 29.4,
-      "vqmt": 27.4
-    },
-    "EG": {
-      "apka": 40.7,
-      "vqmt": 58.9
-    },
-    "EIX": {
-      "apka": 63.1,
-      "vqmt": 54.2
-    },
-    "EL": {
-      "apka": 54.9,
-      "vqmt": 27.2
-    },
-    "ELV": {
-      "apka": 35.8,
-      "vqmt": 48.6
-    },
-    "EME": {
-      "apka": 30.6,
-      "vqmt": 47.1
-    },
-    "EMR": {
-      "apka": 46.8,
-      "vqmt": 39.6
-    },
-    "EOG": {
-      "apka": 38.4,
-      "vqmt": 59.7
-    },
-    "EPAM": {
-      "apka": 37.5,
-      "vqmt": 26.0
-    },
-    "EQIX": {
-      "apka": 51.5,
-      "vqmt": 43.6
-    },
-    "EQT": {
-      "apka": 17.9,
-      "vqmt": 66.1
-    },
-    "ERIE": {
-      "apka": 25.5,
-      "vqmt": 34.0
-    },
-    "ES": {
-      "apka": 45.4,
-      "vqmt": 44.5
-    },
-    "ESS": {
-      "apka": 20.8,
-      "vqmt": 38.6
-    },
-    "ETN": {
-      "apka": 37.5,
-      "vqmt": 38.4
-    },
-    "ETR": {
-      "apka": 63.8,
-      "vqmt": 41.0
-    },
-    "EVRG": {
-      "apka": 49.5,
-      "vqmt": 47.4
-    },
-    "EW": {
-      "apka": 26.2,
-      "vqmt": 35.3
-    },
-    "EXC": {
-      "apka": 33.9,
-      "vqmt": 42.7
-    },
-    "EXE": {
-      "apka": 38.5,
-      "vqmt": 63.3
-    },
-    "EXPD": {
-      "apka": 25.3,
-      "vqmt": 50.6
-    },
-    "EXPE": {
-      "apka": 25.6,
-      "vqmt": 43.9
-    },
-    "EXR": {
-      "apka": 44.5,
-      "vqmt": 41.1
-    },
-    "F": {
-      "apka": 37.7,
-      "vqmt": 63.5
-    },
-    "FANG": {
-      "apka": 29.6,
-      "vqmt": 37.2
-    },
-    "FAST": {
-      "apka": 45.1,
-      "vqmt": 42.9
-    },
-    "FCX": {
-      "apka": 48.0,
-      "vqmt": 46.0
-    },
-    "FDS": {
-      "apka": 44.6,
-      "vqmt": 34.5
-    },
-    "FDX": {
-      "apka": 26.6,
-      "vqmt": 52.2
-    },
-    "FE": {
-      "apka": 42.3,
+      "apka": 64.5,
       "vqmt": 42.6
     },
-    "FFIV": {
-      "apka": 68.5,
-      "vqmt": 44.2
-    },
-    "FICO": {
-      "apka": 42.6,
-      "vqmt": 49.7
-    },
-    "FIS": {
-      "apka": 37.9,
-      "vqmt": 36.6
-    },
-    "FISV": {
-      "apka": 16.7,
-      "vqmt": 23.8
-    },
-    "FITB": {
-      "apka": 26.6,
-      "vqmt": 37.6
-    },
-    "FIX": {
-      "apka": 19.7,
-      "vqmt": 62.5
-    },
-    "FOX": {
-      "apka": 30.2,
-      "vqmt": 33.4
-    },
-    "FOXA": {
-      "apka": 29.8,
-      "vqmt": 33.7
-    },
-    "FRT": {
-      "apka": 37.0,
-      "vqmt": 56.0
-    },
-    "FSLR": {
-      "apka": 20.2,
-      "vqmt": 49.0
-    },
-    "FTNT": {
-      "apka": 43.0,
-      "vqmt": 63.4
-    },
-    "FTV": {
+    "DRI": {
       "apka": 49.4,
-      "vqmt": 41.2
+      "vqmt": 42.3
     },
-    "GD": {
-      "apka": 29.8,
-      "vqmt": 43.4
-    },
-    "GDDY": {
-      "apka": 20.8,
-      "vqmt": 42.1
-    },
-    "GE": {
-      "apka": 18.7,
-      "vqmt": 44.5
-    },
-    "GEHC": {
-      "apka": 13.9,
-      "vqmt": 35.0
-    },
-    "GEN": {
-      "apka": 45.3,
-      "vqmt": 35.0
-    },
-    "GEV": {
-      "apka": 34.0,
-      "vqmt": 74.8
-    },
-    "GILD": {
-      "apka": 26.5,
-      "vqmt": 50.7
-    },
-    "GIS": {
-      "apka": 32.7,
-      "vqmt": 31.1
-    },
-    "GL": {
-      "apka": 34.5,
-      "vqmt": 51.5
-    },
-    "GLW": {
-      "apka": 63.3,
-      "vqmt": 49.8
-    },
-    "GM": {
-      "apka": 19.7,
-      "vqmt": 61.4
-    },
-    "GNRC": {
-      "apka": 22.3,
-      "vqmt": 34.8
-    },
-    "GOOG": {
-      "apka": 26.6,
-      "vqmt": 76.4
-    },
-    "GOOGL": {
-      "apka": 27.9,
-      "vqmt": 76.4
-    },
-    "GPC": {
-      "apka": 31.3,
-      "vqmt": 32.5
-    },
-    "GPN": {
-      "apka": 14.0,
-      "vqmt": 17.5
-    },
-    "GRMN": {
-      "apka": 36.0,
-      "vqmt": 49.6
-    },
-    "GS": {
-      "apka": 48.6,
-      "vqmt": 53.9
-    },
-    "GWW": {
-      "apka": 75.5,
-      "vqmt": 51.3
-    },
-    "HAL": {
-      "apka": 44.3,
-      "vqmt": 51.9
-    },
-    "HAS": {
-      "apka": 13.6,
-      "vqmt": 52.5
-    },
-    "HBAN": {
-      "apka": 43.8,
-      "vqmt": 39.5
-    },
-    "HCA": {
-      "apka": 12.9,
-      "vqmt": 39.4
-    },
-    "HD": {
-      "apka": 28.1,
-      "vqmt": 33.2
-    },
-    "HIG": {
-      "apka": 27.9,
-      "vqmt": 46.2
-    },
-    "HII": {
-      "apka": 30.8,
-      "vqmt": 41.9
-    },
-    "HLT": {
-      "apka": 41.0,
-      "vqmt": 40.0
-    },
-    "HON": {
-      "apka": 38.8,
-      "vqmt": 37.7
-    },
-    "HPE": {
-      "apka": 43.0,
-      "vqmt": 51.2
-    },
-    "HPQ": {
+    "DTE": {
       "apka": 42.7,
-      "vqmt": 34.8
+      "vqmt": 36.9
     },
-    "HRL": {
-      "apka": 6.7,
-      "vqmt": 36.3
+    "DUK": {
+      "apka": 55.5,
+      "vqmt": 43.1
     },
-    "HSIC": {
-      "apka": 6.0,
-      "vqmt": 41.7
+    "DVA": {
+      "apka": 58.4,
+      "vqmt": 53.5
     },
-    "HST": {
-      "apka": 40.9,
-      "vqmt": 48.6
+    "DVN": {
+      "apka": 37.3,
+      "vqmt": 51.7
     },
-    "HSY": {
-      "apka": 36.5,
-      "vqmt": 42.0
+    "DXCM": {
+      "apka": 45.3,
+      "vqmt": 42.9
     },
-    "HUBB": {
-      "apka": 43.8,
-      "vqmt": 39.5
+    "EBAY": {
+      "apka": 76.0,
+      "vqmt": 49.4
     },
-    "HUM": {
-      "apka": 36.6,
-      "vqmt": 52.7
+    "ECL": {
+      "apka": 44.6,
+      "vqmt": 38.0
     },
-    "HWM": {
-      "apka": 33.9,
+    "ED": {
+      "apka": 51.1,
+      "vqmt": 38.2
+    },
+    "EFX": {
+      "apka": 49.8,
+      "vqmt": 28.5
+    },
+    "EG": {
+      "apka": 50.8,
+      "vqmt": 59.5
+    },
+    "EIX": {
+      "apka": 15.0,
       "vqmt": 56.7
     },
-    "IBKR": {
-      "apka": 37.4,
+    "EL": {
+      "apka": 67.5,
+      "vqmt": 28.6
+    },
+    "ELV": {
+      "apka": 65.0,
+      "vqmt": 49.2
+    },
+    "EME": {
+      "apka": 38.7,
+      "vqmt": 47.3
+    },
+    "EMR": {
+      "apka": 44.1,
+      "vqmt": 40.7
+    },
+    "EOG": {
+      "apka": 43.0,
+      "vqmt": 60.4
+    },
+    "EPAM": {
+      "apka": 81.1,
+      "vqmt": 28.2
+    },
+    "EQIX": {
+      "apka": 63.6,
+      "vqmt": 44.0
+    },
+    "EQT": {
+      "apka": 30.8,
+      "vqmt": 66.7
+    },
+    "ERIE": {
+      "apka": 46.0,
+      "vqmt": 36.3
+    },
+    "ES": {
+      "apka": 57.5,
       "vqmt": 45.2
     },
-    "IBM": {
-      "apka": 41.3,
-      "vqmt": 30.4
+    "ESS": {
+      "apka": 61.3,
+      "vqmt": 39.9
     },
-    "ICE": {
-      "apka": 37.6,
+    "ETN": {
+      "apka": 12.8,
+      "vqmt": 41.4
+    },
+    "ETR": {
+      "apka": 76.4,
+      "vqmt": 42.3
+    },
+    "EVRG": {
+      "apka": 63.3,
+      "vqmt": 48.8
+    },
+    "EW": {
+      "apka": 28.0,
+      "vqmt": 35.9
+    },
+    "EXC": {
+      "apka": 48.7,
+      "vqmt": 44.4
+    },
+    "EXE": {
+      "apka": 36.8,
+      "vqmt": 63.7
+    },
+    "EXPD": {
+      "apka": 33.1,
+      "vqmt": 52.2
+    },
+    "EXPE": {
+      "apka": 48.7,
+      "vqmt": 44.6
+    },
+    "EXR": {
+      "apka": 64.6,
+      "vqmt": 42.0
+    },
+    "F": {
+      "apka": 66.6,
+      "vqmt": 64.2
+    },
+    "FANG": {
+      "apka": 35.8,
+      "vqmt": 38.5
+    },
+    "FAST": {
+      "apka": 47.7,
+      "vqmt": 44.8
+    },
+    "FCX": {
+      "apka": 63.6,
+      "vqmt": 46.6
+    },
+    "FDS": {
+      "apka": 69.4,
+      "vqmt": 35.7
+    },
+    "FDX": {
+      "apka": 42.3,
+      "vqmt": 52.8
+    },
+    "FE": {
+      "apka": 62.3,
+      "vqmt": 43.6
+    },
+    "FFIV": {
+      "apka": 46.7,
+      "vqmt": 46.3
+    },
+    "FICO": {
+      "apka": 68.1,
+      "vqmt": 49.4
+    },
+    "FIS": {
+      "apka": 59.5,
+      "vqmt": 37.8
+    },
+    "FISV": {
+      "apka": 35.3,
+      "vqmt": 25.1
+    },
+    "FITB": {
+      "apka": 56.3,
+      "vqmt": 38.7
+    },
+    "FIX": {
+      "apka": 34.5,
+      "vqmt": 63.1
+    },
+    "FOX": {
+      "apka": 51.9,
+      "vqmt": 34.7
+    },
+    "FOXA": {
+      "apka": 49.0,
+      "vqmt": 34.8
+    },
+    "FRT": {
+      "apka": 61.7,
+      "vqmt": 56.8
+    },
+    "FSLR": {
+      "apka": 38.5,
+      "vqmt": 49.5
+    },
+    "FTNT": {
+      "apka": 52.2,
+      "vqmt": 64.3
+    },
+    "FTV": {
+      "apka": 58.1,
+      "vqmt": 43.1
+    },
+    "GD": {
+      "apka": 37.1,
+      "vqmt": 44.8
+    },
+    "GDDY": {
+      "apka": 53.5,
+      "vqmt": 40.5
+    },
+    "GE": {
+      "apka": 46.0,
+      "vqmt": 45.7
+    },
+    "GEHC": {
+      "apka": 57.9,
+      "vqmt": 35.5
+    },
+    "GEN": {
+      "apka": 48.8,
+      "vqmt": 36.6
+    },
+    "GEV": {
+      "apka": 39.6,
+      "vqmt": 75.0
+    },
+    "GILD": {
+      "apka": 50.5,
+      "vqmt": 52.0
+    },
+    "GIS": {
+      "apka": 54.2,
+      "vqmt": 32.4
+    },
+    "GL": {
+      "apka": 29.9,
+      "vqmt": 52.2
+    },
+    "GLW": {
+      "apka": 57.7,
+      "vqmt": 50.7
+    },
+    "GM": {
+      "apka": 30.9,
+      "vqmt": 62.1
+    },
+    "GNRC": {
+      "apka": 28.0,
+      "vqmt": 37.0
+    },
+    "GOOG": {
+      "apka": 67.3,
+      "vqmt": 77.6
+    },
+    "GOOGL": {
+      "apka": 63.3,
+      "vqmt": 77.6
+    },
+    "GPC": {
+      "apka": 31.9,
+      "vqmt": 33.7
+    },
+    "GPN": {
+      "apka": 42.1,
+      "vqmt": 18.1
+    },
+    "GRMN": {
+      "apka": 48.6,
+      "vqmt": 49.3
+    },
+    "GS": {
+      "apka": 70.6,
+      "vqmt": 54.3
+    },
+    "GWW": {
+      "apka": 77.8,
+      "vqmt": 52.6
+    },
+    "HAL": {
+      "apka": 56.0,
+      "vqmt": 53.0
+    },
+    "HAS": {
+      "apka": 16.4,
+      "vqmt": 53.5
+    },
+    "HBAN": {
+      "apka": 52.3,
+      "vqmt": 40.6
+    },
+    "HCA": {
+      "apka": 33.5,
       "vqmt": 40.9
     },
+    "HD": {
+      "apka": 54.3,
+      "vqmt": 34.5
+    },
+    "HIG": {
+      "apka": 37.2,
+      "vqmt": 47.1
+    },
+    "HII": {
+      "apka": 20.7,
+      "vqmt": 43.9
+    },
+    "HLT": {
+      "apka": 77.4,
+      "vqmt": 41.2
+    },
+    "HON": {
+      "apka": 42.7,
+      "vqmt": 39.0
+    },
+    "HPE": {
+      "apka": 42.9,
+      "vqmt": 51.3
+    },
+    "HPQ": {
+      "apka": 48.9,
+      "vqmt": 35.4
+    },
+    "HRL": {
+      "apka": 30.1,
+      "vqmt": 41.2
+    },
+    "HSIC": {
+      "apka": 22.9,
+      "vqmt": 42.8
+    },
+    "HST": {
+      "apka": 65.8,
+      "vqmt": 49.9
+    },
+    "HSY": {
+      "apka": 47.8,
+      "vqmt": 43.2
+    },
+    "HUBB": {
+      "apka": 42.0,
+      "vqmt": 40.4
+    },
+    "HUM": {
+      "apka": 46.8,
+      "vqmt": 53.3
+    },
+    "HWM": {
+      "apka": 49.3,
+      "vqmt": 57.9
+    },
+    "IBKR": {
+      "apka": 45.2,
+      "vqmt": 44.9
+    },
+    "IBM": {
+      "apka": 86.4,
+      "vqmt": 31.8
+    },
+    "ICE": {
+      "apka": 61.4,
+      "vqmt": 41.9
+    },
     "IDXX": {
-      "apka": 35.0,
-      "vqmt": 46.0
+      "apka": 45.1,
+      "vqmt": 47.2
     },
     "IEX": {
       "apka": 45.9,
-      "vqmt": 47.6
+      "vqmt": 48.5
     },
     "IFF": {
-      "apka": 28.5,
-      "vqmt": 39.4
+      "apka": 53.2,
+      "vqmt": 40.4
     },
     "INCY": {
-      "apka": 20.7,
-      "vqmt": 57.0
+      "apka": 49.1,
+      "vqmt": 58.0
     },
     "INTC": {
-      "apka": 27.4,
-      "vqmt": 35.6
+      "apka": 45.5,
+      "vqmt": 36.8
     },
     "INTU": {
-      "apka": 10.4,
-      "vqmt": 20.8
+      "apka": 55.0,
+      "vqmt": 22.8
+    },
+    "INTW": {
+      "apka": 0.0
     },
     "INVH": {
-      "apka": 47.3,
-      "vqmt": 37.3
+      "apka": 58.8,
+      "vqmt": 38.8
     },
     "IP": {
-      "apka": 25.5,
+      "apka": 40.8,
       "vqmt": 26.6
     },
     "IQV": {
-      "apka": 30.0,
-      "vqmt": 40.6
-    },
-    "IR": {
-      "apka": 14.0,
-      "vqmt": 35.3
-    },
-    "IRM": {
-      "apka": 44.3,
-      "vqmt": 41.1
-    },
-    "ISRG": {
-      "apka": 26.8,
-      "vqmt": 36.0
-    },
-    "IT": {
-      "apka": 38.4,
-      "vqmt": 51.5
-    },
-    "ITW": {
-      "apka": 42.0,
-      "vqmt": 48.7
-    },
-    "IVZ": {
-      "apka": 47.0,
-      "vqmt": 50.0
-    },
-    "J": {
-      "apka": 37.2,
-      "vqmt": 21.7
-    },
-    "JBHT": {
-      "apka": 28.1,
-      "vqmt": 50.7
-    },
-    "JBL": {
-      "apka": 24.3,
-      "vqmt": 46.9
-    },
-    "JCI": {
-      "apka": 25.0,
-      "vqmt": 43.9
-    },
-    "JKHY": {
-      "apka": 35.9,
-      "vqmt": 42.1
-    },
-    "JNJ": {
-      "apka": 28.1,
-      "vqmt": 52.7
-    },
-    "JPM": {
-      "apka": 19.6,
-      "vqmt": 48.8
-    },
-    "KDP": {
-      "apka": 29.3,
-      "vqmt": 35.2
-    },
-    "KEY": {
-      "apka": 47.0,
-      "vqmt": 50.0
-    },
-    "KEYS": {
-      "apka": 46.6,
-      "vqmt": 54.3
-    },
-    "KHC": {
-      "apka": 20.0,
-      "vqmt": 45.8
-    },
-    "KIM": {
-      "apka": 55.2,
-      "vqmt": 44.8
-    },
-    "KKR": {
-      "apka": 25.2,
-      "vqmt": 29.5
-    },
-    "KLAC": {
-      "apka": 31.2,
-      "vqmt": 89.7
-    },
-    "KMB": {
-      "apka": 24.2,
-      "vqmt": 46.0
-    },
-    "KMI": {
-      "apka": 54.5,
-      "vqmt": 46.8
-    },
-    "KO": {
-      "apka": 26.2,
-      "vqmt": 54.5
-    },
-    "KR": {
-      "apka": 38.4,
-      "vqmt": 40.0
-    },
-    "KVUE": {
-      "apka": 30.5,
-      "vqmt": 38.4
-    },
-    "L": {
-      "apka": 36.5,
-      "vqmt": 43.1
-    },
-    "LDOS": {
-      "apka": 17.5,
-      "vqmt": 31.6
-    },
-    "LEN": {
-      "apka": 25.7,
-      "vqmt": 24.5
-    },
-    "LH": {
-      "apka": 27.8,
-      "vqmt": 40.5
-    },
-    "LHX": {
-      "apka": 38.2,
-      "vqmt": 36.5
-    },
-    "LII": {
-      "apka": 51.7,
-      "vqmt": 31.4
-    },
-    "LIN": {
-      "apka": 41.9,
-      "vqmt": 41.5
-    },
-    "LLY": {
-      "apka": 8.6,
-      "vqmt": 64.3
-    },
-    "LMT": {
-      "apka": 36.2,
-      "vqmt": 49.0
-    },
-    "LNT": {
-      "apka": 55.1,
-      "vqmt": 42.3
-    },
-    "LOW": {
-      "apka": 23.7,
-      "vqmt": 28.9
-    },
-    "LRCX": {
-      "apka": 52.4,
-      "vqmt": 71.4
-    },
-    "LULU": {
-      "apka": 14.3,
-      "vqmt": 52.6
-    },
-    "LUV": {
-      "apka": 20.3,
-      "vqmt": 46.0
-    },
-    "LVS": {
-      "apka": 16.4,
-      "vqmt": 45.6
-    },
-    "LW": {
-      "apka": 27.9,
-      "vqmt": 31.8
-    },
-    "LYB": {
-      "apka": 6.4,
-      "vqmt": 35.0
-    },
-    "LYV": {
-      "apka": 24.5,
-      "vqmt": 39.0
-    },
-    "MA": {
-      "apka": 29.5,
-      "vqmt": 57.0
-    },
-    "MAA": {
-      "apka": 45.5,
-      "vqmt": 36.4
-    },
-    "MAR": {
-      "apka": 60.9,
-      "vqmt": 44.0
-    },
-    "MAS": {
-      "apka": 55.4,
-      "vqmt": 34.4
-    },
-    "MCD": {
-      "apka": 31.7,
-      "vqmt": 29.5
-    },
-    "MCHP": {
-      "apka": 30.2,
-      "vqmt": 33.1
-    },
-    "MCK": {
-      "apka": 42.8,
-      "vqmt": 34.1
-    },
-    "MCO": {
-      "apka": 25.1,
-      "vqmt": 44.9
-    },
-    "MDLZ": {
-      "apka": 33.6,
-      "vqmt": 34.9
-    },
-    "MDT": {
-      "apka": 19.8,
-      "vqmt": 35.5
-    },
-    "MET": {
-      "apka": 21.1,
-      "vqmt": 40.8
-    },
-    "META": {
-      "apka": 68.2,
-      "vqmt": 50.1
-    },
-    "MGM": {
-      "apka": 46.2,
-      "vqmt": 39.1
-    },
-    "MKC": {
-      "apka": 32.7,
-      "vqmt": 66.6
-    },
-    "MLM": {
-      "apka": 55.8,
-      "vqmt": 77.6
-    },
-    "MMM": {
-      "apka": 37.2,
-      "vqmt": 41.6
-    },
-    "MNST": {
-      "apka": 10.0,
-      "vqmt": 58.1
-    },
-    "MO": {
-      "apka": 51.2,
-      "vqmt": 52.7
-    },
-    "MOH": {
-      "apka": 58.2,
-      "vqmt": 31.8
-    },
-    "MPC": {
-      "apka": 51.7,
-      "vqmt": 47.2
-    },
-    "MPWR": {
-      "apka": 41.7,
-      "vqmt": 53.9
-    },
-    "MRK": {
-      "apka": 25.0,
-      "vqmt": 23.1
-    },
-    "MRNA": {
-      "apka": 66.5,
-      "vqmt": 10.3
-    },
-    "MRSH": {
-      "apka": 14.4,
-      "vqmt": 38.7
-    },
-    "MS": {
-      "apka": 43.7,
-      "vqmt": 53.7
-    },
-    "MSCI": {
-      "apka": 44.8,
-      "vqmt": 52.5
-    },
-    "MSFT": {
-      "apka": 30.3,
-      "vqmt": 43.8
-    },
-    "MSI": {
-      "apka": 22.8,
-      "vqmt": 41.0
-    },
-    "MTB": {
-      "apka": 26.2,
-      "vqmt": 49.7
-    },
-    "MTCH": {
-      "apka": 40.9,
-      "vqmt": 40.9
-    },
-    "MTD": {
-      "apka": 34.7,
-      "vqmt": 33.7
-    },
-    "MU": {
-      "apka": 23.9,
-      "vqmt": 91.3
-    },
-    "NCLH": {
-      "apka": 26.5,
-      "vqmt": 29.5
-    },
-    "NDAQ": {
-      "apka": 26.7,
-      "vqmt": 40.4
-    },
-    "NDSN": {
-      "apka": 39.3,
-      "vqmt": 47.6
-    },
-    "NEE": {
-      "apka": 58.0,
-      "vqmt": 48.4
-    },
-    "NEM": {
-      "apka": 26.0,
-      "vqmt": 67.7
-    },
-    "NFLX": {
-      "apka": 23.9,
-      "vqmt": 47.2
-    },
-    "NI": {
-      "apka": 39.7,
-      "vqmt": 50.6
-    },
-    "NKE": {
-      "apka": 17.5,
-      "vqmt": 22.1
-    },
-    "NOC": {
-      "apka": 33.7,
-      "vqmt": 35.7
-    },
-    "NOW": {
-      "apka": 70.2,
-      "vqmt": 23.7
-    },
-    "NRG": {
-      "apka": 35.4,
-      "vqmt": 27.7
-    },
-    "NSC": {
-      "apka": 26.3,
-      "vqmt": 43.2
-    },
-    "NTAP": {
-      "apka": 39.6,
-      "vqmt": 57.4
-    },
-    "NTRS": {
-      "apka": 23.1,
-      "vqmt": 51.2
-    },
-    "NUE": {
-      "apka": 35.9,
-      "vqmt": 52.3
-    },
-    "NVDA": {
-      "apka": 26.9,
-      "vqmt": 66.1
-    },
-    "NVR": {
-      "apka": 36.4,
-      "vqmt": 39.9
-    },
-    "NWS": {
-      "apka": 39.5,
-      "vqmt": 34.1
-    },
-    "NWSA": {
-      "apka": 34.2,
-      "vqmt": 35.1
-    },
-    "NXPI": {
-      "apka": 53.6,
-      "vqmt": 53.6
-    },
-    "O": {
-      "apka": 30.0,
-      "vqmt": 38.1
-    },
-    "ODFL": {
-      "apka": 29.4,
-      "vqmt": 51.1
-    },
-    "OKE": {
-      "apka": 27.6,
-      "vqmt": 44.3
-    },
-    "OMC": {
-      "apka": 34.4,
-      "vqmt": 39.8
-    },
-    "ON": {
-      "apka": 23.5,
-      "vqmt": 39.9
-    },
-    "ORCL": {
-      "apka": 61.7,
-      "vqmt": 25.6
-    },
-    "ORLY": {
-      "apka": 20.6,
-      "vqmt": 27.3
-    },
-    "OTIS": {
-      "apka": 49.0,
-      "vqmt": 34.5
-    },
-    "OXY": {
-      "apka": 9.4,
-      "vqmt": 77.7
-    },
-    "PANW": {
-      "apka": 45.6,
-      "vqmt": 50.0
-    },
-    "PAYC": {
-      "apka": 62.8,
-      "vqmt": 37.6
-    },
-    "PAYX": {
-      "apka": 31.2,
-      "vqmt": 42.1
-    },
-    "PCAR": {
-      "apka": 26.7,
-      "vqmt": 45.6
-    },
-    "PCG": {
-      "apka": 51.6,
-      "vqmt": 48.7
-    },
-    "PEG": {
-      "apka": 36.6,
-      "vqmt": 43.0
-    },
-    "PEP": {
-      "apka": 38.6,
-      "vqmt": 39.8
-    },
-    "PFE": {
-      "apka": 9.8,
-      "vqmt": 44.0
-    },
-    "PFG": {
-      "apka": 25.4,
-      "vqmt": 51.3
-    },
-    "PG": {
-      "apka": 56.9,
-      "vqmt": 40.6
-    },
-    "PGR": {
-      "apka": 18.3,
-      "vqmt": 43.6
-    },
-    "PH": {
-      "apka": 40.2,
-      "vqmt": 46.6
-    },
-    "PHM": {
-      "apka": 29.7,
-      "vqmt": 39.6
-    },
-    "PKG": {
-      "apka": 26.7,
-      "vqmt": 39.5
-    },
-    "PLD": {
-      "apka": 51.8,
-      "vqmt": 50.3
-    },
-    "PLTR": {
-      "apka": 70.1,
-      "vqmt": 46.7
-    },
-    "PM": {
-      "apka": 17.6,
-      "vqmt": 45.0
-    },
-    "PNC": {
-      "apka": 25.2,
-      "vqmt": 49.4
-    },
-    "PNR": {
-      "apka": 27.4,
-      "vqmt": 32.5
-    },
-    "PNW": {
-      "apka": 43.6,
-      "vqmt": 33.4
-    },
-    "PODD": {
-      "apka": 27.2,
-      "vqmt": 24.4
-    },
-    "POOL": {
-      "apka": 30.7,
-      "vqmt": 22.8
-    },
-    "PPG": {
-      "apka": 53.8,
-      "vqmt": 40.5
-    },
-    "PPL": {
-      "apka": 34.9,
-      "vqmt": 36.0
-    },
-    "PRU": {
-      "apka": 41.2,
-      "vqmt": 40.7
-    },
-    "PSA": {
-      "apka": 36.8,
-      "vqmt": 48.7
-    },
-    "PSKY": {
-      "apka": 42.9,
-      "vqmt": 22.3
-    },
-    "PSX": {
-      "apka": 48.6,
-      "vqmt": 43.1
-    },
-    "PTC": {
-      "apka": 36.9,
-      "vqmt": 30.7
-    },
-    "PWR": {
-      "apka": 11.7,
-      "vqmt": 45.8
-    },
-    "PYPL": {
-      "apka": 17.7,
-      "vqmt": 39.3
-    },
-    "Q": {
-      "apka": 15.2,
-      "vqmt": 34.7
-    },
-    "QCOM": {
-      "apka": 56.9,
-      "vqmt": 82.6
-    },
-    "RCL": {
-      "apka": 20.5,
-      "vqmt": 39.5
-    },
-    "REG": {
-      "apka": 38.5,
-      "vqmt": 44.0
-    },
-    "REGN": {
-      "apka": 7.9,
-      "vqmt": 45.9
-    },
-    "RF": {
-      "apka": 18.1,
-      "vqmt": 49.2
-    },
-    "RJF": {
-      "apka": 9.0,
+      "apka": 47.7,
       "vqmt": 41.3
     },
-    "RL": {
-      "apka": 26.9,
-      "vqmt": 56.3
+    "IR": {
+      "apka": 38.8,
+      "vqmt": 36.5
     },
-    "RMD": {
-      "apka": 37.0,
-      "vqmt": 39.3
+    "IRM": {
+      "apka": 62.7,
+      "vqmt": 41.4
     },
-    "ROK": {
-      "apka": 45.9,
+    "ISRG": {
+      "apka": 48.0,
+      "vqmt": 37.0
+    },
+    "IT": {
+      "apka": 51.8,
+      "vqmt": 51.9
+    },
+    "ITW": {
+      "apka": 43.9,
+      "vqmt": 50.1
+    },
+    "IVZ": {
+      "apka": 49.6,
+      "vqmt": 50.9
+    },
+    "J": {
+      "apka": 57.6,
+      "vqmt": 23.7
+    },
+    "JBHT": {
+      "apka": 54.0,
+      "vqmt": 51.6
+    },
+    "JBL": {
+      "apka": 35.6,
+      "vqmt": 48.2
+    },
+    "JCI": {
+      "apka": 45.1,
+      "vqmt": 45.8
+    },
+    "JKHY": {
+      "apka": 49.4,
+      "vqmt": 43.4
+    },
+    "JNJ": {
+      "apka": 53.9,
+      "vqmt": 53.8
+    },
+    "JPM": {
+      "apka": 54.0,
       "vqmt": 49.7
     },
-    "ROL": {
-      "apka": 67.3,
-      "vqmt": 29.4
+    "KDP": {
+      "apka": 46.6,
+      "vqmt": 36.3
     },
-    "ROP": {
-      "apka": 28.6,
-      "vqmt": 32.9
+    "KEY": {
+      "apka": 50.8,
+      "vqmt": 51.1
     },
-    "ROST": {
-      "apka": 22.2,
-      "vqmt": 56.7
+    "KEYS": {
+      "apka": 55.6,
+      "vqmt": 55.3
     },
-    "RSG": {
-      "apka": 29.9,
-      "vqmt": 33.8
+    "KHC": {
+      "apka": 58.1,
+      "vqmt": 46.4
     },
-    "RTX": {
-      "apka": 34.7,
-      "vqmt": 44.4
+    "KIM": {
+      "apka": 69.7,
+      "vqmt": 45.9
     },
-    "RVTY": {
-      "apka": 40.2,
-      "vqmt": 40.1
+    "KKR": {
+      "apka": 32.3,
+      "vqmt": 30.8
     },
-    "SBAC": {
-      "apka": 42.8,
-      "vqmt": 35.4
+    "KLAC": {
+      "apka": 33.4,
+      "vqmt": 90.0
     },
-    "SBUX": {
-      "apka": 34.1,
-      "vqmt": 38.7
+    "KMB": {
+      "apka": 71.5,
+      "vqmt": 47.5
     },
-    "SCHW": {
-      "apka": 5.6,
-      "vqmt": 45.1
+    "KMI": {
+      "apka": 18.3,
+      "vqmt": 47.9
     },
-    "SHW": {
-      "apka": 28.7,
+    "KO": {
+      "apka": 63.2,
+      "vqmt": 55.3
+    },
+    "KR": {
+      "apka": 53.7,
+      "vqmt": 41.7
+    },
+    "KVUE": {
+      "apka": 74.7,
+      "vqmt": 40.0
+    },
+    "L": {
+      "apka": 59.0,
+      "vqmt": 44.1
+    },
+    "LDOS": {
+      "apka": 41.3,
+      "vqmt": 33.6
+    },
+    "LEN": {
+      "apka": 46.9,
+      "vqmt": 25.6
+    },
+    "LH": {
+      "apka": 56.7,
+      "vqmt": 41.4
+    },
+    "LHX": {
+      "apka": 42.3,
+      "vqmt": 38.2
+    },
+    "LII": {
+      "apka": 57.6,
+      "vqmt": 33.1
+    },
+    "LIN": {
+      "apka": 51.4,
+      "vqmt": 40.6
+    },
+    "LLY": {
+      "apka": 52.0,
+      "vqmt": 65.1
+    },
+    "LMT": {
+      "apka": 24.1,
+      "vqmt": 50.2
+    },
+    "LNT": {
+      "apka": 60.9,
+      "vqmt": 43.8
+    },
+    "LOW": {
+      "apka": 57.1,
+      "vqmt": 30.4
+    },
+    "LRCX": {
+      "apka": 46.4,
+      "vqmt": 72.2
+    },
+    "LULU": {
+      "apka": 50.9,
+      "vqmt": 53.6
+    },
+    "LUV": {
+      "apka": 25.7,
+      "vqmt": 46.8
+    },
+    "LVS": {
+      "apka": 55.5,
+      "vqmt": 46.1
+    },
+    "LW": {
+      "apka": 38.1,
+      "vqmt": 32.7
+    },
+    "LYB": {
+      "apka": 30.0,
+      "vqmt": 37.3
+    },
+    "LYV": {
+      "apka": 55.5,
+      "vqmt": 38.1
+    },
+    "MA": {
+      "apka": 39.1,
+      "vqmt": 57.7
+    },
+    "MAA": {
+      "apka": 60.3,
+      "vqmt": 37.7
+    },
+    "MAR": {
+      "apka": 75.0,
+      "vqmt": 44.7
+    },
+    "MAS": {
+      "apka": 50.3,
+      "vqmt": 35.7
+    },
+    "MCD": {
+      "apka": 58.6,
+      "vqmt": 31.2
+    },
+    "MCHP": {
+      "apka": 52.1,
       "vqmt": 34.8
     },
-    "SJM": {
+    "MCK": {
+      "apka": 43.0,
+      "vqmt": 35.2
+    },
+    "MCO": {
+      "apka": 55.8,
+      "vqmt": 45.8
+    },
+    "MDLZ": {
+      "apka": 55.5,
+      "vqmt": 35.9
+    },
+    "MDT": {
+      "apka": 27.2,
+      "vqmt": 36.8
+    },
+    "MET": {
+      "apka": 53.6,
+      "vqmt": 41.8
+    },
+    "META": {
+      "apka": 69.5,
+      "vqmt": 51.8
+    },
+    "MGM": {
+      "apka": 59.4,
+      "vqmt": 39.7
+    },
+    "MKC": {
+      "apka": 39.6,
+      "vqmt": 67.5
+    },
+    "MLM": {
+      "apka": 76.1,
+      "vqmt": 77.8
+    },
+    "MMM": {
+      "apka": 38.1,
+      "vqmt": 42.6
+    },
+    "MNST": {
+      "apka": 1.0,
+      "vqmt": 38.8
+    },
+    "MO": {
+      "apka": 56.8,
+      "vqmt": 53.6
+    },
+    "MOH": {
+      "apka": 66.9,
+      "vqmt": 33.2
+    },
+    "MPC": {
+      "apka": 53.3,
+      "vqmt": 48.2
+    },
+    "MPWR": {
+      "apka": 57.7,
+      "vqmt": 56.2
+    },
+    "MRK": {
+      "apka": 59.2,
+      "vqmt": 24.6
+    },
+    "MRNA": {
+      "apka": 100.0,
+      "vqmt": 12.1
+    },
+    "MRSH": {
+      "apka": 36.9,
+      "vqmt": 39.8
+    },
+    "MS": {
+      "apka": 45.3,
+      "vqmt": 55.1
+    },
+    "MSCI": {
+      "apka": 61.2,
+      "vqmt": 53.5
+    },
+    "MSFT": {
+      "apka": 46.3,
+      "vqmt": 45.5
+    },
+    "MSI": {
+      "apka": 46.9,
+      "vqmt": 42.1
+    },
+    "MTB": {
+      "apka": 33.1,
+      "vqmt": 50.8
+    },
+    "MTCH": {
+      "apka": 62.4,
+      "vqmt": 42.6
+    },
+    "MTD": {
+      "apka": 38.0,
+      "vqmt": 35.7
+    },
+    "MU": {
+      "apka": 54.2,
+      "vqmt": 91.1
+    },
+    "NCLH": {
+      "apka": 29.3,
+      "vqmt": 30.0
+    },
+    "NDAQ": {
+      "apka": 45.9,
+      "vqmt": 41.3
+    },
+    "NDSN": {
+      "apka": 45.0,
+      "vqmt": 49.1
+    },
+    "NEE": {
+      "apka": 57.6,
+      "vqmt": 49.4
+    },
+    "NEM": {
+      "apka": 76.2,
+      "vqmt": 67.5
+    },
+    "NFLX": {
+      "apka": 39.5,
+      "vqmt": 48.2
+    },
+    "NI": {
+      "apka": 49.3,
+      "vqmt": 51.2
+    },
+    "NKE": {
+      "apka": 53.7,
+      "vqmt": 23.3
+    },
+    "NOC": {
+      "apka": 34.9,
+      "vqmt": 37.3
+    },
+    "NOW": {
+      "apka": 90.7,
+      "vqmt": 24.1
+    },
+    "NRG": {
+      "apka": 33.4,
+      "vqmt": 28.9
+    },
+    "NSC": {
+      "apka": 56.8,
+      "vqmt": 43.8
+    },
+    "NTAP": {
+      "apka": 41.2,
+      "vqmt": 57.8
+    },
+    "NTRS": {
+      "apka": 55.5,
+      "vqmt": 52.6
+    },
+    "NUE": {
+      "apka": 29.1,
+      "vqmt": 53.6
+    },
+    "NVDA": {
+      "apka": 46.5,
+      "vqmt": 67.4
+    },
+    "NVR": {
+      "apka": 79.6,
+      "vqmt": 40.9
+    },
+    "NWS": {
+      "apka": 50.3,
+      "vqmt": 34.7
+    },
+    "NWSA": {
+      "apka": 53.2,
+      "vqmt": 36.2
+    },
+    "NXPI": {
+      "apka": 75.5,
+      "vqmt": 52.4
+    },
+    "O": {
+      "apka": 63.0,
+      "vqmt": 39.4
+    },
+    "ODFL": {
+      "apka": 52.0,
+      "vqmt": 53.1
+    },
+    "OKE": {
+      "apka": 34.3,
+      "vqmt": 45.5
+    },
+    "OMC": {
+      "apka": 48.2,
+      "vqmt": 41.0
+    },
+    "ON": {
+      "apka": 60.9,
+      "vqmt": 40.4
+    },
+    "ORCL": {
+      "apka": 58.2,
+      "vqmt": 26.4
+    },
+    "ORLY": {
+      "apka": 26.5,
+      "vqmt": 29.3
+    },
+    "OTIS": {
+      "apka": 54.5,
+      "vqmt": 36.7
+    },
+    "OXY": {
+      "apka": 30.9,
+      "vqmt": 78.3
+    },
+    "PANW": {
+      "apka": 57.8,
+      "vqmt": 51.0
+    },
+    "PAYC": {
+      "apka": 81.3,
+      "vqmt": 39.3
+    },
+    "PAYX": {
+      "apka": 57.3,
+      "vqmt": 43.5
+    },
+    "PCAR": {
+      "apka": 25.3,
+      "vqmt": 46.7
+    },
+    "PCG": {
+      "apka": 48.7,
+      "vqmt": 52.5
+    },
+    "PEG": {
+      "apka": 55.6,
+      "vqmt": 43.9
+    },
+    "PEP": {
+      "apka": 66.4,
+      "vqmt": 40.9
+    },
+    "PFE": {
       "apka": 46.6,
-      "vqmt": 4.9
+      "vqmt": 45.4
+    },
+    "PFG": {
+      "apka": 42.2,
+      "vqmt": 52.7
+    },
+    "PG": {
+      "apka": 66.9,
+      "vqmt": 41.9
+    },
+    "PGR": {
+      "apka": 40.0,
+      "vqmt": 44.1
+    },
+    "PH": {
+      "apka": 41.3,
+      "vqmt": 48.2
+    },
+    "PHM": {
+      "apka": 53.8,
+      "vqmt": 40.2
+    },
+    "PKG": {
+      "apka": 34.3,
+      "vqmt": 39.7
+    },
+    "PLD": {
+      "apka": 75.9,
+      "vqmt": 51.1
+    },
+    "PLTR": {
+      "apka": 82.3,
+      "vqmt": 47.8
+    },
+    "PM": {
+      "apka": 45.4,
+      "vqmt": 45.8
+    },
+    "PNC": {
+      "apka": 33.6,
+      "vqmt": 50.6
+    },
+    "PNR": {
+      "apka": 44.4,
+      "vqmt": 34.1
+    },
+    "PNW": {
+      "apka": 58.3,
+      "vqmt": 35.1
+    },
+    "PODD": {
+      "apka": 37.4,
+      "vqmt": 25.7
+    },
+    "POOL": {
+      "apka": 44.0,
+      "vqmt": 24.5
+    },
+    "PPG": {
+      "apka": 55.6,
+      "vqmt": 41.7
+    },
+    "PPL": {
+      "apka": 45.2,
+      "vqmt": 37.0
+    },
+    "PRU": {
+      "apka": 40.4,
+      "vqmt": 42.2
+    },
+    "PSA": {
+      "apka": 63.4,
+      "vqmt": 50.3
+    },
+    "PSKY": {
+      "apka": 58.1,
+      "vqmt": 24.3
+    },
+    "PSX": {
+      "apka": 49.4,
+      "vqmt": 43.9
+    },
+    "PTC": {
+      "apka": 54.5,
+      "vqmt": 32.0
+    },
+    "PWR": {
+      "apka": 38.3,
+      "vqmt": 46.9
+    },
+    "PYPL": {
+      "apka": 31.3,
+      "vqmt": 40.5
+    },
+    "Q": {
+      "apka": 37.0,
+      "vqmt": 36.0
+    },
+    "QCOM": {
+      "apka": 75.5,
+      "vqmt": 80.9
+    },
+    "RCL": {
+      "apka": 32.2,
+      "vqmt": 40.1
+    },
+    "REG": {
+      "apka": 62.5,
+      "vqmt": 45.0
+    },
+    "REGN": {
+      "apka": 44.5,
+      "vqmt": 48.4
+    },
+    "RF": {
+      "apka": 34.2,
+      "vqmt": 50.7
+    },
+    "RJF": {
+      "apka": 12.7,
+      "vqmt": 42.4
+    },
+    "RL": {
+      "apka": 43.7,
+      "vqmt": 56.5
+    },
+    "RMD": {
+      "apka": 50.2,
+      "vqmt": 40.9
+    },
+    "ROK": {
+      "apka": 60.4,
+      "vqmt": 51.2
+    },
+    "ROL": {
+      "apka": 67.6,
+      "vqmt": 30.6
+    },
+    "ROP": {
+      "apka": 55.0,
+      "vqmt": 34.6
+    },
+    "ROST": {
+      "apka": 21.9,
+      "vqmt": 57.3
+    },
+    "RSG": {
+      "apka": 33.6,
+      "vqmt": 35.1
+    },
+    "RTX": {
+      "apka": 28.8,
+      "vqmt": 45.5
+    },
+    "RVTY": {
+      "apka": 52.8,
+      "vqmt": 40.8
+    },
+    "SBAC": {
+      "apka": 67.2,
+      "vqmt": 37.0
+    },
+    "SBUX": {
+      "apka": 51.4,
+      "vqmt": 39.5
+    },
+    "SCHW": {
+      "apka": 42.4,
+      "vqmt": 46.2
+    },
+    "SHW": {
+      "apka": 47.3,
+      "vqmt": 35.9
+    },
+    "SJM": {
+      "apka": 49.2,
+      "vqmt": 5.7
     },
     "SLB": {
-      "apka": 43.1,
-      "vqmt": 46.3
+      "apka": 65.4,
+      "vqmt": 47.1
     },
     "SMCI": {
-      "apka": 39.2,
-      "vqmt": 31.8
+      "apka": 67.0,
+      "vqmt": 33.7
     },
     "SNA": {
-      "apka": 40.3,
-      "vqmt": 49.6
+      "apka": 55.1,
+      "vqmt": 50.9
     },
     "SNDK": {
-      "apka": 29.8,
+      "apka": 40.7,
       "vqmt": 70.6
     },
     "SNPS": {
-      "apka": 82.0,
-      "vqmt": 16.7
+      "apka": 81.8,
+      "vqmt": 19.0
     },
     "SO": {
-      "apka": 40.6,
-      "vqmt": 40.2
+      "apka": 64.4,
+      "vqmt": 41.7
     },
     "SOLV": {
-      "apka": 37.6,
-      "vqmt": 32.7
+      "apka": 42.2,
+      "vqmt": 33.9
     },
     "SPG": {
-      "apka": 40.5,
-      "vqmt": 94.8
+      "apka": 73.8,
+      "vqmt": 94.6
     },
     "SPGI": {
-      "apka": 30.3,
-      "vqmt": 37.2
-    },
-    "SRE": {
-      "apka": 67.8,
-      "vqmt": 36.3
-    },
-    "STE": {
-      "apka": 16.6,
-      "vqmt": 35.0
-    },
-    "STLD": {
-      "apka": 52.2,
-      "vqmt": 56.2
-    },
-    "STT": {
-      "apka": 39.1,
-      "vqmt": 53.1
-    },
-    "STX": {
-      "apka": 48.7,
-      "vqmt": 77.6
-    },
-    "STZ": {
-      "apka": 48.4,
-      "vqmt": 30.1
-    },
-    "SW": {
-      "apka": 23.6,
-      "vqmt": 30.7
-    },
-    "SWK": {
-      "apka": 41.6,
+      "apka": 54.4,
       "vqmt": 38.6
     },
+    "SRE": {
+      "apka": 82.6,
+      "vqmt": 37.4
+    },
+    "STE": {
+      "apka": 54.3,
+      "vqmt": 36.6
+    },
+    "STLD": {
+      "apka": 47.5,
+      "vqmt": 57.2
+    },
+    "STT": {
+      "apka": 55.2,
+      "vqmt": 53.7
+    },
+    "STX": {
+      "apka": 51.1,
+      "vqmt": 78.0
+    },
+    "STZ": {
+      "apka": 68.5,
+      "vqmt": 32.0
+    },
+    "SW": {
+      "apka": 53.4,
+      "vqmt": 30.5
+    },
+    "SWK": {
+      "apka": 44.1,
+      "vqmt": 39.7
+    },
     "SWKS": {
-      "apka": 47.9,
-      "vqmt": 25.6
+      "apka": 28.8,
+      "vqmt": 27.3
     },
     "SYF": {
-      "apka": 28.1,
-      "vqmt": 49.4
+      "apka": 56.8,
+      "vqmt": 49.7
     },
     "SYK": {
-      "apka": 28.4,
-      "vqmt": 32.5
+      "apka": 28.6,
+      "vqmt": 32.7
     },
     "SYY": {
-      "apka": 36.1,
-      "vqmt": 38.0
+      "apka": 58.6,
+      "vqmt": 39.5
     },
     "T": {
-      "apka": 40.1,
-      "vqmt": 36.9
+      "apka": 53.3,
+      "vqmt": 38.3
     },
     "TAP": {
-      "apka": 33.7,
-      "vqmt": 35.4
+      "apka": 60.7,
+      "vqmt": 37.6
     },
     "TDG": {
-      "apka": 37.6,
-      "vqmt": 36.5
+      "apka": 44.3,
+      "vqmt": 37.9
     },
     "TDY": {
-      "apka": 32.4,
-      "vqmt": 42.0
+      "apka": 44.9,
+      "vqmt": 43.5
     },
     "TECH": {
-      "apka": 6.4,
-      "vqmt": 42.3
+      "apka": 20.8,
+      "vqmt": 44.6
     },
     "TEL": {
-      "apka": 48.7,
-      "vqmt": 44.4
+      "apka": 43.4,
+      "vqmt": 45.1
     },
     "TER": {
-      "apka": 19.5,
-      "vqmt": 74.2
+      "apka": 38.8,
+      "vqmt": 74.7
     },
     "TFC": {
-      "apka": 16.1,
-      "vqmt": 49.3
+      "apka": 59.7,
+      "vqmt": 50.3
     },
     "TGT": {
-      "apka": 38.4,
-      "vqmt": 51.9
+      "apka": 62.9,
+      "vqmt": 53.1
     },
     "TJX": {
-      "apka": 23.7,
-      "vqmt": 49.8
+      "apka": 37.4,
+      "vqmt": 50.3
     },
     "TKO": {
-      "apka": 27.5,
-      "vqmt": 32.6
+      "apka": 55.7,
+      "vqmt": 33.0
     },
     "TMO": {
-      "apka": 28.8,
-      "vqmt": 41.4
+      "apka": 43.6,
+      "vqmt": 42.6
     },
     "TMUS": {
-      "apka": 38.0,
-      "vqmt": 29.3
+      "apka": 79.4,
+      "vqmt": 30.4
     },
     "TPL": {
-      "apka": 53.8,
-      "vqmt": 62.7
+      "apka": 53.2,
+      "vqmt": 63.6
     },
     "TPR": {
-      "apka": 23.1,
-      "vqmt": 80.2
+      "apka": 24.2,
+      "vqmt": 80.4
     },
     "TRGP": {
-      "apka": 18.1,
-      "vqmt": 52.5
+      "apka": 38.3,
+      "vqmt": 52.9
     },
     "TRMB": {
-      "apka": 41.5,
-      "vqmt": 29.8
+      "apka": 56.0,
+      "vqmt": 31.0
     },
     "TROW": {
-      "apka": 44.0,
-      "vqmt": 53.2
-    },
-    "TRV": {
-      "apka": 22.1,
-      "vqmt": 54.5
-    },
-    "TSCO": {
-      "apka": 7.8,
-      "vqmt": 21.3
-    },
-    "TSLA": {
-      "apka": 44.4,
-      "vqmt": 24.1
-    },
-    "TSN": {
-      "apka": 29.0,
-      "vqmt": 39.1
-    },
-    "TT": {
-      "apka": 38.1,
-      "vqmt": 38.2
-    },
-    "TTWO": {
-      "apka": 18.1,
-      "vqmt": 24.7
-    },
-    "TXN": {
-      "apka": 35.2,
-      "vqmt": 55.0
-    },
-    "TXT": {
-      "apka": 49.3,
-      "vqmt": 40.6
-    },
-    "TYL": {
-      "apka": 45.8,
-      "vqmt": 22.2
-    },
-    "UAL": {
-      "apka": 14.3,
-      "vqmt": 45.5
-    },
-    "UBER": {
-      "apka": 17.5,
-      "vqmt": 21.2
-    },
-    "UDR": {
-      "apka": 53.2,
-      "vqmt": 48.2
-    },
-    "UHS": {
-      "apka": 5.1,
-      "vqmt": 49.4
-    },
-    "ULTA": {
-      "apka": 41.1,
-      "vqmt": 45.7
-    },
-    "UNH": {
-      "apka": 43.2,
-      "vqmt": 52.7
-    },
-    "UNP": {
-      "apka": 26.6,
-      "vqmt": 51.3
-    },
-    "UPS": {
-      "apka": 54.9,
-      "vqmt": 45.8
-    },
-    "URI": {
-      "apka": 27.6,
-      "vqmt": 41.0
-    },
-    "USB": {
-      "apka": 41.6,
+      "apka": 64.6,
       "vqmt": 52.5
     },
+    "TRV": {
+      "apka": 53.3,
+      "vqmt": 55.4
+    },
+    "TSCO": {
+      "apka": 31.8,
+      "vqmt": 23.6
+    },
+    "TSLA": {
+      "apka": 57.6,
+      "vqmt": 26.1
+    },
+    "TSN": {
+      "apka": 47.0,
+      "vqmt": 39.4
+    },
+    "TT": {
+      "apka": 37.4,
+      "vqmt": 40.5
+    },
+    "TTWO": {
+      "apka": 64.7,
+      "vqmt": 25.0
+    },
+    "TXN": {
+      "apka": 53.6,
+      "vqmt": 55.8
+    },
+    "TXT": {
+      "apka": 46.8,
+      "vqmt": 41.7
+    },
+    "TYL": {
+      "apka": 83.5,
+      "vqmt": 23.7
+    },
+    "UAL": {
+      "apka": 29.9,
+      "vqmt": 45.9
+    },
+    "UBER": {
+      "apka": 60.0,
+      "vqmt": 22.5
+    },
+    "UDR": {
+      "apka": 55.6,
+      "vqmt": 49.3
+    },
+    "UHS": {
+      "apka": 14.3,
+      "vqmt": 51.4
+    },
+    "ULTA": {
+      "apka": 33.8,
+      "vqmt": 46.3
+    },
+    "UNH": {
+      "apka": 48.9,
+      "vqmt": 53.4
+    },
+    "UNP": {
+      "apka": 61.8,
+      "vqmt": 52.5
+    },
+    "UPS": {
+      "apka": 74.7,
+      "vqmt": 46.7
+    },
+    "URI": {
+      "apka": 29.4,
+      "vqmt": 42.2
+    },
+    "USB": {
+      "apka": 34.1,
+      "vqmt": 53.6
+    },
     "V": {
-      "apka": 38.2,
-      "vqmt": 55.2
+      "apka": 41.6,
+      "vqmt": 56.2
     },
     "VICI": {
-      "apka": 28.8,
-      "vqmt": 58.9
+      "apka": 57.0,
+      "vqmt": 60.1
     },
     "VLO": {
-      "apka": 47.3,
-      "vqmt": 56.3
+      "apka": 43.5,
+      "vqmt": 56.9
     },
     "VLTO": {
-      "apka": 13.4,
-      "vqmt": 38.4
+      "apka": 34.1,
+      "vqmt": 39.9
     },
     "VMC": {
-      "apka": 32.7,
-      "vqmt": 30.9
+      "apka": 57.5,
+      "vqmt": 32.0
     },
     "VRSK": {
-      "apka": 43.5,
-      "vqmt": 37.0
+      "apka": 66.9,
+      "vqmt": 37.5
     },
     "VRSN": {
-      "apka": 50.4,
-      "vqmt": 59.4
+      "apka": 57.4,
+      "vqmt": 60.5
     },
     "VRTX": {
-      "apka": 12.7,
-      "vqmt": 51.2
+      "apka": 49.6,
+      "vqmt": 51.4
     },
     "VST": {
-      "apka": 38.0,
-      "vqmt": 41.0
+      "apka": 52.2,
+      "vqmt": 41.9
     },
     "VTR": {
-      "apka": 30.1,
-      "vqmt": 38.8
+      "apka": 66.2,
+      "vqmt": 41.0
     },
     "VTRS": {
-      "apka": 67.2,
-      "vqmt": 29.5
+      "apka": 53.7,
+      "vqmt": 30.7
     },
     "VZ": {
-      "apka": 25.6,
-      "vqmt": 48.7
+      "apka": 41.3,
+      "vqmt": 50.0
     },
     "WAB": {
-      "apka": 21.2,
-      "vqmt": 48.7
+      "apka": 49.2,
+      "vqmt": 49.8
     },
     "WAT": {
-      "apka": 16.4,
-      "vqmt": 46.5
+      "apka": 24.2,
+      "vqmt": 47.0
     },
     "WBD": {
-      "apka": 7.2,
-      "vqmt": 42.8
+      "apka": 42.0,
+      "vqmt": 44.3
     },
     "WDAY": {
-      "apka": 28.3,
-      "vqmt": 21.7
+      "apka": 50.0,
+      "vqmt": 23.2
     },
     "WDC": {
-      "apka": 60.2,
+      "apka": 57.6,
       "vqmt": 100.0
     },
     "WEC": {
-      "apka": 39.4,
-      "vqmt": 44.4
+      "apka": 44.8,
+      "vqmt": 45.7
     },
     "WELL": {
-      "apka": 27.3,
-      "vqmt": 46.4
+      "apka": 49.5,
+      "vqmt": 47.7
     },
     "WFC": {
-      "apka": 19.3,
-      "vqmt": 43.9
+      "apka": 33.0,
+      "vqmt": 45.5
     },
     "WM": {
-      "apka": 37.2,
-      "vqmt": 37.1
+      "apka": 55.8,
+      "vqmt": 38.7
     },
     "WMB": {
-      "apka": 52.0,
-      "vqmt": 48.2
+      "apka": 42.0,
+      "vqmt": 49.1
     },
     "WMT": {
-      "apka": 32.4,
-      "vqmt": 37.5
+      "apka": 47.6,
+      "vqmt": 38.9
     },
     "WRB": {
-      "apka": 34.9,
-      "vqmt": 43.8
+      "apka": 54.0,
+      "vqmt": 44.8
     },
     "WSM": {
-      "apka": 40.5,
-      "vqmt": 56.3
+      "apka": 61.2,
+      "vqmt": 57.2
     },
     "WST": {
-      "apka": 43.2,
-      "vqmt": 49.2
+      "apka": 60.1,
+      "vqmt": 50.4
     },
     "WTW": {
-      "apka": 24.1,
-      "vqmt": 36.9
+      "apka": 40.0,
+      "vqmt": 38.5
     },
     "WY": {
-      "apka": 21.0,
-      "vqmt": 33.2
+      "apka": 50.7,
+      "vqmt": 36.6
     },
     "WYNN": {
-      "apka": 23.2,
-      "vqmt": 25.4
+      "apka": 57.1,
+      "vqmt": 26.6
     },
     "XEL": {
-      "apka": 45.1,
-      "vqmt": 40.4
+      "apka": 56.4,
+      "vqmt": 41.5
     },
     "XOM": {
-      "apka": 24.8,
-      "vqmt": 43.9
+      "apka": 29.2,
+      "vqmt": 44.5
     },
     "XYL": {
-      "apka": 43.9,
-      "vqmt": 28.5
+      "apka": 49.9,
+      "vqmt": 30.3
     },
     "XYZ": {
-      "apka": 37.2,
-      "vqmt": 22.0
+      "apka": 55.6,
+      "vqmt": 22.8
     },
     "YUM": {
-      "apka": 34.6,
-      "vqmt": 47.4
+      "apka": 53.4,
+      "vqmt": 47.5
     },
     "ZBH": {
-      "apka": 19.0,
-      "vqmt": 34.4
+      "apka": 21.4,
+      "vqmt": 35.6
     },
     "ZBRA": {
-      "apka": 25.4,
-      "vqmt": 28.2
+      "apka": 60.9,
+      "vqmt": 29.8
     },
     "ZTS": {
-      "apka": 31.2,
-      "vqmt": 35.5
-    },
-    "BK": {
-      "vqmt": 43.1
-    },
-    "HOLX": {
-      "vqmt": 43.1
-    },
-    "BRK-B": {
-      "vqmt": 64.3
-    },
-    "EA": {
-      "vqmt": 36.5
-    },
-    "BF-B": {
-      "vqmt": 48.5
-    },
-    "CTRA": {
-      "vqmt": 42.6
+      "apka": 37.0,
+      "vqmt": 37.0
     },
     "EQR": {
-      "vqmt": 34.7
+      "vqmt": 36.0
+    },
+    "BK": {
+      "vqmt": 44.1
+    },
+    "HOLX": {
+      "vqmt": 44.1
+    },
+    "CTRA": {
+      "vqmt": 43.7
+    },
+    "BRK-B": {
+      "vqmt": 64.9
+    },
+    "EA": {
+      "vqmt": 37.6
     },
     "AVB": {
-      "vqmt": 54.0
+      "vqmt": 54.7
+    },
+    "BF-B": {
+      "vqmt": 51.2
     }
   },
   "TW": {
     "1101.TW": {
-      "apka": 26.4,
-      "vqmt": 39.5
+      "apka": 27.1,
+      "vqmt": 32.7
     },
     "1102.TW": {
-      "apka": 26.2,
-      "vqmt": 41.0
+      "apka": 25.7,
+      "vqmt": 37.5
     },
     "1216.TW": {
-      "apka": 24.9,
-      "vqmt": 37.7
+      "apka": 29.4,
+      "vqmt": 38.7
     },
     "1229.TW": {
-      "apka": 32.4,
-      "vqmt": 38.0
+      "apka": 24.2,
+      "vqmt": 32.8
     },
     "1301.TW": {
-      "apka": 64.0,
-      "vqmt": 63.8
+      "apka": 71.3,
+      "vqmt": 69.6
     },
     "1303.TW": {
-      "apka": 94.5,
-      "vqmt": 93.8
+      "apka": 95.7,
+      "vqmt": 98.4
     },
     "1308.TW": {
-      "apka": 47.9,
-      "vqmt": 43.4
+      "apka": 42.9,
+      "vqmt": 37.6
     },
     "1312.TW": {
-      "apka": 91.4,
-      "vqmt": 67.7
+      "apka": 84.9,
+      "vqmt": 79.2
     },
     "1314.TW": {
-      "apka": 42.2,
-      "vqmt": 45.5
+      "apka": 41.6,
+      "vqmt": 46.4
     },
     "1319.TW": {
-      "apka": 30.4,
-      "vqmt": 30.9
+      "apka": 38.8,
+      "vqmt": 28.7
     },
     "1326.TW": {
-      "apka": 64.1,
-      "vqmt": 67.4
+      "apka": 87.3,
+      "vqmt": 77.5
     },
     "1402.TW": {
-      "apka": 22.1,
-      "vqmt": 44.5
+      "apka": 34.0,
+      "vqmt": 44.3
     },
     "1434.TW": {
-      "apka": 28.0,
-      "vqmt": 49.5
+      "apka": 36.9,
+      "vqmt": 50.3
     },
     "1476.TW": {
-      "apka": 14.9,
-      "vqmt": 28.6
+      "apka": 13.6,
+      "vqmt": 27.4
     },
     "1477.TW": {
-      "apka": 24.2,
-      "vqmt": 21.2
+      "apka": 12.9,
+      "vqmt": 19.3
     },
     "1503.TW": {
-      "apka": 25.0,
-      "vqmt": 50.1
+      "apka": 37.6,
+      "vqmt": 47.1
     },
     "1504.TW": {
-      "apka": 34.3,
-      "vqmt": 52.1
+      "apka": 34.1,
+      "vqmt": 50.2
     },
     "1513.TW": {
-      "apka": 28.0,
-      "vqmt": 45.1
+      "apka": 31.9,
+      "vqmt": 41.4
     },
     "1519.TW": {
-      "apka": 38.7,
-      "vqmt": 54.4
+      "apka": 42.9,
+      "vqmt": 49.3
     },
     "1590.TW": {
-      "apka": 29.3,
-      "vqmt": 56.0
+      "apka": 22.3,
+      "vqmt": 55.1
     },
     "1605.TW": {
-      "apka": 41.6,
-      "vqmt": 56.4
+      "apka": 35.5,
+      "vqmt": 56.6
     },
     "1722.TW": {
-      "apka": 23.3,
-      "vqmt": 39.6
-    },
-    "1802.TW": {
-      "apka": 34.8,
-      "vqmt": 54.2
-    },
-    "1905.TW": {
-      "apka": 32.9,
-      "vqmt": 44.2
-    },
-    "1907.TW": {
-      "apka": 35.2,
-      "vqmt": 48.3
-    },
-    "2002.TW": {
-      "apka": 23.6,
-      "vqmt": 33.1
-    },
-    "2006.TW": {
-      "apka": 24.1,
-      "vqmt": 45.5
-    },
-    "2014.TW": {
-      "apka": 19.0,
-      "vqmt": 40.2
-    },
-    "2015.TW": {
-      "apka": 31.6,
-      "vqmt": 44.6
-    },
-    "2027.TW": {
-      "apka": 21.6,
-      "vqmt": 47.6
-    },
-    "2049.TW": {
-      "apka": 24.6,
-      "vqmt": 51.5
-    },
-    "2059.TW": {
-      "apka": 51.5,
-      "vqmt": 87.5
-    },
-    "2103.TW": {
-      "apka": 31.4,
-      "vqmt": 59.2
-    },
-    "2104.TW": {
-      "apka": 27.4,
-      "vqmt": 31.3
-    },
-    "2105.TW": {
-      "apka": 30.3,
-      "vqmt": 26.2
-    },
-    "2201.TW": {
-      "apka": 21.9,
+      "apka": 22.9,
       "vqmt": 35.7
     },
+    "1802.TW": {
+      "apka": 48.3,
+      "vqmt": 52.6
+    },
+    "1905.TW": {
+      "apka": 30.1,
+      "vqmt": 44.1
+    },
+    "1907.TW": {
+      "apka": 23.5,
+      "vqmt": 45.4
+    },
+    "2002.TW": {
+      "apka": 22.0,
+      "vqmt": 30.1
+    },
+    "2006.TW": {
+      "apka": 27.8,
+      "vqmt": 45.3
+    },
+    "2014.TW": {
+      "apka": 13.7,
+      "vqmt": 37.5
+    },
+    "2015.TW": {
+      "apka": 26.5,
+      "vqmt": 40.3
+    },
+    "2027.TW": {
+      "apka": 23.8,
+      "vqmt": 44.1
+    },
+    "2049.TW": {
+      "apka": 28.5,
+      "vqmt": 49.5
+    },
+    "2059.TW": {
+      "apka": 46.2,
+      "vqmt": 86.6
+    },
+    "2103.TW": {
+      "apka": 43.6,
+      "vqmt": 58.1
+    },
+    "2104.TW": {
+      "apka": 29.5,
+      "vqmt": 31.0
+    },
+    "2105.TW": {
+      "apka": 23.3,
+      "vqmt": 23.4
+    },
+    "2201.TW": {
+      "apka": 41.6,
+      "vqmt": 44.4
+    },
     "2204.TW": {
-      "apka": 29.9,
-      "vqmt": 42.2
+      "apka": 38.8,
+      "vqmt": 39.0
     },
     "2207.TW": {
-      "apka": 26.5,
-      "vqmt": 42.1
+      "apka": 22.4,
+      "vqmt": 39.1
     },
     "2227.TW": {
-      "apka": 23.7,
-      "vqmt": 33.1
+      "apka": 25.9,
+      "vqmt": 30.9
     },
     "2258.TW": {
-      "apka": 29.7,
+      "apka": 25.8,
       "vqmt": 30.5
     },
     "2301.TW": {
-      "apka": 61.6,
-      "vqmt": 84.7
+      "apka": 59.4,
+      "vqmt": 78.5
     },
     "2303.TW": {
-      "apka": 33.9,
-      "vqmt": 76.7
+      "apka": 55.3,
+      "vqmt": 76.2
     },
     "2308.TW": {
-      "apka": 40.9,
-      "vqmt": 65.7
+      "apka": 47.4,
+      "vqmt": 66.7
     },
     "2313.TW": {
-      "apka": 83.0,
-      "vqmt": 72.2
+      "apka": 81.3,
+      "vqmt": 75.9
     },
     "2317.TW": {
-      "apka": 28.5,
-      "vqmt": 48.4
+      "apka": 26.7,
+      "vqmt": 49.5
     },
     "2324.TW": {
-      "apka": 36.9,
-      "vqmt": 53.9
+      "apka": 30.1,
+      "vqmt": 55.7
     },
     "2327.TW": {
-      "apka": 27.9,
-      "vqmt": 67.1
+      "apka": 45.1,
+      "vqmt": 60.3
     },
     "2330.TW": {
-      "apka": 19.5,
-      "vqmt": 75.0
+      "apka": 40.0,
+      "vqmt": 78.6
     },
     "2337.TW": {
-      "apka": 35.0,
-      "vqmt": 66.6
+      "apka": 23.1,
+      "vqmt": 66.7
     },
     "2344.TW": {
-      "apka": 41.2,
-      "vqmt": 87.1
+      "apka": 28.8,
+      "vqmt": 83.2
     },
     "2345.TW": {
-      "apka": 33.3,
-      "vqmt": 54.1
+      "apka": 38.6,
+      "vqmt": 50.0
     },
     "2347.TW": {
-      "apka": 19.6,
-      "vqmt": 54.3
+      "apka": 27.5,
+      "vqmt": 58.9
     },
     "2352.TW": {
-      "apka": 33.6,
-      "vqmt": 38.6
+      "apka": 40.2,
+      "vqmt": 39.5
     },
     "2353.TW": {
-      "apka": 37.3,
-      "vqmt": 42.4
+      "apka": 28.3,
+      "vqmt": 43.4
     },
     "2354.TW": {
-      "apka": 40.5,
-      "vqmt": 27.7
+      "apka": 44.3,
+      "vqmt": 51.3
     },
     "2356.TW": {
-      "apka": 41.7,
-      "vqmt": 56.8
-    },
-    "2357.TW": {
-      "apka": 59.5,
-      "vqmt": 67.1
-    },
-    "2360.TW": {
-      "apka": 10.0,
-      "vqmt": 64.1
-    },
-    "2368.TW": {
-      "apka": 79.3,
-      "vqmt": 65.0
-    },
-    "2371.TW": {
-      "apka": 35.8,
-      "vqmt": 25.5
-    },
-    "2376.TW": {
-      "apka": 40.8,
-      "vqmt": 47.8
-    },
-    "2377.TW": {
-      "apka": 39.6,
-      "vqmt": 42.4
-    },
-    "2379.TW": {
-      "apka": 34.3,
-      "vqmt": 53.0
-    },
-    "2382.TW": {
-      "apka": 41.6,
-      "vqmt": 51.0
-    },
-    "2383.TW": {
-      "apka": 10.2,
-      "vqmt": 69.9
-    },
-    "2385.TW": {
-      "apka": 25.5,
-      "vqmt": 28.0
-    },
-    "2395.TW": {
-      "apka": 34.7,
-      "vqmt": 67.4
-    },
-    "2404.TW": {
-      "apka": 14.6,
-      "vqmt": 38.5
-    },
-    "2408.TW": {
-      "apka": 54.3,
-      "vqmt": 100.0
-    },
-    "2409.TW": {
-      "apka": 30.9,
+      "apka": 32.5,
       "vqmt": 59.8
     },
-    "2412.TW": {
-      "apka": 34.6,
-      "vqmt": 49.1
+    "2357.TW": {
+      "apka": 58.5,
+      "vqmt": 73.6
     },
-    "2421.TW": {
-      "apka": 87.0,
-      "vqmt": 56.6
+    "2360.TW": {
+      "apka": 20.0,
+      "vqmt": 61.3
     },
-    "2428.TW": {
-      "apka": 25.1,
-      "vqmt": 62.1
+    "2368.TW": {
+      "apka": 100.0,
+      "vqmt": 69.1
     },
-    "2439.TW": {
-      "apka": 29.8,
-      "vqmt": 30.5
+    "2371.TW": {
+      "apka": 32.7,
+      "vqmt": 21.6
     },
-    "2441.TW": {
-      "apka": 19.4,
-      "vqmt": 60.5
+    "2376.TW": {
+      "apka": 43.4,
+      "vqmt": 52.6
     },
-    "2449.TW": {
-      "apka": 49.6,
-      "vqmt": 62.3
+    "2377.TW": {
+      "apka": 33.0,
+      "vqmt": 53.9
     },
-    "2454.TW": {
+    "2379.TW": {
+      "apka": 40.9,
+      "vqmt": 50.1
+    },
+    "2382.TW": {
+      "apka": 36.0,
+      "vqmt": 54.6
+    },
+    "2383.TW": {
+      "apka": 29.7,
+      "vqmt": 68.7
+    },
+    "2385.TW": {
+      "apka": 33.5,
+      "vqmt": 26.1
+    },
+    "2395.TW": {
       "apka": 42.3,
-      "vqmt": 71.4
+      "vqmt": 68.0
     },
-    "2458.TW": {
-      "apka": 21.0,
-      "vqmt": 50.6
-    },
-    "2474.TW": {
-      "apka": 37.0,
-      "vqmt": 45.4
-    },
-    "2492.TW": {
-      "apka": 52.3,
-      "vqmt": 66.3
-    },
-    "2498.TW": {
-      "apka": 24.8,
+    "2404.TW": {
+      "apka": 29.3,
       "vqmt": 39.2
     },
-    "2501.TW": {
-      "apka": 28.9,
-      "vqmt": 46.1
+    "2408.TW": {
+      "apka": 44.1,
+      "vqmt": 99.3
     },
-    "2542.TW": {
-      "apka": 27.5,
-      "vqmt": 52.4
+    "2409.TW": {
+      "apka": 43.5,
+      "vqmt": 63.6
     },
-    "2548.TW": {
-      "apka": 19.4,
+    "2412.TW": {
+      "apka": 31.5,
       "vqmt": 46.6
     },
-    "2603.TW": {
-      "apka": 22.0,
+    "2421.TW": {
+      "apka": 81.4,
+      "vqmt": 70.7
+    },
+    "2428.TW": {
+      "apka": 31.4,
+      "vqmt": 59.1
+    },
+    "2439.TW": {
+      "apka": 28.4,
+      "vqmt": 29.3
+    },
+    "2441.TW": {
+      "apka": 40.6,
+      "vqmt": 58.2
+    },
+    "2449.TW": {
+      "apka": 74.0,
+      "vqmt": 57.9
+    },
+    "2454.TW": {
+      "apka": 72.4,
+      "vqmt": 68.7
+    },
+    "2458.TW": {
+      "apka": 21.7,
+      "vqmt": 47.3
+    },
+    "2474.TW": {
+      "apka": 44.4,
       "vqmt": 49.3
     },
+    "2492.TW": {
+      "apka": 81.4,
+      "vqmt": 60.4
+    },
+    "2498.TW": {
+      "apka": 29.8,
+      "vqmt": 34.8
+    },
+    "2501.TW": {
+      "apka": 29.3,
+      "vqmt": 40.9
+    },
+    "2542.TW": {
+      "apka": 25.8,
+      "vqmt": 45.7
+    },
+    "2548.TW": {
+      "apka": 29.8,
+      "vqmt": 42.5
+    },
+    "2603.TW": {
+      "apka": 25.4,
+      "vqmt": 47.4
+    },
     "2608.TW": {
-      "apka": 22.6,
-      "vqmt": 21.8
+      "apka": 34.6,
+      "vqmt": 19.4
     },
     "2609.TW": {
-      "apka": 28.4,
-      "vqmt": 42.6
+      "apka": 29.9,
+      "vqmt": 53.7
     },
     "2610.TW": {
-      "apka": 37.4,
-      "vqmt": 44.7
+      "apka": 32.0,
+      "vqmt": 43.9
     },
     "2615.TW": {
-      "apka": 27.4,
-      "vqmt": 72.1
+      "apka": 42.1,
+      "vqmt": 70.4
     },
     "2618.TW": {
-      "apka": 21.6,
-      "vqmt": 47.6
+      "apka": 25.7,
+      "vqmt": 48.4
     },
     "2633.TW": {
-      "apka": 32.4,
-      "vqmt": 41.5
+      "apka": 34.1,
+      "vqmt": 35.1
     },
     "2801.TW": {
-      "apka": 41.6,
-      "vqmt": 70.8
+      "apka": 44.6,
+      "vqmt": 71.5
     },
     "2812.TW": {
-      "apka": 29.5,
-      "vqmt": 33.7
+      "apka": 35.0,
+      "vqmt": 35.6
     },
     "2832.TW": {
-      "apka": 35.8,
-      "vqmt": 65.0
+      "apka": 35.9,
+      "vqmt": 58.6
     },
     "2834.TW": {
-      "apka": 53.7,
-      "vqmt": 55.1
+      "apka": 37.4,
+      "vqmt": 71.2
     },
     "2838.TW": {
-      "apka": 37.4,
+      "apka": 36.4,
       "vqmt": 60.5
     },
     "2845.TW": {
-      "apka": 35.6,
-      "vqmt": 43.8
+      "apka": 25.6,
+      "vqmt": 47.7
     },
     "2880.TW": {
-      "apka": 33.8,
-      "vqmt": 63.2
+      "apka": 48.4,
+      "vqmt": 67.0
     },
     "2881.TW": {
-      "apka": 48.5,
-      "vqmt": 82.2
+      "apka": 46.5,
+      "vqmt": 82.1
     },
     "2882.TW": {
-      "apka": 60.6,
-      "vqmt": 71.8
+      "apka": 62.2,
+      "vqmt": 80.5
     },
     "2883.TW": {
-      "apka": 45.5,
-      "vqmt": 83.8
+      "apka": 68.0,
+      "vqmt": 92.6
     },
     "2884.TW": {
-      "apka": 38.1,
-      "vqmt": 55.4
+      "apka": 40.8,
+      "vqmt": 59.5
     },
     "2885.TW": {
-      "apka": 43.1,
-      "vqmt": 49.8
+      "apka": 48.5,
+      "vqmt": 53.9
     },
     "2886.TW": {
-      "apka": 24.2,
-      "vqmt": 57.8
+      "apka": 34.9,
+      "vqmt": 61.7
     },
     "2887.TW": {
-      "apka": 43.1,
-      "vqmt": 89.5
+      "apka": 54.5,
+      "vqmt": 93.1
     },
     "2890.TW": {
-      "apka": 43.7,
-      "vqmt": 72.2
+      "apka": 46.0,
+      "vqmt": 80.9
     },
     "2891.TW": {
-      "apka": 37.0,
-      "vqmt": 64.8
+      "apka": 29.1,
+      "vqmt": 65.5
     },
     "2892.TW": {
-      "apka": 39.7,
-      "vqmt": 60.6
+      "apka": 52.1,
+      "vqmt": 66.1
     },
     "2912.TW": {
-      "apka": 23.2,
-      "vqmt": 45.2
+      "apka": 18.4,
+      "vqmt": 26.2
     },
     "3005.TW": {
-      "apka": 29.6,
-      "vqmt": 37.1
+      "apka": 32.5,
+      "vqmt": 38.1
     },
     "3008.TW": {
-      "apka": 100.0,
-      "vqmt": 97.1
+      "apka": 96.9,
+      "vqmt": 100.0
     },
     "3017.TW": {
-      "apka": 62.2,
-      "vqmt": 81.5
+      "apka": 74.7,
+      "vqmt": 82.8
     },
     "3019.TW": {
-      "apka": 46.6,
-      "vqmt": 35.5
+      "apka": 51.6,
+      "vqmt": 42.7
     },
     "3023.TW": {
-      "apka": 27.8,
-      "vqmt": 51.8
+      "apka": 22.8,
+      "vqmt": 50.8
     },
     "3034.TW": {
-      "apka": 26.0,
-      "vqmt": 57.4
+      "apka": 27.2,
+      "vqmt": 55.9
     },
     "3035.TW": {
-      "apka": 29.4,
-      "vqmt": 47.1
+      "apka": 41.9,
+      "vqmt": 42.8
     },
     "3036.TW": {
-      "apka": 15.0,
+      "apka": 20.6,
       "vqmt": 47.2
     },
     "3037.TW": {
-      "apka": 28.9,
-      "vqmt": 91.1
+      "apka": 7.4,
+      "vqmt": 73.5
     },
     "3044.TW": {
-      "apka": 51.9,
-      "vqmt": 55.3
+      "apka": 58.3,
+      "vqmt": 56.6
     },
     "3045.TW": {
-      "apka": 25.7,
-      "vqmt": 61.8
+      "apka": 23.8,
+      "vqmt": 58.0
     },
     "3189.TW": {
-      "apka": 48.3,
-      "vqmt": 93.2
+      "apka": 45.2,
+      "vqmt": 76.7
     },
     "3231.TW": {
-      "apka": 30.4,
-      "vqmt": 51.7
+      "apka": 25.1,
+      "vqmt": 52.4
     },
     "3443.TW": {
-      "apka": 53.1,
-      "vqmt": 87.8
+      "apka": 58.1,
+      "vqmt": 87.2
     },
     "3481.TW": {
-      "apka": 50.9,
-      "vqmt": 70.4
+      "apka": 67.3,
+      "vqmt": 73.0
     },
     "3532.TW": {
-      "apka": 55.0,
-      "vqmt": 83.5
+      "apka": 56.3,
+      "vqmt": 75.9
     },
     "3533.TW": {
-      "apka": 33.9,
-      "vqmt": 43.3
+      "apka": 50.5,
+      "vqmt": 40.4
     },
     "3576.TW": {
-      "apka": 22.3,
-      "vqmt": 57.8
+      "apka": 41.5,
+      "vqmt": 63.9
     },
     "3653.TW": {
-      "apka": 71.3,
-      "vqmt": 85.9
+      "apka": 68.6,
+      "vqmt": 87.6
     },
     "3661.TW": {
-      "apka": 46.3,
-      "vqmt": 39.9
+      "apka": 63.7,
+      "vqmt": 43.4
     },
     "3665.TW": {
-      "apka": 35.5,
-      "vqmt": 56.4
+      "apka": 48.1,
+      "vqmt": 54.4
     },
     "3702.TW": {
-      "apka": 0.0,
-      "vqmt": 45.0
+      "apka": 0.4,
+      "vqmt": 41.2
     },
     "3711.TW": {
-      "apka": 39.1,
-      "vqmt": 78.6
+      "apka": 37.2,
+      "vqmt": 71.3
     },
     "4763.TW": {
-      "apka": 19.0,
-      "vqmt": 8.4
+      "apka": 31.8,
+      "vqmt": 12.0
     },
     "4904.TW": {
-      "apka": 26.4,
-      "vqmt": 57.1
+      "apka": 13.0,
+      "vqmt": 46.6
     },
     "4915.TW": {
-      "apka": 27.1,
-      "vqmt": 31.0
+      "apka": 38.4,
+      "vqmt": 31.8
     },
     "4938.TW": {
-      "apka": 33.4,
-      "vqmt": 48.3
+      "apka": 32.6,
+      "vqmt": 53.4
     },
     "4958.TW": {
-      "apka": 65.2,
-      "vqmt": 66.6
+      "apka": 67.8,
+      "vqmt": 71.0
     },
     "5269.TW": {
-      "apka": 25.4,
-      "vqmt": 42.6
+      "apka": 23.4,
+      "vqmt": 38.3
     },
     "5522.TW": {
-      "apka": 29.2,
-      "vqmt": 45.5
+      "apka": 32.4,
+      "vqmt": 43.1
     },
     "5871.TW": {
-      "apka": 20.2,
-      "vqmt": 44.8
+      "apka": 15.8,
+      "vqmt": 52.4
     },
     "5876.TW": {
-      "apka": 30.7,
-      "vqmt": 46.1
+      "apka": 27.4,
+      "vqmt": 43.2
     },
     "5880.TW": {
-      "apka": 42.8,
-      "vqmt": 54.2
+      "apka": 39.2,
+      "vqmt": 57.5
     },
     "6139.TW": {
-      "apka": 23.1,
-      "vqmt": 58.9
+      "apka": 20.6,
+      "vqmt": 57.0
     },
     "6176.TW": {
-      "apka": 2.5,
+      "apka": 0.0,
       "vqmt": 0.0
     },
     "6183.TW": {
-      "apka": 35.1,
-      "vqmt": 36.5
+      "apka": 23.4,
+      "vqmt": 36.0
     },
     "6213.TW": {
-      "apka": 74.3,
-      "vqmt": 89.4
+      "apka": 68.6,
+      "vqmt": 86.6
     },
     "6239.TW": {
-      "apka": 37.0,
-      "vqmt": 65.0
+      "apka": 50.6,
+      "vqmt": 61.1
     },
     "6285.TW": {
-      "apka": 44.7,
-      "vqmt": 59.2
+      "apka": 43.8,
+      "vqmt": 58.6
     },
     "6409.TW": {
-      "apka": 28.4,
-      "vqmt": 43.2
+      "apka": 27.6,
+      "vqmt": 43.5
     },
     "6412.TW": {
-      "apka": 37.2,
-      "vqmt": 28.7
+      "apka": 34.1,
+      "vqmt": 31.5
     },
     "6415.TW": {
-      "apka": 23.7,
-      "vqmt": 50.3
+      "apka": 20.5,
+      "vqmt": 41.1
     },
     "6446.TW": {
-      "apka": 50.0,
-      "vqmt": 92.6
+      "apka": 34.0,
+      "vqmt": 75.7
     },
     "6505.TW": {
-      "apka": 38.3,
-      "vqmt": 60.5
-    },
-    "6526.TW": {
-      "apka": 44.8,
-      "vqmt": 46.2
-    },
-    "6592.TW": {
-      "apka": 24.9,
-      "vqmt": 35.9
-    },
-    "6669.TW": {
-      "apka": 61.2,
-      "vqmt": 78.8
-    },
-    "6770.TW": {
-      "apka": 42.0,
-      "vqmt": 67.4
-    },
-    "6789.TW": {
-      "apka": 56.7,
+      "apka": 33.7,
       "vqmt": 62.5
     },
+    "6526.TW": {
+      "apka": 66.1,
+      "vqmt": 43.9
+    },
+    "6592.TW": {
+      "apka": 15.2,
+      "vqmt": 33.5
+    },
+    "6669.TW": {
+      "apka": 78.0,
+      "vqmt": 76.4
+    },
+    "6770.TW": {
+      "apka": 38.8,
+      "vqmt": 70.4
+    },
+    "6789.TW": {
+      "apka": 61.0,
+      "vqmt": 63.2
+    },
     "7769.TW": {
-      "apka": 17.8,
-      "vqmt": 76.8
+      "apka": 3.1,
+      "vqmt": 64.8
     },
     "8046.TW": {
-      "apka": 62.2,
-      "vqmt": 82.1
+      "apka": 53.3,
+      "vqmt": 79.7
     },
     "8454.TW": {
-      "apka": 18.1,
-      "vqmt": 38.5
+      "apka": 11.4,
+      "vqmt": 36.3
     },
     "8464.TW": {
-      "apka": 30.8,
-      "vqmt": 27.1
+      "apka": 32.5,
+      "vqmt": 32.5
     },
     "9904.TW": {
-      "apka": 23.8,
+      "apka": 24.3,
       "vqmt": 27.4
     },
     "9910.TW": {
-      "apka": 17.2,
-      "vqmt": 13.4
+      "apka": 17.6,
+      "vqmt": 12.2
     },
     "9921.TW": {
-      "apka": 25.0,
-      "vqmt": 39.5
+      "apka": 23.9,
+      "vqmt": 33.1
     },
     "9941.TW": {
-      "apka": 32.9,
-      "vqmt": 29.9
+      "apka": 29.2,
+      "vqmt": 28.2
     },
     "9945.TW": {
-      "apka": 14.9,
-      "vqmt": 32.7
+      "apka": 15.6,
+      "vqmt": 30.2
     },
     "1704.TW": {
-      "vqmt": 47.4
+      "vqmt": 47.2
     }
   },
   "USETF": {
     "AGQ": {
+      "apka": 74.7
+    },
+    "BITX": {
       "apka": 100.0
     },
     "DFEN": {
-      "apka": 4.2
+      "apka": 28.2
     },
     "DPST": {
-      "apka": 0.0
+      "apka": 32.1
     },
     "GLD": {
-      "apka": 48.5
+      "apka": 43.7
+    },
+    "INTW": {
+      "apka": 25.6
     },
     "IWM": {
-      "apka": 72.1
+      "apka": 77.7
+    },
+    "MSFU": {
+      "apka": 75.0
     },
     "NAIL": {
-      "apka": 17.2
+      "apka": 45.7
+    },
+    "NVDU": {
+      "apka": 46.0
+    },
+    "ORCX": {
+      "apka": 98.5
     },
     "QQQ": {
-      "apka": 23.8
+      "apka": 27.5
     },
     "SCO": {
-      "apka": 79.0
+      "apka": 78.7
     },
     "SOXL": {
-      "apka": 15.1
+      "apka": 72.4
     },
     "SOXS": {
-      "apka": 73.1
+      "apka": 55.2
     },
     "SPXU": {
-      "apka": 73.4
+      "apka": 74.7
     },
     "SPY": {
-      "apka": 25.8
+      "apka": 36.4
     },
     "SQQQ": {
-      "apka": 78.8
+      "apka": 74.5
     },
     "TECL": {
-      "apka": 33.6
+      "apka": 68.4
     },
     "TLT": {
-      "apka": 51.6
+      "apka": 72.6
     },
     "TMF": {
-      "apka": 81.8
+      "apka": 57.0
     },
     "TMV": {
-      "apka": 13.9
+      "apka": 40.1
     },
     "TQQQ": {
-      "apka": 35.1
+      "apka": 37.2
     },
     "UCO": {
-      "apka": 34.0
+      "apka": 0.0
     },
     "UGL": {
-      "apka": 92.4
+      "apka": 76.7
     },
     "UNG": {
-      "apka": 77.8
+      "apka": 55.6
     },
     "UPRO": {
-      "apka": 7.4
+      "apka": 21.7
     },
     "USO": {
-      "apka": 26.7
+      "apka": 21.2
     },
     "UUP": {
-      "apka": 47.5
+      "apka": 21.6
     },
     "XBI": {
-      "apka": 55.3
+      "apka": 53.0
     },
     "XLE": {
-      "apka": 30.6
+      "apka": 6.4
     },
     "XLF": {
-      "apka": 34.3
+      "apka": 48.0
     },
     "XLV": {
-      "apka": 55.6
+      "apka": 49.3
     }
   },
   "TWETF": {
     "0050.TW": {
-      "apka": 68.2
+      "apka": 66.7
     },
     "00631L.TW": {
-      "apka": 98.7
+      "apka": 80.4
     },
     "00647L.TW": {
-      "apka": 50.8
+      "apka": 45.3
     },
     "00663L.TW": {
-      "apka": 100.0
+      "apka": 84.8
     },
     "00670L.TW": {
-      "apka": 45.0
+      "apka": 40.6
     },
     "00673R.TW": {
-      "apka": 47.3
+      "apka": 29.0
     },
     "00680L.TW": {
-      "apka": 43.1
+      "apka": 41.3
+    },
+    "00683L.TW": {
+      "apka": 36.3
+    },
+    "00693U.TW": {
+      "apka": NaN
     },
     "00708L.TW": {
-      "apka": 72.2
+      "apka": 54.3
     },
     "00715L.TW": {
-      "apka": 0.0
+      "apka": 35.6
     },
     "00737.TW": {
-      "apka": 56.6
+      "apka": 46.0
     },
     "00738U.TW": {
       "apka": 49.6
     },
     "00757.TW": {
-      "apka": 60.5
+      "apka": 64.1
     },
     "00762.TW": {
-      "apka": 50.4
+      "apka": 41.5
     },
     "00830.TW": {
-      "apka": 29.4
+      "apka": 28.9
     },
     "00852L.TW": {
-      "apka": 41.9
+      "apka": 37.8
     },
     "00861.TW": {
-      "apka": 33.6
+      "apka": 20.7
     },
     "00875.TW": {
-      "apka": 55.0
+      "apka": 50.5
     },
     "00881.TW": {
-      "apka": 67.4
+      "apka": 49.4
     },
     "00891.TW": {
-      "apka": 57.9
+      "apka": 49.0
     },
     "00910.TW": {
-      "apka": 9.7
+      "apka": 0.6
     },
     "00912.TW": {
-      "apka": 63.8
+      "apka": 72.6
     },
     "00913.TW": {
-      "apka": 72.0
+      "apka": 58.3
     },
     "00941.TW": {
-      "apka": 35.8
+      "apka": 2.4
     },
     "00947.TW": {
-      "apka": 86.7
+      "apka": 82.7
     },
     "00954.TW": {
-      "apka": 25.5
+      "apka": 10.0
     },
     "00965.TW": {
-      "apka": 37.2
+      "apka": 35.0
     },
     "00992A.TW": {
-      "apka": 98.6
+      "apka": 100.0
     }
   }
 }
