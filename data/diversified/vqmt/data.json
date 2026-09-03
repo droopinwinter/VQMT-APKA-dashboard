@@ -22517,28 +22517,6 @@
         "total_return": 835.24,
         "years": 11.3
       }
-    },
-    "live": {
-      "dates": [
-        "2026-05-13"
-      ],
-      "values": [
-        1.0
-      ],
-      "metrics": {}
-    },
-    "holdings": [],
-    "meta": {
-      "high_water_mark": 100000.0,
-      "current_equity": 100000.0,
-      "soft_kill_state": "normal",
-      "soft_kill_ts": 0.0,
-      "market_regime": "HIGH_VOL",
-      "hard_kill_state": false,
-      "hard_kill_date": null,
-      "reset_anchor": false,
-      "last_reset_date": null,
-      "last_update": "2026-05-13 17:09:47.027223"
     }
   }
 }
