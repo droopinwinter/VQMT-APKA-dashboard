@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>資金運用 — Strategy Dashboard</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
   :root {
     --bg: #0f1117; --card: #1a1d27; --border: #2a2d3e;
@@ -18,22 +17,35 @@
   .nav-btn { padding: 5px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--card); color: var(--muted); cursor: pointer; font-size: 0.82rem; text-decoration: none; transition: all .2s; white-space: nowrap; }
   .nav-btn:hover { border-color: var(--accent); color: var(--text); }
 
-  .tab-bar { display: flex; gap: 6px; padding: 16px 24px 0; flex-wrap: wrap; }
+  .tab-bar { display: flex; gap: 6px; padding: 16px 24px 0; flex-wrap: wrap; align-items: center; }
   .tab { padding: 6px 18px; border-radius: 6px; border: 1px solid var(--border); background: var(--card); color: var(--muted); cursor: pointer; font-size: 0.85rem; transition: all .2s; }
   .tab:hover { border-color: var(--accent); color: var(--text); }
   .tab.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+
+  .options-bar { display: flex; gap: 18px; padding: 12px 24px 0; flex-wrap: wrap; align-items: center; font-size: 0.82rem; color: var(--muted); }
+  .options-bar label { display: flex; align-items: center; gap: 6px; }
+  .options-bar input[type="range"] { accent-color: var(--accent); }
+  .options-bar input[type="checkbox"] { accent-color: var(--accent); }
+  #topn-value { color: var(--text); font-weight: 600; min-width: 2ch; display: inline-block; }
 
   main { padding: 20px 24px; }
   #status { color: var(--muted); font-size: 0.85rem; margin-bottom: 12px; }
 
   .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
   .chart-card h3 { font-size: 0.9rem; color: var(--muted); margin-bottom: 14px; }
-  .chart-wrap { position: relative; height: 380px; }
+  .caption { font-size: 0.78rem; color: var(--muted); margin: -6px 0 14px; line-height: 1.5; }
 
-  /* legend colour boxes */
-  .legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 12px; }
-  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.78rem; color: var(--muted); }
-  .legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+  .heatmap-row { display: flex; align-items: flex-start; position: relative; }
+  .heatmap-scroll { flex: 1 1 auto; overflow-x: auto; overflow-y: hidden; }
+  .heatmap-tooltip {
+    position: fixed; background: #1a1d27; border: 1px solid #2a2d3e; border-radius: 6px;
+    padding: 8px 10px; font-size: 0.78rem; color: #e0e0e0; pointer-events: none; z-index: 50;
+    box-shadow: 0 4px 12px rgba(0,0,0,.4); white-space: nowrap;
+  }
+  .heatmap-tooltip .muted { color: #9ca3af; }
+
+  .legend-bar { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 0.78rem; color: var(--muted); }
+  .legend-gradient { width: 160px; height: 10px; border-radius: 3px; background: linear-gradient(to right, #eef4fc, #1e4d8f); }
 </style>
 </head>
 <body>
@@ -60,46 +72,55 @@
   <button class="tab" onclick="setMarket('USETF')">🇺🇸 US ETF</button>
   <button class="tab" onclick="setMarket('TWETF')">🇹🇼 TW ETF</button>
 </div>
+<div class="options-bar">
+  <label><input type="checkbox" id="show-all-chk" onchange="onShowAllChange()"> 顯示全部品種（不合併 Other）</label>
+  <label id="topn-label">顯示前 <span id="topn-value">20</span> 大品種
+    <input type="range" id="topn-range" min="10" max="60" step="5" value="20" oninput="onTopNInput()">
+  </label>
+</div>
 
 <main>
   <p id="status">資料載入中...</p>
 
   <div class="chart-card">
     <h3 id="bt-title">📊 Backtest 持倉比例（週取樣）</h3>
-    <div class="chart-wrap"><canvas id="btChart"></canvas></div>
-    <div class="legend" id="bt-legend"></div>
+    <p class="caption">橫軸=週別，縱軸=品種，色塊深淺=該週佔資金比例；Cash＝未使用資金。只看單一週（一欄）即可讀出當週持有哪些品種、比例多少、剩多少現金。資料區可左右捲動查看完整歷史。</p>
+    <div class="heatmap-row">
+      <canvas id="btLabelCanvas"></canvas>
+      <div class="heatmap-scroll"><canvas id="btHeatCanvas"></canvas></div>
+    </div>
+    <div class="legend-bar"><span>0%</span><div class="legend-gradient"></div><span>100%</span></div>
   </div>
 
   <div class="chart-card">
     <h3 id="lv-title">📡 Live 持倉比例</h3>
-    <div class="chart-wrap"><canvas id="lvChart"></canvas></div>
-    <div class="legend" id="lv-legend"></div>
+    <div class="heatmap-row">
+      <canvas id="lvLabelCanvas"></canvas>
+      <div class="heatmap-scroll"><canvas id="lvHeatCanvas"></canvas></div>
+    </div>
+    <div class="legend-bar"><span>0%</span><div class="legend-gradient"></div><span>100%</span></div>
   </div>
 </main>
 
-<script>
-// ── Palette (Tableau20-like, Cash always last = gray) ─────────────
-const PALETTE = [
-  '#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f',
-  '#edc948','#b07aa1','#ff9da7','#9c755f','#d4a373',
-  '#86efac','#fca5a5',
-  '#94a3b8',  // Other
-  '#4b5563',  // Cash
-];
+<div id="tooltip" class="heatmap-tooltip" hidden></div>
 
-function tickerColor(label, index, total) {
-  if (label === 'Cash')  return PALETTE[PALETTE.length - 1];
-  if (label === 'Other') return PALETTE[PALETTE.length - 2];
-  return PALETTE[index % (PALETTE.length - 2)];
-}
+<script>
+// ── Layout constants ─────────────────────────────────────────────
+const ROW_HEIGHT   = 20;
+const PX_PER_WEEK  = 14;
+const MIN_WIDTH    = 900;
+const X_AXIS_H      = 70;   // room for rotated date labels
+const LABEL_WIDTH   = 150;
+const LABEL_FONT    = '12px Segoe UI';
+const AXIS_FONT     = '10px Segoe UI';
 
 // ── State ─────────────────────────────────────────────────────────
 let DATA = {};   // { focus: { apka: { US: { backtest:{}, live:{} }, ... }, ... } }
 let currentProfile  = 'focus';
 let currentStrategy = 'apka';
 let currentMarket   = 'US';
-let btChart = null;
-let lvChart = null;
+let topN = 20;
+let showAll = false;
 
 // ── Bootstrap ─────────────────────────────────────────────────────
 async function init() {
@@ -128,7 +149,7 @@ async function fetchJSON(url) {
   return r.json();
 }
 
-// ── Tabs ──────────────────────────────────────────────────────────
+// ── Tabs / options ───────────────────────────────────────────────
 function setProfile(p) {
   currentProfile = p;
   document.querySelectorAll('#profile-tabs .tab').forEach(t =>
@@ -147,107 +168,175 @@ function setMarket(m) {
     t.classList.toggle('active', t.onclick.toString().includes(`'${m}'`)));
   render();
 }
+function onShowAllChange() {
+  showAll = document.getElementById('show-all-chk').checked;
+  document.getElementById('topn-label').style.opacity = showAll ? 0.4 : 1;
+  document.getElementById('topn-range').disabled = showAll;
+  render();
+}
+function onTopNInput() {
+  topN = parseInt(document.getElementById('topn-range').value, 10);
+  document.getElementById('topn-value').textContent = topN;
+  render();
+}
 
 // ── Render ────────────────────────────────────────────────────────
 function render() {
   const mktData = ((DATA[currentProfile] || {})[currentStrategy] || {})[currentMarket] || {};
+  const topNDesc = showAll ? '顯示全部品種' : `前 ${topN} 大品種，其餘合併為 Other`;
 
   document.getElementById('bt-title').textContent =
-    `📊 ${currentMarket} Backtest 持倉比例（${currentStrategy.toUpperCase()}，週取樣，前12大品種）`;
+    `📊 ${currentMarket} Backtest 持倉比例（${currentStrategy.toUpperCase()}，週取樣，${topNDesc}）`;
   document.getElementById('lv-title').textContent =
-    `📡 ${currentMarket} Live 持倉比例（${currentStrategy.toUpperCase()}）`;
+    `📡 ${currentMarket} Live 持倉比例（${currentStrategy.toUpperCase()}，${topNDesc}）`;
 
   if (mktData.backtest) {
-    btChart = buildChart('btChart', btChart, mktData.backtest, 'bt-legend');
+    drawHeatmap('btLabelCanvas', 'btHeatCanvas', mktData.backtest);
     document.getElementById('status').textContent = '';
   } else {
-    if (btChart) { btChart.destroy(); btChart = null; }
+    clearCanvas('btLabelCanvas'); clearCanvas('btHeatCanvas');
     document.getElementById('status').textContent = `⚠️ 此組合（${currentProfile}/${currentStrategy}/${currentMarket}）無 Backtest 持倉資料`;
   }
 
   if (mktData.live) {
-    lvChart = buildChart('lvChart', lvChart, mktData.live, 'lv-legend');
+    drawHeatmap('lvLabelCanvas', 'lvHeatCanvas', mktData.live);
   } else {
-    if (lvChart) { lvChart.destroy(); lvChart = null; }
+    clearCanvas('lvLabelCanvas'); clearCanvas('lvHeatCanvas');
   }
 }
 
-function buildChart(canvasId, oldChart, posData, legendId) {
-  if (oldChart) oldChart.destroy();
-
-  const ctx = document.getElementById(canvasId).getContext('2d');
-  const { dates, series } = posData;
-
-  const datasets = series.map((s, i) => ({
-    label: s.label,
-    data: dates.map((d, j) => ({ x: new Date(d), y: s.data[j] })),
-    backgroundColor: tickerColor(s.label, i, series.length),
-    borderColor:     tickerColor(s.label, i, series.length),
-    borderWidth: 0,
-    fill: true,
-    tension: 0,
-    pointRadius: 0,
-  }));
-
-  // Legend
-  const legendEl = document.getElementById(legendId);
-  legendEl.innerHTML = series.map((s, i) =>
-    `<div class="legend-item">
-      <div class="legend-dot" style="background:${tickerColor(s.label, i, series.length)}"></div>
-      <span>${s.label}</span>
-    </div>`
-  ).join('');
-
-  Chart.defaults.plugins.tooltip.backgroundColor = '#1a1d27';
-  Chart.defaults.plugins.tooltip.borderColor      = '#2a2d3e';
-  Chart.defaults.plugins.tooltip.borderWidth      = 1;
-  Chart.defaults.plugins.tooltip.titleColor       = '#e0e0e0';
-  Chart.defaults.plugins.tooltip.bodyColor        = '#9ca3af';
-
-  return new Chart(ctx, {
-    type: 'line',
-    data: { datasets },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      interaction: { mode: 'index', intersect: false },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: c => `${c.dataset.label}: ${(c.parsed.y * 100).toFixed(1)}%`,
-            footer: items => {
-              const total = items.filter(i => i.dataset.label !== 'Cash')
-                                 .reduce((s, i) => s + i.parsed.y, 0);
-              return `持倉合計：${(total * 100).toFixed(1)}%`;
-            }
-          }
-        }
-      },
-      scales: {
-        x: {
-          type: 'time',
-          time: { unit: 'year' },
-          stacked: true,
-          ticks: { color: '#6b7280', maxTicksLimit: 8 },
-          grid:  { color: 'rgba(255,255,255,.04)' }
-        },
-        y: {
-          stacked: true,
-          min: 0, max: 1,
-          ticks: { color: '#6b7280', callback: v => (v * 100).toFixed(0) + '%' },
-          grid:  { color: 'rgba(255,255,255,.04)' }
-        }
-      }
-    }
-  });
+function clearCanvas(id) {
+  const c = document.getElementById(id);
+  const ctx = c.getContext('2d');
+  ctx.clearRect(0, 0, c.width, c.height);
 }
 
-// ── Load time adapter then init ───────────────────────────────────
-const s = document.createElement('script');
-s.src = 'https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js';
-s.onload = init;
-document.head.appendChild(s);
+// ── Top-N reduction (client-side, mirrors the Streamlit page) ─────
+function reduceRows(posData) {
+  const { dates, series } = posData;
+  const cash = series.find(s => s.label === 'Cash');
+  const others = series.filter(s => s.label !== 'Cash');
+
+  let rows;
+  if (showAll || others.length <= topN) {
+    rows = others;
+  } else {
+    const avg = s => s.data.reduce((a, b) => a + b, 0) / (s.data.length || 1);
+    const sorted = [...others].sort((a, b) => avg(b) - avg(a));
+    const top  = sorted.slice(0, topN);
+    const rest = sorted.slice(topN);
+    const otherData = dates.map((_, i) => rest.reduce((sum, s) => sum + (s.data[i] || 0), 0));
+    rows = rest.length ? [...top, { label: 'Other', data: otherData }] : top;
+  }
+  if (cash) rows = [...rows, cash];
+  return { dates, rows };
+}
+
+// ── Colour scale ──────────────────────────────────────────────────
+function weightColor(w) {
+  const t = Math.max(0, Math.min(1, w));
+  const c0 = [238, 244, 252], c1 = [30, 77, 143]; // light -> dark blue
+  const r = Math.round(c0[0] + (c1[0] - c0[0]) * t);
+  const g = Math.round(c0[1] + (c1[1] - c0[1]) * t);
+  const b = Math.round(c0[2] + (c1[2] - c0[2]) * t);
+  return `rgb(${r},${g},${b})`;
+}
+
+// ── Draw ──────────────────────────────────────────────────────────
+function drawHeatmap(labelCanvasId, heatCanvasId, posData) {
+  const { dates, rows } = reduceRows(posData);
+  const nRows = rows.length;
+  const nCols = dates.length;
+  const plotHeight = Math.max(160, nRows * ROW_HEIGHT);
+  const totalHeight = plotHeight + X_AXIS_H;
+  const plotWidth = Math.max(MIN_WIDTH, nCols * PX_PER_WEEK);
+
+  // Label canvas (fixed, not scrolled)
+  const labelCanvas = document.getElementById(labelCanvasId);
+  labelCanvas.width = LABEL_WIDTH;
+  labelCanvas.height = totalHeight;
+  labelCanvas.style.width = LABEL_WIDTH + 'px';
+  labelCanvas.style.height = totalHeight + 'px';
+  const lctx = labelCanvas.getContext('2d');
+  lctx.clearRect(0, 0, LABEL_WIDTH, totalHeight);
+  lctx.font = LABEL_FONT;
+  lctx.fillStyle = '#e0e0e0';
+  lctx.textAlign = 'right';
+  lctx.textBaseline = 'middle';
+  rows.forEach((row, i) => {
+    const y = i * ROW_HEIGHT + ROW_HEIGHT / 2;
+    let label = row.label;
+    while (lctx.measureText(label).width > LABEL_WIDTH - 10 && label.length > 1) {
+      label = label.slice(0, -1);
+    }
+    if (label !== row.label) label = label.slice(0, -1) + '…';
+    lctx.fillText(label, LABEL_WIDTH - 6, y);
+  });
+
+  // Heatmap canvas (scrollable)
+  const heatCanvas = document.getElementById(heatCanvasId);
+  heatCanvas.width = plotWidth;
+  heatCanvas.height = totalHeight;
+  heatCanvas.style.width = plotWidth + 'px';
+  heatCanvas.style.height = totalHeight + 'px';
+  const hctx = heatCanvas.getContext('2d');
+  hctx.clearRect(0, 0, plotWidth, totalHeight);
+
+  const colWidth = plotWidth / nCols;
+  rows.forEach((row, r) => {
+    for (let c = 0; c < nCols; c++) {
+      const w = row.data[c] || 0;
+      if (w <= 0.001) continue;
+      hctx.fillStyle = weightColor(w);
+      hctx.fillRect(c * colWidth, r * ROW_HEIGHT, Math.ceil(colWidth), ROW_HEIGHT);
+    }
+  });
+
+  // X-axis date labels (rotated), thin out so they don't overlap
+  hctx.font = AXIS_FONT;
+  hctx.fillStyle = '#6b7280';
+  hctx.strokeStyle = 'rgba(255,255,255,.08)';
+  const labelPxWidth = 60; // approx rotated label footprint along x
+  const step = Math.max(1, Math.ceil(labelPxWidth / colWidth));
+  for (let c = 0; c < nCols; c += step) {
+    const x = c * colWidth + colWidth / 2;
+    hctx.save();
+    hctx.translate(x, plotHeight + 8);
+    hctx.rotate(-Math.PI / 4);
+    hctx.textAlign = 'right';
+    hctx.textBaseline = 'middle';
+    hctx.fillText(dates[c], 0, 0);
+    hctx.restore();
+  }
+
+  // Attach interactive tooltip (re-bind each draw since colWidth/rows change)
+  heatCanvas.onmousemove = (e) => {
+    const rect = heatCanvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    if (y > plotHeight) { hideTooltip(); return; }
+    const c = Math.floor(x / colWidth);
+    const r = Math.floor(y / ROW_HEIGHT);
+    if (c < 0 || c >= nCols || r < 0 || r >= nRows) { hideTooltip(); return; }
+    const row = rows[r];
+    const w = row.data[c] || 0;
+    showTooltip(e.clientX, e.clientY, dates[c], row.label, w);
+  };
+  heatCanvas.onmouseleave = hideTooltip;
+}
+
+function showTooltip(x, y, date, label, weight) {
+  const tt = document.getElementById('tooltip');
+  tt.innerHTML = `<div class="muted">${date}</div><div>${label}: <b>${(weight * 100).toFixed(1)}%</b></div>`;
+  tt.style.left = (x + 14) + 'px';
+  tt.style.top  = (y + 14) + 'px';
+  tt.hidden = false;
+}
+function hideTooltip() {
+  document.getElementById('tooltip').hidden = true;
+}
+
+init();
 </script>
 </body>
 </html>
