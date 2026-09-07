@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07 12:10",
+  "generated_at": "2026-09-07 23:00",
   "profiles": {
     "focus": {
       "apka": {
@@ -61,7 +61,7 @@
             "min_weight": 0.15,
             "target_volatility": 0.5,
             "max_drawdown": 0.34,
-            "trailing_stop_threshold": 0.2,
+            "trailing_stop_threshold": 0.25,
             "trailing_stop_lookback": 14,
             "breadth_warn": 0.4,
             "breadth_bear": 0.35,
