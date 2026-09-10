@@ -1,75 +1,75 @@
 {
-  "generated_at": "2026-09-10 11:41",
+  "generated_at": "2026-09-11 06:40",
   "results": {
     "focus": {
       "vqmt": {
         "US": {
           "meta": {
             "wf_calmar": null,
-            "generated_at": "2026-09-09 15:09"
+            "generated_at": "2026-09-11 00:13"
           },
           "full_period": null,
           "factor_weights": {
-            "value": 0.0295,
-            "momentum": 0.4229,
-            "quality": 0.0585,
-            "tech_trend": 0.3199,
-            "tech_reversion": 0.1692,
+            "value": 0.2464,
+            "momentum": 0.2256,
+            "quality": 0.1414,
+            "tech_trend": 0.3231,
+            "tech_reversion": 0.0635,
             "tech_trend_sub": {
-              "ema_ensemble": 0.464,
-              "macd_hist": 0.373,
-              "obv_factor": 0.163
+              "ema_ensemble": 0.7143,
+              "macd_hist": 0.1951,
+              "obv_factor": 0.0906
             },
             "tech_reversion_sub": {
-              "bollinger_pos": 0.7585,
-              "srsi": 0.2415
+              "bollinger_pos": 0.7633,
+              "srsi": 0.2367
             }
           },
           "risk": {
-            "target_volatility": 0.25,
-            "max_weight": 0.1,
-            "max_drawdown": 0.12,
-            "trailing_stop": 0.14,
-            "breadth_warn": 0.5,
+            "target_volatility": 0.15000000000000002,
+            "max_weight": 0.08,
+            "max_drawdown": 0.26,
+            "trailing_stop": 0.24,
+            "breadth_warn": 0.45,
             "breadth_bear": 0.2,
-            "max_corr": 0.8,
-            "rebalance_freq": "Q",
-            "top_n": 30
+            "max_corr": 0.75,
+            "rebalance_freq": "W",
+            "top_n": 20
           },
           "top10": null
         },
         "TW": {
           "meta": {
             "wf_calmar": null,
-            "generated_at": "2026-09-09 15:03"
+            "generated_at": "2026-09-11 00:04"
           },
           "full_period": null,
           "factor_weights": {
-            "value": 0.4195,
-            "momentum": 0.3105,
-            "quality": 0.1526,
-            "tech_trend": 0.0996,
-            "tech_reversion": 0.0178,
+            "value": 0.0871,
+            "momentum": 0.4127,
+            "quality": 0.0916,
+            "tech_trend": 0.2629,
+            "tech_reversion": 0.1456,
             "tech_trend_sub": {
-              "ema_ensemble": 0.3226,
-              "macd_hist": 0.4946,
-              "obv_factor": 0.1829
+              "ema_ensemble": 0.7943,
+              "macd_hist": 0.0557,
+              "obv_factor": 0.15
             },
             "tech_reversion_sub": {
-              "bollinger_pos": 0.3981,
-              "srsi": 0.6019
+              "bollinger_pos": 0.5102,
+              "srsi": 0.4898
             }
           },
           "risk": {
-            "target_volatility": 0.15000000000000002,
-            "max_weight": 0.1,
-            "max_drawdown": 0.24,
-            "trailing_stop": 0.08,
-            "breadth_warn": 0.3,
-            "breadth_bear": 0.30000000000000004,
-            "max_corr": 0.65,
-            "rebalance_freq": "M",
-            "top_n": 35
+            "target_volatility": 0.25,
+            "max_weight": 0.2,
+            "max_drawdown": 0.13999999999999999,
+            "trailing_stop": 0.18,
+            "breadth_warn": 0.45,
+            "breadth_bear": 0.2,
+            "max_corr": 0.7000000000000001,
+            "rebalance_freq": "Q",
+            "top_n": 40
           },
           "top10": null
         },
