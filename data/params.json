@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10 06:32",
+  "generated_at": "2026-09-10 11:41",
   "profiles": {
     "focus": {
       "apka": {
@@ -111,31 +111,44 @@
       "vqmt": {
         "US": {
           "factor_weights": {
-            "value": 0.0295,
-            "momentum": 0.4229,
-            "quality": 0.0585,
-            "tech_trend": 0.3199,
-            "tech_reversion": 0.1692,
+            "value": 0.3029,
+            "momentum": 0.163,
+            "quality": 0.3053,
+            "tech_trend": 0.0555,
+            "tech_reversion": 0.1733,
             "_tech_trend_sub": {
-              "ema_ensemble": 0.464,
-              "macd_hist": 0.373,
-              "obv_factor": 0.163
+              "ema_ensemble": 0.3389,
+              "macd_hist": 0.3416,
+              "obv_factor": 0.3195
             },
             "_tech_reversion_sub": {
-              "bollinger_pos": 0.7585,
-              "srsi": 0.2415
+              "bollinger_pos": 0.3008,
+              "srsi": 0.6992
             }
           },
           "risk": {
-            "max_weight": 0.1,
+            "max_weight": 0.25,
             "min_weight": 0.02,
-            "target_volatility": 0.15,
-            "max_drawdown": 0.12,
+            "target_volatility": 0.25,
+            "max_drawdown": 0.25,
             "commission_bp": 1,
             "slippage_bp": 2,
             "tax_bp": 0,
-            "trailing_drawdown": null,
-            "drawdown_levels": []
+            "trailing_drawdown": 0.25,
+            "drawdown_levels": [
+              {
+                "action": "freeze",
+                "threshold": -0.1
+              },
+              {
+                "action": "reduce_50",
+                "threshold": -0.15
+              },
+              {
+                "action": "liquidate",
+                "threshold": -0.2
+              }
+            ]
           },
           "universe": {
             "min_stocks": 50,
@@ -148,26 +161,26 @@
         },
         "TW": {
           "factor_weights": {
-            "value": 0.4195,
-            "momentum": 0.3105,
-            "quality": 0.1526,
-            "tech_trend": 0.0996,
-            "tech_reversion": 0.0178,
+            "value": 0.489,
+            "momentum": 0.206,
+            "quality": 0.022,
+            "tech_trend": 0.16,
+            "tech_reversion": 0.123,
             "_tech_trend_sub": {
-              "ema_ensemble": 0.3226,
-              "macd_hist": 0.4946,
-              "obv_factor": 0.1829
+              "ema_ensemble": 0.5,
+              "macd_hist": 0.3,
+              "obv_factor": 0.2
             },
             "_tech_reversion_sub": {
-              "bollinger_pos": 0.3981,
-              "srsi": 0.6019
+              "bollinger_pos": 0.35,
+              "srsi": 0.65
             }
           },
           "risk": {
-            "max_weight": 0.1,
+            "max_weight": 0.25,
             "min_weight": 0.02,
             "target_volatility": 0.25,
-            "max_drawdown": 0.24,
+            "max_drawdown": 0.2,
             "commission_bp": 30,
             "slippage_bp": 5,
             "tax_bp": 150,
