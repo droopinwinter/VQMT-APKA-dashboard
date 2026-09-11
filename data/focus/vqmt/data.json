@@ -11790,7 +11790,8 @@
         "2026-09-08",
         "2026-09-09",
         "2026-09-10",
-        "2026-09-11"
+        "2026-09-11",
+        "2026-09-12"
       ],
       "values": [
         1.0,
@@ -11799,7 +11800,8 @@
         0.995291,
         0.999117,
         0.982942,
-        0.980494
+        0.980494,
+        1.00945
       ],
       "metrics": {}
     },
@@ -14747,14 +14749,14 @@
     "holdings": [
       {
         "symbol": "CNC",
-        "shares": 218.0,
+        "shares": 232.0,
         "weight": 15,
         "price": 65.4,
         "last_update": "2026-09-11 06:40:28"
       },
       {
         "symbol": "DELL",
-        "shares": 29.0,
+        "shares": 30.0,
         "weight": 15,
         "price": 506.62,
         "last_update": "2026-09-11 06:40:28"
@@ -14768,7 +14770,7 @@
       },
       {
         "symbol": "MU",
-        "shares": 16.0,
+        "shares": 15.0,
         "weight": 15,
         "price": 977.41,
         "last_update": "2026-09-11 06:40:28"
@@ -14790,8 +14792,8 @@
     ],
     "meta": {
       "high_water_mark": 101183.40084838869,
-      "current_equity": 98049.4403305054,
-      "cash": 2.17713492413075e-11,
+      "current_equity": 100944.969329834,
+      "cash": 1009.449693298341,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1788911999.0,
       "market_regime": "TREND",
@@ -14800,7 +14802,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-09-11",
-      "last_update": "2026-09-11 06:40:28.445248"
+      "last_update": "2026-09-12 06:41:48.575115"
     }
   },
   "TW": {
