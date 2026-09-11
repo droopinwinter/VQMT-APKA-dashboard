@@ -135,6 +135,7 @@ let UNIVERSE = {};  // { US: [{ticker, name}, ...], ... }
 let HOLDINGS = {};  // { focus: { apka: { US: Set<symbol>, ... }, vqmt: {...} }, ... }
 let WEIGHTS  = {};  // { focus: { apka: { US: {symbol: weight}, ... }, ... } }
 let SCORES   = {};  // { US: { AAPL: {apka: 75.3, vqmt: 62.1}, ... }, ... }
+let PRICES   = {};  // { AAPL: {price: 123.45, date: '2026-09-10'}, ... }
 let currentProfile = 'focus';
 let searchTerms = {};  // { US: '', TW: '', USETF: '', TWETF: '' }
 
@@ -146,14 +147,16 @@ async function fetchJSON(url) {
 
 async function init() {
   try {
-    const [sum, universe, scores] = await Promise.all([
+    const [sum, universe, scores, prices] = await Promise.all([
       fetchJSON('data/summary.json'),
       fetchJSON('data/universe.json'),
       fetchJSON('data/scores.json').catch(() => ({})),
+      fetchJSON('data/prices.json').catch(() => ({})),
     ]);
     document.getElementById('last-update').textContent = '更新時間：' + sum.generated_at;
     UNIVERSE = universe;
     SCORES   = scores;
+    PRICES   = prices;
 
     // Load holdings from all profiles/strategies
     for (const p of sum.profiles) {
@@ -207,6 +210,12 @@ function fmtScore(v) {
   return `<span class="score-pill ${cls}">${Math.round(v)}</span>`;
 }
 
+function fmtPrice(ticker) {
+  const p = PRICES[ticker];
+  if (!p || p.price === null || p.price === undefined) return '<span class="score-none">—</span>';
+  return `<span title="${p.date || ''}">${p.price.toLocaleString('en-US', { maximumFractionDigits: 2 })}</span>`;
+}
+
 function buildTable(mkt, tickers) {
   const term = (searchTerms[mkt] || '').toLowerCase();
   const apkaH = (HOLDINGS[currentProfile]?.apka?.[mkt]) || new Set();
@@ -236,6 +245,7 @@ function buildTable(mkt, tickers) {
   let html = `<table>
     <thead><tr>
       <th>代碼</th><th>名稱</th>
+      <th style="text-align:right;">最新價格</th>
       <th style="text-align:center;color:#60a5fa;">APKA 持倉</th>
       <th style="text-align:center;color:#a78bfa;">VQMT 持倉</th>
       <th style="text-align:center;color:#60a5fa;">APKA 分</th>
@@ -264,6 +274,7 @@ function buildTable(mkt, tickers) {
     html += `<tr class="${rowCls}">
       <td class="symbol">${t.ticker}</td>
       <td class="name-cell">${t.name}</td>
+      <td style="text-align:right;">${fmtPrice(t.ticker)}</td>
       <td style="text-align:center;">${apkaCell}</td>
       <td style="text-align:center;">${vqmtCell}</td>
       <td style="text-align:center;">${apkaScore}</td>
