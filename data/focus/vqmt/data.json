@@ -26339,7 +26339,7 @@
         1.120238,
         1.115273,
         1.071785,
-        1.030768
+        1.002088
       ],
       "metrics": {}
     },
@@ -29220,21 +29220,21 @@
     "holdings": [
       {
         "symbol": "2887.TW",
-        "shares": 513.0,
+        "shares": 499.0,
         "weight": 20,
         "price": 42.05,
         "last_update": "2026-09-10 11:41:07"
       },
       {
         "symbol": "1303.TW",
-        "shares": 32.0,
+        "shares": 31.0,
         "weight": 7,
         "price": 238.0,
         "last_update": "2026-09-10 11:41:07"
       },
       {
         "symbol": "2883.TW",
-        "shares": 501.0,
+        "shares": 488.0,
         "weight": 17,
         "price": 36.6,
         "last_update": "2026-09-10 11:41:07"
@@ -29248,14 +29248,14 @@
       },
       {
         "symbol": "2344.TW",
-        "shares": 34.0,
+        "shares": 33.0,
         "weight": 6,
         "price": 189.0,
         "last_update": "2026-09-09 11:47:02"
       },
       {
         "symbol": "2885.TW",
-        "shares": 292.0,
+        "shares": 284.0,
         "weight": 19,
         "price": 70.3,
         "last_update": "2026-09-10 11:41:07"
@@ -29276,7 +29276,7 @@
       },
       {
         "symbol": "3711.TW",
-        "shares": 14.0,
+        "shares": 13.0,
         "weight": 8,
         "price": 637.0,
         "last_update": "2026-09-10 11:41:07"
@@ -29284,9 +29284,9 @@
     ],
     "meta": {
       "high_water_mark": 117333.34925079346,
-      "current_equity": 107962.28415761449,
-      "cash": 1079.6228415761457,
-      "soft_kill_state": "lv1",
+      "current_equity": 104958.42285988668,
+      "cash": 1049.584228598868,
+      "soft_kill_state": "lv2",
       "soft_kill_ts": 1789344000.0,
       "market_regime": "SIDEWAYS",
       "hard_kill_state": false,
@@ -29294,7 +29294,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-09-10",
-      "last_update": "2026-09-14 14:43:56.242020"
+      "last_update": "2026-09-14 15:04:33.092402"
     }
   }
 }
