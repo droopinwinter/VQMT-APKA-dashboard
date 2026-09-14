@@ -26307,7 +26307,8 @@
         "2026-09-08",
         "2026-09-09",
         "2026-09-10",
-        "2026-09-11"
+        "2026-09-11",
+        "2026-09-14"
       ],
       "values": [
         1.0,
@@ -26316,7 +26317,8 @@
         1.013675,
         1.014289,
         1.047412,
-        1.069839
+        1.069839,
+        1.080427
       ],
       "metrics": {}
     },
@@ -29189,7 +29191,7 @@
       },
       {
         "symbol": "2409.TW",
-        "shares": 183.0,
+        "shares": 185.0,
         "weight": 5,
         "price": 28.2,
         "last_update": "2026-09-08 11:39:53"
@@ -29210,7 +29212,7 @@
       },
       {
         "symbol": "2344.TW",
-        "shares": 22.0,
+        "shares": 23.0,
         "weight": 4,
         "price": 184.0,
         "last_update": "2026-09-10 11:37:07"
@@ -29231,9 +29233,9 @@
       }
     ],
     "meta": {
-      "high_water_mark": 103119.90032010204,
-      "current_equity": 103119.90032010204,
-      "cash": 70121.53221766939,
+      "high_water_mark": 104140.48198955048,
+      "current_equity": 104140.48198955048,
+      "cash": 70815.52775289433,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1788307199.0,
       "market_regime": "SIDEWAYS",
@@ -29242,7 +29244,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-09-10",
-      "last_update": "2026-09-11 11:38:50.339801"
+      "last_update": "2026-09-14 14:40:07.127906"
     }
   },
   "USETF": {
@@ -55443,7 +55445,8 @@
         "2026-09-08",
         "2026-09-09",
         "2026-09-10",
-        "2026-09-11"
+        "2026-09-11",
+        "2026-09-14"
       ],
       "values": [
         1.0,
@@ -55452,7 +55455,8 @@
         1.012702,
         1.015031,
         1.017595,
-        1.016541
+        1.016541,
+        1.014111
       ],
       "metrics": {}
     },
@@ -58311,7 +58315,7 @@
     "holdings": [
       {
         "symbol": "00680L.TW",
-        "shares": 956.0,
+        "shares": 954.0,
         "weight": 6,
         "price": 6.38,
         "last_update": "2026-09-10 11:17:15"
@@ -58332,7 +58336,7 @@
       },
       {
         "symbol": "00673R.TW",
-        "shares": 187.0,
+        "shares": 186.0,
         "weight": 2,
         "price": 10.89,
         "last_update": "2026-09-10 11:17:15"
@@ -58347,17 +58351,17 @@
     ],
     "meta": {
       "high_water_mark": 101766.71199045028,
-      "current_equity": 101661.24465989704,
-      "cash": 86412.05796091248,
+      "current_equity": 101418.1978534906,
+      "cash": 86205.46817546702,
       "soft_kill_state": "lv1",
-      "soft_kill_ts": 1789010233.685016,
+      "soft_kill_ts": 1789366788.4213538,
       "market_regime": "SIDEWAYS",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-09-10",
-      "last_update": "2026-09-11 11:17:42.754421"
+      "last_update": "2026-09-14 14:19:50.498305"
     }
   }
 }

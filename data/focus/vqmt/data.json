@@ -26328,7 +26328,8 @@
         "2026-09-08",
         "2026-09-09",
         "2026-09-10",
-        "2026-09-11"
+        "2026-09-11",
+        "2026-09-14"
       ],
       "values": [
         1.0,
@@ -26337,7 +26338,8 @@
         1.064513,
         1.120238,
         1.115273,
-        1.071785
+        1.071785,
+        1.030768
       ],
       "metrics": {}
     },
@@ -29218,21 +29220,21 @@
     "holdings": [
       {
         "symbol": "2887.TW",
-        "shares": 534.0,
+        "shares": 513.0,
         "weight": 20,
         "price": 42.05,
         "last_update": "2026-09-10 11:41:07"
       },
       {
         "symbol": "1303.TW",
-        "shares": 33.0,
+        "shares": 32.0,
         "weight": 7,
         "price": 238.0,
         "last_update": "2026-09-10 11:41:07"
       },
       {
         "symbol": "2883.TW",
-        "shares": 521.0,
+        "shares": 501.0,
         "weight": 17,
         "price": 36.6,
         "last_update": "2026-09-10 11:41:07"
@@ -29246,14 +29248,14 @@
       },
       {
         "symbol": "2344.TW",
-        "shares": 36.0,
+        "shares": 34.0,
         "weight": 6,
         "price": 189.0,
         "last_update": "2026-09-09 11:47:02"
       },
       {
         "symbol": "2885.TW",
-        "shares": 303.0,
+        "shares": 292.0,
         "weight": 19,
         "price": 70.3,
         "last_update": "2026-09-10 11:41:07"
@@ -29282,17 +29284,17 @@
     ],
     "meta": {
       "high_water_mark": 117333.34925079346,
-      "current_equity": 112258.41377780456,
-      "cash": 1122.5841377780466,
-      "soft_kill_state": "normal",
-      "soft_kill_ts": 1788307199.0,
+      "current_equity": 107962.28415761449,
+      "cash": 1079.6228415761457,
+      "soft_kill_state": "lv1",
+      "soft_kill_ts": 1789344000.0,
       "market_regime": "SIDEWAYS",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-09-10",
-      "last_update": "2026-09-11 11:42:48.331125"
+      "last_update": "2026-09-14 14:43:56.242020"
     }
   }
 }

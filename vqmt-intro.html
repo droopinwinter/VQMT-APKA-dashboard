@@ -82,7 +82,7 @@
   <!-- 四大因子 -->
   <div class="section">
     <div class="section-title"><span class="icon">🔬</span>四大因子評分系統（VQMT）</div>
-    <p style="font-size:0.88rem;color:var(--muted);margin-bottom:16px;">系統對每支股票打出 0–100 的綜合分數，從四個維度評估：</p>
+    <p style="font-size:0.88rem;color:var(--muted);margin-bottom:16px;">系統對每支股票打出 0–100 的綜合分數，從四個維度評估。四個因子的權重並非固定比例，而是各市場各自用歷史資料 walk-forward 優化出來、且會定期更新的一組權重（正式數字見「⚙️ 參數查詢」頁）：</p>
     <div class="factor-grid">
       <div class="factor-card">
         <div class="f-icon">💰</div>
@@ -114,9 +114,9 @@
     <div class="section-title"><span class="icon">🌊</span>CTA 趨勢跟隨邏輯</div>
     <div class="card">
       <h4>什麼是 CTA？</h4>
-      <p>CTA（Commodity Trading Advisor）策略的核心理念是「順勢而為」：當市場在上漲趨勢時積極持股，當市場陷入熊市或高波動時自動減倉甚至清倉。系統每天自動判斷當前市場「制度」（Regime），並據此調整倉位。</p>
+      <p>CTA（Commodity Trading Advisor）策略的核心理念是「順勢而為」：當市場在上漲趨勢時積極持股，當市場陷入熊市或高波動時自動減倉甚至清倉。系統會計算當前市場「制度」（Regime），並據此調整倉位與訊號強度。</p>
     </div>
-    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">市場制度分為五種狀態：</p>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">市場制度目前分為以下狀態（其中 BULL 疊加判斷目前只在美股啟用，其他市場尚未開啟）：</p>
     <div class="regime-grid">
       <div class="regime-chip" style="background:#1e3a2f;color:#22c55e;">
         <div class="r-name">● TREND 趨勢</div>
@@ -124,19 +124,19 @@
       </div>
       <div class="regime-chip" style="background:#2a2a1e;color:#f59e0b;">
         <div class="r-name">● SIDEWAYS 震盪</div>
-        <div class="r-desc">市場橫盤整理，適度佈局</div>
+        <div class="r-desc">市場橫盤整理或短期均值回歸訊號，適度佈局</div>
       </div>
-      <div class="regime-chip" style="background:#1e2a3a;color:#3b82f6;">
-        <div class="r-name">● REVERSION 均值</div>
-        <div class="r-desc">短期過漲/過跌，等待回歸</div>
+      <div class="regime-chip" style="background:#173a2a;color:#22c55e;">
+        <div class="r-name">● BULL 多頭疊加</div>
+        <div class="r-desc">趨勢向上且站上長期均線、廣度健康（目前僅美股啟用），可放寬曝險</div>
       </div>
       <div class="regime-chip" style="background:#3b1e1e;color:#ef4444;">
         <div class="r-name">● BEAR 熊市</div>
-        <div class="r-desc">市場下行，降低風險曝險</div>
+        <div class="r-desc">跌破長期均線且廣度轉弱，大幅降低風險曝險</div>
       </div>
       <div class="regime-chip" style="background:#3b2a0f;color:#f59e0b;">
         <div class="r-name">● HIGH_VOL 高波動</div>
-        <div class="r-desc">市場劇烈波動，縮減倉位</div>
+        <div class="r-desc">高波動個股比例過高，縮減倉位</div>
       </div>
     </div>
   </div>
@@ -148,18 +148,18 @@
     <div class="section-title"><span class="icon">🛡️</span>三層風險防護機制</div>
 
     <div class="kill-row">
-      <div class="kill-label soft">Soft Kill<br>縮倉</div>
-      <div class="kill-desc">當實盤績效與回測基準出現顯著偏離（例如實盤回報僅達回測的 70% 以下），系統自動將倉位縮減至 50%，進入觀察期，待異常恢復後再重新加倉。</div>
+      <div class="kill-label soft">Soft Kill<br>分級縮倉</div>
+      <div class="kill-desc">當回撤達到該市場「最大回撤上限」的 50%，倉位縮放至 50%；達到 75% 時再縮放至 20%。門檻是相對於每個市場各自設定的回撤上限計算，並非固定的絕對百分比。</div>
     </div>
 
     <div class="kill-row">
-      <div class="kill-label">Hard Kill<br>全清</div>
-      <div class="kill-desc">當實盤最大回撤超過設定閾值（美股約 <span class="highlight">-15%</span>，台股約 <span class="highlight">-18%</span>），系統立即清倉並停止交易，進入冷卻期，最快 45 天後才重新進場評估。</div>
+      <div class="kill-label">Hard Kill<br>降倉/全清</div>
+      <div class="kill-desc">當回撤觸及該市場設定的最大回撤上限（各市場數值不同，且會隨回測優化調整），系統依規則降低曝險或清倉並停止交易，進入冷卻期；冷卻天數同樣依市場設定（目前多數市場為 5 天，非固定天數），恢復條件也可能疊加市場制度過濾。</div>
     </div>
 
     <div class="kill-row">
-      <div class="kill-label soft">回測偏差<br>監控</div>
-      <div class="kill-desc">系統每日比對實盤與回測的績效差異。若實際滑點或成本遠高於預期，會自動調降風險係數，防止模型失效時繼續重壓。</div>
+      <div class="kill-label soft">個股 Trailing Stop</div>
+      <div class="kill-desc">單一持股從近期高點回落達到設定門檻時，該檔會被強制出場，並在短期內（依市場設定的冷卻天數）列入禁止回補名單，防止「已經到手的獲利」在同一檔標的上整個吐回去。</div>
     </div>
   </div>
 
@@ -176,32 +176,33 @@
         <tr>
           <td>🇺🇸 美股 US</td>
           <td>S&amp;P 500 大中型股（市值 &gt; 20 億美元）</td>
-          <td class="highlight">~10 支</td>
-          <td>每月</td>
+          <td class="highlight">~50 支</td>
+          <td>預設每月</td>
         </tr>
         <tr>
           <td>🇹🇼 台股 TW</td>
           <td>台灣前 200 大個股</td>
-          <td class="highlight">~10 支</td>
-          <td>每月</td>
+          <td class="highlight">~50 支</td>
+          <td>預設季度</td>
         </tr>
         <tr>
           <td>🇺🇸 US ETF</td>
           <td>美股主要 ETF（板塊、因子型）</td>
-          <td class="highlight">3–5 支</td>
-          <td>每月</td>
+          <td class="highlight">~5 支</td>
+          <td>預設每月</td>
         </tr>
         <tr>
           <td>🇹🇼 TW ETF</td>
           <td>台灣主要 ETF</td>
-          <td class="highlight">3–5 支</td>
-          <td>每月</td>
+          <td class="highlight">~5 支</td>
+          <td>預設季度</td>
         </tr>
       </tbody>
     </table>
+    <div class="note" style="margin-top:10px;">📌 VQMT 是「分散」策略，個股市場（US/TW）持股數遠多於集中型的 APKA；持股數與再平衡頻率都可能被個別市場的優化結果覆蓋，正式數字以「⚙️ 參數查詢」頁為準。</div>
     <div class="card" style="margin-top:14px;">
       <h4>操作流程簡述</h4>
-      <p>每月月底，系統自動對股票池打分 → 選出得分最高的 10 支 → 透過風險預算分配各股權重 → 執行再平衡。日常則持續監控市場制度與 Kill Switch 狀態，發現異常立即調整。</p>
+      <p>到了再平衡日，系統自動對股票池打分 → 依分數選出目標持股 → 依風控參數分配各股權重 → 執行再平衡；個股再平衡頻率依市場而定（見上表）。日常則持續監控市場制度與 Kill Switch 狀態，發現異常立即調整曝險。</p>
     </div>
   </div>
 

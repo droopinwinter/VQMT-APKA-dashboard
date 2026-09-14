@@ -471,7 +471,7 @@
         <div class="step-num">5</div>
         <div class="step-content">
           <h4>定期回來確認，發現變動就跟著調整</h4>
-          <p>策略每月會重新評分、調整持股（月度再平衡）。建議每月定期回來看一次持倉表格是否有變化；若中途 Regime 燈號轉為警戒狀態，也應提高檢查頻率，必要時跟著系統的縮倉方向減碼。</p>
+          <p>各組合的再平衡頻率依市場而定（例如美股個股偏雙週、台股個股偏季度，實際頻率可能隨優化調整），不是統一每月一次。建議至少按網站更新頻率（每週二四六）回來看一次持倉表格是否有變化；若中途 Regime 燈號轉為警戒狀態，也應提高檢查頻率，必要時跟著系統的縮倉方向減碼。</p>
         </div>
       </div>
       <div class="note">📌 持倉表格中如果某支股票消失或新增，代表系統這次重新選股後把它換掉了——照著清單同步調整你手上的部位即可，不需要自己額外判斷加減碼。</div>
@@ -507,10 +507,9 @@
 
       <div class="card">
         <h4>🚨 風控燈號轉變時，系統會自動做什麼？</h4>
-        <p>當實盤回撤達到約 <span class="highlight">-10%</span>，系統會自動<span class="highlight">凍結新增持倉</span>；達到約 <span
-            class="highlight">-15%</span> 會自動<span class="highlight">減碼 50%</span>；達到約 <span
-            class="highlight">-20%</span> 則會<span
-            class="highlight">全部平倉</span>（實際門檻依組合略有差異）。這些都是系統自動執行的行為，看到燈號轉為警戒時，<span
+        <p>每個市場組合都各自設有一個「最大回撤上限」。當實際回撤達到該上限的 <span class="highlight">50%</span>，系統會自動<span class="highlight">將倉位縮減到 50%</span>；達到上限的 <span
+            class="highlight">75%</span> 會再<span class="highlight">縮減到 20%</span>；觸及上限本身則會依規則<span
+            class="highlight">大幅降低曝險或全部平倉</span>。因為門檻是相對於各市場自己的回撤上限計算，實際觸發的絕對回撤數字每個組合都不一樣（正式數值見「⚙️ 參數查詢」頁）。這些都是系統自動執行的行為，看到燈號轉為警戒時，<span
             class="highlight">跟著系統減碼即可，不需要自行搶先加碼對抗</span>。</p>
       </div>
 

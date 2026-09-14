@@ -82,9 +82,9 @@
 
   <!-- Hero -->
   <div class="hero">
-    <div class="badge">動量核心 × 多層風控</div>
+    <div class="badge">AI 技術面排序模型 × 多層風控</div>
     <h2>APKA 是什麼？</h2>
-    <p>APKA 是在 VQMT 多因子系統基礎上優化的進階策略，以<span style="color:var(--accent);font-weight:600;">動量因子為核心</span>，搭配嚴格的 Kill Switch 機制，追求在趨勢市場中獲取更高的集中報酬，同時透過多層風控保護資本。</p>
+    <p>APKA 是在 VQMT 基礎上另立的集中持股策略，核心是一套<span style="color:var(--accent);font-weight:600;">用機器學習訓練出來的技術面排序模型</span>（而非單純的傳統動量因子），搭配多層 Kill Switch 與波動率目標控管，追求比分散配置更高的集中報酬，同時透過風控保護資本。</p>
   </div>
 
   <hr class="divider">
@@ -96,8 +96,8 @@
       <div class="compare-card vqmt">
         <div class="c-title">📘 VQMT（Diversified 分散）</div>
         <ul>
-          <li>四因子均衡配置</li>
-          <li>價值、品質、動量、技術各佔約 15–30%</li>
+          <li>四因子（價值/品質/動量/技術）加權評分</li>
+          <li>各市場權重不同，且會定期重新優化</li>
           <li>分散風格，波動較低</li>
           <li>適合長期穩健增長</li>
           <li>持股來自多個行業</li>
@@ -106,15 +106,15 @@
       <div class="compare-card apka">
         <div class="c-title">📗 APKA（Focus 集中）</div>
         <ul>
-          <li>動量因子獨佔 <span class="highlight">100%</span> 權重（美股）</li>
-          <li>專注捕捉強勢股的價格動能</li>
-          <li>集中持股，追求更高超額報酬</li>
+          <li>以技術/動量指標為特徵的 AI 排序模型評分</li>
+          <li>結合 12-1 月動量、EMA/MACD 趨勢、力度指標等訊號</li>
+          <li>集中持股（依市場約 5–8 檔），追求更高超額報酬</li>
           <li>適合進取型策略偏好</li>
-          <li>台股則採多因子混合配置</li>
+          <li>美股、台股用同一套評分邏輯，只是各自訓練/優化</li>
         </ul>
       </div>
     </div>
-    <div class="note">📌 美股 APKA 使用純動量策略（Momentum 100%），台股 APKA 因市場特性不同，採取技術因子（30%）+ 品質因子（20%）等多因子組合。</div>
+    <div class="note">📌 APKA 的評分不是固定公式的「動量 100%」，而是用歷史資料 walk-forward 訓練出來的模型（Ridge Regression 或梯度提升樹），對一籃子技術指標（含經典 12-1 月動量）評分排名；各市場的模型與權重各自獨立訓練，且會隨最新回測結果定期更新。</div>
   </div>
 
   <hr class="divider">
@@ -126,35 +126,35 @@
       <div class="step-num">1</div>
       <div class="step-content">
         <h4>建立股票池</h4>
-        <p>從市場中篩選符合條件的股票（美股：市值 &gt; 20 億美元、日均成交 &gt; 500 萬美元），形成候選股票池（約 200 支）。</p>
+        <p>從市場中篩選符合條件的股票（美股：股價 &gt; $5、市值 &gt; 20 億美元、近 63 日日均成交 &gt; 500 萬美元；台股另有各自的流動性條件），形成候選股票池（上限約 200 支）。</p>
       </div>
     </div>
     <div class="step-row">
       <div class="step-num">2</div>
       <div class="step-content">
-        <h4>動量評分排名</h4>
-        <p>計算每支股票的 3–12 個月價格動能分數，考量風險調整後的漲幅，對所有候選股票進行排名。</p>
+        <h4>AI 技術面排序評分</h4>
+        <p>用 EMA/MACD 趨勢、布林通道、震盪指標、經典 12-1 月動量等技術特徵，訓練排序模型算出每支股票的分數，並做每日截面正規化（0–100 分，排名相對值，不是絕對報酬率）。</p>
       </div>
     </div>
     <div class="step-row">
       <div class="step-num">3</div>
       <div class="step-content">
-        <h4>集中選出前 10 支</h4>
-        <p>從排名中選出得分最高的 <span class="highlight">10 支</span>股票，形成持股組合。集中持股有助於充分把握強勢股的漲勢。</p>
+        <h4>集中選出分數最高的一批股票</h4>
+        <p>從排名中選出得分最高的一批股票，形成持股組合。目標持股數依市場而定（美股/台股/ETF 各不相同，且會隨定期優化調整），正式數字請見「⚙️ 參數查詢」頁。</p>
       </div>
     </div>
     <div class="step-row">
       <div class="step-num">4</div>
       <div class="step-content">
-        <h4>風險預算分配權重</h4>
-        <p>根據各股票的波動率和相關性，分配各股倉位權重（單股上限 <span class="highlight">25%</span>，下限 2%），確保風險分散。</p>
+        <h4>波動率目標＋持股權重上下限</h4>
+        <p>依整體目標波動率（target volatility）與相關性限制分配各股倉位權重，並設定單股權重上限與下限；上下限依市場各自校準，同樣可在「⚙️ 參數查詢」頁查到目前數值。</p>
       </div>
     </div>
     <div class="step-row">
       <div class="step-num">5</div>
       <div class="step-content">
-        <h4>月度再平衡</h4>
-        <p>每月月底重新評分並調倉，汰弱留強。最大換手率受限在 20%，避免頻繁交易侵蝕報酬。</p>
+        <h4>定期再平衡（依市場不同）</h4>
+        <p>再平衡頻率<span class="highlight">不是統一每月</span>：美股/美股 ETF 目前為雙週（每 14 天），台股/台股 ETF 目前為季度，且會隨最新回測結果調整。個股另有獨立的 Trailing Stop（近期高點回落達門檻即強制出場並列入短期黑名單），不必等到下次再平衡日。</p>
       </div>
     </div>
   </div>
@@ -164,33 +164,33 @@
   <!-- Kill Switch -->
   <div class="section">
     <div class="section-title"><span class="icon">🔐</span>多層 Kill Switch 風控機制</div>
-    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:14px;">APKA 的風控是系統的核心競爭力之一。當市場出現異常，系統分三個等級自動應對：</p>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:14px;">APKA 的風控是系統的核心競爭力之一。當帳戶回撤逼近該市場自訂的最大回撤上限時，系統分等級自動縮減曝險：</p>
 
     <div class="kill-row">
-      <div class="kill-label kill-lv1">Level 1<br>縮倉 50%</div>
+      <div class="kill-label kill-lv1">Soft Kill Lv1<br>縮倉至 50%</div>
       <div class="kill-desc">
-        <strong>觸發條件：</strong>實盤報酬 vs 回測基準的比值跌破 <span style="color:var(--yellow);font-weight:600;">70%</span>，或帳戶回撤達到 <span style="color:var(--yellow);font-weight:600;">-10%</span>（美股）。<br>
-        <strong>處置：</strong>倉位縮減至 50%，系統進入觀察期（約 3 天冷卻），待訊號穩定後再加回。
+        <strong>觸發條件：</strong>當前回撤達到該市場「最大回撤上限」的 <span style="color:var(--yellow);font-weight:600;">50%</span> 時觸發（例如上限設 40%，回撤到 20% 就觸發），或市場廣度出現背離警訊。<br>
+        <strong>處置：</strong>倉位縮放至 50%，訊號恢復健康且過了冷卻期才會降級回正常。
       </div>
     </div>
 
     <div class="kill-row">
-      <div class="kill-label kill-lv2">Level 2<br>縮倉 80%</div>
+      <div class="kill-label kill-lv2">Soft Kill Lv2<br>縮倉至 20%</div>
       <div class="kill-desc">
-        <strong>觸發條件：</strong>帳戶回撤持續擴大至 <span style="color:var(--red);font-weight:600;">-15%</span>（美股），或實盤與回測偏差進一步惡化。<br>
-        <strong>處置：</strong>倉位縮減至 20%，進入嚴格觀察模式。
+        <strong>觸發條件：</strong>回撤擴大到該市場最大回撤上限的 <span style="color:var(--red);font-weight:600;">75%</span>。<br>
+        <strong>處置：</strong>倉位縮放至 20%，進入嚴格觀察模式，需先降回 Lv1 才能再降回正常。
       </div>
     </div>
 
     <div class="kill-row">
-      <div class="kill-label kill-lv3">Level 3<br>Hard Kill 全清</div>
+      <div class="kill-label kill-lv3">Hard Kill 全清</div>
       <div class="kill-desc">
-        <strong>觸發條件：</strong>帳戶回撤超過 <span style="color:var(--red);font-weight:600;">-20%</span>（美股），代表系統出現根本性失效。<br>
-        <strong>處置：</strong>立即全部清倉，交易完全停止。最快 <span style="color:var(--red);font-weight:600;">45 天</span>後才重新評估是否重啟。
+        <strong>觸發條件：</strong>回撤觸及該市場設定的最大回撤上限（各市場數值不同，US/USETF 目前約 34–40%，其餘市場另有各自數值），或波動率／實盤偏離出現極端異常。<br>
+        <strong>處置：</strong>依規則降低曝險或全部清倉，交易停止。重新進場需先經過冷卻天數（目前各市場多設為 5 天，非固定 45 天），且可視設定加上市場制度過濾條件。
       </div>
     </div>
 
-    <div class="note">🔒 冷卻期設計是為了防止「情緒性重壓」：在市場剛發生重大衝擊後，系統不急於重新進場，而是等待市場制度恢復穩定後再評估。</div>
+    <div class="note">🔒 各市場的回撤上限、縮倉比例與冷卻天數皆由回測優化定期調整，正式數值請看「⚙️ 參數查詢」頁；這裡列的是機制邏輯而非寫死的單一數字。此外個股層級另有獨立的 Trailing Stop（近期高點回落達門檻即出場，並有短期禁止回補的冷卻期）。</div>
   </div>
 
   <hr class="divider">
@@ -224,7 +224,7 @@
 
     <div class="card">
       <h4>為什麼集中選股？</h4>
-      <p>學術研究（Jegadeesh & Titman, 1993 等）顯示，過去 3–12 個月強勢的股票在未來 3–6 個月往往繼續跑贏市場（動量效應）。APKA 的集中策略旨在充分利用這一效應，而不是將報酬稀釋在大量股票中。代價是波動性會比分散型策略略高，因此嚴格的 Kill Switch 機制是必不可少的保護。</p>
+      <p>經典動量效應（強勢股續強、Jegadeesh &amp; Titman 1993 等研究）是 APKA 模型眾多輸入特徵之一，但 APKA 實際用的是把 12-1 月動量、EMA/MACD 趨勢、震盪與力度指標一起餵給機器學習模型訓練出的綜合排序分數，而非單押「過去強勢＝未來強勢」這一條規則。集中持股旨在把資金集中在模型排序最靠前的少數標的上，而不是稀釋在大量股票中；代價是波動性會比分散型策略略高，因此多層 Kill Switch 與波動率目標控管是必不可少的保護。</p>
     </div>
   </div>
 
