@@ -26337,7 +26337,8 @@
         "2026-09-10",
         "2026-09-11",
         "2026-09-14",
-        "2026-09-15"
+        "2026-09-15",
+        "2026-09-16"
       ],
       "values": [
         1.0,
@@ -26348,9 +26349,16 @@
         1.047412,
         1.069839,
         1.09002,
-        1.099671
+        1.099671,
+        1.100239
       ],
-      "metrics": {}
+      "metrics": {
+        "cagr": 159.94,
+        "sharpe": 11.909,
+        "max_dd": -1.43,
+        "total_return": 10.02,
+        "years": 0.1
+      }
     },
     "holdings_history": {
       "2015-02-03": "聯發科(55%), 美時(11%), 正新(9%), 大立光(8%), 和碩(5%), 華南金(4%), 統一超(4%), 聯詠(3%)",
@@ -29265,9 +29273,9 @@
       }
     ],
     "meta": {
-      "high_water_mark": 105995.35276768958,
-      "current_equity": 105995.35276768958,
-      "cash": 72076.8398820289,
+      "high_water_mark": 106050.13964856944,
+      "current_equity": 106050.13964856944,
+      "cash": 72114.09496102721,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1788307199.0,
       "market_regime": "TREND",
@@ -29276,7 +29284,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-09-10",
-      "last_update": "2026-09-15 11:37:58.167825"
+      "last_update": "2026-09-16 11:38:02.979727"
     }
   },
   "USETF": {
@@ -55507,7 +55515,8 @@
         "2026-09-10",
         "2026-09-11",
         "2026-09-14",
-        "2026-09-15"
+        "2026-09-15",
+        "2026-09-16"
       ],
       "values": [
         1.0,
@@ -55518,9 +55527,16 @@
         1.017595,
         1.016541,
         1.011822,
-        1.009947
+        1.009947,
+        1.007708
       ],
-      "metrics": {}
+      "metrics": {
+        "cagr": 7.98,
+        "sharpe": 3.729,
+        "max_dd": -0.97,
+        "total_return": 0.77,
+        "years": 0.1
+      }
     },
     "holdings_history": {
       "2015-01-05": "元大台灣50正2(70%), 元大台灣50(30%)",
@@ -58379,7 +58395,7 @@
     "holdings": [
       {
         "symbol": "00680L.TW",
-        "shares": 950.0,
+        "shares": 948.0,
         "weight": 6,
         "price": 6.38,
         "last_update": "2026-09-10 11:17:15"
@@ -58415,17 +58431,17 @@
     ],
     "meta": {
       "high_water_mark": 101766.71199045028,
-      "current_equity": 101001.83306596254,
-      "cash": 85851.55810606816,
-      "soft_kill_state": "lv1",
-      "soft_kill_ts": 1789366788.4213538,
+      "current_equity": 100777.90783369876,
+      "cash": 85661.22165864396,
+      "soft_kill_state": "normal",
+      "soft_kill_ts": 1789516800.0,
       "market_regime": "SIDEWAYS",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-09-10",
-      "last_update": "2026-09-15 11:17:19.139981"
+      "last_update": "2026-09-16 11:17:30.164233"
     }
   }
 }

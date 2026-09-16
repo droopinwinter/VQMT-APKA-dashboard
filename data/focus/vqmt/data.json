@@ -26358,7 +26358,8 @@
         "2026-09-10",
         "2026-09-11",
         "2026-09-14",
-        "2026-09-15"
+        "2026-09-15",
+        "2026-09-16"
       ],
       "values": [
         1.0,
@@ -26369,9 +26370,16 @@
         1.115273,
         1.071785,
         1.002088,
-        0.994443
+        0.994443,
+        0.975933
       ],
-      "metrics": {}
+      "metrics": {
+        "cagr": -21.62,
+        "sharpe": -0.821,
+        "max_dd": -12.88,
+        "total_return": -2.41,
+        "years": 0.1
+      }
     },
     "holdings_history": {
       "2015-01-02": "榮化(0%)",
@@ -29252,21 +29260,21 @@
     "holdings": [
       {
         "symbol": "2887.TW",
-        "shares": 495.0,
+        "shares": 486.0,
         "weight": 20,
         "price": 42.05,
         "last_update": "2026-09-10 11:41:07"
       },
       {
         "symbol": "1303.TW",
-        "shares": 31.0,
+        "shares": 30.0,
         "weight": 7,
         "price": 238.0,
         "last_update": "2026-09-10 11:41:07"
       },
       {
         "symbol": "2883.TW",
-        "shares": 484.0,
+        "shares": 475.0,
         "weight": 17,
         "price": 36.6,
         "last_update": "2026-09-10 11:41:07"
@@ -29280,14 +29288,14 @@
       },
       {
         "symbol": "2344.TW",
-        "shares": 33.0,
+        "shares": 32.0,
         "weight": 6,
         "price": 189.0,
         "last_update": "2026-09-09 11:47:02"
       },
       {
         "symbol": "2885.TW",
-        "shares": 282.0,
+        "shares": 276.0,
         "weight": 19,
         "price": 70.3,
         "last_update": "2026-09-10 11:41:07"
@@ -29316,8 +29324,8 @@
     ],
     "meta": {
       "high_water_mark": 117333.34925079346,
-      "current_equity": 104157.63434227684,
-      "cash": 1041.5763434227692,
+      "current_equity": 102218.97826755609,
+      "cash": 1022.1897826755616,
       "soft_kill_state": "lv2",
       "soft_kill_ts": 1789344000.0,
       "market_regime": "TREND",
@@ -29326,7 +29334,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-09-10",
-      "last_update": "2026-09-15 11:41:57.929737"
+      "last_update": "2026-09-16 11:42:12.035145"
     }
   }
 }
