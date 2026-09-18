@@ -26382,7 +26382,8 @@
         "2026-09-14",
         "2026-09-15",
         "2026-09-16",
-        "2026-09-17"
+        "2026-09-17",
+        "2026-09-18"
       ],
       "values": [
         1.0,
@@ -26395,13 +26396,14 @@
         1.002088,
         0.994443,
         0.975933,
-        0.965987
+        0.965987,
+        0.980456
       ],
       "metrics": {
-        "cagr": -29.25,
-        "sharpe": -1.219,
+        "cagr": -17.91,
+        "sharpe": -0.546,
         "max_dd": -13.77,
-        "total_return": -3.4,
+        "total_return": -1.95,
         "years": 0.1
       }
     },
@@ -29286,7 +29288,7 @@
     "holdings": [
       {
         "symbol": "2887.TW",
-        "shares": 481.0,
+        "shares": 488.0,
         "weight": 20,
         "price": 42.05,
         "last_update": "2026-09-10 11:41:07"
@@ -29300,7 +29302,7 @@
       },
       {
         "symbol": "2883.TW",
-        "shares": 470.0,
+        "shares": 477.0,
         "weight": 17,
         "price": 36.6,
         "last_update": "2026-09-10 11:41:07"
@@ -29314,14 +29316,14 @@
       },
       {
         "symbol": "2344.TW",
-        "shares": 32.0,
+        "shares": 33.0,
         "weight": 6,
         "price": 189.0,
         "last_update": "2026-09-09 11:47:02"
       },
       {
         "symbol": "2885.TW",
-        "shares": 273.0,
+        "shares": 278.0,
         "weight": 19,
         "price": 70.3,
         "last_update": "2026-09-10 11:41:07"
@@ -29350,8 +29352,8 @@
     ],
     "meta": {
       "high_water_mark": 117333.34925079346,
-      "current_equity": 101177.1389403904,
-      "cash": 1011.7713894039048,
+      "current_equity": 102692.67217294272,
+      "cash": 1026.9267217294282,
       "soft_kill_state": "lv2",
       "soft_kill_ts": 1789344000.0,
       "market_regime": "TREND",
@@ -29360,7 +29362,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-09-10",
-      "last_update": "2026-09-17 12:32:04.258268"
+      "last_update": "2026-09-18 11:41:31.361692"
     }
   }
 }
