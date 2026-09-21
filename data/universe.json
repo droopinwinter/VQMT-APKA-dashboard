@@ -2847,6 +2847,10 @@
     {
       "ticker": "BDRY",
       "name": "BDRY"
+    },
+    {
+      "ticker": "SOXX",
+      "name": "半導體指數"
     }
   ],
   "TWETF": [

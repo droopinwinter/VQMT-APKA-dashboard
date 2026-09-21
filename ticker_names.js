@@ -42,6 +42,7 @@ window.TICKER_NAMES = {
   "CORN": "玉米期貨",
   "SOYB": "大豆期貨",
   "BDRY": "BDRY",
+  "SOXX": "半導體指數",
   "A": "安捷倫科技(醫療儀器)",
   "AAPL": "蘋果(iPhone)",
   "ABBV": "艾伯維(生物製藥)",
