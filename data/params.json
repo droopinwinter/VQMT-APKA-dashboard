@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03 06:43",
+  "generated_at": "2026-10-05 14:56",
   "profiles": {
     "focus": {
       "apka": {
@@ -111,26 +111,26 @@
       "vqmt": {
         "US": {
           "factor_weights": {
-            "value": 0.2464,
-            "momentum": 0.2256,
-            "quality": 0.1414,
-            "tech_trend": 0.3231,
-            "tech_reversion": 0.0635,
+            "value": 0.2771,
+            "momentum": 0.2269,
+            "quality": 0.3225,
+            "tech_trend": 0.1515,
+            "tech_reversion": 0.0221,
             "_tech_trend_sub": {
-              "ema_ensemble": 0.7143,
-              "macd_hist": 0.1951,
-              "obv_factor": 0.0906
+              "ema_ensemble": 0.2693,
+              "macd_hist": 0.3517,
+              "obv_factor": 0.379
             },
             "_tech_reversion_sub": {
-              "bollinger_pos": 0.7633,
-              "srsi": 0.2367
+              "bollinger_pos": 0.3615,
+              "srsi": 0.6385
             }
           },
           "risk": {
-            "max_weight": 0.08,
+            "max_weight": 0.14,
             "min_weight": 0.02,
-            "target_volatility": 0.15,
-            "max_drawdown": 0.26,
+            "target_volatility": 0.225,
+            "max_drawdown": 0.28,
             "commission_bp": 1,
             "slippage_bp": 2,
             "tax_bp": 0,

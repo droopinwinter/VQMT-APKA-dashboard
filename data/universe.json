@@ -1999,680 +1999,932 @@
     {
       "ticker": "ZTS",
       "name": "碩騰(動物保健)"
+    },
+    {
+      "ticker": "ARM",
+      "name": "安謀(CPU架構IP)"
+    },
+    {
+      "ticker": "MRVL",
+      "name": "邁威爾(客製AI晶片)"
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR(晶圓代工)"
+    },
+    {
+      "ticker": "ASML",
+      "name": "艾司摩爾ADR(微影設備)"
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo(高速連接晶片)"
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs(AI互連晶片)"
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent(光通訊模組)"
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum(光通訊雷射)"
+    },
+    {
+      "ticker": "AAOI",
+      "name": "應用光電(光模組)"
+    },
+    {
+      "ticker": "FN",
+      "name": "Fabrinet(光元件代工)"
+    },
+    {
+      "ticker": "MTSI",
+      "name": "MACOM(射頻光通訊晶片)"
+    },
+    {
+      "ticker": "RMBS",
+      "name": "Rambus(記憶體介面)"
+    },
+    {
+      "ticker": "SITM",
+      "name": "SiTime(MEMS時脈)"
+    },
+    {
+      "ticker": "ONTO",
+      "name": "Onto Innovation(檢測設備)"
+    },
+    {
+      "ticker": "NVMI",
+      "name": "Nova(量測設備)"
+    },
+    {
+      "ticker": "CAMT",
+      "name": "Camtek(先進封裝檢測)"
+    },
+    {
+      "ticker": "AMKR",
+      "name": "艾克爾(封裝測試)"
+    },
+    {
+      "ticker": "ENTG",
+      "name": "Entegris(半導體材料)"
+    },
+    {
+      "ticker": "FORM",
+      "name": "FormFactor(探針卡)"
+    },
+    {
+      "ticker": "AEHR",
+      "name": "Aehr(晶圓級測試)"
+    },
+    {
+      "ticker": "CLS",
+      "name": "天弘Celestica(AI伺服器代工)"
+    },
+    {
+      "ticker": "VRT",
+      "name": "維諦Vertiv(資料中心電力散熱)"
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave(GPU雲端)"
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius(AI雲端)"
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital(AI資料中心)"
+    },
+    {
+      "ticker": "IREN",
+      "name": "IREN(AI雲/算力)"
+    },
+    {
+      "ticker": "CIFR",
+      "name": "Cipher Mining(算力轉AI)"
+    },
+    {
+      "ticker": "WULF",
+      "name": "TeraWulf(算力轉AI)"
+    },
+    {
+      "ticker": "CORZ",
+      "name": "Core Scientific(算力託管)"
+    },
+    {
+      "ticker": "PSTG",
+      "name": "Pure Storage(企業儲存)"
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake(雲端資料倉儲)"
+    },
+    {
+      "ticker": "NET",
+      "name": "Cloudflare(邊緣網路/資安)"
+    },
+    {
+      "ticker": "MDB",
+      "name": "MongoDB(資料庫)"
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler(零信任資安)"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta(身分驗證)"
+    },
+    {
+      "ticker": "S",
+      "name": "SentinelOne(端點資安)"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot(行銷軟體)"
+    },
+    {
+      "ticker": "TEAM",
+      "name": "Atlassian(協作軟體)"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify(電商SaaS)"
+    },
+    {
+      "ticker": "TTD",
+      "name": "The Trade Desk(程式化廣告)"
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit(社群/AI數據)"
+    },
+    {
+      "ticker": "IOT",
+      "name": "Samsara(物聯網平台)"
+    },
+    {
+      "ticker": "PATH",
+      "name": "UiPath(流程自動化)"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai(企業AI)"
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound(語音AI)"
+    },
+    {
+      "ticker": "BBAI",
+      "name": "BigBear.ai(國防AI)"
+    },
+    {
+      "ticker": "TEM",
+      "name": "Tempus AI(醫療AI)"
+    },
+    {
+      "ticker": "GTLB",
+      "name": "GitLab(DevOps)"
+    },
+    {
+      "ticker": "ESTC",
+      "name": "Elastic(搜尋分析)"
+    },
+    {
+      "ticker": "TWLO",
+      "name": "Twilio(通訊API)"
+    },
+    {
+      "ticker": "DUOL",
+      "name": "Duolingo(語言學習)"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox(遊戲平台)"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity(遊戲引擎)"
+    },
+    {
+      "ticker": "FIG",
+      "name": "Figma(設計軟體)"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean(中小雲端)"
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy(燃料電池)"
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo(小型核反應爐)"
+    },
+    {
+      "ticker": "SMR",
+      "name": "NuScale(小型模組化核電)"
+    },
+    {
+      "ticker": "NNE",
+      "name": "Nano Nuclear(微型核反應爐)"
+    },
+    {
+      "ticker": "LEU",
+      "name": "Centrus(核燃料濃縮)"
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco(鈾礦)"
+    },
+    {
+      "ticker": "TLN",
+      "name": "Talen Energy(核電供電)"
+    },
+    {
+      "ticker": "FLNC",
+      "name": "Fluence(儲能系統)"
+    },
+    {
+      "ticker": "EOSE",
+      "name": "Eos Energy(鋅電池儲能)"
+    },
+    {
+      "ticker": "NXT",
+      "name": "Nextracker(太陽能追日)"
+    },
+    {
+      "ticker": "ENPH",
+      "name": "Enphase(微型逆變器)"
+    },
+    {
+      "ticker": "PLUG",
+      "name": "Plug Power(氫能)"
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab(火箭/衛星)"
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile(衛星直連手機)"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines(登月)"
+    },
+    {
+      "ticker": "RDW",
+      "name": "Redwire(太空基礎設施)"
+    },
+    {
+      "ticker": "PL",
+      "name": "Planet Labs(衛星影像)"
+    },
+    {
+      "ticker": "KTOS",
+      "name": "Kratos(無人機/國防)"
+    },
+    {
+      "ticker": "AVAV",
+      "name": "AeroVironment(無人機)"
+    },
+    {
+      "ticker": "JOBY",
+      "name": "Joby Aviation(電動飛行器)"
+    },
+    {
+      "ticker": "ACHR",
+      "name": "Archer Aviation(電動飛行器)"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ(離子阱量子電腦)"
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti(超導量子電腦)"
+    },
+    {
+      "ticker": "QBTS",
+      "name": "D-Wave(量子退火)"
+    },
+    {
+      "ticker": "QUBT",
+      "name": "Quantum Computing Inc(光量子)"
+    },
+    {
+      "ticker": "SYM",
+      "name": "Symbotic(倉儲機器人)"
+    },
+    {
+      "ticker": "SERV",
+      "name": "Serve Robotics(外送機器人)"
+    },
+    {
+      "ticker": "MBLY",
+      "name": "Mobileye(自駕晶片)"
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood(券商/加密)"
+    },
+    {
+      "ticker": "SOFI",
+      "name": "SoFi(數位銀行)"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm(先買後付)"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart(AI信貸)"
+    },
+    {
+      "ticker": "NU",
+      "name": "Nu Holdings(拉美數位銀行)"
+    },
+    {
+      "ticker": "CRCL",
+      "name": "Circle(穩定幣USDC)"
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy(比特幣持有)"
+    },
+    {
+      "ticker": "MARA",
+      "name": "MARA(比特幣挖礦)"
+    },
+    {
+      "ticker": "RIOT",
+      "name": "Riot(比特幣挖礦)"
+    },
+    {
+      "ticker": "CLSK",
+      "name": "CleanSpark(比特幣挖礦)"
+    },
+    {
+      "ticker": "GLXY",
+      "name": "Galaxy Digital(加密金融)"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers(遠距醫療)"
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam(RNAi藥物)"
+    },
+    {
+      "ticker": "ARGX",
+      "name": "argenx ADR(自體免疫藥)"
+    },
+    {
+      "ticker": "INSM",
+      "name": "Insmed(呼吸道藥物)"
+    },
+    {
+      "ticker": "NTRA",
+      "name": "Natera(基因檢測)"
+    },
+    {
+      "ticker": "MDGL",
+      "name": "Madrigal(MASH肝病藥)"
+    },
+    {
+      "ticker": "VKTX",
+      "name": "Viking(減重藥)"
+    },
+    {
+      "ticker": "CRSP",
+      "name": "CRISPR(基因編輯)"
+    },
+    {
+      "ticker": "RXRX",
+      "name": "Recursion(AI製藥)"
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre(拉美電商)"
+    },
+    {
+      "ticker": "SE",
+      "name": "Sea Ltd ADR(東南亞電商遊戲)"
+    },
+    {
+      "ticker": "SPOT",
+      "name": "Spotify(音樂串流)"
+    },
+    {
+      "ticker": "PDD",
+      "name": "拼多多ADR(電商)"
+    },
+    {
+      "ticker": "BABA",
+      "name": "阿里巴巴ADR(電商/雲)"
+    },
+    {
+      "ticker": "CPNG",
+      "name": "Coupang(韓國電商)"
+    },
+    {
+      "ticker": "ONON",
+      "name": "On Running(運動鞋)"
+    },
+    {
+      "ticker": "CAVA",
+      "name": "CAVA(地中海餐飲)"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius(機能飲料)"
+    },
+    {
+      "ticker": "ELF",
+      "name": "e.l.f.(平價美妝)"
     }
   ],
   "TW": [
     {
-      "ticker": "1101.TW",
-      "name": "台泥(水泥)"
+      "ticker": "3006.TW",
+      "name": "晶豪科(記憶體IC)"
     },
     {
-      "ticker": "1102.TW",
-      "name": "亞泥(水泥)"
+      "ticker": "3014.TW",
+      "name": "聯陽(IC設計)"
     },
     {
-      "ticker": "1216.TW",
-      "name": "統一(食品飲料)"
+      "ticker": "3545.TW",
+      "name": "敦泰(觸控驅動IC)"
     },
     {
-      "ticker": "1229.TW",
-      "name": "聯華(食品)"
+      "ticker": "3592.TW",
+      "name": "瑞鼎(驅動IC)"
     },
     {
-      "ticker": "1301.TW",
-      "name": "台塑(石化)"
+      "ticker": "4919.TW",
+      "name": "新唐(微控制器)"
     },
     {
-      "ticker": "1303.TW",
-      "name": "南亞(塑膠材料)"
+      "ticker": "4961.TW",
+      "name": "天鈺(驅動IC)"
     },
     {
-      "ticker": "1308.TW",
-      "name": "亞聚(塑膠)"
+      "ticker": "4968.TW",
+      "name": "立積(射頻IC)"
     },
     {
-      "ticker": "1312.TW",
-      "name": "國喬(石化)"
+      "ticker": "6202.TW",
+      "name": "盛群(微控制器)"
     },
     {
-      "ticker": "1314.TW",
-      "name": "中石化(石化)"
+      "ticker": "6531.TW",
+      "name": "愛普(記憶體IP)"
     },
     {
-      "ticker": "1319.TW",
-      "name": "東陽(汽車零件)"
+      "ticker": "6533.TW",
+      "name": "晶心科(處理器IP)"
     },
     {
-      "ticker": "1326.TW",
-      "name": "台化(塑膠)"
+      "ticker": "8081.TW",
+      "name": "致新(電源IC)"
     },
     {
-      "ticker": "1402.TW",
-      "name": "遠東新(紡織)"
+      "ticker": "8261.TW",
+      "name": "富鼎(功率MOSFET)"
     },
     {
-      "ticker": "1434.TW",
-      "name": "福懋興業(紡織)"
+      "ticker": "2481.TW",
+      "name": "強茂(功率元件)"
     },
     {
-      "ticker": "1476.TW",
-      "name": "儒鴻(成衣代工)"
+      "ticker": "2342.TW",
+      "name": "茂矽(功率晶圓)"
     },
     {
-      "ticker": "1477.TW",
-      "name": "聚陽(成衣代工)"
+      "ticker": "2363.TW",
+      "name": "矽統(IC設計)"
     },
     {
-      "ticker": "1503.TW",
-      "name": "士電(電機)"
+      "ticker": "2401.TW",
+      "name": "凌陽(IC設計)"
     },
     {
-      "ticker": "1504.TW",
-      "name": "東元(電機)"
+      "ticker": "2436.TW",
+      "name": "偉詮電(IC設計)"
     },
     {
-      "ticker": "1513.TW",
-      "name": "中興電(電力設備)"
+      "ticker": "3016.TW",
+      "name": "嘉晶(磊晶)"
     },
     {
-      "ticker": "1519.TW",
-      "name": "華城(電力設備)"
+      "ticker": "2455.TW",
+      "name": "全新(化合物磊晶)"
     },
     {
-      "ticker": "1590.TW",
-      "name": "亞德客-KY(氣動元件)"
+      "ticker": "8028.TW",
+      "name": "昇陽半導體(晶圓再生)"
     },
     {
-      "ticker": "1605.TW",
-      "name": "華新(電線電纜)"
+      "ticker": "6271.TW",
+      "name": "同欣電(感測封裝)"
     },
     {
-      "ticker": "1704.TW",
-      "name": "榮化(化工)"
+      "ticker": "6257.TW",
+      "name": "矽格(封測)"
     },
     {
-      "ticker": "1722.TW",
-      "name": "台肥(化肥)"
+      "ticker": "8150.TW",
+      "name": "南茂(封測)"
     },
     {
-      "ticker": "1802.TW",
-      "name": "台玻(玻璃)"
+      "ticker": "2451.TW",
+      "name": "創見(記憶體模組)"
     },
     {
-      "ticker": "1905.TW",
-      "name": "華紙(造紙)"
+      "ticker": "4967.TW",
+      "name": "十銓(記憶體模組)"
     },
     {
-      "ticker": "1907.TW",
-      "name": "永豐餘(造紙)"
+      "ticker": "3583.TW",
+      "name": "辛耘(半導體設備)"
     },
     {
-      "ticker": "2002.TW",
-      "name": "中鋼(鋼鐵)"
+      "ticker": "3413.TW",
+      "name": "京鼎(設備零件)"
     },
     {
-      "ticker": "2006.TW",
-      "name": "東和鋼鐵(鋼鐵)"
+      "ticker": "2467.TW",
+      "name": "志聖(封裝設備)"
     },
     {
-      "ticker": "2014.TW",
-      "name": "中鴻(鋼鐵)"
+      "ticker": "6196.TW",
+      "name": "帆宣(廠務工程)"
     },
     {
-      "ticker": "2015.TW",
-      "name": "豐興(鋼鐵)"
+      "ticker": "5434.TW",
+      "name": "崇越(半導體材料)"
     },
     {
-      "ticker": "2027.TW",
-      "name": "大成鋼(鋼鐵)"
+      "ticker": "3010.TW",
+      "name": "華立(材料通路)"
     },
     {
-      "ticker": "2049.TW",
-      "name": "上銀(傳動元件)"
+      "ticker": "3030.TW",
+      "name": "德律(檢測設備)"
     },
     {
-      "ticker": "2059.TW",
-      "name": "川湖(滑軌)"
+      "ticker": "6515.TW",
+      "name": "穎崴(測試座)"
     },
     {
-      "ticker": "2103.TW",
-      "name": "台橡(橡膠)"
-    },
-    {
-      "ticker": "2104.TW",
-      "name": "中橡(橡膠)"
-    },
-    {
-      "ticker": "2105.TW",
-      "name": "正新(輪胎)"
-    },
-    {
-      "ticker": "2201.TW",
-      "name": "裕隆(汽車)"
-    },
-    {
-      "ticker": "2204.TW",
-      "name": "中華(汽車)"
-    },
-    {
-      "ticker": "2207.TW",
-      "name": "和泰車(汽車)"
-    },
-    {
-      "ticker": "2227.TW",
-      "name": "裕日車(汽車)"
-    },
-    {
-      "ticker": "2258.TW",
-      "name": "鴻華先進(電動車)"
-    },
-    {
-      "ticker": "2301.TW",
-      "name": "光寶科(電子零組件)"
-    },
-    {
-      "ticker": "2303.TW",
-      "name": "聯電(晶圓代工)"
-    },
-    {
-      "ticker": "2308.TW",
-      "name": "台達電(電源管理)"
-    },
-    {
-      "ticker": "2313.TW",
-      "name": "華通(PCB)"
-    },
-    {
-      "ticker": "2317.TW",
-      "name": "鴻海(電子代工)"
-    },
-    {
-      "ticker": "2324.TW",
-      "name": "仁寶(電子代工)"
-    },
-    {
-      "ticker": "2327.TW",
-      "name": "國巨(被動元件)"
-    },
-    {
-      "ticker": "2330.TW",
-      "name": "台積電(晶圓代工)"
-    },
-    {
-      "ticker": "2337.TW",
-      "name": "旺宏(記憶體)"
-    },
-    {
-      "ticker": "2344.TW",
-      "name": "華邦電(記憶體)"
-    },
-    {
-      "ticker": "2345.TW",
-      "name": "智邦(網通設備)"
-    },
-    {
-      "ticker": "2347.TW",
-      "name": "聯強(通路)"
-    },
-    {
-      "ticker": "2352.TW",
-      "name": "佳世達(顯示器)"
-    },
-    {
-      "ticker": "2353.TW",
-      "name": "宏碁(電腦)"
-    },
-    {
-      "ticker": "2354.TW",
-      "name": "鴻準(機殼)"
-    },
-    {
-      "ticker": "2356.TW",
-      "name": "英業達(電子代工)"
-    },
-    {
-      "ticker": "2357.TW",
-      "name": "華碩(電腦)"
-    },
-    {
-      "ticker": "2360.TW",
-      "name": "致茂(測試設備)"
-    },
-    {
-      "ticker": "2368.TW",
-      "name": "金像電(PCB)"
-    },
-    {
-      "ticker": "2371.TW",
-      "name": "大同(電機)"
-    },
-    {
-      "ticker": "2376.TW",
-      "name": "技嘉(主機板)"
-    },
-    {
-      "ticker": "2377.TW",
-      "name": "微星(電競硬體)"
-    },
-    {
-      "ticker": "2379.TW",
-      "name": "瑞昱(IC設計)"
-    },
-    {
-      "ticker": "2382.TW",
-      "name": "廣達(電子代工)"
-    },
-    {
-      "ticker": "2383.TW",
-      "name": "台光電(銅箔基板)"
-    },
-    {
-      "ticker": "2385.TW",
-      "name": "群光(鍵盤模組)"
-    },
-    {
-      "ticker": "2395.TW",
-      "name": "研華(工業電腦)"
-    },
-    {
-      "ticker": "2404.TW",
-      "name": "漢唐(無塵室工程)"
-    },
-    {
-      "ticker": "2408.TW",
-      "name": "南亞科(記憶體)"
-    },
-    {
-      "ticker": "2409.TW",
-      "name": "友達(面板)"
-    },
-    {
-      "ticker": "2412.TW",
-      "name": "中華電(電信)"
-    },
-    {
-      "ticker": "2421.TW",
-      "name": "建準(散熱)"
-    },
-    {
-      "ticker": "2428.TW",
-      "name": "興勤(保護元件)"
-    },
-    {
-      "ticker": "2439.TW",
-      "name": "美律(聲學元件)"
-    },
-    {
-      "ticker": "2441.TW",
-      "name": "超豐(封測)"
-    },
-    {
-      "ticker": "2449.TW",
-      "name": "京元電子(封測)"
-    },
-    {
-      "ticker": "2454.TW",
-      "name": "聯發科(IC設計)"
-    },
-    {
-      "ticker": "2458.TW",
-      "name": "義隆(觸控IC)"
-    },
-    {
-      "ticker": "2474.TW",
-      "name": "可成(金屬機殼)"
-    },
-    {
-      "ticker": "2492.TW",
-      "name": "華新科(被動元件)"
-    },
-    {
-      "ticker": "2498.TW",
-      "name": "宏達電(手機)"
-    },
-    {
-      "ticker": "2501.TW",
-      "name": "國建(建設)"
-    },
-    {
-      "ticker": "2542.TW",
-      "name": "興富發(建設)"
-    },
-    {
-      "ticker": "2548.TW",
-      "name": "華固(建設)"
-    },
-    {
-      "ticker": "2603.TW",
-      "name": "長榮(航運)"
-    },
-    {
-      "ticker": "2608.TW",
-      "name": "嘉里大榮(物流)"
-    },
-    {
-      "ticker": "2609.TW",
-      "name": "陽明(航運)"
-    },
-    {
-      "ticker": "2610.TW",
-      "name": "華航(航空)"
-    },
-    {
-      "ticker": "2615.TW",
-      "name": "萬海(航運)"
-    },
-    {
-      "ticker": "2618.TW",
-      "name": "長榮航(航空)"
-    },
-    {
-      "ticker": "2633.TW",
-      "name": "台灣高鐵(交通運輸)"
-    },
-    {
-      "ticker": "2801.TW",
-      "name": "彰銀(銀行)"
-    },
-    {
-      "ticker": "2812.TW",
-      "name": "台中銀(銀行)"
-    },
-    {
-      "ticker": "2832.TW",
-      "name": "台產(保險)"
-    },
-    {
-      "ticker": "2834.TW",
-      "name": "臺企銀(銀行)"
-    },
-    {
-      "ticker": "2838.TW",
-      "name": "聯邦銀(銀行)"
-    },
-    {
-      "ticker": "2845.TW",
-      "name": "遠東銀(銀行)"
-    },
-    {
-      "ticker": "2880.TW",
-      "name": "華南金(金融控股)"
-    },
-    {
-      "ticker": "2881.TW",
-      "name": "富邦金(金融控股)"
-    },
-    {
-      "ticker": "2882.TW",
-      "name": "國泰金(金融控股)"
-    },
-    {
-      "ticker": "2883.TW",
-      "name": "凱基金(金融控股)"
-    },
-    {
-      "ticker": "2884.TW",
-      "name": "玉山金(金融控股)"
-    },
-    {
-      "ticker": "2885.TW",
-      "name": "元大金(金融控股)"
-    },
-    {
-      "ticker": "2886.TW",
-      "name": "兆豐金(金融控股)"
-    },
-    {
-      "ticker": "2887.TW",
-      "name": "台新新光金(金融控股)"
-    },
-    {
-      "ticker": "2890.TW",
-      "name": "永豐金(金融控股)"
-    },
-    {
-      "ticker": "2891.TW",
-      "name": "中信金(金融控股)"
-    },
-    {
-      "ticker": "2892.TW",
-      "name": "第一金(金融控股)"
-    },
-    {
-      "ticker": "2912.TW",
-      "name": "統一超(零售)"
-    },
-    {
-      "ticker": "3005.TW",
-      "name": "神基(工業電腦)"
-    },
-    {
-      "ticker": "3008.TW",
-      "name": "大立光(光學鏡頭)"
-    },
-    {
-      "ticker": "3017.TW",
-      "name": "奇鋐(散熱)"
-    },
-    {
-      "ticker": "3019.TW",
-      "name": "亞光(光學)"
-    },
-    {
-      "ticker": "3023.TW",
-      "name": "信邦(連接線)"
-    },
-    {
-      "ticker": "3034.TW",
-      "name": "聯詠(IC設計)"
-    },
-    {
-      "ticker": "3035.TW",
-      "name": "智原(IC設計)"
-    },
-    {
-      "ticker": "3036.TW",
-      "name": "文曄(半導體通路)"
-    },
-    {
-      "ticker": "3037.TW",
-      "name": "欣興(PCB)"
-    },
-    {
-      "ticker": "3044.TW",
-      "name": "健鼎(PCB)"
-    },
-    {
-      "ticker": "3045.TW",
-      "name": "台灣大(電信)"
-    },
-    {
-      "ticker": "3189.TW",
-      "name": "景碩(PCB)"
-    },
-    {
-      "ticker": "3231.TW",
-      "name": "緯創(電子代工)"
-    },
-    {
-      "ticker": "3443.TW",
-      "name": "創意(ASIC設計)"
-    },
-    {
-      "ticker": "3481.TW",
-      "name": "群創(面板)"
-    },
-    {
-      "ticker": "3532.TW",
-      "name": "台勝科(矽晶圓)"
-    },
-    {
-      "ticker": "3533.TW",
-      "name": "嘉聯益(FPC)"
-    },
-    {
-      "ticker": "3576.TW",
+      "ticker": "3376.TW",
       "name": "新日興(軸承)"
     },
     {
-      "ticker": "3653.TW",
-      "name": "健策(散熱)"
+      "ticker": "6153.TW",
+      "name": "嘉聯益(FPC)"
     },
     {
-      "ticker": "3661.TW",
-      "name": "世芯-KY(ASIC設計)"
+      "ticker": "2392.TW",
+      "name": "正崴(連接器)"
     },
     {
-      "ticker": "3665.TW",
-      "name": "貿聯-KY(連接線)"
+      "ticker": "2393.TW",
+      "name": "億光(LED)"
     },
     {
-      "ticker": "3702.TW",
-      "name": "大聯大(半導體通路)"
+      "ticker": "2420.TW",
+      "name": "新巨(開關電源)"
     },
     {
-      "ticker": "3711.TW",
-      "name": "日月光投控(封測)"
+      "ticker": "2478.TW",
+      "name": "大毅(被動元件)"
     },
     {
-      "ticker": "4763.TW",
-      "name": "材料-KY(化學材料)"
+      "ticker": "3026.TW",
+      "name": "禾伸堂(被動元件)"
     },
     {
-      "ticker": "4904.TW",
-      "name": "遠傳(電信)"
+      "ticker": "3042.TW",
+      "name": "晶技(石英元件)"
     },
     {
-      "ticker": "4915.TW",
-      "name": "致伸(電子零組件)"
+      "ticker": "2457.TW",
+      "name": "飛宏(電源)"
     },
     {
-      "ticker": "4938.TW",
-      "name": "和碩(電子代工)"
+      "ticker": "6282.TW",
+      "name": "康舒(電源)"
     },
     {
-      "ticker": "4958.TW",
-      "name": "臻鼎-KY(PCB)"
+      "ticker": "3015.TW",
+      "name": "全漢(電源)"
     },
     {
-      "ticker": "5269.TW",
-      "name": "祥碩(高速IC)"
+      "ticker": "6278.TW",
+      "name": "台表科(SMT代工)"
     },
     {
-      "ticker": "5522.TW",
-      "name": "遠雄(建設)"
+      "ticker": "6269.TW",
+      "name": "台郡(FPC)"
     },
     {
-      "ticker": "5871.TW",
-      "name": "中租-KY(租賃金融)"
+      "ticker": "3450.TW",
+      "name": "聯鈞(光通訊)"
     },
     {
-      "ticker": "5876.TW",
-      "name": "上海商銀(銀行)"
+      "ticker": "6442.TW",
+      "name": "光聖(光纖元件)"
     },
     {
-      "ticker": "5880.TW",
-      "name": "合庫金(金融控股)"
+      "ticker": "2367.TW",
+      "name": "燿華(PCB)"
     },
     {
-      "ticker": "6139.TW",
-      "name": "亞翔(無塵室工程)"
+      "ticker": "3715.TW",
+      "name": "定穎投控(PCB)"
     },
     {
-      "ticker": "6176.TW",
-      "name": "瑞儀(背光模組)"
+      "ticker": "5469.TW",
+      "name": "瀚宇博(PCB)"
     },
     {
-      "ticker": "6183.TW",
-      "name": "關貿網路(資訊服務)"
+      "ticker": "6191.TW",
+      "name": "精成科(PCB)"
     },
     {
-      "ticker": "6213.TW",
-      "name": "聯茂(CCL)"
+      "ticker": "8213.TW",
+      "name": "志超(PCB)"
     },
     {
-      "ticker": "6239.TW",
-      "name": "力成(封測)"
+      "ticker": "3515.TW",
+      "name": "華擎(主機板)"
     },
     {
-      "ticker": "6285.TW",
-      "name": "啟碁(網通)"
+      "ticker": "2362.TW",
+      "name": "藍天(筆電)"
     },
     {
-      "ticker": "6409.TW",
-      "name": "旭隼(電源)"
+      "ticker": "3706.TW",
+      "name": "神達(伺服器)"
     },
     {
-      "ticker": "6412.TW",
-      "name": "群電(電源)"
+      "ticker": "2312.TW",
+      "name": "金寶(電子代工)"
     },
     {
-      "ticker": "6415.TW",
-      "name": "矽力-KY(電源IC)"
+      "ticker": "6414.TW",
+      "name": "樺漢(工業電腦)"
     },
     {
-      "ticker": "6446.TW",
-      "name": "藥華藥(生技)"
+      "ticker": "8210.TW",
+      "name": "勤誠(伺服器機殼)"
     },
     {
-      "ticker": "6505.TW",
-      "name": "台塑化(石化)"
+      "ticker": "6805.TW",
+      "name": "富世達(伺服器滑軌)"
     },
     {
-      "ticker": "6526.TW",
-      "name": "達發(IC設計)"
+      "ticker": "6230.TW",
+      "name": "尼得科超眾(散熱)"
     },
     {
-      "ticker": "6592.TW",
-      "name": "和潤企業(汽車金融)"
+      "ticker": "3013.TW",
+      "name": "晟銘電(機殼)"
     },
     {
-      "ticker": "6669.TW",
-      "name": "緯穎(伺服器)"
+      "ticker": "6781.TW",
+      "name": "AES-KY(電池模組)"
     },
     {
-      "ticker": "6770.TW",
-      "name": "力積電(晶圓代工)"
+      "ticker": "3380.TW",
+      "name": "明泰(網通)"
     },
     {
-      "ticker": "6789.TW",
-      "name": "采鈺(半導體封測)"
+      "ticker": "5388.TW",
+      "name": "中磊(網通)"
     },
     {
-      "ticker": "7769.TW",
-      "name": "鴻勁(半導體設備)"
+      "ticker": "3596.TW",
+      "name": "智易(網通)"
     },
     {
-      "ticker": "8046.TW",
-      "name": "南電(PCB)"
+      "ticker": "3704.TW",
+      "name": "合勤控(網通)"
     },
     {
-      "ticker": "8454.TW",
-      "name": "富邦媒(電商)"
+      "ticker": "2314.TW",
+      "name": "台揚(衛星通訊)"
     },
     {
-      "ticker": "8464.TW",
-      "name": "億豐(窗簾)"
+      "ticker": "3406.TW",
+      "name": "玉晶光(光學鏡頭)"
     },
     {
-      "ticker": "9904.TW",
-      "name": "寶成(鞋業代工)"
+      "ticker": "3714.TW",
+      "name": "富采(LED)"
     },
     {
-      "ticker": "9910.TW",
-      "name": "豐泰(鞋業代工)"
+      "ticker": "8215.TW",
+      "name": "明基材(光學膜)"
     },
     {
-      "ticker": "9921.TW",
-      "name": "巨大(自行車)"
+      "ticker": "6116.TW",
+      "name": "彩晶(面板)"
     },
     {
-      "ticker": "9941.TW",
-      "name": "裕融(汽車金融)"
+      "ticker": "1440.TW",
+      "name": "南紡(紡織)"
     },
     {
-      "ticker": "9945.TW",
-      "name": "潤泰新(建設)"
+      "ticker": "1717.TW",
+      "name": "長興(化工)"
+    },
+    {
+      "ticker": "1710.TW",
+      "name": "東聯(石化)"
+    },
+    {
+      "ticker": "1723.TW",
+      "name": "中碳(碳材)"
+    },
+    {
+      "ticker": "1736.TW",
+      "name": "喬山(健身器材)"
+    },
+    {
+      "ticker": "1707.TW",
+      "name": "葡萄王(保健)"
+    },
+    {
+      "ticker": "1909.TW",
+      "name": "榮成(紙業)"
+    },
+    {
+      "ticker": "1904.TW",
+      "name": "正隆(紙業)"
+    },
+    {
+      "ticker": "2101.TW",
+      "name": "南港(輪胎)"
+    },
+    {
+      "ticker": "2106.TW",
+      "name": "建大(輪胎)"
+    },
+    {
+      "ticker": "2108.TW",
+      "name": "南帝(橡膠)"
+    },
+    {
+      "ticker": "2023.TW",
+      "name": "燁輝(鋼鐵)"
+    },
+    {
+      "ticker": "2031.TW",
+      "name": "新光鋼(鋼鐵)"
+    },
+    {
+      "ticker": "1560.TW",
+      "name": "中砂(鑽石碟)"
+    },
+    {
+      "ticker": "2206.TW",
+      "name": "三陽工業(機車)"
+    },
+    {
+      "ticker": "2231.TW",
+      "name": "為升(胎壓偵測)"
+    },
+    {
+      "ticker": "1536.TW",
+      "name": "和大(汽車齒輪)"
+    },
+    {
+      "ticker": "1522.TW",
+      "name": "堤維西(車燈)"
+    },
+    {
+      "ticker": "1514.TW",
+      "name": "亞力(重電)"
+    },
+    {
+      "ticker": "1609.TW",
+      "name": "大亞(電線電纜)"
+    },
+    {
+      "ticker": "3708.TW",
+      "name": "上緯投控(風電材料)"
+    },
+    {
+      "ticker": "9958.TW",
+      "name": "世紀鋼(風電)"
+    },
+    {
+      "ticker": "6443.TW",
+      "name": "元晶(太陽能)"
+    },
+    {
+      "ticker": "2634.TW",
+      "name": "漢翔(航太)"
+    },
+    {
+      "ticker": "2645.TW",
+      "name": "長榮航太(航太維修)"
+    },
+    {
+      "ticker": "6757.TW",
+      "name": "台灣虎航(航空)"
+    },
+    {
+      "ticker": "2606.TW",
+      "name": "裕民(散裝航運)"
+    },
+    {
+      "ticker": "2605.TW",
+      "name": "新興(航運)"
+    },
+    {
+      "ticker": "2637.TW",
+      "name": "慧洋-KY(散裝航運)"
+    },
+    {
+      "ticker": "2520.TW",
+      "name": "冠德(建設)"
+    },
+    {
+      "ticker": "2545.TW",
+      "name": "皇翔(建設)"
+    },
+    {
+      "ticker": "2597.TW",
+      "name": "潤弘(營造)"
+    },
+    {
+      "ticker": "5534.TW",
+      "name": "長虹(建設)"
+    },
+    {
+      "ticker": "2915.TW",
+      "name": "潤泰全(投資控股)"
+    },
+    {
+      "ticker": "2903.TW",
+      "name": "遠百(百貨)"
+    },
+    {
+      "ticker": "2727.TW",
+      "name": "王品(餐飲)"
+    },
+    {
+      "ticker": "2707.TW",
+      "name": "晶華(飯店)"
+    },
+    {
+      "ticker": "2753.TW",
+      "name": "八方雲集(餐飲)"
+    },
+    {
+      "ticker": "1795.TW",
+      "name": "美時(學名藥)"
+    },
+    {
+      "ticker": "1760.TW",
+      "name": "寶齡富錦(製藥)"
+    },
+    {
+      "ticker": "1789.TW",
+      "name": "神隆(原料藥)"
+    },
+    {
+      "ticker": "2889.TW",
+      "name": "國票金(金融)"
+    },
+    {
+      "ticker": "6005.TW",
+      "name": "群益證(證券)"
+    },
+    {
+      "ticker": "2855.TW",
+      "name": "統一證(證券)"
+    },
+    {
+      "ticker": "2851.TW",
+      "name": "中再保(再保險)"
+    },
+    {
+      "ticker": "2850.TW",
+      "name": "新產(產險)"
     }
   ],
   "USETF": [
