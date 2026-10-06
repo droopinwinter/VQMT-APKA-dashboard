@@ -11875,7 +11875,8 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-06"
+        "2026-10-06",
+        "2026-10-07"
       ],
       "values": [
         1.0,
@@ -11901,13 +11902,14 @@
         1.16181,
         1.164242,
         1.170289,
-        1.179921
+        1.179921,
+        1.157666
       ],
       "metrics": {
-        "cagr": 423.03,
-        "sharpe": 7.418,
+        "cagr": 332.35,
+        "sharpe": 6.096,
         "max_dd": -3.1,
-        "total_return": 17.99,
+        "total_return": 15.77,
         "years": 0.1
       }
     },
@@ -14879,14 +14881,14 @@
       },
       {
         "symbol": "CNC",
-        "shares": 380.0,
+        "shares": 378.0,
         "weight": 21,
         "price": 64.3,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "STX",
-        "shares": 14.0,
+        "shares": 13.0,
         "weight": 10,
         "price": 887.09,
         "last_update": "2026-10-06 07:00:35"
@@ -14900,7 +14902,7 @@
       },
       {
         "symbol": "PSX",
-        "shares": 83.0,
+        "shares": 82.0,
         "weight": 19,
         "price": 269.72,
         "last_update": "2026-10-06 07:00:35"
@@ -14915,7 +14917,7 @@
     ],
     "meta": {
       "high_water_mark": 117992.1335278112,
-      "current_equity": 117992.1335278112,
+      "current_equity": 115766.59191894533,
       "cash": 0.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1791244800.0,
@@ -14925,7 +14927,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-06",
-      "last_update": "2026-10-06 07:00:35.930408"
+      "last_update": "2026-10-07 06:58:43.681477"
     }
   },
   "TW": {
