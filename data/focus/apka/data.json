@@ -26378,7 +26378,8 @@
         "2026-09-30",
         "2026-10-01",
         "2026-10-02",
-        "2026-10-05"
+        "2026-10-05",
+        "2026-10-06"
       ],
       "values": [
         1.0,
@@ -26403,13 +26404,14 @@
         1.444516,
         1.488641,
         1.509249,
-        1.521673
+        1.521673,
+        1.567488
       ],
       "metrics": {
-        "cagr": 6556.0,
-        "sharpe": 20.555,
+        "cagr": 8854.51,
+        "sharpe": 21.297,
         "max_dd": -1.43,
-        "total_return": 52.17,
+        "total_return": 56.75,
         "years": 0.1
       }
     },
@@ -29255,14 +29257,14 @@
     "holdings": [
       {
         "symbol": "1303.TW",
-        "shares": 28.0,
+        "shares": 29.0,
         "weight": 5,
         "price": 261.0,
         "last_update": "2026-10-01 11:40:02"
       },
       {
         "symbol": "6505.TW",
-        "shares": 55.0,
+        "shares": 56.0,
         "weight": 2,
         "price": 53.6,
         "last_update": "2026-10-01 11:40:02"
@@ -29304,16 +29306,16 @@
       },
       {
         "symbol": "6526.TW",
-        "shares": 10.0,
+        "shares": 11.0,
         "weight": 6,
         "price": 851.0,
         "last_update": "2026-10-01 11:40:02"
       }
     ],
     "meta": {
-      "high_water_mark": 146671.3961240147,
-      "current_equity": 146671.3961240147,
-      "cash": 95336.40748060956,
+      "high_water_mark": 151087.4073966862,
+      "current_equity": 151087.4073966862,
+      "cash": 98206.81480784604,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1788307199.0,
       "market_regime": "SIDEWAYS",
@@ -29322,7 +29324,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-01",
-      "last_update": "2026-10-05 14:50:54.286881"
+      "last_update": "2026-10-06 12:35:05.333415"
     }
   },
   "USETF": {
@@ -55713,7 +55715,8 @@
         "2026-09-30",
         "2026-10-01",
         "2026-10-02",
-        "2026-10-05"
+        "2026-10-05",
+        "2026-10-06"
       ],
       "values": [
         1.0,
@@ -55738,13 +55741,14 @@
         0.995258,
         0.990756,
         0.990186,
-        1.008878
+        1.008878,
+        1.021216
       ],
       "metrics": {
-        "cagr": 9.24,
-        "sharpe": 1.311,
+        "cagr": 23.36,
+        "sharpe": 2.687,
         "max_dd": -2.69,
-        "total_return": 0.89,
+        "total_return": 2.12,
         "years": 0.1
       }
     },
@@ -58617,44 +58621,44 @@
     "holdings": [
       {
         "symbol": "00715L.TW",
-        "shares": 64.0,
+        "shares": 65.0,
         "weight": 4,
         "price": 63.2,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00891.TW",
-        "shares": 187.0,
+        "shares": 189.0,
         "weight": 7,
         "price": 37.74,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00631L.TW",
-        "shares": 129.0,
+        "shares": 130.0,
         "weight": 5,
         "price": 39.2,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00881.TW",
-        "shares": 115.0,
+        "shares": 117.0,
         "weight": 6,
         "price": 52.5,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00947.TW",
-        "shares": 125.0,
+        "shares": 126.0,
         "weight": 5,
         "price": 40.47,
         "last_update": "2026-10-01 11:18:10"
       }
     ],
     "meta": {
-      "high_water_mark": 101766.71199045028,
-      "current_equity": 100894.94994210868,
-      "cash": 73653.31345773932,
+      "high_water_mark": 102128.75339914556,
+      "current_equity": 102128.75339914556,
+      "cash": 74553.98998137626,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1789516800.0,
       "market_regime": "SIDEWAYS",
@@ -58663,7 +58667,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-01",
-      "last_update": "2026-10-05 14:32:33.805175"
+      "last_update": "2026-10-06 11:27:50.733989"
     }
   }
 }
