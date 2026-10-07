@@ -3725,6 +3725,18 @@
       "name": "2x做多NVDA"
     },
     {
+      "ticker": "ARMG",
+      "name": "2x做多ARM"
+    },
+    {
+      "ticker": "GGLL",
+      "name": "2x做多GOOGL"
+    },
+    {
+      "ticker": "AMZU",
+      "name": "2x做多AMZN"
+    },
+    {
       "ticker": "BITX",
       "name": "2x做多比特幣"
     },
