@@ -26390,7 +26390,8 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-05",
-        "2026-10-06"
+        "2026-10-06",
+        "2026-10-07"
       ],
       "values": [
         1.0,
@@ -26416,13 +26417,14 @@
         1.488641,
         1.509249,
         1.521673,
-        1.567488
+        1.567488,
+        1.614937
       ],
       "metrics": {
-        "cagr": 8854.51,
-        "sharpe": 21.297,
+        "cagr": 11965.77,
+        "sharpe": 22.016,
         "max_dd": -1.43,
-        "total_return": 56.75,
+        "total_return": 61.49,
         "years": 0.1
       }
     },
@@ -29269,14 +29271,14 @@
     "holdings": [
       {
         "symbol": "1303.TW",
-        "shares": 29.0,
+        "shares": 30.0,
         "weight": 5,
         "price": 261.0,
         "last_update": "2026-10-01 11:40:02"
       },
       {
         "symbol": "6505.TW",
-        "shares": 56.0,
+        "shares": 58.0,
         "weight": 2,
         "price": 53.6,
         "last_update": "2026-10-01 11:40:02"
@@ -29290,14 +29292,14 @@
       },
       {
         "symbol": "2368.TW",
-        "shares": 5.0,
+        "shares": 6.0,
         "weight": 4,
         "price": 1120.0,
         "last_update": "2026-10-01 11:40:02"
       },
       {
         "symbol": "3532.TW",
-        "shares": 13.0,
+        "shares": 14.0,
         "weight": 4,
         "price": 455.0,
         "last_update": "2026-10-01 11:40:02"
@@ -29311,7 +29313,7 @@
       },
       {
         "symbol": "6213.TW",
-        "shares": 9.0,
+        "shares": 10.0,
         "weight": 4,
         "price": 639.0,
         "last_update": "2026-10-01 11:40:02"
@@ -29325,18 +29327,18 @@
       }
     ],
     "meta": {
-      "high_water_mark": 151087.4073966862,
-      "current_equity": 151087.4073966862,
-      "cash": 98206.81480784604,
+      "high_water_mark": 155660.91472239682,
+      "current_equity": 155660.91472239682,
+      "cash": 101179.59456955791,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1788307199.0,
-      "market_regime": "SIDEWAYS",
+      "market_regime": "TREND",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-01",
-      "last_update": "2026-10-06 12:35:05.333415"
+      "last_update": "2026-10-07 11:52:22.170016"
     }
   },
   "USETF": {
@@ -55739,7 +55741,8 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-05",
-        "2026-10-06"
+        "2026-10-06",
+        "2026-10-07"
       ],
       "values": [
         1.0,
@@ -55765,13 +55768,14 @@
         0.990756,
         0.990186,
         1.008878,
-        1.021216
+        1.021216,
+        1.033093
       ],
       "metrics": {
-        "cagr": 23.36,
-        "sharpe": 2.687,
+        "cagr": 38.48,
+        "sharpe": 3.767,
         "max_dd": -2.69,
-        "total_return": 2.12,
+        "total_return": 3.31,
         "years": 0.1
       }
     },
@@ -58652,37 +58656,37 @@
       },
       {
         "symbol": "00891.TW",
-        "shares": 189.0,
+        "shares": 192.0,
         "weight": 7,
         "price": 37.74,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00631L.TW",
-        "shares": 130.0,
+        "shares": 132.0,
         "weight": 5,
         "price": 39.2,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00881.TW",
-        "shares": 117.0,
+        "shares": 118.0,
         "weight": 6,
         "price": 52.5,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00947.TW",
-        "shares": 126.0,
+        "shares": 128.0,
         "weight": 5,
         "price": 40.47,
         "last_update": "2026-10-01 11:18:10"
       }
     ],
     "meta": {
-      "high_water_mark": 102128.75339914556,
-      "current_equity": 102128.75339914556,
-      "cash": 74553.98998137626,
+      "high_water_mark": 103316.529967033,
+      "current_equity": 103316.529967033,
+      "cash": 75421.06687593409,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1789516800.0,
       "market_regime": "SIDEWAYS",
@@ -58691,7 +58695,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-01",
-      "last_update": "2026-10-06 11:27:50.733989"
+      "last_update": "2026-10-07 11:18:09.525438"
     }
   }
 }
