@@ -11880,7 +11880,8 @@
         "2026-10-02",
         "2026-10-03",
         "2026-10-06",
-        "2026-10-07"
+        "2026-10-07",
+        "2026-10-10"
       ],
       "values": [
         1.0,
@@ -11907,13 +11908,14 @@
         0.844189,
         0.835626,
         0.831299,
-        0.830114
+        0.830114,
+        0.826652
       ],
       "metrics": {
-        "cagr": -84.46,
-        "sharpe": -11.753,
-        "max_dd": -18.83,
-        "total_return": -16.99,
+        "cagr": -84.73,
+        "sharpe": -11.758,
+        "max_dd": -19.17,
+        "total_return": -17.33,
         "years": 0.1
       }
     },
@@ -14857,45 +14859,52 @@
     },
     "holdings": [
       {
-        "symbol": "INTU",
-        "shares": 27.0,
-        "weight": 9,
-        "price": 277.13,
-        "last_update": "2026-09-25 06:35:37"
+        "symbol": "CCI",
+        "shares": 156.0,
+        "weight": 15,
+        "price": 79.64,
+        "last_update": "2026-10-10 06:47:45"
       },
       {
-        "symbol": "MLM",
-        "shares": 29.0,
-        "weight": 17,
-        "price": 480.1,
-        "last_update": "2026-09-25 06:35:37"
+        "symbol": "FLNC",
+        "shares": 695.0,
+        "weight": 6,
+        "price": 7.43,
+        "last_update": "2026-10-10 06:47:45"
       },
       {
-        "symbol": "NOC",
-        "shares": 31.0,
-        "weight": 19,
-        "price": 508.98,
-        "last_update": "2026-09-25 06:35:37"
+        "symbol": "HPE",
+        "shares": 112.0,
+        "weight": 10,
+        "price": 73.46,
+        "last_update": "2026-10-10 06:47:45"
       },
       {
-        "symbol": "ORCL",
-        "shares": 54.0,
-        "weight": 9,
-        "price": 139.54,
-        "last_update": "2026-09-25 06:35:37"
+        "symbol": "NU",
+        "shares": 617.0,
+        "weight": 12,
+        "price": 16.12,
+        "last_update": "2026-10-10 06:47:45"
       },
       {
-        "symbol": "PODD",
-        "shares": 79.0,
-        "weight": 13,
-        "price": 135.78,
-        "last_update": "2026-09-25 06:35:37"
+        "symbol": "TTD",
+        "shares": 774.0,
+        "weight": 11,
+        "price": 12.08,
+        "last_update": "2026-10-10 06:47:45"
+      },
+      {
+        "symbol": "ZS",
+        "shares": 21.0,
+        "weight": 3,
+        "price": 130.42,
+        "last_update": "2026-10-10 06:47:45"
       }
     ],
     "meta": {
       "high_water_mark": 102269.37934460328,
-      "current_equity": 83011.42886458087,
-      "cash": 27393.771525311684,
+      "current_equity": 82665.21131413005,
+      "cash": 34861.328243941374,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1791244800.0,
       "market_regime": "REVERSION",
@@ -14903,8 +14912,8 @@
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
-      "last_rebalance_date": "2026-09-25",
-      "last_update": "2026-10-07 06:52:45.759722"
+      "last_rebalance_date": "2026-10-10",
+      "last_update": "2026-10-10 06:47:45.533633"
     }
   },
   "TW": {
@@ -41250,7 +41259,8 @@
         "2026-10-02",
         "2026-10-03",
         "2026-10-06",
-        "2026-10-07"
+        "2026-10-07",
+        "2026-10-10"
       ],
       "values": [
         1.0,
@@ -41277,11 +41287,12 @@
         1.001971,
         1.001971,
         1.001971,
+        1.001971,
         1.001971
       ],
       "metrics": {
-        "cagr": 1.99,
-        "sharpe": 0.23,
+        "cagr": 1.96,
+        "sharpe": 0.226,
         "max_dd": -3.48,
         "total_return": 0.2,
         "years": 0.1
@@ -44260,8 +44271,8 @@
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
-      "last_rebalance_date": "2026-09-25",
-      "last_update": "2026-10-07 05:40:19.199827"
+      "last_rebalance_date": "2026-10-10",
+      "last_update": "2026-10-10 05:40:16.848116"
     }
   },
   "TWETF": {
