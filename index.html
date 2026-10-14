@@ -423,7 +423,8 @@ function renderHoldings(holdings) {
     html += '<tr>' + displayCols.map(c => {
       if (c === 'name') return `<td style="color:#9ca3af">${(window.TICKER_NAMES || {})[row.symbol] ?? ''}</td>`;
       let v = row[c];
-      if (c === 'weight' && typeof v === 'number') v = (v * 100).toFixed(1) + '%';
+      // live_holdings CSV stores weight as integer percent (portfolio_tracker.py exports weight*100)
+      if (c === 'weight' && typeof v === 'number') v = v + '%';
       else if (numCols.has(c) && typeof v === 'number') v = v.toLocaleString();
       return `<td>${v ?? '--'}</td>`;
     }).join('') + '</tr>';
