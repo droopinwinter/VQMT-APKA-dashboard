@@ -26492,7 +26492,8 @@
         "2026-10-12",
         "2026-10-13",
         "2026-10-14",
-        "2026-10-15"
+        "2026-10-15",
+        "2026-10-16"
       ],
       "values": [
         1.0,
@@ -26523,13 +26524,14 @@
         1.419805,
         1.538364,
         1.675797,
-        1.873871
+        1.873871,
+        1.900554
       ],
       "metrics": {
-        "cagr": 23442.93,
-        "sharpe": 8.31,
+        "cagr": 23280.9,
+        "sharpe": 8.34,
         "max_dd": -13.77,
-        "total_return": 87.39,
+        "total_return": 90.06,
         "years": 0.1
       }
     },
@@ -29403,21 +29405,21 @@
     "holdings": [
       {
         "symbol": "1303.TW",
-        "shares": 113.0,
+        "shares": 114.0,
         "weight": 15,
         "price": 261.0,
         "last_update": "2026-10-01 11:44:19"
       },
       {
         "symbol": "2408.TW",
-        "shares": 42.0,
+        "shares": 43.0,
         "weight": 11,
         "price": 512.0,
         "last_update": "2026-10-01 11:44:19"
       },
       {
         "symbol": "2409.TW",
-        "shares": 560.0,
+        "shares": 568.0,
         "weight": 11,
         "price": 38.55,
         "last_update": "2026-10-01 11:44:19"
@@ -29438,7 +29440,7 @@
       },
       {
         "symbol": "3653.TW",
-        "shares": 3.0,
+        "shares": 4.0,
         "weight": 12,
         "price": 6745.0,
         "last_update": "2026-10-01 11:44:19"
@@ -29452,15 +29454,15 @@
       },
       {
         "symbol": "8046.TW",
-        "shares": 15.0,
+        "shares": 16.0,
         "weight": 10,
         "price": 1275.0,
         "last_update": "2026-10-01 11:44:19"
       }
     ],
     "meta": {
-      "high_water_mark": 196268.65076446533,
-      "current_equity": 196268.65076446533,
+      "high_water_mark": 199063.4991455078,
+      "current_equity": 199063.4991455078,
       "cash": 0.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1790294400.0,
@@ -29470,7 +29472,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-01",
-      "last_update": "2026-10-15 13:31:31.009803"
+      "last_update": "2026-10-16 11:55:35.646784"
     }
   }
 }
