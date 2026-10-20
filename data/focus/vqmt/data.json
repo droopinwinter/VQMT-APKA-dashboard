@@ -26516,7 +26516,8 @@
         "2026-10-14",
         "2026-10-15",
         "2026-10-16",
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-20"
       ],
       "values": [
         1.0,
@@ -26549,13 +26550,14 @@
         1.675797,
         1.873871,
         1.900554,
-        2.000646
+        2.000646,
+        2.014762
       ],
       "metrics": {
-        "cagr": 24523.96,
-        "sharpe": 8.778,
+        "cagr": 23031.69,
+        "sharpe": 8.702,
         "max_dd": -13.77,
-        "total_return": 100.06,
+        "total_return": 101.48,
         "years": 0.1
       }
     },
@@ -29431,7 +29433,7 @@
     "holdings": [
       {
         "symbol": "1303.TW",
-        "shares": 120.0,
+        "shares": 121.0,
         "weight": 15,
         "price": 261.0,
         "last_update": "2026-10-01 11:44:19"
@@ -29445,7 +29447,7 @@
       },
       {
         "symbol": "2409.TW",
-        "shares": 598.0,
+        "shares": 602.0,
         "weight": 11,
         "price": 38.55,
         "last_update": "2026-10-01 11:44:19"
@@ -29480,15 +29482,15 @@
       },
       {
         "symbol": "8046.TW",
-        "shares": 16.0,
+        "shares": 17.0,
         "weight": 10,
         "price": 1275.0,
         "last_update": "2026-10-01 11:44:19"
       }
     ],
     "meta": {
-      "high_water_mark": 209547.1004333496,
-      "current_equity": 209547.1004333496,
+      "high_water_mark": 211025.6004562378,
+      "current_equity": 211025.6004562378,
       "cash": 0.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1790294400.0,
@@ -29498,7 +29500,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-01",
-      "last_update": "2026-10-19 11:57:06.712178"
+      "last_update": "2026-10-20 11:57:27.751035"
     }
   }
 }
