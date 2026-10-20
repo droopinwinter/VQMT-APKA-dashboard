@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20 11:57",
+  "generated_at": "2026-10-20 17:49",
   "profiles": {
     "focus": {
       "apka": {
@@ -289,50 +289,50 @@
       "apka": {
         "US": {
           "risk": {
-            "max_weight": 1.0,
-            "min_weight": 0.02,
-            "target_volatility": 0.18,
-            "max_drawdown": 0.2,
-            "trailing_stop_threshold": null,
-            "trailing_stop_lookback": null,
-            "breadth_warn": null,
-            "breadth_bear": null,
-            "max_corr": null,
-            "rebalance_freq": null,
-            "top_n": null,
+            "max_weight": 0.15,
+            "min_weight": 0.15,
+            "target_volatility": 0.45000000000000007,
+            "max_drawdown": 0.4,
+            "trailing_stop_threshold": 0.2,
+            "trailing_stop_lookback": 14,
+            "breadth_warn": 0.35,
+            "breadth_bear": 0.35,
+            "max_corr": 1.05,
+            "rebalance_freq": "2W",
+            "top_n": 15,
             "commission_bp": 1,
             "slippage_bp": 2,
             "tax_bp": 0
           },
           "universe": {
             "min_stocks": 50,
-            "target_stocks": 50,
+            "target_stocks": 15,
             "max_stocks": 200,
-            "min_market_cap_usd": 500000000,
+            "min_market_cap_usd": 2000000000,
             "min_adv_usd": 5000000,
             "description": "US Large & Mid Cap Liquid Stocks"
           }
         },
         "TW": {
           "risk": {
-            "max_weight": null,
-            "min_weight": null,
-            "target_volatility": null,
-            "max_drawdown": 0.2,
-            "trailing_stop_threshold": null,
-            "trailing_stop_lookback": null,
-            "breadth_warn": null,
-            "breadth_bear": null,
-            "max_corr": null,
-            "rebalance_freq": null,
-            "top_n": null,
+            "max_weight": 0.15,
+            "min_weight": 0.15,
+            "target_volatility": 0.30000000000000004,
+            "max_drawdown": 0.4,
+            "trailing_stop_threshold": 0.15000000000000002,
+            "trailing_stop_lookback": 14,
+            "breadth_warn": 0.3,
+            "breadth_bear": 0.35,
+            "max_corr": 0.8500000000000001,
+            "rebalance_freq": "Q",
+            "top_n": 15,
             "commission_bp": 30,
             "slippage_bp": 5,
             "tax_bp": 150
           },
           "universe": {
             "min_stocks": 50,
-            "target_stocks": 50,
+            "target_stocks": 15,
             "max_stocks": 200,
             "min_market_cap_usd": null,
             "min_adv_usd": null,
@@ -395,98 +395,72 @@
       "vqmt": {
         "US": {
           "factor_weights": {
-            "value": 0.15,
-            "momentum": 0.15,
-            "quality": 0.2,
-            "tech_trend": 0.3,
-            "tech_reversion": 0.2,
+            "value": 0.2771,
+            "momentum": 0.2269,
+            "quality": 0.3225,
+            "tech_trend": 0.1515,
+            "tech_reversion": 0.0221,
             "_tech_trend_sub": {
-              "ema_ensemble": 1.0,
-              "macd_hist": 0.0,
-              "obv_factor": 0.0
+              "ema_ensemble": 0.2693,
+              "macd_hist": 0.3517,
+              "obv_factor": 0.379
             },
             "_tech_reversion_sub": {
-              "bollinger_pos": 1.0,
-              "srsi": 0.0
+              "bollinger_pos": 0.3615,
+              "srsi": 0.6385
             }
           },
           "risk": {
-            "max_weight": 1.0,
+            "max_weight": 0.15,
             "min_weight": 0.02,
-            "target_volatility": 0.18,
-            "max_drawdown": 0.2,
+            "target_volatility": 0.225,
+            "max_drawdown": 0.28,
             "commission_bp": 1,
             "slippage_bp": 2,
             "tax_bp": 0,
-            "trailing_drawdown": 0.15,
-            "drawdown_levels": [
-              {
-                "action": "freeze",
-                "threshold": -0.12
-              },
-              {
-                "action": "reduce_50",
-                "threshold": -0.18
-              },
-              {
-                "action": "liquidate",
-                "threshold": -0.25
-              }
-            ]
+            "trailing_drawdown": null,
+            "drawdown_levels": []
           },
           "universe": {
             "min_stocks": 50,
-            "target_stocks": 50,
+            "target_stocks": 15,
             "max_stocks": 200,
-            "min_market_cap_usd": 500000000,
+            "min_market_cap_usd": 2000000000,
             "min_adv_usd": 5000000,
             "description": "US Large & Mid Cap Liquid Stocks"
           }
         },
         "TW": {
           "factor_weights": {
-            "value": 0.15,
-            "momentum": 0.15,
-            "quality": 0.2,
-            "tech_trend": 0.3,
-            "tech_reversion": 0.2,
+            "value": 0.3213,
+            "momentum": 0.3448,
+            "quality": 0.1157,
+            "tech_trend": 0.2079,
+            "tech_reversion": 0.0104,
             "_tech_trend_sub": {
-              "ema_ensemble": 1.0,
-              "macd_hist": 0.0,
-              "obv_factor": 0.0
+              "ema_ensemble": 0.5843,
+              "macd_hist": 0.2326,
+              "obv_factor": 0.1831
             },
             "_tech_reversion_sub": {
-              "bollinger_pos": 1.0,
-              "srsi": 0.0
+              "bollinger_pos": 0.6336,
+              "srsi": 0.3664
             }
           },
           "risk": {
-            "max_weight": null,
-            "min_weight": null,
-            "target_volatility": null,
-            "max_drawdown": 0.2,
+            "max_weight": 0.15,
+            "min_weight": 0.02,
+            "target_volatility": 0.15,
+            "max_drawdown": 0.16,
             "commission_bp": 30,
             "slippage_bp": 5,
             "tax_bp": 150,
-            "trailing_drawdown": 0.15,
-            "drawdown_levels": [
-              {
-                "action": "freeze",
-                "threshold": -0.12
-              },
-              {
-                "action": "reduce_50",
-                "threshold": -0.18
-              },
-              {
-                "action": "liquidate",
-                "threshold": -0.25
-              }
-            ]
+            "trailing_drawdown": null,
+            "drawdown_levels": []
           },
           "universe": {
             "min_stocks": 50,
-            "target_stocks": 50,
+            "target_stocks": 15,
             "max_stocks": 200,
             "min_market_cap_usd": null,
             "min_adv_usd": null,
