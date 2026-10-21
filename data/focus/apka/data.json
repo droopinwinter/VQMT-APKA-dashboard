@@ -11928,7 +11928,8 @@
         "2026-10-16",
         "2026-10-17",
         "2026-10-20",
-        "2026-10-21"
+        "2026-10-21",
+        "2026-10-22"
       ],
       "values": [
         1.0,
@@ -11963,13 +11964,14 @@
         0.762309,
         0.730217,
         0.698376,
-        0.673927
+        0.673927,
+        0.665697
       ],
       "metrics": {
-        "cagr": -95.04,
-        "sharpe": -13.774,
-        "max_dd": -34.1,
-        "total_return": -32.61,
+        "cagr": -95.18,
+        "sharpe": -13.996,
+        "max_dd": -34.91,
+        "total_return": -33.43,
         "years": 0.1
       }
     },
@@ -14924,42 +14926,42 @@
     "holdings": [
       {
         "symbol": "CCI",
-        "shares": 127.0,
+        "shares": 125.0,
         "weight": 15,
         "price": 79.64,
         "last_update": "2026-10-10 06:47:45"
       },
       {
         "symbol": "FLNC",
-        "shares": 544.0,
+        "shares": 538.0,
         "weight": 6,
         "price": 7.43,
         "last_update": "2026-10-10 06:47:45"
       },
       {
         "symbol": "HPE",
-        "shares": 92.0,
+        "shares": 91.0,
         "weight": 10,
         "price": 73.46,
         "last_update": "2026-10-10 06:47:45"
       },
       {
         "symbol": "NU",
-        "shares": 502.0,
+        "shares": 496.0,
         "weight": 12,
         "price": 16.12,
         "last_update": "2026-10-10 06:47:45"
       },
       {
         "symbol": "TTD",
-        "shares": 614.0,
+        "shares": 606.0,
         "weight": 11,
         "price": 12.08,
         "last_update": "2026-10-10 06:47:45"
       },
       {
         "symbol": "ZS",
-        "shares": 16.0,
+        "shares": 15.0,
         "weight": 3,
         "price": 130.42,
         "last_update": "2026-10-10 06:47:45"
@@ -14967,8 +14969,8 @@
     ],
     "meta": {
       "high_water_mark": 102269.37934460328,
-      "current_equity": 67392.65297032718,
-      "cash": 28978.840777240683,
+      "current_equity": 66569.67102130501,
+      "cash": 28624.95853916115,
       "soft_kill_state": "lv2",
       "soft_kill_ts": 1792454400.0,
       "market_regime": "REVERSION",
@@ -14977,7 +14979,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-10",
-      "last_update": "2026-10-21 06:49:32.159144"
+      "last_update": "2026-10-22 06:48:10.452489"
     }
   },
   "TW": {
@@ -41414,7 +41416,8 @@
         "2026-10-16",
         "2026-10-17",
         "2026-10-20",
-        "2026-10-21"
+        "2026-10-21",
+        "2026-10-22"
       ],
       "values": [
         1.0,
@@ -41449,11 +41452,12 @@
         1.001971,
         1.001971,
         1.001971,
+        1.001971,
         1.001971
       ],
       "metrics": {
-        "cagr": 1.51,
-        "sharpe": 0.201,
+        "cagr": 1.48,
+        "sharpe": 0.198,
         "max_dd": -3.48,
         "total_return": 0.2,
         "years": 0.1
@@ -44434,14 +44438,14 @@
       "current_equity": 100197.102321368,
       "cash": 100197.102321368,
       "soft_kill_state": "lv1",
-      "soft_kill_ts": 1792532445.3867896,
-      "market_regime": "HIGH_VOL",
+      "soft_kill_ts": 1792618837.1114175,
+      "market_regime": "TREND",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-10",
-      "last_update": "2026-10-21 05:40:47.450417"
+      "last_update": "2026-10-22 05:40:39.208527"
     }
   },
   "TWETF": {
