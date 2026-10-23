@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23 06:51",
+  "generated_at": "2026-10-23 11:30",
   "profiles": {
     "focus": {
       "apka": {
@@ -395,25 +395,25 @@
       "vqmt": {
         "US": {
           "factor_weights": {
-            "value": 0.2771,
-            "momentum": 0.2269,
-            "quality": 0.3225,
-            "tech_trend": 0.1515,
-            "tech_reversion": 0.0221,
+            "value": 0.3371,
+            "momentum": 0.0957,
+            "quality": 0.2906,
+            "tech_trend": 0.1949,
+            "tech_reversion": 0.0818,
             "_tech_trend_sub": {
-              "ema_ensemble": 0.2693,
-              "macd_hist": 0.3517,
-              "obv_factor": 0.379
+              "ema_ensemble": 0.5343,
+              "macd_hist": 0.3065,
+              "obv_factor": 0.1592
             },
             "_tech_reversion_sub": {
-              "bollinger_pos": 0.3615,
-              "srsi": 0.6385
+              "bollinger_pos": 0.6767,
+              "srsi": 0.3233
             }
           },
           "risk": {
-            "max_weight": 0.15,
+            "max_weight": 0.26,
             "min_weight": 0.02,
-            "target_volatility": 0.225,
+            "target_volatility": 0.175,
             "max_drawdown": 0.28,
             "commission_bp": 1,
             "slippage_bp": 2,
@@ -432,26 +432,26 @@
         },
         "TW": {
           "factor_weights": {
-            "value": 0.3213,
-            "momentum": 0.3448,
-            "quality": 0.1157,
-            "tech_trend": 0.2079,
-            "tech_reversion": 0.0104,
+            "value": 0.3973,
+            "momentum": 0.1088,
+            "quality": 0.1928,
+            "tech_trend": 0.0476,
+            "tech_reversion": 0.2534,
             "_tech_trend_sub": {
-              "ema_ensemble": 0.5843,
-              "macd_hist": 0.2326,
-              "obv_factor": 0.1831
+              "ema_ensemble": 0.5735,
+              "macd_hist": 0.2197,
+              "obv_factor": 0.2069
             },
             "_tech_reversion_sub": {
-              "bollinger_pos": 0.6336,
-              "srsi": 0.3664
+              "bollinger_pos": 0.5873,
+              "srsi": 0.4127
             }
           },
           "risk": {
-            "max_weight": 0.15,
+            "max_weight": 0.26,
             "min_weight": 0.02,
-            "target_volatility": 0.15,
-            "max_drawdown": 0.16,
+            "target_volatility": 0.25,
+            "max_drawdown": 0.22,
             "commission_bp": 30,
             "slippage_bp": 5,
             "tax_bp": 150,
