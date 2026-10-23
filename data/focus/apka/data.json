@@ -11938,7 +11938,8 @@
         "2026-10-20",
         "2026-10-21",
         "2026-10-22",
-        "2026-10-23"
+        "2026-10-23",
+        "2026-10-24"
       ],
       "values": [
         1.0,
@@ -11975,13 +11976,14 @@
         0.698376,
         0.673927,
         0.665697,
-        0.654405
+        0.654405,
+        0.656688
       ],
       "metrics": {
-        "cagr": -95.48,
-        "sharpe": -14.352,
+        "cagr": -95.08,
+        "sharpe": -13.763,
         "max_dd": -36.01,
-        "total_return": -34.56,
+        "total_return": -34.33,
         "years": 0.1
       }
     },
@@ -14937,52 +14939,24 @@
     },
     "holdings": [
       {
-        "symbol": "CCI",
-        "shares": 123.0,
-        "weight": 15,
-        "price": 79.64,
-        "last_update": "2026-10-10 06:47:45"
+        "symbol": "MPC",
+        "shares": 1.0,
+        "weight": 1,
+        "price": 457.22,
+        "last_update": "2026-10-24 06:49:47"
       },
       {
-        "symbol": "FLNC",
-        "shares": 528.0,
-        "weight": 6,
-        "price": 7.43,
-        "last_update": "2026-10-10 06:47:45"
-      },
-      {
-        "symbol": "HPE",
-        "shares": 89.0,
-        "weight": 10,
-        "price": 73.46,
-        "last_update": "2026-10-10 06:47:45"
-      },
-      {
-        "symbol": "NU",
-        "shares": 487.0,
-        "weight": 12,
-        "price": 16.12,
-        "last_update": "2026-10-10 06:47:45"
-      },
-      {
-        "symbol": "TTD",
-        "shares": 596.0,
-        "weight": 11,
-        "price": 12.08,
-        "last_update": "2026-10-10 06:47:45"
-      },
-      {
-        "symbol": "ZS",
-        "shares": 15.0,
-        "weight": 3,
-        "price": 130.42,
-        "last_update": "2026-10-10 06:47:45"
+        "symbol": "PSX",
+        "shares": 1.0,
+        "weight": 1,
+        "price": 283.18,
+        "last_update": "2026-10-24 06:49:47"
       }
     ],
     "meta": {
       "high_water_mark": 102269.37934460328,
-      "current_equity": 65440.51837459511,
-      "cash": 28139.422901075894,
+      "current_equity": 65668.83284370284,
+      "cash": 64927.1990901551,
       "soft_kill_state": "lv2",
       "soft_kill_ts": 1792454400.0,
       "market_regime": "REVERSION",
@@ -14990,8 +14964,8 @@
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
-      "last_rebalance_date": "2026-10-10",
-      "last_update": "2026-10-23 06:46:01.005862"
+      "last_rebalance_date": "2026-10-24",
+      "last_update": "2026-10-24 06:49:47.417414"
     }
   },
   "TW": {
@@ -41452,7 +41426,8 @@
         "2026-10-20",
         "2026-10-21",
         "2026-10-22",
-        "2026-10-23"
+        "2026-10-23",
+        "2026-10-24"
       ],
       "values": [
         1.0,
@@ -41489,11 +41464,12 @@
         1.001971,
         1.001971,
         1.001971,
+        1.001971,
         1.001971
       ],
       "metrics": {
-        "cagr": 1.45,
-        "sharpe": 0.195,
+        "cagr": 1.42,
+        "sharpe": 0.192,
         "max_dd": -3.48,
         "total_return": 0.2,
         "years": 0.1
@@ -44470,11 +44446,54 @@
       "2026-10-21": "半導體及人工智慧(28%), 半導體指數(14%), 3x做多科技板塊(8%), 2x做多美光(4%), 三倍做多半導體(3%), 2x做多ARM(3%)",
       "2026-10-22": "半導體及人工智慧(26%), 半導體指數(13%), 3x做多科技板塊(7%), 2x做多美光(4%), 三倍做多半導體(3%), 2x做多ARM(0%)"
     },
-    "holdings": [],
+    "holdings": [
+      {
+        "symbol": "NAIL",
+        "shares": 181.0,
+        "weight": 6,
+        "price": 30.87,
+        "last_update": "2026-10-24 05:39:12"
+      },
+      {
+        "symbol": "DPST",
+        "shares": 67.0,
+        "weight": 8,
+        "price": 122.86,
+        "last_update": "2026-10-24 05:39:12"
+      },
+      {
+        "symbol": "GLD",
+        "shares": 68.0,
+        "weight": 25,
+        "price": 366.61,
+        "last_update": "2026-10-24 05:39:12"
+      },
+      {
+        "symbol": "CORN",
+        "shares": 1413.0,
+        "weight": 25,
+        "price": 17.68,
+        "last_update": "2026-10-24 05:39:12"
+      },
+      {
+        "symbol": "XLI",
+        "shares": 145.0,
+        "weight": 24,
+        "price": 164.62,
+        "last_update": "2026-10-24 05:39:12"
+      },
+      {
+        "symbol": "XBI",
+        "shares": 84.0,
+        "weight": 13,
+        "price": 149.54,
+        "last_update": "2026-10-24 05:39:12"
+      }
+    ],
     "meta": {
       "high_water_mark": 103806.24032173204,
       "current_equity": 100197.102321368,
-      "cash": 100197.102321368,
+      "cash": 0.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1792713600.0,
       "market_regime": "TREND",
@@ -44482,8 +44501,8 @@
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
-      "last_rebalance_date": "2026-10-10",
-      "last_update": "2026-10-23 05:39:03.193060"
+      "last_rebalance_date": "2026-10-24",
+      "last_update": "2026-10-24 05:39:12.579614"
     }
   },
   "TWETF": {
