@@ -14885,77 +14885,77 @@
     "holdings": [
       {
         "symbol": "PSX",
-        "shares": 36,
+        "shares": 35.0,
         "weight": 10,
         "price": 284.63,
         "last_update": "2026-10-23 15:55:24"
       },
       {
         "symbol": "GM",
-        "shares": 132,
+        "shares": 129.0,
         "weight": 10,
         "price": 77.21,
         "last_update": "2026-10-23 15:55:24"
       },
       {
         "symbol": "CNC",
-        "shares": 146,
+        "shares": 140.0,
         "weight": 10,
         "price": 71.24,
         "last_update": "2026-10-23 15:55:24"
       },
       {
         "symbol": "MU",
-        "shares": 7,
+        "shares": 7.0,
         "weight": 6,
         "price": 856.49,
         "last_update": "2026-10-23 15:55:24"
       },
       {
         "symbol": "MPC",
-        "shares": 18,
+        "shares": 17.0,
         "weight": 8,
         "price": 459.28,
         "last_update": "2026-10-23 15:55:24"
       },
       {
         "symbol": "ADM",
-        "shares": 129,
+        "shares": 125.0,
         "weight": 10,
         "price": 79.84,
         "last_update": "2026-10-23 15:55:24"
       },
       {
         "symbol": "BG",
-        "shares": 80,
+        "shares": 77.0,
         "weight": 8,
         "price": 103.15,
         "last_update": "2026-10-23 15:55:24"
       },
       {
         "symbol": "HUM",
-        "shares": 15,
+        "shares": 14.0,
         "weight": 6,
         "price": 420.97,
         "last_update": "2026-10-23 15:55:24"
       },
       {
         "symbol": "TGT",
-        "shares": 58,
+        "shares": 57.0,
         "weight": 9,
         "price": 158.11,
         "last_update": "2026-10-23 15:55:24"
       },
       {
         "symbol": "CAH",
-        "shares": 43,
+        "shares": 43.0,
         "weight": 11,
         "price": 255.64,
         "last_update": "2026-10-23 15:55:24"
       },
       {
         "symbol": "FDX",
-        "shares": 32,
+        "shares": 33.0,
         "weight": 10,
         "price": 303.92,
         "last_update": "2026-10-23 15:55:24"
@@ -14963,8 +14963,8 @@
     ],
     "meta": {
       "high_water_mark": 100000.0,
-      "current_equity": 100000.0,
-      "cash": 0.0,
+      "current_equity": 99856.15975952148,
+      "cash": 1997.1231951904424,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1792627199.0,
       "market_regime": "REVERSION",
@@ -14973,7 +14973,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-23",
-      "last_update": "2026-10-23 15:55:24.861439"
+      "last_update": "2026-10-23 23:35:31.736976"
     }
   },
   "TW": {
@@ -29372,105 +29372,105 @@
     "holdings": [
       {
         "symbol": "2851.TW",
-        "shares": 166,
+        "shares": 159.0,
         "weight": 8,
         "price": 50.2,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "2915.TW",
-        "shares": 224,
+        "shares": 223.0,
         "weight": 13,
         "price": 58.2,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "2392.TW",
-        "shares": 170,
+        "shares": 173.0,
         "weight": 7,
         "price": 40.4,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "2031.TW",
-        "shares": 179,
+        "shares": 186.0,
         "weight": 9,
         "price": 48.5,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "9904.TW",
-        "shares": 432,
+        "shares": 417.0,
         "weight": 11,
         "price": 26.35,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "9945.TW",
-        "shares": 319,
+        "shares": 303.0,
         "weight": 9,
         "price": 29.65,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "4967.TW",
-        "shares": 22,
+        "shares": 20.0,
         "weight": 5,
         "price": 250.0,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "2451.TW",
-        "shares": 19,
+        "shares": 18.0,
         "weight": 5,
         "price": 276.5,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "4938.TW",
-        "shares": 40,
+        "shares": 38.0,
         "weight": 4,
         "price": 104.5,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "2362.TW",
-        "shares": 137,
+        "shares": 145.0,
         "weight": 7,
         "price": 48.35,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "2103.TW",
-        "shares": 152,
+        "shares": 142.0,
         "weight": 4,
         "price": 28.25,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "2605.TW",
-        "shares": 131,
+        "shares": 140.0,
         "weight": 5,
         "price": 35.65,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "8213.TW",
-        "shares": 88,
+        "shares": 96.0,
         "weight": 4,
         "price": 41.7,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "2855.TW",
-        "shares": 74,
+        "shares": 72.0,
         "weight": 4,
         "price": 55.6,
         "last_update": "2026-10-23 15:50:11"
       },
       {
         "symbol": "3702.TW",
-        "shares": 34,
+        "shares": 35.0,
         "weight": 4,
         "price": 115.0,
         "last_update": "2026-10-23 15:50:11"
@@ -29478,8 +29478,8 @@
     ],
     "meta": {
       "high_water_mark": 100000.0,
-      "current_equity": 100000.0,
-      "cash": 0.0,
+      "current_equity": 99976.65054512024,
+      "cash": 999.766505451181,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1792627199.0,
       "market_regime": "TREND",
@@ -29488,7 +29488,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-23",
-      "last_update": "2026-10-23 15:50:11.993939"
+      "last_update": "2026-10-23 22:31:08.620390"
     }
   }
 }
