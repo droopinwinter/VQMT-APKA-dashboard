@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24 06:56",
+  "generated_at": "2026-10-26 11:32",
   "profiles": {
     "focus": {
       "apka": {
@@ -44,7 +44,7 @@
             "top_n": 8,
             "commission_bp": 30,
             "slippage_bp": 5,
-            "tax_bp": 150
+            "tax_bp": 30
           },
           "universe": {
             "min_stocks": 50,
@@ -170,7 +170,7 @@
             "max_drawdown": 0.16,
             "commission_bp": 30,
             "slippage_bp": 5,
-            "tax_bp": 150,
+            "tax_bp": 30,
             "trailing_drawdown": null,
             "drawdown_levels": []
           },
@@ -328,7 +328,7 @@
             "top_n": 15,
             "commission_bp": 30,
             "slippage_bp": 5,
-            "tax_bp": 150
+            "tax_bp": 30
           },
           "universe": {
             "min_stocks": 50,
@@ -454,7 +454,7 @@
             "max_drawdown": 0.22,
             "commission_bp": 30,
             "slippage_bp": 5,
-            "tax_bp": 150,
+            "tax_bp": 30,
             "trailing_drawdown": null,
             "drawdown_levels": []
           },
