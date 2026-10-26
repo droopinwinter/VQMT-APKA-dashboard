@@ -11943,7 +11943,8 @@
         "2026-10-21",
         "2026-10-22",
         "2026-10-23",
-        "2026-10-24"
+        "2026-10-24",
+        "2026-10-27"
       ],
       "values": [
         1.0,
@@ -11981,13 +11982,14 @@
         1.067723,
         1.053867,
         1.01741,
-        0.969978
+        0.969978,
+        0.935489
       ],
       "metrics": {
-        "cagr": -19.61,
-        "sharpe": -0.573,
-        "max_dd": -17.79,
-        "total_return": -3.0,
+        "cagr": -36.3,
+        "sharpe": -1.333,
+        "max_dd": -20.72,
+        "total_return": -6.45,
         "years": 0.1
       }
     },
@@ -14966,14 +14968,14 @@
     "holdings": [
       {
         "symbol": "MU",
-        "shares": 19.0,
+        "shares": 18.0,
         "weight": 21,
         "price": 1063.96,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "CNC",
-        "shares": 317.0,
+        "shares": 306.0,
         "weight": 21,
         "price": 64.3,
         "last_update": "2026-10-06 07:00:35"
@@ -14987,21 +14989,21 @@
       },
       {
         "symbol": "MPC",
-        "shares": 40.0,
+        "shares": 39.0,
         "weight": 18,
         "price": 433.47,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "PSX",
-        "shares": 68.0,
+        "shares": 66.0,
         "weight": 19,
         "price": 269.72,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "WDC",
-        "shares": 26.0,
+        "shares": 25.0,
         "weight": 12,
         "price": 441.64,
         "last_update": "2026-10-06 07:00:35"
@@ -15009,7 +15011,7 @@
     ],
     "meta": {
       "high_water_mark": 117992.1335278112,
-      "current_equity": 96997.78894042967,
+      "current_equity": 93548.9012145996,
       "cash": 0.0,
       "soft_kill_state": "lv1",
       "soft_kill_ts": 1792800000.0,
@@ -15019,7 +15021,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-06",
-      "last_update": "2026-10-24 06:55:25.582297"
+      "last_update": "2026-10-27 06:57:32.430349"
     }
   },
   "TW": {

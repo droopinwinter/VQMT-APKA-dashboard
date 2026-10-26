@@ -11943,7 +11943,8 @@
         "2026-10-21",
         "2026-10-22",
         "2026-10-23",
-        "2026-10-24"
+        "2026-10-24",
+        "2026-10-27"
       ],
       "values": [
         1.0,
@@ -11981,13 +11982,14 @@
         0.673927,
         0.665697,
         0.654405,
-        0.656688
+        0.656688,
+        0.656867
       ],
       "metrics": {
-        "cagr": -95.08,
-        "sharpe": -13.763,
+        "cagr": -94.17,
+        "sharpe": -13.417,
         "max_dd": -36.01,
-        "total_return": -34.33,
+        "total_return": -34.31,
         "years": 0.1
       }
     },
@@ -14945,23 +14947,23 @@
     "holdings": [
       {
         "symbol": "MPC",
-        "shares": 1.0,
-        "weight": 1,
+        "shares": 144.0,
+        "weight": 100,
         "price": 457.22,
         "last_update": "2026-10-24 06:49:47"
       },
       {
         "symbol": "PSX",
-        "shares": 1.0,
-        "weight": 1,
+        "shares": 232.0,
+        "weight": 100,
         "price": 283.18,
         "last_update": "2026-10-24 06:49:47"
       }
     ],
     "meta": {
       "high_water_mark": 102269.37934460328,
-      "current_equity": 65668.83284370284,
-      "cash": 64927.1990901551,
+      "current_equity": 65686.68911090706,
+      "cash": 0.0,
       "soft_kill_state": "lv2",
       "soft_kill_ts": 1792454400.0,
       "market_regime": "REVERSION",
@@ -14970,7 +14972,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-10-24 06:49:47.417414"
+      "last_update": "2026-10-27 06:51:52.922110"
     }
   },
   "TW": {
@@ -41443,7 +41445,8 @@
         "2026-10-21",
         "2026-10-22",
         "2026-10-23",
-        "2026-10-24"
+        "2026-10-24",
+        "2026-10-27"
       ],
       "values": [
         1.0,
@@ -41481,13 +41484,14 @@
         1.001971,
         1.001971,
         1.001971,
-        1.001971
+        1.001971,
+        1.005318
       ],
       "metrics": {
-        "cagr": 1.42,
-        "sharpe": 0.192,
+        "cagr": 3.65,
+        "sharpe": 0.429,
         "max_dd": -3.48,
-        "total_return": 0.2,
+        "total_return": 0.53,
         "years": 0.1
       }
     },
@@ -44466,42 +44470,42 @@
     "holdings": [
       {
         "symbol": "NAIL",
-        "shares": 181.0,
+        "shares": 195.0,
         "weight": 6,
         "price": 30.87,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "DPST",
-        "shares": 67.0,
+        "shares": 65.0,
         "weight": 8,
         "price": 122.86,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "GLD",
-        "shares": 68.0,
+        "shares": 69.0,
         "weight": 25,
         "price": 366.61,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "CORN",
-        "shares": 1413.0,
+        "shares": 1422.0,
         "weight": 25,
         "price": 17.68,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "XLI",
-        "shares": 145.0,
+        "shares": 147.0,
         "weight": 24,
         "price": 164.62,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "XBI",
-        "shares": 84.0,
+        "shares": 87.0,
         "weight": 13,
         "price": 149.54,
         "last_update": "2026-10-24 05:39:12"
@@ -44509,17 +44513,17 @@
     ],
     "meta": {
       "high_water_mark": 103806.24032173204,
-      "current_equity": 100197.102321368,
+      "current_equity": 100531.8204612732,
       "cash": 0.0,
-      "soft_kill_state": "normal",
-      "soft_kill_ts": 1792713600.0,
+      "soft_kill_state": "lv1",
+      "soft_kill_ts": 1793050835.5726545,
       "market_regime": "TREND",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-10-24 05:39:12.579614"
+      "last_update": "2026-10-27 05:40:37.647817"
     }
   },
   "TWETF": {
