@@ -11948,7 +11948,8 @@
         "2026-10-22",
         "2026-10-23",
         "2026-10-24",
-        "2026-10-27"
+        "2026-10-27",
+        "2026-10-28"
       ],
       "values": [
         1.0,
@@ -11987,14 +11988,15 @@
         0.665697,
         0.654405,
         0.656688,
-        0.656867
+        0.656867,
+        1.250801
       ],
       "metrics": {
-        "cagr": -94.17,
-        "sharpe": -13.417,
+        "cagr": 342.0,
+        "sharpe": 1.39,
         "max_dd": -36.01,
-        "total_return": -34.31,
-        "years": 0.1
+        "total_return": 25.08,
+        "years": 0.2
       }
     },
     "holdings_history": {
@@ -14952,32 +14954,32 @@
     "holdings": [
       {
         "symbol": "MPC",
-        "shares": 144.0,
+        "shares": 274.0,
         "weight": 100,
         "price": 457.22,
         "last_update": "2026-10-24 06:49:47"
       },
       {
         "symbol": "PSX",
-        "shares": 232.0,
+        "shares": 442.0,
         "weight": 100,
         "price": 283.18,
         "last_update": "2026-10-24 06:49:47"
       }
     ],
     "meta": {
-      "high_water_mark": 102269.37934460328,
-      "current_equity": 65686.68911090706,
+      "high_water_mark": 125080.08129882812,
+      "current_equity": 125080.08129882812,
       "cash": 0.0,
-      "soft_kill_state": "lv2",
-      "soft_kill_ts": 1792454400.0,
+      "soft_kill_state": "lv1",
+      "soft_kill_ts": 1793141406.3668065,
       "market_regime": "REVERSION",
-      "hard_kill_state": false,
-      "hard_kill_date": null,
+      "hard_kill_state": true,
+      "hard_kill_date": "2026-10-28",
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-10-27 06:51:52.922110"
+      "last_update": "2026-10-28 06:50:08.450729"
     }
   },
   "TW": {
@@ -41457,7 +41459,8 @@
         "2026-10-22",
         "2026-10-23",
         "2026-10-24",
-        "2026-10-27"
+        "2026-10-27",
+        "2026-10-28"
       ],
       "values": [
         1.0,
@@ -41496,14 +41499,15 @@
         1.001971,
         1.001971,
         1.001971,
-        1.005318
+        1.005318,
+        1.026134
       ],
       "metrics": {
-        "cagr": 3.65,
-        "sharpe": 0.429,
+        "cagr": 18.69,
+        "sharpe": 1.652,
         "max_dd": -3.48,
-        "total_return": 0.53,
-        "years": 0.1
+        "total_return": 2.61,
+        "years": 0.2
       }
     },
     "holdings_history": {
@@ -44482,42 +44486,42 @@
     "holdings": [
       {
         "symbol": "NAIL",
-        "shares": 195.0,
+        "shares": 199.0,
         "weight": 6,
         "price": 30.87,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "DPST",
-        "shares": 65.0,
+        "shares": 67.0,
         "weight": 8,
         "price": 122.86,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "GLD",
-        "shares": 69.0,
+        "shares": 70.0,
         "weight": 25,
         "price": 366.61,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "CORN",
-        "shares": 1422.0,
+        "shares": 1451.0,
         "weight": 25,
         "price": 17.68,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "XLI",
-        "shares": 147.0,
+        "shares": 150.0,
         "weight": 24,
         "price": 164.62,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "XBI",
-        "shares": 87.0,
+        "shares": 89.0,
         "weight": 13,
         "price": 149.54,
         "last_update": "2026-10-24 05:39:12"
@@ -44525,17 +44529,17 @@
     ],
     "meta": {
       "high_water_mark": 103806.24032173204,
-      "current_equity": 100531.8204612732,
+      "current_equity": 102613.42037010191,
       "cash": 0.0,
       "soft_kill_state": "lv1",
-      "soft_kill_ts": 1793050835.5726545,
+      "soft_kill_ts": 1793137244.4209862,
       "market_regime": "TREND",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-10-27 05:40:37.647817"
+      "last_update": "2026-10-28 05:40:46.503603"
     }
   },
   "TWETF": {
