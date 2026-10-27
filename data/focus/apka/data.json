@@ -26527,7 +26527,8 @@
         "2026-10-21",
         "2026-10-22",
         "2026-10-23",
-        "2026-10-26"
+        "2026-10-26",
+        "2026-10-27"
       ],
       "values": [
         1.0,
@@ -26565,13 +26566,14 @@
         1.82011,
         1.86248,
         1.88711,
-        1.887636
+        1.887636,
+        1.887978
       ],
       "metrics": {
-        "cagr": 7870.64,
-        "sharpe": 19.886,
+        "cagr": 7258.88,
+        "sharpe": 19.203,
         "max_dd": -1.43,
-        "total_return": 88.76,
+        "total_return": 88.8,
         "years": 0.1
       }
     },
@@ -29487,9 +29489,9 @@
       }
     ],
     "meta": {
-      "high_water_mark": 181945.91817306727,
-      "current_equity": 181945.91817306727,
-      "cash": 118264.84681249374,
+      "high_water_mark": 181978.84681249372,
+      "current_equity": 181978.84681249372,
+      "cash": 118286.25042812094,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1788307199.0,
       "market_regime": "TREND",
@@ -29498,7 +29500,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-01",
-      "last_update": "2026-10-26 11:27:35.372992"
+      "last_update": "2026-10-27 11:52:32.801678"
     }
   },
   "USETF": {
@@ -56102,7 +56104,8 @@
         "2026-10-21",
         "2026-10-22",
         "2026-10-23",
-        "2026-10-26"
+        "2026-10-26",
+        "2026-10-27"
       ],
       "values": [
         1.0,
@@ -56140,13 +56143,14 @@
         1.046168,
         1.041616,
         1.034524,
-        1.023832
+        1.023832,
+        1.014152
       ],
       "metrics": {
-        "cagr": 17.62,
-        "sharpe": 1.535,
-        "max_dd": -4.77,
-        "total_return": 2.38,
+        "cagr": 9.97,
+        "sharpe": 0.903,
+        "max_dd": -5.68,
+        "total_return": 1.42,
         "years": 0.1
       }
     },
@@ -59033,35 +59037,35 @@
     "holdings": [
       {
         "symbol": "00715L.TW",
-        "shares": 65.0,
+        "shares": 64.0,
         "weight": 4,
         "price": 63.2,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00891.TW",
-        "shares": 190.0,
+        "shares": 188.0,
         "weight": 7,
         "price": 37.74,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00631L.TW",
-        "shares": 131.0,
+        "shares": 129.0,
         "weight": 5,
         "price": 39.2,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00881.TW",
-        "shares": 117.0,
+        "shares": 116.0,
         "weight": 6,
         "price": 52.5,
         "last_update": "2026-10-01 11:18:10"
       },
       {
         "symbol": "00947.TW",
-        "shares": 127.0,
+        "shares": 125.0,
         "weight": 5,
         "price": 40.47,
         "last_update": "2026-10-01 11:18:10"
@@ -59069,8 +59073,8 @@
     ],
     "meta": {
       "high_water_mark": 107524.67092051408,
-      "current_equity": 102390.41315555866,
-      "cash": 74745.00160355783,
+      "current_equity": 101422.3214087031,
+      "cash": 74038.29462835325,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1792540800.0,
       "market_regime": "SIDEWAYS",
@@ -59079,7 +59083,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-01",
-      "last_update": "2026-10-26 11:18:25.824597"
+      "last_update": "2026-10-27 11:18:59.495434"
     }
   }
 }
