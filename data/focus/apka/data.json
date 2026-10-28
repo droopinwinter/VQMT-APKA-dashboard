@@ -11953,7 +11953,8 @@
         "2026-10-23",
         "2026-10-24",
         "2026-10-27",
-        "2026-10-28"
+        "2026-10-28",
+        "2026-10-29"
       ],
       "values": [
         1.0,
@@ -11993,13 +11994,14 @@
         0.654405,
         0.656688,
         0.656867,
-        1.250801
+        1.250801,
+        2.417729
       ],
       "metrics": {
-        "cagr": 342.0,
-        "sharpe": 1.39,
+        "cagr": 31574.35,
+        "sharpe": 2.818,
         "max_dd": -36.01,
-        "total_return": 25.08,
+        "total_return": 141.77,
         "years": 0.2
       }
     },
@@ -14959,22 +14961,22 @@
     "holdings": [
       {
         "symbol": "MPC",
-        "shares": 274.0,
+        "shares": 529.0,
         "weight": 100,
         "price": 457.22,
         "last_update": "2026-10-24 06:49:47"
       },
       {
         "symbol": "PSX",
-        "shares": 442.0,
+        "shares": 854.0,
         "weight": 100,
         "price": 283.18,
         "last_update": "2026-10-24 06:49:47"
       }
     ],
     "meta": {
-      "high_water_mark": 125080.08129882812,
-      "current_equity": 125080.08129882812,
+      "high_water_mark": 241772.90130615237,
+      "current_equity": 241772.90130615237,
       "cash": 0.0,
       "soft_kill_state": "lv1",
       "soft_kill_ts": 1793141406.3668065,
@@ -14984,7 +14986,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-10-28 06:50:08.450729"
+      "last_update": "2026-10-29 06:46:31.917337"
     }
   },
   "TW": {
@@ -41476,7 +41478,8 @@
         "2026-10-23",
         "2026-10-24",
         "2026-10-27",
-        "2026-10-28"
+        "2026-10-28",
+        "2026-10-29"
       ],
       "values": [
         1.0,
@@ -41516,13 +41519,14 @@
         1.001971,
         1.001971,
         1.005318,
-        1.026134
+        1.026134,
+        1.046231
       ],
       "metrics": {
-        "cagr": 18.69,
-        "sharpe": 1.652,
+        "cagr": 34.28,
+        "sharpe": 2.581,
         "max_dd": -3.48,
-        "total_return": 2.61,
+        "total_return": 4.62,
         "years": 0.2
       }
     },
@@ -44503,60 +44507,60 @@
     "holdings": [
       {
         "symbol": "NAIL",
-        "shares": 199.0,
+        "shares": 203.0,
         "weight": 6,
         "price": 30.87,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "DPST",
-        "shares": 67.0,
+        "shares": 68.0,
         "weight": 8,
         "price": 122.86,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "GLD",
-        "shares": 70.0,
+        "shares": 71.0,
         "weight": 25,
         "price": 366.61,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "CORN",
-        "shares": 1451.0,
+        "shares": 1479.0,
         "weight": 25,
         "price": 17.68,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "XLI",
-        "shares": 150.0,
+        "shares": 153.0,
         "weight": 24,
         "price": 164.62,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "XBI",
-        "shares": 89.0,
+        "shares": 91.0,
         "weight": 13,
         "price": 149.54,
         "last_update": "2026-10-24 05:39:12"
       }
     ],
     "meta": {
-      "high_water_mark": 103806.24032173204,
-      "current_equity": 102613.42037010191,
+      "high_water_mark": 104623.0608291626,
+      "current_equity": 104623.0608291626,
       "cash": 0.0,
-      "soft_kill_state": "lv1",
-      "soft_kill_ts": 1793137244.4209862,
+      "soft_kill_state": "normal",
+      "soft_kill_ts": 1793232000.0,
       "market_regime": "TREND",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-10-28 05:40:46.503603"
+      "last_update": "2026-10-29 05:38:57.415235"
     }
   },
   "TWETF": {

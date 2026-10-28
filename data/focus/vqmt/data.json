@@ -11953,7 +11953,8 @@
         "2026-10-23",
         "2026-10-24",
         "2026-10-27",
-        "2026-10-28"
+        "2026-10-28",
+        "2026-10-29"
       ],
       "values": [
         1.0,
@@ -11993,13 +11994,14 @@
         1.01741,
         0.969978,
         0.935489,
-        0.893375
+        0.893375,
+        0.873259
       ],
       "metrics": {
-        "cagr": -52.7,
-        "sharpe": -2.165,
-        "max_dd": -24.29,
-        "total_return": -10.66,
+        "cagr": -58.68,
+        "sharpe": -2.566,
+        "max_dd": -25.99,
+        "total_return": -12.67,
         "years": 0.2
       }
     },
@@ -14980,14 +14982,14 @@
     "holdings": [
       {
         "symbol": "MU",
-        "shares": 18.0,
+        "shares": 17.0,
         "weight": 21,
         "price": 1063.96,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "CNC",
-        "shares": 292.0,
+        "shares": 285.0,
         "weight": 21,
         "price": 64.3,
         "last_update": "2026-10-06 07:00:35"
@@ -15001,14 +15003,14 @@
       },
       {
         "symbol": "MPC",
-        "shares": 37.0,
+        "shares": 36.0,
         "weight": 18,
         "price": 433.47,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "PSX",
-        "shares": 63.0,
+        "shares": 62.0,
         "weight": 19,
         "price": 269.72,
         "last_update": "2026-10-06 07:00:35"
@@ -15023,7 +15025,7 @@
     ],
     "meta": {
       "high_water_mark": 117992.1335278112,
-      "current_equity": 89337.4900970459,
+      "current_equity": 87325.89077758789,
       "cash": 0.0,
       "soft_kill_state": "lv2",
       "soft_kill_ts": 1793145600.0,
@@ -15033,7 +15035,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-06",
-      "last_update": "2026-10-28 06:55:42.838520"
+      "last_update": "2026-10-29 06:51:57.104240"
     }
   },
   "TW": {
