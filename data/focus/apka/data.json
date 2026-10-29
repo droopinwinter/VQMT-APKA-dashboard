@@ -11958,7 +11958,8 @@
         "2026-10-24",
         "2026-10-27",
         "2026-10-28",
-        "2026-10-29"
+        "2026-10-29",
+        "2026-10-30"
       ],
       "values": [
         1.0,
@@ -11999,13 +12000,14 @@
         0.656688,
         0.656867,
         1.250801,
-        2.417729
+        2.417729,
+        4.624607
       ],
       "metrics": {
-        "cagr": 31574.35,
-        "sharpe": 2.818,
+        "cagr": 1826862.58,
+        "sharpe": 3.788,
         "max_dd": -36.01,
-        "total_return": 141.77,
+        "total_return": 362.46,
         "years": 0.2
       }
     },
@@ -14966,32 +14968,32 @@
     "holdings": [
       {
         "symbol": "MPC",
-        "shares": 529.0,
+        "shares": 1011.0,
         "weight": 100,
         "price": 457.22,
         "last_update": "2026-10-24 06:49:47"
       },
       {
         "symbol": "PSX",
-        "shares": 854.0,
+        "shares": 1633.0,
         "weight": 100,
         "price": 283.18,
         "last_update": "2026-10-24 06:49:47"
       }
     ],
     "meta": {
-      "high_water_mark": 241772.90130615237,
-      "current_equity": 241772.90130615237,
+      "high_water_mark": 462460.72265625,
+      "current_equity": 462460.72265625,
       "cash": 0.0,
-      "soft_kill_state": "lv1",
-      "soft_kill_ts": 1793141406.3668065,
+      "soft_kill_state": "normal",
+      "soft_kill_ts": 1793314301.4040184,
       "market_regime": "REVERSION",
       "hard_kill_state": true,
       "hard_kill_date": "2026-10-28",
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-10-29 06:46:31.917337"
+      "last_update": "2026-10-30 06:51:43.559413"
     }
   },
   "TW": {
@@ -41495,7 +41497,8 @@
         "2026-10-24",
         "2026-10-27",
         "2026-10-28",
-        "2026-10-29"
+        "2026-10-29",
+        "2026-10-30"
       ],
       "values": [
         1.0,
@@ -41536,13 +41539,14 @@
         1.001971,
         1.005318,
         1.026134,
-        1.046231
+        1.046231,
+        1.073651
       ],
       "metrics": {
-        "cagr": 34.28,
-        "sharpe": 2.581,
+        "cagr": 57.68,
+        "sharpe": 3.511,
         "max_dd": -3.48,
-        "total_return": 4.62,
+        "total_return": 7.37,
         "years": 0.2
       }
     },
@@ -44524,50 +44528,50 @@
     "holdings": [
       {
         "symbol": "NAIL",
-        "shares": 203.0,
+        "shares": 209.0,
         "weight": 6,
         "price": 30.87,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "DPST",
-        "shares": 68.0,
+        "shares": 70.0,
         "weight": 8,
         "price": 122.86,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "GLD",
-        "shares": 71.0,
+        "shares": 73.0,
         "weight": 25,
         "price": 366.61,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "CORN",
-        "shares": 1479.0,
+        "shares": 1518.0,
         "weight": 25,
         "price": 17.68,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "XLI",
-        "shares": 153.0,
+        "shares": 157.0,
         "weight": 24,
         "price": 164.62,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "XBI",
-        "shares": 91.0,
+        "shares": 93.0,
         "weight": 13,
         "price": 149.54,
         "last_update": "2026-10-24 05:39:12"
       }
     ],
     "meta": {
-      "high_water_mark": 104623.0608291626,
-      "current_equity": 104623.0608291626,
+      "high_water_mark": 107365.10147666933,
+      "current_equity": 107365.10147666933,
       "cash": 0.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1793232000.0,
@@ -44577,7 +44581,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-10-29 05:38:57.415235"
+      "last_update": "2026-10-30 05:40:24.904264"
     }
   },
   "TWETF": {
