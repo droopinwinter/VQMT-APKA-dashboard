@@ -26596,7 +26596,8 @@
         "2026-10-23",
         "2026-10-26",
         "2026-10-27",
-        "2026-10-28"
+        "2026-10-28",
+        "2026-10-29"
       ],
       "values": [
         1.0,
@@ -26636,13 +26637,14 @@
         2.356051,
         2.344523,
         2.331221,
-        2.268449
+        2.268449,
+        2.328902
       ],
       "metrics": {
-        "cagr": 22933.74,
-        "sharpe": 8.73,
+        "cagr": 24712.94,
+        "sharpe": 8.884,
         "max_dd": -13.77,
-        "total_return": 126.84,
+        "total_return": 132.89,
         "years": 0.2
       }
     },
@@ -29524,28 +29526,28 @@
     "holdings": [
       {
         "symbol": "1303.TW",
-        "shares": 137.0,
+        "shares": 140.0,
         "weight": 15,
         "price": 261.0,
         "last_update": "2026-10-01 11:44:19"
       },
       {
         "symbol": "2408.TW",
-        "shares": 51.0,
+        "shares": 52.0,
         "weight": 11,
         "price": 512.0,
         "last_update": "2026-10-01 11:44:19"
       },
       {
         "symbol": "2409.TW",
-        "shares": 678.0,
+        "shares": 696.0,
         "weight": 11,
         "price": 38.55,
         "last_update": "2026-10-01 11:44:19"
       },
       {
         "symbol": "3189.TW",
-        "shares": 37.0,
+        "shares": 38.0,
         "weight": 15,
         "price": 958.0,
         "last_update": "2026-10-01 11:44:19"
@@ -29566,7 +29568,7 @@
       },
       {
         "symbol": "6213.TW",
-        "shares": 48.0,
+        "shares": 50.0,
         "weight": 13,
         "price": 639.0,
         "last_update": "2026-10-01 11:44:19"
@@ -29581,7 +29583,7 @@
     ],
     "meta": {
       "high_water_mark": 246772.09896850583,
-      "current_equity": 237596.6989364624,
+      "current_equity": 243928.5,
       "cash": 0.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1790294400.0,
@@ -29591,7 +29593,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-01",
-      "last_update": "2026-10-28 12:00:54.303716"
+      "last_update": "2026-10-29 11:55:43.936362"
     }
   }
 }
