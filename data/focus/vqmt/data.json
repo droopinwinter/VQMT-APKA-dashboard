@@ -26620,7 +26620,8 @@
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
-        "2026-10-30"
+        "2026-10-30",
+        "2026-11-02"
       ],
       "values": [
         1.0,
@@ -26662,13 +26663,14 @@
         2.331221,
         2.268449,
         2.328902,
-        2.369084
+        2.369084,
+        2.235446
       ],
       "metrics": {
-        "cagr": 25034.64,
-        "sharpe": 8.941,
+        "cagr": 13289.18,
+        "sharpe": 7.908,
         "max_dd": -13.77,
-        "total_return": 136.91,
+        "total_return": 123.54,
         "years": 0.2
       }
     },
@@ -29552,28 +29554,28 @@
     "holdings": [
       {
         "symbol": "1303.TW",
-        "shares": 143.0,
+        "shares": 135.0,
         "weight": 15,
         "price": 261.0,
         "last_update": "2026-10-01 11:44:19"
       },
       {
         "symbol": "2408.TW",
-        "shares": 53.0,
+        "shares": 50.0,
         "weight": 11,
         "price": 512.0,
         "last_update": "2026-10-01 11:44:19"
       },
       {
         "symbol": "2409.TW",
-        "shares": 708.0,
+        "shares": 668.0,
         "weight": 11,
         "price": 38.55,
         "last_update": "2026-10-01 11:44:19"
       },
       {
         "symbol": "3189.TW",
-        "shares": 39.0,
+        "shares": 37.0,
         "weight": 15,
         "price": 958.0,
         "last_update": "2026-10-01 11:44:19"
@@ -29594,14 +29596,14 @@
       },
       {
         "symbol": "6213.TW",
-        "shares": 50.0,
+        "shares": 48.0,
         "weight": 13,
         "price": 639.0,
         "last_update": "2026-10-01 11:44:19"
       },
       {
         "symbol": "8046.TW",
-        "shares": 19.0,
+        "shares": 18.0,
         "weight": 10,
         "price": 1275.0,
         "last_update": "2026-10-01 11:44:19"
@@ -29609,7 +29611,7 @@
     ],
     "meta": {
       "high_water_mark": 248137.20053100583,
-      "current_equity": 248137.20053100583,
+      "current_equity": 234139.89945983887,
       "cash": 0.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1790294400.0,
@@ -29619,7 +29621,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-01",
-      "last_update": "2026-10-30 11:55:34.895816"
+      "last_update": "2026-11-02 11:58:52.295065"
     }
   }
 }
