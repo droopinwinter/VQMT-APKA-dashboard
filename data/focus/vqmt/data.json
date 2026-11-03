@@ -11973,7 +11973,8 @@
         "2026-10-29",
         "2026-10-30",
         "2026-10-31",
-        "2026-11-03"
+        "2026-11-03",
+        "2026-11-04"
       ],
       "values": [
         1.0,
@@ -12017,13 +12018,14 @@
         0.873259,
         0.84468,
         0.813345,
-        0.741378
+        0.741378,
+        0.683431
       ],
       "metrics": {
-        "cagr": -83.33,
-        "sharpe": -4.458,
-        "max_dd": -37.17,
-        "total_return": -25.86,
+        "cagr": -89.38,
+        "sharpe": -5.121,
+        "max_dd": -42.08,
+        "total_return": -31.66,
         "years": 0.2
       }
     },
@@ -15008,14 +15010,14 @@
     "holdings": [
       {
         "symbol": "MU",
-        "shares": 15.0,
+        "shares": 13.0,
         "weight": 21,
         "price": 1063.96,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "CNC",
-        "shares": 242.0,
+        "shares": 223.0,
         "weight": 21,
         "price": 64.3,
         "last_update": "2026-10-06 07:00:35"
@@ -15029,21 +15031,21 @@
       },
       {
         "symbol": "MPC",
-        "shares": 31.0,
+        "shares": 28.0,
         "weight": 18,
         "price": 433.47,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "PSX",
-        "shares": 52.0,
+        "shares": 48.0,
         "weight": 19,
         "price": 269.72,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "WDC",
-        "shares": 20.0,
+        "shares": 19.0,
         "weight": 12,
         "price": 441.64,
         "last_update": "2026-10-06 07:00:35"
@@ -15051,17 +15053,17 @@
     ],
     "meta": {
       "high_water_mark": 117992.1335278112,
-      "current_equity": 74137.78109741211,
+      "current_equity": 68343.12062072754,
       "cash": 0.0,
       "soft_kill_state": "lv2",
       "soft_kill_ts": 1793145600.0,
       "market_regime": "REVERSION",
-      "hard_kill_state": false,
-      "hard_kill_date": null,
+      "hard_kill_state": true,
+      "hard_kill_date": "2026-11-04",
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-06",
-      "last_update": "2026-11-03 06:53:15.708862"
+      "last_update": "2026-11-04 06:53:18.715225"
     }
   },
   "TW": {
