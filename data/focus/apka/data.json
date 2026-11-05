@@ -11983,7 +11983,8 @@
         "2026-10-31",
         "2026-11-03",
         "2026-11-04",
-        "2026-11-05"
+        "2026-11-05",
+        "2026-11-06"
       ],
       "values": [
         1.0,
@@ -12029,13 +12030,14 @@
         9.114834,
         17.435515,
         33.03782,
-        58.666089
+        58.666089,
+        99.593206
       ],
       "metrics": {
-        "cagr": 1788277634681.42,
-        "sharpe": 6.363,
+        "cagr": 25348916758066.7,
+        "sharpe": 6.827,
         "max_dd": -36.01,
-        "total_return": 5766.61,
+        "total_return": 9859.32,
         "years": 0.2
       }
     },
@@ -15001,32 +15003,32 @@
     "holdings": [
       {
         "symbol": "MPC",
-        "shares": 12831.0,
+        "shares": 21782.0,
         "weight": 100,
         "price": 457.22,
         "last_update": "2026-10-24 06:49:47"
       },
       {
         "symbol": "PSX",
-        "shares": 20717.0,
+        "shares": 35170.0,
         "weight": 100,
         "price": 283.18,
         "last_update": "2026-10-24 06:49:47"
       }
     ],
     "meta": {
-      "high_water_mark": 5866608.894042969,
-      "current_equity": 5866608.894042969,
+      "high_water_mark": 9959320.554885864,
+      "current_equity": 9959320.554885864,
       "cash": 0.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1793314301.4040184,
-      "market_regime": "REVERSION",
+      "market_regime": "HIGH_VOL",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": true,
       "last_reset_date": "2026-11-03",
       "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-11-05 06:47:52.503659"
+      "last_update": "2026-11-06 06:53:44.994763"
     }
   },
   "TW": {
@@ -41590,7 +41592,8 @@
         "2026-10-31",
         "2026-11-03",
         "2026-11-04",
-        "2026-11-05"
+        "2026-11-05",
+        "2026-11-06"
       ],
       "values": [
         1.0,
@@ -41636,13 +41639,14 @@
         1.083672,
         1.115057,
         1.136883,
-        1.195597
+        1.195597,
+        1.218826
       ],
       "metrics": {
-        "cagr": 181.71,
-        "sharpe": 5.61,
+        "cagr": 209.37,
+        "sharpe": 6.028,
         "max_dd": -3.48,
-        "total_return": 19.56,
+        "total_return": 21.88,
         "years": 0.2
       }
     },
@@ -44629,60 +44633,60 @@
     "holdings": [
       {
         "symbol": "NAIL",
-        "shares": 232.0,
+        "shares": 237.0,
         "weight": 6,
         "price": 30.87,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "DPST",
-        "shares": 78.0,
+        "shares": 79.0,
         "weight": 8,
         "price": 122.86,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "GLD",
-        "shares": 82.0,
+        "shares": 83.0,
         "weight": 25,
         "price": 366.61,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "CORN",
-        "shares": 1691.0,
+        "shares": 1723.0,
         "weight": 25,
         "price": 17.68,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "XLI",
-        "shares": 174.0,
+        "shares": 178.0,
         "weight": 24,
         "price": 164.62,
         "last_update": "2026-10-24 05:39:12"
       },
       {
         "symbol": "XBI",
-        "shares": 104.0,
+        "shares": 106.0,
         "weight": 13,
         "price": 149.54,
         "last_update": "2026-10-24 05:39:12"
       }
     ],
     "meta": {
-      "high_water_mark": 119559.7405014038,
-      "current_equity": 119559.7405014038,
+      "high_water_mark": 121882.64796638487,
+      "current_equity": 121882.64796638487,
       "cash": 0.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1793232000.0,
-      "market_regime": "TREND",
+      "market_regime": "HIGH_VOL",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-11-05 05:39:08.296738"
+      "last_update": "2026-11-06 05:41:06.019579"
     }
   },
   "TWETF": {
