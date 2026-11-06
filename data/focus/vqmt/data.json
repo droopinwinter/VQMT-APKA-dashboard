@@ -11988,7 +11988,8 @@
         "2026-11-03",
         "2026-11-04",
         "2026-11-05",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-07"
       ],
       "values": [
         1.0,
@@ -12035,13 +12036,14 @@
         0.741378,
         0.683431,
         0.613547,
-        0.505818
+        0.505818,
+        0.415394
       ],
       "metrics": {
-        "cagr": -97.96,
-        "sharpe": -5.97,
-        "max_dd": -57.13,
-        "total_return": -49.42,
+        "cagr": -99.28,
+        "sharpe": -6.364,
+        "max_dd": -64.79,
+        "total_return": -58.46,
         "years": 0.2
       }
     },
@@ -15029,42 +15031,42 @@
     "holdings": [
       {
         "symbol": "MU",
-        "shares": 10.0,
+        "shares": 8.0,
         "weight": 21,
         "price": 1063.96,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "CNC",
-        "shares": 165.0,
+        "shares": 136.0,
         "weight": 21,
         "price": 64.3,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "STX",
-        "shares": 6.0,
+        "shares": 5.0,
         "weight": 10,
         "price": 887.09,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "MPC",
-        "shares": 21.0,
+        "shares": 17.0,
         "weight": 18,
         "price": 433.47,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "PSX",
-        "shares": 36.0,
+        "shares": 29.0,
         "weight": 19,
         "price": 269.72,
         "last_update": "2026-10-06 07:00:35"
       },
       {
         "symbol": "WDC",
-        "shares": 14.0,
+        "shares": 11.0,
         "weight": 12,
         "price": 441.64,
         "last_update": "2026-10-06 07:00:35"
@@ -15072,7 +15074,7 @@
     ],
     "meta": {
       "high_water_mark": 117992.1335278112,
-      "current_equity": 50581.81977844238,
+      "current_equity": 41539.41941070557,
       "cash": 0.0,
       "soft_kill_state": "lv2",
       "soft_kill_ts": 1793145600.0,
@@ -15082,7 +15084,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-10-06",
-      "last_update": "2026-11-06 06:59:41.399644"
+      "last_update": "2026-11-07 07:01:20.479003"
     }
   },
   "TW": {

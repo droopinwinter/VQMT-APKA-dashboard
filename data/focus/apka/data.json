@@ -11988,7 +11988,8 @@
         "2026-11-03",
         "2026-11-04",
         "2026-11-05",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-07"
       ],
       "values": [
         1.0,
@@ -12035,13 +12036,14 @@
         17.435515,
         33.03782,
         58.666089,
-        99.593206
+        99.593206,
+        167.609949
       ],
       "metrics": {
-        "cagr": 25348916758066.7,
-        "sharpe": 6.827,
+        "cagr": 315394302415835.3,
+        "sharpe": 7.261,
         "max_dd": -36.01,
-        "total_return": 9859.32,
+        "total_return": 16660.99,
         "years": 0.2
       }
     },
@@ -15005,26 +15007,11 @@
       "2026-11-04": "Nova(量測設備)(9%), 瓦莱羅能源(石油)(9%), BigBear.ai(國防AI)(7%), 莫德納(生技)(6%), Eos Energy(鋅電池儲能)(4%), Cipher Mining(算力轉AI)(0%)",
       "2026-11-05": "瓦莱羅能源(石油)(0%), Nova(量測設備)(0%), 莫德納(生技)(0%), BigBear.ai(國防AI)(0%), Eos Energy(鋅電池儲能)(0%), Cipher Mining(算力轉AI)(0%)"
     },
-    "holdings": [
-      {
-        "symbol": "MPC",
-        "shares": 21782.0,
-        "weight": 100,
-        "price": 457.22,
-        "last_update": "2026-10-24 06:49:47"
-      },
-      {
-        "symbol": "PSX",
-        "shares": 35170.0,
-        "weight": 100,
-        "price": 283.18,
-        "last_update": "2026-10-24 06:49:47"
-      }
-    ],
+    "holdings": [],
     "meta": {
-      "high_water_mark": 9959320.554885864,
-      "current_equity": 9959320.554885864,
-      "cash": 0.0,
+      "high_water_mark": 16760994.910217283,
+      "current_equity": 16760994.910217283,
+      "cash": 16760994.910217283,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1793314301.4040184,
       "market_regime": "HIGH_VOL",
@@ -15032,8 +15019,8 @@
       "hard_kill_date": null,
       "reset_anchor": true,
       "last_reset_date": "2026-11-03",
-      "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-11-06 06:53:44.994763"
+      "last_rebalance_date": "2026-11-07",
+      "last_update": "2026-11-07 06:55:25.983822"
     }
   },
   "TW": {
@@ -41609,7 +41596,8 @@
         "2026-11-03",
         "2026-11-04",
         "2026-11-05",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-07"
       ],
       "values": [
         1.0,
@@ -41656,13 +41644,14 @@
         1.115057,
         1.136883,
         1.195597,
-        1.218826
+        1.218826,
+        1.236936
       ],
       "metrics": {
-        "cagr": 209.37,
-        "sharpe": 6.028,
+        "cagr": 230.31,
+        "sharpe": 6.35,
         "max_dd": -3.48,
-        "total_return": 21.88,
+        "total_return": 23.69,
         "years": 0.2
       }
     },
@@ -44647,54 +44636,11 @@
       "2026-11-04": "通信服務板塊(28%), 壯麗七主動型(22%), 美國天然氣基金(14%), 2x做多AMZN(9%), 2x做多GOOGL(6%), 半導體指數(4%)",
       "2026-11-05": "半導體指數(0%), 2x做多AMZN(0%), 通信服務板塊(0%), 2x做多GOOGL(0%), 美國天然氣基金(0%), 壯麗七主動型(0%)"
     },
-    "holdings": [
-      {
-        "symbol": "NAIL",
-        "shares": 237.0,
-        "weight": 6,
-        "price": 30.87,
-        "last_update": "2026-10-24 05:39:12"
-      },
-      {
-        "symbol": "DPST",
-        "shares": 79.0,
-        "weight": 8,
-        "price": 122.86,
-        "last_update": "2026-10-24 05:39:12"
-      },
-      {
-        "symbol": "GLD",
-        "shares": 83.0,
-        "weight": 25,
-        "price": 366.61,
-        "last_update": "2026-10-24 05:39:12"
-      },
-      {
-        "symbol": "CORN",
-        "shares": 1723.0,
-        "weight": 25,
-        "price": 17.68,
-        "last_update": "2026-10-24 05:39:12"
-      },
-      {
-        "symbol": "XLI",
-        "shares": 178.0,
-        "weight": 24,
-        "price": 164.62,
-        "last_update": "2026-10-24 05:39:12"
-      },
-      {
-        "symbol": "XBI",
-        "shares": 106.0,
-        "weight": 13,
-        "price": 149.54,
-        "last_update": "2026-10-24 05:39:12"
-      }
-    ],
+    "holdings": [],
     "meta": {
-      "high_water_mark": 121882.64796638487,
-      "current_equity": 121882.64796638487,
-      "cash": 0.0,
+      "high_water_mark": 123693.56058692932,
+      "current_equity": 123693.56058692932,
+      "cash": 123693.56058692932,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1793232000.0,
       "market_regime": "HIGH_VOL",
@@ -44702,8 +44648,8 @@
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
-      "last_rebalance_date": "2026-10-24",
-      "last_update": "2026-11-06 05:41:06.019579"
+      "last_rebalance_date": "2026-11-07",
+      "last_update": "2026-11-07 05:40:27.345838"
     }
   },
   "TWETF": {
