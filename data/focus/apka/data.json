@@ -11948,7 +11948,7 @@
     },
     "live": {
       "dates": [
-        "2026-02-15"
+        "2026-11-10"
       ],
       "values": [
         1.0
@@ -14915,6 +14915,21 @@
       "2026-11-04": "莫德納(生技)(6%), NuScale(小型模組化核電)(5%), Fluence(儲能系統)(5%), Eos Energy(鋅電池儲能)(3%), Serve Robotics(外送機器人)(0%), Cipher Mining(算力轉AI)(0%)",
       "2026-11-05": "Serve Robotics(外送機器人)(0%), Eos Energy(鋅電池儲能)(0%), Cipher Mining(算力轉AI)(0%), NuScale(小型模組化核電)(0%), Fluence(儲能系統)(0%), 莫德納(生技)(0%)",
       "2026-11-06": "Serve Robotics(外送機器人)(0%), Eos Energy(鋅電池儲能)(0%), Cipher Mining(算力轉AI)(0%), NuScale(小型模組化核電)(0%), Fluence(儲能系統)(0%), 莫德納(生技)(0%)"
+    },
+    "holdings": [],
+    "meta": {
+      "high_water_mark": 100000.0,
+      "current_equity": 100000.0,
+      "cash": 100000.0,
+      "soft_kill_state": "normal",
+      "soft_kill_ts": 1794177768.258954,
+      "market_regime": "HIGH_VOL",
+      "hard_kill_state": false,
+      "hard_kill_date": null,
+      "reset_anchor": false,
+      "last_reset_date": null,
+      "last_rebalance_date": "2026-11-10",
+      "last_update": "2026-11-10 06:42:51.442274"
     }
   },
   "TW": {
@@ -41289,7 +41304,7 @@
     },
     "live": {
       "dates": [
-        "2026-02-15"
+        "2026-11-10"
       ],
       "values": [
         1.0
@@ -44277,6 +44292,21 @@
       "2026-11-04": "大豆期貨(43%), 工業板塊(30%), 3x做多地區銀行(9%), 3x做多航太&國防(7%), 3x做多建築業(6%), 三倍做空標普500(5%)",
       "2026-11-05": "工業板塊(0%), 3x做多地區銀行(0%), 3x做多建築業(0%), 三倍做空標普500(0%), 3x做多航太&國防(0%), 大豆期貨(0%)",
       "2026-11-06": "工業板塊(0%), 3x做多地區銀行(0%), 3x做多建築業(0%), 三倍做空標普500(0%), 3x做多航太&國防(0%), 大豆期貨(0%)"
+    },
+    "holdings": [],
+    "meta": {
+      "high_water_mark": 100000.0,
+      "current_equity": 100000.0,
+      "cash": 100000.0,
+      "soft_kill_state": "normal",
+      "soft_kill_ts": 1794173989.1586928,
+      "market_regime": "HIGH_VOL",
+      "hard_kill_state": false,
+      "hard_kill_date": null,
+      "reset_anchor": false,
+      "last_reset_date": null,
+      "last_rebalance_date": "2026-11-10",
+      "last_update": "2026-11-10 05:39:52.219558"
     }
   },
   "TWETF": {
