@@ -11952,9 +11952,11 @@
     },
     "live": {
       "dates": [
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-11"
       ],
       "values": [
+        1.0,
         1.0
       ],
       "metrics": {}
@@ -14955,7 +14957,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-10 06:48:17.604945"
+      "last_update": "2026-11-11 06:55:44.875276"
     }
   },
   "TW": {

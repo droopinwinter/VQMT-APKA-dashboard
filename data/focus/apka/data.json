@@ -11952,9 +11952,11 @@
     },
     "live": {
       "dates": [
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-11"
       ],
       "values": [
+        1.0,
         1.0
       ],
       "metrics": {}
@@ -14934,7 +14936,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-10 06:42:51.442274"
+      "last_update": "2026-11-11 06:50:14.834662"
     }
   },
   "TW": {
@@ -41333,9 +41335,11 @@
     },
     "live": {
       "dates": [
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-11"
       ],
       "values": [
+        1.0,
         1.0
       ],
       "metrics": {}
@@ -44336,7 +44340,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-10 05:39:52.219558"
+      "last_update": "2026-11-11 05:39:31.954065"
     }
   },
   "TWETF": {
