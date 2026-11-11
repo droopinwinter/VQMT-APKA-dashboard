@@ -26496,9 +26496,11 @@
     },
     "live": {
       "dates": [
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-11"
       ],
       "values": [
+        1.0,
         1.0
       ],
       "metrics": {}
@@ -29379,7 +29381,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-10 11:49:52.680145"
+      "last_update": "2026-11-11 11:52:20.850918"
     }
   },
   "USETF": {
@@ -55924,9 +55926,11 @@
     },
     "live": {
       "dates": [
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-11"
       ],
       "values": [
+        1.0,
         1.0
       ],
       "metrics": {}
@@ -58834,7 +58838,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-10 11:18:10.465318"
+      "last_update": "2026-11-11 11:18:52.294094"
     }
   }
 }

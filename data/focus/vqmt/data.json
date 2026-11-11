@@ -26517,9 +26517,11 @@
     },
     "live": {
       "dates": [
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-11"
       ],
       "values": [
+        1.0,
         1.0
       ],
       "metrics": {}
@@ -29421,7 +29423,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-10 11:54:33.393812"
+      "last_update": "2026-11-11 11:57:16.580308"
     }
   }
 }
