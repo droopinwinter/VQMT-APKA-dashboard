@@ -11957,9 +11957,11 @@
     "live": {
       "dates": [
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "values": [
+        1.0,
         1.0,
         1.0
       ],
@@ -14935,13 +14937,13 @@
       "cash": 100000.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1794177768.258954,
-      "market_regime": "HIGH_VOL",
+      "market_regime": "REVERSION",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-11 06:50:14.834662"
+      "last_update": "2026-11-12 06:38:21.106857"
     }
   },
   "TW": {
@@ -41352,9 +41354,11 @@
     "live": {
       "dates": [
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "values": [
+        1.0,
         1.0,
         1.0
       ],
@@ -44357,7 +44361,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-11 05:39:31.954065"
+      "last_update": "2026-11-12 05:37:43.755764"
     }
   },
   "TWETF": {
