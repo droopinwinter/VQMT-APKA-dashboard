@@ -26529,9 +26529,11 @@
     "live": {
       "dates": [
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "values": [
+        1.0,
         1.0,
         1.0
       ],
@@ -29429,13 +29431,13 @@
       "cash": 100000.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1794196470.3235135,
-      "market_regime": "HIGH_VOL",
+      "market_regime": "TREND",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-11 11:57:16.580308"
+      "last_update": "2026-11-12 11:51:33.763643"
     }
   }
 }
