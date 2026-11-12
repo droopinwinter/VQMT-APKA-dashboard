@@ -11962,9 +11962,11 @@
       "dates": [
         "2026-11-10",
         "2026-11-11",
-        "2026-11-12"
+        "2026-11-12",
+        "2026-11-13"
       ],
       "values": [
+        1.0,
         1.0,
         1.0,
         1.0
@@ -14935,11 +14937,47 @@
       "2026-11-10": "Cipher Mining(算力轉AI)(0%), SoFi(數位銀行)(0%), NuScale(小型模組化核電)(0%), 慧與(IT)(0%), 莫德納(生技)(0%), MongoDB(資料庫)(0%)",
       "2026-11-11": "SoFi(數位銀行)(5%), MongoDB(資料庫)(4%), 慧與(IT)(3%), 莫德納(生技)(3%), NuScale(小型模組化核電)(2%), Cipher Mining(算力轉AI)(2%)"
     },
-    "holdings": [],
+    "holdings": [
+      {
+        "symbol": "MRNA",
+        "shares": 23.0,
+        "weight": 5.32,
+        "price": 231.35,
+        "last_update": "2026-11-13 06:46:09"
+      },
+      {
+        "symbol": "EOSE",
+        "shares": 1880.0,
+        "weight": 3.4,
+        "price": 1.81,
+        "last_update": "2026-11-13 06:46:09"
+      },
+      {
+        "symbol": "LUNR",
+        "shares": 411.0,
+        "weight": 5.36,
+        "price": 13.03,
+        "last_update": "2026-11-13 06:46:09"
+      },
+      {
+        "symbol": "ASTS",
+        "shares": 114.0,
+        "weight": 3.94,
+        "price": 34.5,
+        "last_update": "2026-11-13 06:46:09"
+      },
+      {
+        "symbol": "CIFR",
+        "shares": 464.0,
+        "weight": 3.32,
+        "price": 7.15,
+        "last_update": "2026-11-13 06:46:09"
+      }
+    ],
     "meta": {
       "high_water_mark": 100000.0,
       "current_equity": 100000.0,
-      "cash": 100000.0,
+      "cash": 78670.22003269196,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1794177768.258954,
       "market_regime": "REVERSION",
@@ -14948,7 +14986,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-12 06:38:21.106857"
+      "last_update": "2026-11-13 06:46:09.797621"
     }
   },
   "TW": {
@@ -41371,9 +41409,11 @@
       "dates": [
         "2026-11-10",
         "2026-11-11",
-        "2026-11-12"
+        "2026-11-12",
+        "2026-11-13"
       ],
       "values": [
+        1.0,
         1.0,
         1.0,
         1.0
@@ -44378,7 +44418,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-12 05:37:43.755764"
+      "last_update": "2026-11-13 05:42:02.081758"
     }
   },
   "TWETF": {
