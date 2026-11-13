@@ -26556,9 +26556,11 @@
       "dates": [
         "2026-11-10",
         "2026-11-11",
-        "2026-11-12"
+        "2026-11-12",
+        "2026-11-13"
       ],
       "values": [
+        1.0,
         1.0,
         1.0,
         1.0
@@ -29430,11 +29432,68 @@
       "2026-11-10": "嘉晶(磊晶)(0%), 台泥(0%), 晶心科(處理器IP)(0%), 和碩(0%), 茂矽(功率晶圓)(0%), 聯發科(IC設計)(0%), 台塑化(石化)(0%), 京元電(0%)",
       "2026-11-11": "京元電(5%), 聯發科(IC設計)(4%), 茂矽(功率晶圓)(4%), 台泥(3%), 和碩(0%), 晶心科(處理器IP)(0%), 嘉晶(磊晶)(0%), 台塑化(石化)(0%)"
     },
-    "holdings": [],
+    "holdings": [
+      {
+        "symbol": "5876.TW",
+        "shares": 168.0,
+        "weight": 8.68,
+        "price": 51.8,
+        "last_update": "2026-11-13 11:47:50"
+      },
+      {
+        "symbol": "2801.TW",
+        "shares": 286.0,
+        "weight": 8.14,
+        "price": 28.5,
+        "last_update": "2026-11-13 11:47:50"
+      },
+      {
+        "symbol": "2404.TW",
+        "shares": 5.0,
+        "weight": 4.86,
+        "price": 1010.0,
+        "last_update": "2026-11-13 11:47:50"
+      },
+      {
+        "symbol": "2883.TW",
+        "shares": 191.0,
+        "weight": 6.9,
+        "price": 36.15,
+        "last_update": "2026-11-13 11:47:50"
+      },
+      {
+        "symbol": "2892.TW",
+        "shares": 191.0,
+        "weight": 8.11,
+        "price": 42.55,
+        "last_update": "2026-11-13 11:47:50"
+      },
+      {
+        "symbol": "2884.TW",
+        "shares": 179.0,
+        "weight": 8.52,
+        "price": 47.5,
+        "last_update": "2026-11-13 11:47:50"
+      },
+      {
+        "symbol": "6269.TW",
+        "shares": 43.0,
+        "weight": 3.46,
+        "price": 80.7,
+        "last_update": "2026-11-13 11:47:50"
+      },
+      {
+        "symbol": "2887.TW",
+        "shares": 184.0,
+        "weight": 7.44,
+        "price": 40.35,
+        "last_update": "2026-11-13 11:47:50"
+      }
+    ],
     "meta": {
       "high_water_mark": 100000.0,
       "current_equity": 100000.0,
-      "cash": 100000.0,
+      "cash": 43667.9003944397,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1794196189.5599842,
       "market_regime": "TREND",
@@ -29443,7 +29502,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-12 11:47:03.306140"
+      "last_update": "2026-11-13 11:47:50.813132"
     }
   },
   "USETF": {
@@ -56012,9 +56071,11 @@
       "dates": [
         "2026-11-10",
         "2026-11-11",
-        "2026-11-12"
+        "2026-11-12",
+        "2026-11-13"
       ],
       "values": [
+        1.0,
         1.0,
         1.0,
         1.0
@@ -58913,20 +58974,49 @@
       "2026-11-10": "街口布蘭特正2(0%), 台新臺IC設計(0%), 元大台灣50正2(0%), 兆豐台晶圓製造(0%), 國泰台灣5G+(0%)",
       "2026-11-11": "街口布蘭特正2(0%), 台新臺IC設計(0%), 元大台灣50正2(0%), 兆豐台晶圓製造(0%), 國泰台灣5G+(0%)"
     },
-    "holdings": [],
+    "holdings": [
+      {
+        "symbol": "00708L.TW",
+        "shares": 32.0,
+        "weight": 2.07,
+        "price": 65.0,
+        "last_update": "2026-11-13 11:17:46"
+      },
+      {
+        "symbol": "00913.TW",
+        "shares": 46.0,
+        "weight": 2.0,
+        "price": 43.25,
+        "last_update": "2026-11-13 11:17:46"
+      },
+      {
+        "symbol": "00947.TW",
+        "shares": 60.0,
+        "weight": 1.93,
+        "price": 31.97,
+        "last_update": "2026-11-13 11:17:46"
+      },
+      {
+        "symbol": "00683L.TW",
+        "shares": 387.0,
+        "weight": 8.93,
+        "price": 23.05,
+        "last_update": "2026-11-13 11:17:46"
+      }
+    ],
     "meta": {
       "high_water_mark": 100000.0,
       "current_equity": 100000.0,
-      "cash": 100000.0,
+      "cash": 85091.9503364563,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1794194287.3702383,
-      "market_regime": "HIGH_VOL",
+      "market_regime": "TREND",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-12 11:19:17.368085"
+      "last_update": "2026-11-13 11:17:46.483377"
     }
   }
 }
