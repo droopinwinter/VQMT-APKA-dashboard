@@ -26575,13 +26575,15 @@
         "2026-11-10",
         "2026-11-11",
         "2026-11-12",
-        "2026-11-13"
+        "2026-11-13",
+        "2026-11-16"
       ],
       "values": [
         1.0,
         1.0,
         1.0,
-        1.0
+        1.0,
+        1.005962
       ],
       "metrics": {}
     },
@@ -29531,18 +29533,18 @@
       }
     ],
     "meta": {
-      "high_water_mark": 100000.0,
-      "current_equity": 100000.0,
+      "high_water_mark": 100596.19975280762,
+      "current_equity": 100596.19975280762,
       "cash": 0.0,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1794196470.3235135,
-      "market_regime": "TREND",
+      "market_regime": "SIDEWAYS",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-13 11:52:58.354498"
+      "last_update": "2026-11-16 11:56:09.569903"
     }
   }
 }
