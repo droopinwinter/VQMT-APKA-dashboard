@@ -11977,7 +11977,8 @@
         "2026-11-12",
         "2026-11-13",
         "2026-11-14",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
       "values": [
         1.0,
@@ -11985,7 +11986,8 @@
         1.0,
         1.0,
         0.99641,
-        0.985567
+        0.985567,
+        0.980927
       ],
       "metrics": {}
     },
@@ -14956,35 +14958,20 @@
       "2026-11-13": "派拓網絡(資安)(4%), 莫德納(生技)(3%), Oklo(小型核反應爐)(2%), Eos Energy(鋅電池儲能)(2%), Serve Robotics(外送機器人)(0%), Cipher Mining(算力轉AI)(0%)",
       "2026-11-16": "派拓網絡(資安)(4%), 莫德納(生技)(3%), Oklo(小型核反應爐)(2%), Eos Energy(鋅電池儲能)(0%), Serve Robotics(外送機器人)(0%), Cipher Mining(算力轉AI)(0%)"
     },
-    "holdings": [
-      {
-        "symbol": "MRNA",
-        "shares": 23.0,
-        "weight": 5.32,
-        "price": 231.35,
-        "last_update": "2026-11-13 06:46:09"
-      },
-      {
-        "symbol": "LUNR",
-        "shares": 393.0,
-        "weight": 4.67,
-        "price": 11.73,
-        "last_update": "2026-11-17 06:52:33"
-      }
-    ],
+    "holdings": [],
     "meta": {
       "high_water_mark": 100000.0,
-      "current_equity": 98556.69990253448,
-      "cash": 88995.599984169,
+      "current_equity": 98092.68508434296,
+      "cash": 98092.68508434296,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1794177768.258954,
-      "market_regime": "REVERSION",
+      "market_regime": "HIGH_VOL",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-17 06:52:33.788082"
+      "last_update": "2026-11-18 06:43:32.572818"
     }
   },
   "TW": {
@@ -41443,9 +41430,11 @@
         "2026-11-12",
         "2026-11-13",
         "2026-11-14",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
       "values": [
+        1.0,
         1.0,
         1.0,
         1.0,
@@ -44456,7 +44445,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-17 05:42:24.097889"
+      "last_update": "2026-11-18 05:41:30.365856"
     }
   },
   "TWETF": {
