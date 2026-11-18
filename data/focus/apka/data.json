@@ -11982,7 +11982,8 @@
         "2026-11-13",
         "2026-11-14",
         "2026-11-17",
-        "2026-11-18"
+        "2026-11-18",
+        "2026-11-19"
       ],
       "values": [
         1.0,
@@ -11991,6 +11992,7 @@
         1.0,
         0.99641,
         0.985567,
+        0.980927,
         0.980927
       ],
       "metrics": {}
@@ -14963,20 +14965,35 @@
       "2026-11-16": "派拓網絡(資安)(4%), 莫德納(生技)(3%), Oklo(小型核反應爐)(2%), Eos Energy(鋅電池儲能)(0%), Serve Robotics(外送機器人)(0%), Cipher Mining(算力轉AI)(0%)",
       "2026-11-17": "Eos Energy(鋅電池儲能)(0%), 莫德納(生技)(0%), Cipher Mining(算力轉AI)(0%), Serve Robotics(外送機器人)(0%), Oklo(小型核反應爐)(0%), 派拓網絡(資安)(0%)"
     },
-    "holdings": [],
+    "holdings": [
+      {
+        "symbol": "CIFR",
+        "shares": 496.0,
+        "weight": 3.32,
+        "price": 6.56,
+        "last_update": "2026-11-19 06:41:51"
+      },
+      {
+        "symbol": "LUNR",
+        "shares": 399.0,
+        "weight": 4.31,
+        "price": 10.6,
+        "last_update": "2026-11-19 06:41:51"
+      }
+    ],
     "meta": {
       "high_water_mark": 100000.0,
       "current_equity": 98092.68508434296,
-      "cash": 98092.68508434296,
+      "cash": 90609.52496051788,
       "soft_kill_state": "normal",
       "soft_kill_ts": 1794177768.258954,
-      "market_regime": "HIGH_VOL",
+      "market_regime": "TREND",
       "hard_kill_state": false,
       "hard_kill_date": null,
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-18 06:43:32.572818"
+      "last_update": "2026-11-19 06:41:51.938878"
     }
   },
   "TW": {
@@ -41447,9 +41464,11 @@
         "2026-11-13",
         "2026-11-14",
         "2026-11-17",
-        "2026-11-18"
+        "2026-11-18",
+        "2026-11-19"
       ],
       "values": [
+        1.0,
         1.0,
         1.0,
         1.0,
@@ -44462,7 +44481,7 @@
       "reset_anchor": false,
       "last_reset_date": null,
       "last_rebalance_date": "2026-11-10",
-      "last_update": "2026-11-18 05:41:30.365856"
+      "last_update": "2026-11-19 05:39:00.530699"
     }
   },
   "TWETF": {
