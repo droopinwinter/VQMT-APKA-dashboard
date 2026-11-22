@@ -96,6 +96,11 @@
   .score-2     { background: rgba(249,115,22,.18); color: #fb923c; }  /* 20-39 */
   .score-1     { background: rgba(239,68,68,.22);  color: #f87171; }  /* 0-19 */
   .score-none  { color: var(--border); font-size: 0.78rem; }
+
+  /* Sortable score headers */
+  th.sortable { cursor: pointer; user-select: none; }
+  th.sortable:hover { text-decoration: underline; }
+  .sort-arrow { font-size: 0.65rem; margin-left: 2px; }
 </style>
 </head>
 <body>
@@ -140,6 +145,7 @@ let SCORES   = {};  // { US: { AAPL: {apka: 75.3, vqmt: 62.1}, ... }, ... }
 let PRICES   = {};  // { AAPL: {price: 123.45, date: '2026-09-10'}, ... }
 let currentProfile = 'focus';
 let searchTerms = {};  // { US: '', TW: '', USETF: '', TWETF: '' }
+let sortState = {};    // { US: {key: 'apka'|'vqmt', dir: 'desc'|'asc'} } — absent = default order
 
 async function fetchJSON(url) {
   const r = await fetch(url + '?t=' + Date.now());
@@ -234,7 +240,15 @@ function buildTable(mkt, tickers) {
 
   if (!filtered.length) return '<p class="no-data">無符合結果</p>';
 
+  const ss = sortState[mkt];
   const sorted = [...filtered].sort((a, b) => {
+    if (ss) {  // user-chosen score column; tickers without a score always go last
+      const av = (mktScores[a.ticker] || {})[ss.key], bv = (mktScores[b.ticker] || {})[ss.key];
+      const aNo = av === null || av === undefined, bNo = bv === null || bv === undefined;
+      if (aNo || bNo) return aNo - bNo;
+      if (av !== bv) return ss.dir === 'desc' ? bv - av : av - bv;
+      return a.ticker.localeCompare(b.ticker);
+    }
     const aApka = apkaH.has(a.ticker), aVqmt = vqmtH.has(a.ticker);
     const bApka = apkaH.has(b.ticker), bVqmt = vqmtH.has(b.ticker);
     const aHeld = (aApka && aVqmt) ? 2 : (aApka || aVqmt) ? 1 : 0;
@@ -252,8 +266,8 @@ function buildTable(mkt, tickers) {
       <th style="text-align:right;">最新價格</th>
       <th style="text-align:center;color:#60a5fa;">APKA 持倉</th>
       <th style="text-align:center;color:#a78bfa;">VQMT 持倉</th>
-      <th style="text-align:center;color:#60a5fa;">APKA 分</th>
-      <th style="text-align:center;color:#a78bfa;">VQMT 分</th>
+      ${sortHeader(mkt, 'apka', 'APKA 分', '#60a5fa')}
+      ${sortHeader(mkt, 'vqmt', 'VQMT 分', '#a78bfa')}
     </tr></thead><tbody>`;
 
   for (const t of sorted) {
@@ -327,8 +341,28 @@ function render() {
 
 function onSearch(mkt, val) {
   searchTerms[mkt] = val;
+  refreshTable(mkt);
+}
+
+function refreshTable(mkt) {
   const wrap = document.getElementById('table-' + mkt);
   if (wrap) wrap.innerHTML = buildTable(mkt, UNIVERSE[mkt] || []);
+}
+
+function sortHeader(mkt, key, label, color) {
+  const ss = sortState[mkt];
+  const arrow = ss && ss.key === key ? (ss.dir === 'desc' ? '▼' : '▲') : '⇅';
+  return `<th class="sortable" style="text-align:center;color:${color};" title="點擊排序：遞減 → 遞增 → 預設"
+    onclick="onSortClick('${mkt}', '${key}')">${label}<span class="sort-arrow">${arrow}</span></th>`;
+}
+
+// Click cycles: descending -> ascending -> default order (holdings first)
+function onSortClick(mkt, key) {
+  const ss = sortState[mkt];
+  if (!ss || ss.key !== key) sortState[mkt] = { key, dir: 'desc' };
+  else if (ss.dir === 'desc') sortState[mkt] = { key, dir: 'asc' };
+  else delete sortState[mkt];
+  refreshTable(mkt);
 }
 
 init();
