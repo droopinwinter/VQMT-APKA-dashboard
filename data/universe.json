@@ -3791,6 +3791,10 @@
     {
       "ticker": "MUU",
       "name": "2x做多美光"
+    },
+    {
+      "ticker": "UDN",
+      "name": "放空美元指數"
     }
   ],
   "TWETF": [

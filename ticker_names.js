@@ -48,6 +48,7 @@ window.TICKER_NAMES = {
   "SOXX": "半導體指數",
   "CIBR": "資安防護",
   "MUU": "2x做多美光",
+  "UDN": "放空美元指數",
   "A": "安捷倫科技(醫療儀器)",
   "AAPL": "蘋果(iPhone)",
   "ABBV": "艾伯維(生物製藥)",
