@@ -72,6 +72,11 @@
   tr:last-child td { border-bottom: none; }
   tr:hover td { background: rgba(255,255,255,.03); }
   .no-data { color: var(--muted); text-align: center; padding: 30px; font-size: 0.85rem; }
+  .cleared-box { margin: -14px auto 10px; max-width: 640px; padding: 12px 16px; border: 1px solid var(--border);
+                 border-radius: 8px; font-size: 0.83rem; color: var(--muted); line-height: 1.7; }
+  .cleared-box b { color: #e0e0e0; }
+  .cleared-box ul { margin: 0 0 0 18px; padding: 0; color: #f59e0b; }
+  .cleared-sold { margin-top: 4px; font-size: 0.78rem; }
 </style>
 </head>
 <body>
@@ -226,7 +231,7 @@ function render() {
   renderMetrics(mkt);
   renderChart(mkt);
   renderDrawdown(mkt);
-  renderHoldings(mkt.holdings);
+  renderHoldings(mkt.holdings, mkt.cleared, mkt.meta);
 }
 
 // Regime badge
@@ -403,10 +408,42 @@ function buildDrawdownChart(canvasId, mkt) {
 }
 
 // Holdings table
-function renderHoldings(holdings) {
+// Reason codes written by main_live.py into execution sheets
+const CLEAR_REASONS = {
+  Market_Filter: '市場過濾：盤勢被判為空頭（BEAR）或高波動（HIGH_VOL），暫停持股',
+  Rebalance:     '換倉：重新計算後目標權重為 0',
+  Stop_Loss:     '回撤停損：組合回撤超過上限，全部出場',
+  Re_entry:      '重新進場',
+};
+function clearReasonText(code) {
+  if (CLEAR_REASONS[code]) return CLEAR_REASONS[code];
+  if (code.startsWith('HardKill_')) return '硬停損（Hard Kill）：' + code.slice(9);
+  if (code.startsWith('SoftKill_')) return '軟停損降倉（Soft Kill）：' + code.slice(9);
+  return code;
+}
+
+function renderCleared(cleared, meta) {
+  if (!cleared) return '';
+  const regime = meta && meta.market_regime ? String(meta.market_regime).toUpperCase() : '';
+  const regimeLine = regime ? `<div>目前盤勢：<b>${regime}</b></div>` : '';
+  if (cleared.never_held) {
+    return `<div class="cleared-box">
+      <div>實盤自 <b>${cleared.since}</b> 開始追蹤，尚未建倉</div>${regimeLine}</div>`;
+  }
+  const reasons = (cleared.reasons || []).length
+    ? cleared.reasons.map(r => `<li>${clearReasonText(r)}</li>`).join('')
+    : '<li>當天執行單未記錄理由</li>';
+  const sold = (cleared.sold || []).length
+    ? `<div class="cleared-sold">賣出：${cleared.sold.join('、')}</div>` : '';
+  return `<div class="cleared-box">
+    <div>清倉日期：<b>${cleared.date}</b></div>
+    <div>清倉理由：</div><ul>${reasons}</ul>${regimeLine}${sold}</div>`;
+}
+
+function renderHoldings(holdings, cleared, meta) {
   const wrap = document.getElementById('holdings-wrap');
   if (!holdings || !holdings.length) {
-    wrap.innerHTML = '<p class="no-data">目前無持倉資料</p>'; return;
+    wrap.innerHTML = '<p class="no-data">目前無持倉資料</p>' + renderCleared(cleared, meta); return;
   }
 
   const cols = Object.keys(holdings[0]);
